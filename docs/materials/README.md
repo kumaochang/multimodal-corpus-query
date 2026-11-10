@@ -34,6 +34,19 @@ The [focused two-way HA W3 materials](../../materials/releases/ha-w3-two-way-v1/
 
 ### Clip-level results and additional comparisons
 
+#### Earlier clip-level diagnostics: q1–q6
+
+The registration's historical appendix lists q7–q23. The q1–q6 programs and their result reports were already present in the original repository's September 19, 2026 commit (`023a94b`). The following retrospective index makes those earlier analyses explicit; it does not alter the original registration.
+
+| Reference | Analysis | Program |
+|---|---|---|
+| q1–q2 | Person-slot assignment and the relationship between kinematic vectors and shot composition. | [`q1q2_composition.py`](../../analysis/q1q2_composition.py) |
+| q3–q4 | Kinematic feature reductions and composition-robust variants. | [`q3q4_reductions.py`](../../analysis/q3q4_reductions.py) |
+| q5 | Category-specific chance baselines for cross-source retrieval. | [`q5_baselines.py`](../../analysis/q5_baselines.py) |
+| q6 | Pooled comparison of the model-assigned Explaining category with other categories, relative to each query's chance baseline. | [`q6_pooled_pairing.py`](../../analysis/q6_pooled_pairing.py) |
+
+Each program specifies the path of the report it generates.
+
 | Analysis | Saved results | Program or specification |
 |---|---|---|
 | Clip-level retrieval and 15 feature combinations | [`retrieval_results.json`](../../analysis/clip_level_map_audit/retrieval_results.json), [`fusion15_results.json`](../../analysis/clip_level_map_audit/fusion15_results.json), and [`fusion15_results.csv`](../../analysis/clip_level_map_audit/fusion15_results.csv) | [`complete_fusion_map.py`](../../analysis/clip_level_map_audit/complete_fusion_map.py) and [`PLAN_F0.md`](../../analysis/clip_level_map_audit/PLAN_F0.md) |
