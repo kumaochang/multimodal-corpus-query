@@ -1,0 +1,73 @@
+{
+  "original_freeze_sha256": "39c659558b975a4ebff47043e3405ba32e89bd82a84ae7f551a65d5c31ba913b",
+  "public_programs": {
+    "analysis/study3/prosody_preparation/runner.py": {
+      "bytes": 13892,
+      "sha256": "3e3569a7550e8ee4efc49775041c0b5bbfaccec91db8786dbaed45d8030bf09c"
+    },
+    "analysis/study3/ch5_fusion_preparation/kernels.py": {
+      "bytes": 5541,
+      "sha256": "902a7559e7538bbbcb06cd38eff17958fccfcd5eb7717a7c4cf768c636adbef5"
+    },
+    "analysis/study3/ch5_fusion_preparation/execution_support.py": {
+      "bytes": 3691,
+      "sha256": "04132e87e07475fe7482b727264f6fa3c51e6e8321853da3e4def12e49ba452e"
+    }
+  },
+  "public_sources": {
+    "analysis/study3/clm_jev_preparation/REGISTERED_RESULTS_AUDIT.json": {
+      "bytes": 24410,
+      "sha256": "ec74a13cfee74e2831fa739dd7b4c996c157ffd95f2dc421a9710007ddeacdf7"
+    },
+    "data/study3_stats/registered/oof_scores.npz": {
+      "bytes": 17795,
+      "sha256": "f1d036398fa05e54ef0650923e547e395a4d4b4c4a7d0872a6add549d772223f"
+    },
+    "data/study3_runs/annotation/items.json": {
+      "bytes": 88870,
+      "sha256": "99bedb757963ea071d71c58254a7ea2e5d5a7ade6c046c64b05fb83cbfae67e2"
+    },
+    "data/study3_runs/item5/audio.npz": {
+      "bytes": 2516270,
+      "sha256": "2497f5d3f3ff2e7d843613f28d7fc318453fa69a58765a57f4489de5fc690bc1"
+    },
+    "data/study3_runs/item5/text.npz": {
+      "bytes": 138847122,
+      "sha256": "601db363c17a75b04dfcadcefcd2e4ca718d93822c03c114eed546a0eacbc3d2"
+    },
+    "data/study3_runs/item5/SHA256SUMS.txt": {
+      "bytes": 454,
+      "sha256": "d39e50d6bf435876c7b522e52c808c99fd27277f22e9b0e3f422195ef1e2da4e"
+    },
+    "data/study3_runs/prosody.jsonl": {
+      "bytes": 7189530,
+      "sha256": "ce66ed2251eb8787612b88480358dfd7dd802812baeb9ada23dbd7a6be687771"
+    },
+    "data/study3_runs/prosody.jsonl.provenance.json": {
+      "bytes": 1197,
+      "sha256": "0ddba4f93c02632477531fa182ed7bb5eaf68083116a32a03d769d0de460e297"
+    },
+    "data/study3_runs/ext84/prosody.jsonl": {
+      "bytes": 3001300,
+      "sha256": "2f2670c290e6fcf2351d23ef48df852303e0b4921d2e57ab4ea5000701f26223"
+    },
+    "data/study3_runs/ext84/prosody.jsonl.provenance.json": {
+      "bytes": 1117,
+      "sha256": "e377277cc09c959143e28ca532f739a56832b71f0d627d0690ad3e75f5283c33"
+    },
+    "pipeline/stages/prosody.py": {
+      "bytes": 7472,
+      "sha256": "6b11c6acf3c9fe8e89b7a220e9818d60782d7915e27808fed65d4236b7897225"
+    },
+    "pipeline/analysis/item5/probe.py": {
+      "bytes": 10321,
+      "sha256": "19dc74610379cccedfc82a00c0079a2cf72e5dbf132daaa8a518ea06c5d44b0a"
+    },
+    "pipeline/analysis/item5/feat_audio.py": {
+      "bytes": 3307,
+      "sha256": "bde014a1e400a7f669a44daf3a757049d1ac819a0f9f365eb08f83f716f3f7a7"
+    }
+  },
+  "numerical_input_hashes_unchanged": true,
+  "scope": "Original baseline artifact bytes stay fixed; portable public source identities are recorded separately."
+}

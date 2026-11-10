@@ -1,0 +1,31 @@
+{
+  "seed": {
+    "value": 20261005
+  },
+  "days_per_language": {
+    "value": 12
+  },
+  "min_months_for_month_stratified_draw": {
+    "value": 12
+  },
+  "clips_per_day": {
+    "value": 10
+  },
+  "clips_drawn_per_day": {
+    "value": 3
+  },
+  "programme": {
+    "value": "看見族語"
+  },
+  "study1_days": {
+    "value": "pilot/labels.json"
+  },
+  "additional_exclusions_if_present": {
+    "value": [
+      {
+        "language": "Truku",
+        "broadcast_date": "20260302"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release": "ULFR-v1-20261025",
+  "formula_before": "R+L+K+RL+RK+LK+RLK+G+LG+KG+RG+RKG",
+  "retained_terms_in_original_order": [
+    "R",
+    "L",
+    "K",
+    "RL",
+    "RK",
+    "LK",
+    "G",
+    "LG",
+    "KG",
+    "RG"
+  ],
+  "input_roles": {
+    "model": {
+      "root": "formal",
+      "relative_path": "supplement/runA/execution/HA_W3_model_data.npz",
+      "sha256": "6417e9783238a7af27baecf95817e095a2998d6ee5e26d337daf4d9d5dde1429",
+      "bytes": 1237038
+    },
+    "overlap": {
+      "root": "formal",
+      "relative_path": "posterior/report_inputs/execution_20261020/adopted_overlap_weights.csv",
+      "sha256": "6738716290e4963f2c0f2cddacf1f97f1306fd1924f33d3b5447292a83cd529b",
+      "bytes": 241303
+    },
+    "prefit": {
+      "root": "formal",
+      "relative_path": "supplement/runA/execution_reports/hierarchy_prefit.json",
+      "sha256": "cd2fe08bc51fa88e5cd6fb2f5d3158eab1ae6c1bf4d65dcb68fa875a5bdfd3dd",
+      "bytes": 35267
+    },
+    "base_contrasts": {
+      "root": "formal",
+      "relative_path": "posterior/out/base_contrasts.json",
+      "sha256": "0b42cf2a92d40d10dba697550fc1b6e67fa5d175608bc3cf5d4893c7e4ba4aaa",
+      "bytes": 275323
+    },
+    "ids": {
+      "root": "frozen",
+      "relative_path": "features_full/features.npz",
+      "sha256": "80ab8584dd41383226e0986055480ead9cac774b9e3b5928d4f2bf45d80d1704",
+      "bytes": 165456704
+    },
+    "metadata": {
+      "root": "frozen",
+      "relative_path": "label_analysis/units.tsv",
+      "sha256": "0c5f9fd8c80bfbde1f6034b88d37145cd1b76c7684851bae0af6b0e92fdcf554",
+      "bytes": 2280941
+    }
+  }
+}

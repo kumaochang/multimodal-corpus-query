@@ -1,0 +1,12 @@
+{
+  "release": "ULFR-v1-20261025",
+  "payload_count": 636,
+  "payload_bytes": 7325796347,
+  "entries": 1374557290,
+  "missing": 0,
+  "duplicate_or_extra": 0,
+  "canonical_list_sha256": "97c5c7504fea14db3b47e21d2ea8323b6f50f5cd0ddbe9bcd402fea38611a8c9",
+  "index_sha256_before": "9dbe943dbfe6f972a8fc35cde35ea5edd811ad91d42a54ca4b8bf78c8ecb5889",
+  "index_sha256_after": "9dbe943dbfe6f972a8fc35cde35ea5edd811ad91d42a54ca4b8bf78c8ecb5889",
+  "original_manifest_sha256": "5ef82a40ad3e1d31b1f20fc623d11bd6a950042dfccc1e87a95c6c3b27497249"
+}

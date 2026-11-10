@@ -1,0 +1,266 @@
+{
+  "schema": "symbolic-similarity-source-contract/1",
+  "date": "2026-11-05",
+  "scope": "exploratory_consultant_reference_finite_bank",
+  "sources": {
+    "split": {
+      "path_suffix": "analysis/study3/split.json",
+      "sha256": "58b673a55903df70d5a603cf7dcb6036c45ccc6beec31e5cf9986657fc61b644",
+      "bytes": 954
+    },
+    "items": {
+      "path_suffix": "annotation/items.json",
+      "sha256": "99bedb757963ea071d71c58254a7ea2e5d5a7ade6c046c64b05fb83cbfae67e2",
+      "bytes": 88870
+    },
+    "pool": {
+      "path_suffix": "annotation/pool.jsonl",
+      "sha256": "782ad6429d667349e8004c08544bc80e50bc8f866b3d8b4203f7f977e1ea554e",
+      "bytes": 441094
+    },
+    "phone_core": {
+      "path_suffix": "armA/core36/armA_utterances.jsonl",
+      "sha256": "1f0206fa279e65b6b5f341678ec0aead5ad71a5685d4e9fa665ac9ebf395f39f",
+      "bytes": 425257
+    },
+    "phone_ext": {
+      "path_suffix": "armA/ext84/armA_utterances.jsonl",
+      "sha256": "3ef25ae2119b5d78241f4c13345ed0d28b425523c7eff7879f2b2816c2439107",
+      "bytes": 1001979
+    },
+    "phone_core_provenance": {
+      "path_suffix": "armA/core36/armA.provenance.json",
+      "sha256": "c8892f782ee959fc3c3ba098664b4356ba3934e3b7edbd128ea07b556109f0b5",
+      "bytes": 3868
+    },
+    "phone_ext_provenance": {
+      "path_suffix": "armA/ext84/armA.provenance.json",
+      "sha256": "21a18864a6df8e7ecc12638210ba1e020061b32b4459528ebcc7163fd5c852be",
+      "bytes": 8622
+    },
+    "text": {
+      "path_suffix": "item5/text.npz",
+      "sha256": "601db363c17a75b04dfcadcefcd2e4ca718d93822c03c114eed546a0eacbc3d2",
+      "bytes": 138847122
+    },
+    "audio": {
+      "path_suffix": "item5/audio.npz",
+      "sha256": "2497f5d3f3ff2e7d843613f28d7fc318453fa69a58765a57f4489de5fc690bc1",
+      "bytes": 2516270
+    },
+    "kin": {
+      "path_suffix": "item5/kin.npz",
+      "sha256": "98cb04eb8256c99f7b30520f1ca92b0cf673ca45abcab6ccc386bdb9dc73810b",
+      "bytes": 80142
+    },
+    "answers1": {
+      "path_suffix": "annotation/results_batch_1.csv",
+      "sha256": "f494fa565d55a17d38eae50afa82852f26bc769c458d37372f799d3c1f20460b",
+      "bytes": 1958
+    },
+    "answers2": {
+      "path_suffix": "annotation/results_batch_2.csv",
+      "sha256": "5173dbafb6f1b301f85c503292966560aacdf956840ab5fa84c16d92b08ab3af",
+      "bytes": 7374
+    },
+    "registered_audit": {
+      "path_suffix": "analysis/study3/clm_jev_preparation/REGISTERED_RESULTS_AUDIT.json",
+      "sha256": "ec74a13cfee74e2831fa739dd7b4c996c157ffd95f2dc421a9710007ddeacdf7",
+      "bytes": 24410,
+      "original_sha256": "c1a6e1c0a08fbcc852ac8189fb1ffe76fa7ee69f90dc8c4602e8ddf7fa7be98a"
+    },
+    "coverage": {
+      "path_suffix": "analysis/study3/clm_jev_preparation/REGISTERED_RESULTS_COVERAGE.json",
+      "sha256": "0286ac8691189ee7dbbd56c55cbbb73278d5b2e164aca8e4b77f17501e329f34",
+      "bytes": 1747,
+      "original_sha256": "61168abc8735bfca7a625738b49c66db54748185c5f5f7c4c3e046bc45db34c3"
+    }
+  },
+  "environment": {
+    "python": "3.10.22",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.5.2"
+  },
+  "ordered_bindings": {
+    "all_positive_seed_queries": {
+      "n": 10,
+      "days": 5,
+      "clips": 9,
+      "ordered_ids_sha256": "a17e6a50c658fb7229a1a072af075055ba3ff353288af3aa0f16b1414214b8ab"
+    },
+    "decidable_scoring_bank": {
+      "n": 99,
+      "days": 6,
+      "clips": 44,
+      "ordered_ids_sha256": "9d8bc8d7184a94d6b46a1139e6a314b9832dcefc349cd097d067761f57ddf13b"
+    },
+    "unknown_inclusive_scoring_bank": {
+      "n": 112,
+      "days": 6,
+      "clips": 48,
+      "ordered_ids_sha256": "6aeed718bb1c531a72cbeefe4fc89d3fe8ad6af5ec0b216e3eaf0ccec96987b3"
+    },
+    "query_candidate_ID_intersection": 0,
+    "query_candidate_day_intersection": 0
+  },
+  "counts": {
+    "items": 240,
+    "queries": 10,
+    "main_bank": 99,
+    "inclusive_bank": 112,
+    "known_positive_targets": 11,
+    "unknown": 13
+  },
+  "budgets": {
+    "main": {
+      "Phone": 8,
+      "Forms": 90
+    },
+    "inclusive": {
+      "Phone": 8,
+      "Forms": 95
+    }
+  },
+  "feature_headers": {
+    "text": {
+      "ids": {
+        "shape": [
+          240
+        ],
+        "dtype": "<U29",
+        "fortran_order": false
+      },
+      "xlmr": {
+        "shape": [
+          240,
+          768
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "tfidf": {
+        "shape": [
+          240,
+          71529
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "form": {
+        "shape": [
+          240,
+          4
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "form_names": {
+        "shape": [
+          4
+        ],
+        "dtype": "<U8",
+        "fortran_order": false
+      }
+    },
+    "audio": {
+      "ids": {
+        "shape": [
+          240
+        ],
+        "dtype": "<U29",
+        "fortran_order": false
+      },
+      "whisper": {
+        "shape": [
+          240,
+          1280
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "prosody": {
+        "shape": [
+          240,
+          15
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "prosody_names": {
+        "shape": [
+          15
+        ],
+        "dtype": "<U17",
+        "fortran_order": false
+      }
+    },
+    "kin": {
+      "ids": {
+        "shape": [
+          240
+        ],
+        "dtype": "<U29",
+        "fortran_order": false
+      },
+      "K": {
+        "shape": [
+          240,
+          14
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "k_missing": {
+        "shape": [
+          240
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      },
+      "F": {
+        "shape": [
+          240,
+          8
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "F_names": {
+        "shape": [
+          8
+        ],
+        "dtype": "<U13",
+        "fortran_order": false
+      },
+      "n_records": {
+        "shape": [
+          240
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      },
+      "n_tight": {
+        "shape": [
+          240
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      },
+      "span_ms": {
+        "shape": [
+          240
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      }
+    }
+  },
+  "numeric": {
+    "dtype": "float64",
+    "layout": "C",
+    "threads": 1,
+    "zscore_ddof": 0
+  },
+  "main_case_reference": "first-round consultant judgments; original subtitle-rule A/B/T unchanged"
+}

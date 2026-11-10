@@ -1,0 +1,10 @@
+{
+  "release": "ULFR-v1-20261025",
+  "files": [
+    {
+      "path": "analysis/study3/formal_release/RELEASE_MANIFEST.json",
+      "bytes": 5163,
+      "sha256": "da58275a96f12d974d29c5b356de86880e88cbd0e3b8eda7b79617ca8b414a81"
+    }
+  ]
+}

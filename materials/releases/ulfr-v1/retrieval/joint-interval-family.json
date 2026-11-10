@@ -1,0 +1,447 @@
+{
+  "seed": 20261024,
+  "resamples": 10000,
+  "coordinates": [
+    {
+      "family": "B",
+      "coordinate": "B|xlmr|W1|all",
+      "eligible": true,
+      "estimate": -0.08225108225108226,
+      "n": 2079,
+      "ci95_pointwise": [
+        -0.11940442297184597,
+        -0.0465692720762826
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.018479833280012042,
+      "simultaneous95_24": [
+        -0.13912130207312695,
+        -0.025380862429037553
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "B",
+      "coordinate": "B|xlmr|W1|Explaining_minus_Reporting",
+      "eligible": true,
+      "estimate": -0.04835070589787571,
+      "n": 1775,
+      "ci95_pointwise": [
+        -0.12747930384503273,
+        0.03135190906690629
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.040478463226847464,
+      "simultaneous95_24": [
+        -0.17291996293004025,
+        0.07621855113428881
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "B",
+      "coordinate": "B|tfidf|W1|all",
+      "eligible": true,
+      "estimate": -0.05868205868205868,
+      "n": 2079,
+      "ci95_pointwise": [
+        -0.08579012493837411,
+        -0.031263443520679744
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.013997786709860797,
+      "simultaneous95_24": [
+        -0.10175913601007236,
+        -0.015604981354045006
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "B",
+      "coordinate": "B|tfidf|W1|Explaining_minus_Reporting",
+      "eligible": true,
+      "estimate": -0.02079430003958306,
+      "n": 1775,
+      "ci95_pointwise": [
+        -0.0811191314672729,
+        0.03897851840059378
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.030398805031512523,
+      "simultaneous95_24": [
+        -0.11434420919052043,
+        0.07275560911135431
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "B",
+      "coordinate": "B|xlmr|W2|all",
+      "eligible": true,
+      "estimate": -0.04329004329004329,
+      "n": 2079,
+      "ci95_pointwise": [
+        -0.07515560181525457,
+        -0.012080427809486998
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.016161603947478804,
+      "simultaneous95_24": [
+        -0.0930260963833397,
+        0.006446009803253126
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "B",
+      "coordinate": "B|xlmr|W2|Explaining_minus_Reporting",
+      "eligible": true,
+      "estimate": -0.03995250032985882,
+      "n": 1775,
+      "ci95_pointwise": [
+        -0.10960576747637264,
+        0.03153157595711706
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.03617722422123041,
+      "simultaneous95_24": [
+        -0.15128503579369784,
+        0.0713800351339802
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "B",
+      "coordinate": "B|tfidf|W2|all",
+      "eligible": true,
+      "estimate": -0.030303030303030304,
+      "n": 2079,
+      "ci95_pointwise": [
+        -0.054929825931394824,
+        -0.006246990382481894
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.01246203788610099,
+      "simultaneous95_24": [
+        -0.06865396254762848,
+        0.008047901941567882
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "B",
+      "coordinate": "B|tfidf|W2|Explaining_minus_Reporting",
+      "eligible": true,
+      "estimate": -0.03259664863438448,
+      "n": 1775,
+      "ci95_pointwise": [
+        -0.08970024473937306,
+        0.02389119052745081
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.029008156207540752,
+      "simultaneous95_24": [
+        -0.12186694643189676,
+        0.056673649163127796
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "B",
+      "coordinate": "B|xlmr|W3|all",
+      "eligible": true,
+      "estimate": -0.03896103896103896,
+      "n": 2079,
+      "ci95_pointwise": [
+        -0.07296636482274485,
+        -0.004832935653536291
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.017425172141216326,
+      "simultaneous95_24": [
+        -0.09258562285703048,
+        0.014663544934952553
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "B",
+      "coordinate": "B|xlmr|W3|Explaining_minus_Reporting",
+      "eligible": true,
+      "estimate": -0.016011347143422616,
+      "n": 1775,
+      "ci95_pointwise": [
+        -0.09203864709939359,
+        0.06406940393927854
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.039930074274015896,
+      "simultaneous95_24": [
+        -0.13889298070934925,
+        0.10687028642250403
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "B",
+      "coordinate": "B|tfidf|W3|all",
+      "eligible": true,
+      "estimate": -0.02405002405002405,
+      "n": 2079,
+      "ci95_pointwise": [
+        -0.04671311081684582,
+        -0.0019060830620357286
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.011467998706966121,
+      "simultaneous95_24": [
+        -0.059341879636702954,
+        0.011241831536654853
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "B",
+      "coordinate": "B|tfidf|W3|Explaining_minus_Reporting",
+      "eligible": true,
+      "estimate": -0.03165325240796939,
+      "n": 1775,
+      "ci95_pointwise": [
+        -0.09411675732046683,
+        0.030356579759266897
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.03168050542111021,
+      "simultaneous95_24": [
+        -0.12914749275486292,
+        0.06584098793892416
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|whisper-prosody|W1",
+      "eligible": true,
+      "estimate": 0.043775749505257,
+      "n": 9646,
+      "ci95_pointwise": [
+        0.005315292545348576,
+        0.08969004699785721
+      ],
+      "undefined_resamples": 2,
+      "bootstrap_sd": 0.02157457666415161,
+      "simultaneous95_24": [
+        -0.022618297392608656,
+        0.11016979640312266
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|whisper-prosody|W2",
+      "eligible": true,
+      "estimate": 0.043438703949334474,
+      "n": 9646,
+      "ci95_pointwise": [
+        0.005920942021385193,
+        0.09002273571954968
+      ],
+      "undefined_resamples": 2,
+      "bootstrap_sd": 0.021417761041086662,
+      "simultaneous95_24": [
+        -0.022472755317998798,
+        0.10935016321666774
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|whisper-prosody|W3",
+      "eligible": true,
+      "estimate": 0.06031548329332808,
+      "n": 9646,
+      "ci95_pointwise": [
+        0.025629161644154515,
+        0.10422728183282358
+      ],
+      "undefined_resamples": 2,
+      "bootstrap_sd": 0.020014146367283457,
+      "simultaneous95_24": [
+        -0.001276463247070897,
+        0.12190742983372706
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|whisper-prosody|X",
+      "eligible": true,
+      "estimate": 0.10936419348326479,
+      "n": 9646,
+      "ci95_pointwise": [
+        0.06577280752313082,
+        0.15809717523571223
+      ],
+      "undefined_resamples": 2,
+      "bootstrap_sd": 0.023351827769948406,
+      "simultaneous95_24": [
+        0.0375007974016618,
+        0.18122758956486779
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|xlmr_sub-tfidf_sub|W1",
+      "eligible": true,
+      "estimate": 0.04045661372444403,
+      "n": 7473,
+      "ci95_pointwise": [
+        -0.003149023982818389,
+        0.08944791711296032
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.023924652031892486,
+      "simultaneous95_24": [
+        -0.033169603547293584,
+        0.11408283099618163
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|xlmr_sub-tfidf_sub|W2",
+      "eligible": true,
+      "estimate": 0.05153631182515584,
+      "n": 7473,
+      "ci95_pointwise": [
+        0.016365924018177488,
+        0.09500852371052698
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.019921269289295794,
+      "simultaneous95_24": [
+        -0.009769812881163034,
+        0.11284243653147472
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|xlmr_sub-tfidf_sub|W3",
+      "eligible": true,
+      "estimate": 0.0489364135488626,
+      "n": 7473,
+      "ci95_pointwise": [
+        0.01582021249436935,
+        0.09138103042495052
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.019354873778597338,
+      "simultaneous95_24": [
+        -0.010626673938907323,
+        0.10849950103663253
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|xlmr_sub-tfidf_sub|X",
+      "eligible": true,
+      "estimate": 0.0175415824802793,
+      "n": 7473,
+      "ci95_pointwise": [
+        -0.026080235950724708,
+        0.0585081025155467
+      ],
+      "undefined_resamples": 0,
+      "bootstrap_sd": 0.02155626507539493,
+      "simultaneous95_24": [
+        -0.04879611195692808,
+        0.08387927691748669
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|kin14-whisper|W1",
+      "eligible": true,
+      "estimate": 0.03517324135618332,
+      "n": 845,
+      "ci95_pointwise": [
+        -0.11484618604433854,
+        0.1497215230346371
+      ],
+      "undefined_resamples": 8,
+      "bootstrap_sd": 0.06776687219801086,
+      "simultaneous95_24": [
+        -0.17337392788271447,
+        0.24372041059508112
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|kin14-whisper|W2",
+      "eligible": true,
+      "estimate": 0.06656805471660822,
+      "n": 845,
+      "ci95_pointwise": [
+        -0.07237760551028895,
+        0.18276445004457975
+      ],
+      "undefined_resamples": 8,
+      "bootstrap_sd": 0.06444382614221815,
+      "simultaneous95_24": [
+        -0.13175270409919798,
+        0.26488881353241445
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|kin14-whisper|W3",
+      "eligible": true,
+      "estimate": -0.016225765916661722,
+      "n": 845,
+      "ci95_pointwise": [
+        -0.15686997948009798,
+        0.0817979960345634
+      ],
+      "undefined_resamples": 8,
+      "bootstrap_sd": 0.06407196820378551,
+      "simultaneous95_24": [
+        -0.2134021614484057,
+        0.18095062961508226
+      ],
+      "status": "simultaneous_family_completed"
+    },
+    {
+      "family": "A",
+      "coordinate": "A|kin14-whisper|X",
+      "eligible": true,
+      "estimate": -0.21162329172221117,
+      "n": 845,
+      "ci95_pointwise": [
+        -0.4626194271213416,
+        0.061858747066948855
+      ],
+      "undefined_resamples": 8,
+      "bootstrap_sd": 0.13364179004458773,
+      "simultaneous95_24": [
+        -0.6228952908840075,
+        0.19964870743958518
+      ],
+      "status": "simultaneous_family_completed"
+    }
+  ],
+  "joint_valid": 9990,
+  "joint_undefined": 10,
+  "joint_valid_fraction": 0.999,
+  "minimum_fraction": 0.99,
+  "formal_family_completed": true,
+  "critical_max_standardized_deviation": 3.07742061090757,
+  "centering": "observed point estimate; bootstrap SD on complete jointly finite draws; ddof=1",
+  "conditional": "fixed candidates and rankings; valid-resample conditioning disclosed",
+  "elapsed_statistics_seconds": 22.416573035996407
+}

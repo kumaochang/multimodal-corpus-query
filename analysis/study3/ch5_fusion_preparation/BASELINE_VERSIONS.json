@@ -1,0 +1,57 @@
+{
+  "original_freeze_sha256": "d138c70f48695561b92daa980475c24cb1e4f4997a00a855ce84ed4f274aa0f3",
+  "public_programs": {
+    "runner.py": {
+      "bytes": 18214,
+      "sha256": "7bfd94878a22e1d2f89a9a815486ab7d5c35dbda6cc17aa0f6de130329b6f990"
+    },
+    "kernels.py": {
+      "bytes": 5541,
+      "sha256": "902a7559e7538bbbcb06cd38eff17958fccfcd5eb7717a7c4cf768c636adbef5"
+    },
+    "execution_support.py": {
+      "bytes": 3691,
+      "sha256": "04132e87e07475fe7482b727264f6fa3c51e6e8321853da3e4def12e49ba452e"
+    }
+  },
+  "public_sources": {
+    "data/study3_runs/features_full/features.npz": {
+      "bytes": 165456704,
+      "sha256": "80ab8584dd41383226e0986055480ead9cac774b9e3b5928d4f2bf45d80d1704"
+    },
+    "data/study3_runs/features_full/tfidf_sub.npz": {
+      "bytes": 2868433,
+      "sha256": "37166887f01dbe39e61b3ffde9ed0f746ba76f9e18d5f55c0eb2506ef6c71047"
+    },
+    "data/study3_runs/features_full/features.provenance.json": {
+      "bytes": 738,
+      "sha256": "2deb3bf0753042034b131f4664050c2b7ff319c7becbda27f5193fc0f1bddad4"
+    },
+    "data/study3_runs/unit_table/units_k.npz": {
+      "bytes": 4555880,
+      "sha256": "d443a7566edd113a9ab6356797761de3a48bd427fffbc11d2f6c63451df38222"
+    },
+    "analysis/study3/formal_release/RELEASE_MANIFEST.json": {
+      "bytes": 5163,
+      "sha256": "da58275a96f12d974d29c5b356de86880e88cbd0e3b8eda7b79617ca8b414a81"
+    },
+    "data/study3_stats/formal_release/v1/index/unit_rows.npz": {
+      "bytes": 128208,
+      "sha256": "73ee6d208106e3c3d158f4c810b8c8696048cb5c96cb0ed94ac56ffb25ad96f5"
+    },
+    "data/study3_stats/formal_release/v1/index/condition_index.json": {
+      "bytes": 3502747,
+      "sha256": "9dbe943dbfe6f972a8fc35cde35ea5edd811ad91d42a54ca4b8bf78c8ecb5889"
+    },
+    "data/study3_stats/ch5_fusion/common_ok.npy": {
+      "bytes": 14140,
+      "sha256": "32e34d3b3e7f95c1358baf0556e8f32473b8d14f5471f1efbcb0317867f14d7c"
+    },
+    "pipeline/analysis/ch5_retrieval.py": {
+      "bytes": 17430,
+      "sha256": "3b542963d13db0e846afba45a406dab1e03e009feb17b25594d091920195c7ba"
+    }
+  },
+  "numerical_input_hashes_unchanged": true,
+  "scope": "Original baseline artifact bytes stay fixed; portable public source identities are recorded separately."
+}

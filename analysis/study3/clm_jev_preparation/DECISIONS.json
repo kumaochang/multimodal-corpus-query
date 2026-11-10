@@ -1,0 +1,22 @@
+{
+  "adopted_date": "2026-10-29",
+  "minimum_positive_scope": "all_batches_1_2",
+  "minimum_positives": 15,
+  "primary_population_unchanged": true,
+  "study2_input": "paiwan_original",
+  "study2_unit": "primary sent XML S",
+  "study2_reference": "published_english_sent_rule",
+  "english_parallel": "specification_fixed; execution_opt_in_before_viewing_results",
+  "study2_waits_for_consultant": false,
+  "study3_requires_all_registered_outcomes": true,
+  "study3_requires_same_model_study2_assessment": true,
+  "model": "jev-1.14.0",
+  "study2_rule_sha256": "2af59c6921de81e2de97bd2650025818c9be7ab516087b1fcc1dc3a2f9b4935b",
+  "registration_sha256": "1122bfe28339973802356ca8989f63247f23abc0db63edb98ac617a420b9734f",
+  "study2_single_class_AP": {
+    "no_positive_reference": null,
+    "all_positive": 1,
+    "all_positive_status": "trivial_not_discrimination",
+    "CLM_and_Study3_unchanged": true
+  }
+}

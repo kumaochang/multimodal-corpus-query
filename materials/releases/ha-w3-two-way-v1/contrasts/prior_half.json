@@ -1,0 +1,650 @@
+[
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "all",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": 0.02205510741411583,
+    "sd": 0.010736568675074647,
+    "credible95": [
+      0.0012990591801335957,
+      0.04316218388562209
+    ],
+    "Rhat": 1.0004641123678388,
+    "bulk_ESS": 8542.074065595745,
+    "tail_ESS": 6656.316442552749,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "Explaining",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": 0.030398644353802736,
+    "sd": 0.012656682930507628,
+    "credible95": [
+      0.005138420830129315,
+      0.05486595120843733
+    ],
+    "Rhat": 1.000459513864801,
+    "bulk_ESS": 8258.510433485377,
+    "tail_ESS": 6854.268387783456,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "Reporting",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": -0.0016531165786992034,
+    "sd": 0.021138448565779996,
+    "credible95": [
+      -0.04348469015225113,
+      0.038873833967597714
+    ],
+    "Rhat": 1.000511069128803,
+    "bulk_ESS": 11075.493549073026,
+    "tail_ESS": 5977.368568492522,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "Explaining_minus_Reporting_DID",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": 0.03205176093250196,
+    "sd": 0.024176838659062387,
+    "credible95": [
+      -0.015035743964507126,
+      0.07882870145450499
+    ],
+    "Rhat": 1.0008602685544494,
+    "bulk_ESS": 10791.188786452853,
+    "tail_ESS": 6386.9568935631605,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "M_minus_I_DID",
+    "target": "unbalanced_empirical_groups_composition_sensitive",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": 0.025358984325165635,
+    "sd": 0.03491570240949338,
+    "credible95": [
+      -0.02987844528201354,
+      0.10997983077515158
+    ],
+    "Rhat": 0.9999950186008512,
+    "bulk_ESS": 7707.9011966338885,
+    "tail_ESS": 6513.793642700357,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "M_minus_I_DID",
+    "target": "six_common_restricted_overlap_four_cells_not_family_24_target",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": 0.020013642855320063,
+    "sd": 0.040379817640683484,
+    "credible95": [
+      -0.04425987762140996,
+      0.11711221656346174
+    ],
+    "Rhat": 1.0000918237102072,
+    "bulk_ESS": 7477.386484346886,
+    "tail_ESS": 6043.495433553731,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "all",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": -0.0015406704306764175,
+    "sd": 0.010768177164290155,
+    "credible95": [
+      -0.022784844931825154,
+      0.019094251319473066
+    ],
+    "Rhat": 0.9999480766077342,
+    "bulk_ESS": 8484.813856756666,
+    "tail_ESS": 6441.1912698481365,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "Explaining",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": 0.019605755275141308,
+    "sd": 0.012357518508858826,
+    "credible95": [
+      -0.004635718096826952,
+      0.0434215903665988
+    ],
+    "Rhat": 0.9999874100273279,
+    "bulk_ESS": 8516.291289098404,
+    "tail_ESS": 6599.6257349104935,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "Reporting",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": -0.06912569393536816,
+    "sd": 0.023811214067609953,
+    "credible95": [
+      -0.11687197238921268,
+      -0.022963672305034637
+    ],
+    "Rhat": 0.9999733561070155,
+    "bulk_ESS": 9804.489738050579,
+    "tail_ESS": 6217.66887686808,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "Explaining_minus_Reporting_DID",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": 0.08873144921050943,
+    "sd": 0.026606508733222213,
+    "credible95": [
+      0.03725929311228261,
+      0.14208815665152202
+    ],
+    "Rhat": 1.0000792312332814,
+    "bulk_ESS": 9908.609185083356,
+    "tail_ESS": 6119.7002615075935,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "M_minus_I_DID",
+    "target": "unbalanced_empirical_groups_composition_sensitive",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": 0.029342645812152086,
+    "sd": 0.03223867955846771,
+    "credible95": [
+      -0.04327811742020644,
+      0.09214146863676971
+    ],
+    "Rhat": 0.9999979571679688,
+    "bulk_ESS": 10027.6933872796,
+    "tail_ESS": 6467.434218017787,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "M_minus_I_DID",
+    "target": "six_common_restricted_overlap_four_cells_not_family_24_target",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": 0.009366664937705974,
+    "sd": 0.0377757030351049,
+    "credible95": [
+      -0.07479271256637579,
+      0.08297384891919926
+    ],
+    "Rhat": 0.9998425440525662,
+    "bulk_ESS": 10117.037197720305,
+    "tail_ESS": 6954.950774346426,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "all",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": -0.029191263171944513,
+    "sd": 0.010800237206563701,
+    "credible95": [
+      -0.05034137572628442,
+      -0.00792620445042764
+    ],
+    "Rhat": 0.9997751540887423,
+    "bulk_ESS": 8461.863244270795,
+    "tail_ESS": 7201.225719468118,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "Explaining",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": -0.03956924805721815,
+    "sd": 0.012763676190394266,
+    "credible95": [
+      -0.0641619334082504,
+      -0.014742927609199059
+    ],
+    "Rhat": 1.0001183071572841,
+    "bulk_ESS": 8386.450290050667,
+    "tail_ESS": 6721.648445008519,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "Reporting",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": 8.125095531097624e-05,
+    "sd": 0.02143376940815225,
+    "credible95": [
+      -0.04181964671679934,
+      0.042159007887961536
+    ],
+    "Rhat": 1.0010393114817193,
+    "bulk_ESS": 10383.102654195454,
+    "tail_ESS": 6225.902320127134,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "Explaining_minus_Reporting_DID",
+    "target": "empirical_query_weighted",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": -0.03965049901252915,
+    "sd": 0.024590105904916688,
+    "credible95": [
+      -0.08804454263487158,
+      0.008128145765587068
+    ],
+    "Rhat": 1.0010651965452395,
+    "bulk_ESS": 10066.31731863176,
+    "tail_ESS": 6008.009097972624,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "M_minus_I_DID",
+    "target": "unbalanced_empirical_groups_composition_sensitive",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": -0.010052060929132044,
+    "sd": 0.031697357661390146,
+    "credible95": [
+      -0.07763542662735241,
+      0.05508816728675685
+    ],
+    "Rhat": 1.000226413821608,
+    "bulk_ESS": 10032.155397307888,
+    "tail_ESS": 6607.479537287554,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "M_minus_I_DID",
+    "target": "six_common_restricted_overlap_four_cells_not_family_24_target",
+    "prediction": "conditional",
+    "conditioning": "observed_fitted_effects",
+    "mean": -0.0019078292366429652,
+    "sd": 0.03606783078304042,
+    "credible95": [
+      -0.0795410055415378,
+      0.07361560665053636
+    ],
+    "Rhat": 1.0004403728148443,
+    "bulk_ESS": 9957.272754709616,
+    "tail_ESS": 6487.18827522324,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "all",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": 0.022284312635328,
+    "sd": 0.012099670640528866,
+    "credible95": [
+      -0.0015784080799536452,
+      0.046166789447121666
+    ],
+    "Rhat": 1.000418677177922,
+    "bulk_ESS": 8711.97901574411,
+    "tail_ESS": 7001.7755698248175,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "Explaining",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": 0.030074927186964355,
+    "sd": 0.014043565471268053,
+    "credible95": [
+      0.0020242892566552074,
+      0.057045580184222705
+    ],
+    "Rhat": 1.0004089336262365,
+    "bulk_ESS": 8545.713253687829,
+    "tail_ESS": 7449.9600598485495,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "Reporting",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": 0.00033448792001486183,
+    "sd": 0.02180500503136448,
+    "credible95": [
+      -0.04280635510614297,
+      0.04164970219659622
+    ],
+    "Rhat": 1.0006210245972824,
+    "bulk_ESS": 11071.741754093451,
+    "tail_ESS": 5864.876200335899,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "Explaining_minus_Reporting_DID",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": 0.02974043926694951,
+    "sd": 0.024396356933225834,
+    "credible95": [
+      -0.017642374549739447,
+      0.07776866559300279
+    ],
+    "Rhat": 1.000477026444413,
+    "bulk_ESS": 10710.136002643272,
+    "tail_ESS": 6517.930283311327,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "M_minus_I_DID",
+    "target": "unbalanced_empirical_groups_composition_sensitive",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": 0.022852311885420192,
+    "sd": 0.03444027814049794,
+    "credible95": [
+      -0.03126590927033451,
+      0.10782842650415128
+    ],
+    "Rhat": 1.0002878757584872,
+    "bulk_ESS": 7943.677314733011,
+    "tail_ESS": 6101.082986498157,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "whisper-prosody",
+    "query_group": "M_minus_I_DID",
+    "target": "six_common_restricted_overlap_four_cells_not_family_24_target",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": 0.019944647289214672,
+    "sd": 0.0383598678492575,
+    "credible95": [
+      -0.04027615319296603,
+      0.11584461115629177
+    ],
+    "Rhat": 1.0003898568522094,
+    "bulk_ESS": 7644.165342641629,
+    "tail_ESS": 6116.328231663219,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "all",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": -0.001402203050643147,
+    "sd": 0.012242397599060043,
+    "credible95": [
+      -0.025305164946134506,
+      0.02230251574404219
+    ],
+    "Rhat": 1.000221529345324,
+    "bulk_ESS": 8976.827159560935,
+    "tail_ESS": 6906.091339541423,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "Explaining",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": 0.018878114562707545,
+    "sd": 0.013640153121714058,
+    "credible95": [
+      -0.008025705684740023,
+      0.04559119377826904
+    ],
+    "Rhat": 1.0001397431880363,
+    "bulk_ESS": 8996.448625991967,
+    "tail_ESS": 7066.902995450087,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "Reporting",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": -0.06625035485496619,
+    "sd": 0.025059798881708777,
+    "credible95": [
+      -0.11564278090842477,
+      -0.017722092733897635
+    ],
+    "Rhat": 0.9997396255484859,
+    "bulk_ESS": 9657.297281223293,
+    "tail_ESS": 6516.8079546393155,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "Explaining_minus_Reporting_DID",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": 0.0851284694176737,
+    "sd": 0.027021253895967406,
+    "credible95": [
+      0.03227313518979989,
+      0.13893309649576072
+    ],
+    "Rhat": 0.9999558860807367,
+    "bulk_ESS": 9845.163622995851,
+    "tail_ESS": 6530.834854360931,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "M_minus_I_DID",
+    "target": "unbalanced_empirical_groups_composition_sensitive",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": 0.02569477933046643,
+    "sd": 0.031462990494334236,
+    "credible95": [
+      -0.04594691079831871,
+      0.08831811950159456
+    ],
+    "Rhat": 1.0001911775200427,
+    "bulk_ESS": 8876.055623487247,
+    "tail_ESS": 6902.880045794046,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "xlmr_sub-tfidf_sub",
+    "query_group": "M_minus_I_DID",
+    "target": "six_common_restricted_overlap_four_cells_not_family_24_target",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": 0.006579296701232772,
+    "sd": 0.03551135601064891,
+    "credible95": [
+      -0.0750300037022848,
+      0.07944008628754162
+    ],
+    "Rhat": 0.9999817642434616,
+    "bulk_ESS": 9655.569018885983,
+    "tail_ESS": 6750.4303658870795,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "all",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": -0.0285688412807311,
+    "sd": 0.01269121534855181,
+    "credible95": [
+      -0.05374223334741922,
+      -0.00362932369134848
+    ],
+    "Rhat": 0.9999307816443483,
+    "bulk_ESS": 8987.093242125666,
+    "tail_ESS": 7726.708636394397,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "Explaining",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": -0.03894814507792736,
+    "sd": 0.014657110339735815,
+    "credible95": [
+      -0.06761011717454603,
+      -0.01039703596788784
+    ],
+    "Rhat": 1.0001704146799828,
+    "bulk_ESS": 8680.541473266841,
+    "tail_ESS": 7446.992505125361,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "Reporting",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": 0.000833730194073495,
+    "sd": 0.022471469251804887,
+    "credible95": [
+      -0.04255973091612013,
+      0.04479664720596285
+    ],
+    "Rhat": 1.000969806852703,
+    "bulk_ESS": 10388.026782126819,
+    "tail_ESS": 7057.194083748453,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "Explaining_minus_Reporting_DID",
+    "target": "empirical_query_weighted",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": -0.03978187527200089,
+    "sd": 0.02494626538748664,
+    "credible95": [
+      -0.08860526283240891,
+      0.00895815824695557
+    ],
+    "Rhat": 1.0014500708835243,
+    "bulk_ESS": 9907.681860259354,
+    "tail_ESS": 6170.18586564894,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "M_minus_I_DID",
+    "target": "unbalanced_empirical_groups_composition_sensitive",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": -0.009955253516124331,
+    "sd": 0.030574556470056555,
+    "credible95": [
+      -0.07700783984977363,
+      0.05331099062839685
+    ],
+    "Rhat": 1.0003776417818986,
+    "bulk_ESS": 10050.34377171573,
+    "tail_ESS": 6778.850535163217,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  },
+  {
+    "contrast": "kin14-whisper",
+    "query_group": "M_minus_I_DID",
+    "target": "six_common_restricted_overlap_four_cells_not_family_24_target",
+    "prediction": "population_average",
+    "conditioning": "all_query_day_slopes_integrated_new",
+    "mean": -0.0008555418506995248,
+    "sd": 0.03313146540038676,
+    "credible95": [
+      -0.0752024532176381,
+      0.06746077704128126
+    ],
+    "Rhat": 1.0003856765973473,
+    "bulk_ESS": 9984.638488798268,
+    "tail_ESS": 6910.1353163240465,
+    "diagnostics_pass": true,
+    "status": "descriptive_pointwise_model_CrI_O7_retained"
+  }
+]

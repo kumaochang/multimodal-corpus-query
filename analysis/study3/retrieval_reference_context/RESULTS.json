@@ -1,0 +1,516 @@
+{
+  "reference_stability": {
+    "response_codes": {
+      "1": "directive",
+      "2": "not directive",
+      "3": "cannot tell"
+    },
+    "matrix_axes": "Rows first, columns repeat, code order1/2/3",
+    "repeat_n": 40,
+    "confusion_first_by_repeat": [
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        0,
+        30,
+        0
+      ],
+      [
+        0,
+        0,
+        5
+      ]
+    ],
+    "aggregate_cross_tabs": [
+      {
+        "role": "primary_all_decidable",
+        "set_size": 192,
+        "repeat_intersection_total": 33,
+        "first_affirmative_in_repeat_intersection": 5,
+        "retained_first_affirmatives": 1,
+        "changed_first_affirmatives": 4,
+        "affirmative_to_negative": 4,
+        "affirmative_to_cannot_tell": 0,
+        "all_changes_in_repeat_intersection": 4,
+        "confusion_first_by_repeat": [
+          [
+            1,
+            4,
+            0
+          ],
+          [
+            0,
+            28,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "role": "primary_positive_reference",
+        "set_size": 20,
+        "repeat_intersection_total": 5,
+        "first_affirmative_in_repeat_intersection": 5,
+        "retained_first_affirmatives": 1,
+        "changed_first_affirmatives": 4,
+        "affirmative_to_negative": 4,
+        "affirmative_to_cannot_tell": 0,
+        "all_changes_in_repeat_intersection": 4,
+        "confusion_first_by_repeat": [
+          [
+            1,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "role": "Q_seed_positive_reference",
+        "set_size": 10,
+        "repeat_intersection_total": 1,
+        "first_affirmative_in_repeat_intersection": 1,
+        "retained_first_affirmatives": 0,
+        "changed_first_affirmatives": 1,
+        "affirmative_to_negative": 1,
+        "affirmative_to_cannot_tell": 0,
+        "all_changes_in_repeat_intersection": 1,
+        "confusion_first_by_repeat": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "role": "C_scoring_positive_reference",
+        "set_size": 11,
+        "repeat_intersection_total": 4,
+        "first_affirmative_in_repeat_intersection": 4,
+        "retained_first_affirmatives": 1,
+        "changed_first_affirmatives": 3,
+        "affirmative_to_negative": 3,
+        "affirmative_to_cannot_tell": 0,
+        "all_changes_in_repeat_intersection": 3,
+        "confusion_first_by_repeat": [
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "conditional_random_ranking": {
+    "bank": {
+      "N": 99,
+      "M_known_positive": 11,
+      "K": [
+        8,
+        90
+      ]
+    },
+    "full_six_comparisons": [
+      {
+        "baseline": "Phone",
+        "route": "Audio",
+        "K": 8,
+        "observed_symbolic_hits": 2,
+        "observed_similarity_hits": 0,
+        "expected_random_hits": {
+          "numerator": 8,
+          "denominator": 9,
+          "decimal": 0.8888888888888888
+        },
+        "random_upper_tail_at_symbolic_hits": {
+          "numerator": 3372021503,
+          "denominator": 15563714796,
+          "decimal": 0.21665916827688442
+        },
+        "random_upper_tail_at_similarity_hits": {
+          "numerator": 1,
+          "denominator": 1,
+          "decimal": 1
+        },
+        "status": "conditional_descriptive_tail_not_new_confirmatory_p_value"
+      },
+      {
+        "baseline": "Phone",
+        "route": "ASR_XLMR",
+        "K": 8,
+        "observed_symbolic_hits": 2,
+        "observed_similarity_hits": 1,
+        "expected_random_hits": {
+          "numerator": 8,
+          "denominator": 9,
+          "decimal": 0.8888888888888888
+        },
+        "random_upper_tail_at_symbolic_hits": {
+          "numerator": 3372021503,
+          "denominator": 15563714796,
+          "decimal": 0.21665916827688442
+        },
+        "random_upper_tail_at_similarity_hits": {
+          "numerator": 1080039871,
+          "denominator": 1729301644,
+          "decimal": 0.6245526191149564
+        },
+        "status": "conditional_descriptive_tail_not_new_confirmatory_p_value"
+      },
+      {
+        "baseline": "Phone",
+        "route": "ASR_TFIDF",
+        "K": 8,
+        "observed_symbolic_hits": 2,
+        "observed_similarity_hits": 1,
+        "expected_random_hits": {
+          "numerator": 8,
+          "denominator": 9,
+          "decimal": 0.8888888888888888
+        },
+        "random_upper_tail_at_symbolic_hits": {
+          "numerator": 3372021503,
+          "denominator": 15563714796,
+          "decimal": 0.21665916827688442
+        },
+        "random_upper_tail_at_similarity_hits": {
+          "numerator": 1080039871,
+          "denominator": 1729301644,
+          "decimal": 0.6245526191149564
+        },
+        "status": "conditional_descriptive_tail_not_new_confirmatory_p_value"
+      },
+      {
+        "baseline": "Forms",
+        "route": "Audio",
+        "K": 90,
+        "observed_symbolic_hits": 10,
+        "observed_similarity_hits": 9,
+        "expected_random_hits": {
+          "numerator": 10,
+          "denominator": 1,
+          "decimal": 10
+        },
+        "random_upper_tail_at_symbolic_hits": {
+          "numerator": 116217857367,
+          "denominator": 157366449604,
+          "decimal": 0.7385173755870637
+        },
+        "random_upper_tail_at_similarity_hits": {
+          "numerator": 21137077721,
+          "denominator": 22480921372,
+          "decimal": 0.9402229281992971
+        },
+        "status": "conditional_descriptive_tail_not_new_confirmatory_p_value"
+      },
+      {
+        "baseline": "Forms",
+        "route": "ASR_XLMR",
+        "K": 90,
+        "observed_symbolic_hits": 10,
+        "observed_similarity_hits": 8,
+        "expected_random_hits": {
+          "numerator": 10,
+          "denominator": 1,
+          "decimal": 10
+        },
+        "random_upper_tail_at_symbolic_hits": {
+          "numerator": 116217857367,
+          "denominator": 157366449604,
+          "decimal": 0.7385173755870637
+        },
+        "random_upper_tail_at_similarity_hits": {
+          "numerator": 51025993,
+          "denominator": 51443756,
+          "decimal": 0.9918792282585276
+        },
+        "status": "conditional_descriptive_tail_not_new_confirmatory_p_value"
+      },
+      {
+        "baseline": "Forms",
+        "route": "ASR_TFIDF",
+        "K": 90,
+        "observed_symbolic_hits": 10,
+        "observed_similarity_hits": 10,
+        "expected_random_hits": {
+          "numerator": 10,
+          "denominator": 1,
+          "decimal": 10
+        },
+        "random_upper_tail_at_symbolic_hits": {
+          "numerator": 116217857367,
+          "denominator": 157366449604,
+          "decimal": 0.7385173755870637
+        },
+        "random_upper_tail_at_similarity_hits": {
+          "numerator": 116217857367,
+          "denominator": 157366449604,
+          "decimal": 0.7385173755870637
+        },
+        "status": "conditional_descriptive_tail_not_new_confirmatory_p_value"
+      }
+    ],
+    "complete_two_budget_distributions": [
+      {
+        "K": 8,
+        "mean_hits": {
+          "numerator": 8,
+          "denominator": 9,
+          "decimal": 0.8888888888888888
+        },
+        "probability_by_hits": [
+          {
+            "hits": 0,
+            "probability": {
+              "numerator": 649261773,
+              "denominator": 1729301644,
+              "decimal": 0.37544738088504354
+            }
+          },
+          {
+            "hits": 1,
+            "probability": {
+              "numerator": 1587084334,
+              "denominator": 3890928699,
+              "decimal": 0.407893450838072
+            }
+          },
+          {
+            "hits": 2,
+            "probability": {
+              "numerator": 96773435,
+              "denominator": 555846957,
+              "decimal": 0.1741008631625917
+            }
+          },
+          {
+            "hits": 3,
+            "probability": {
+              "numerator": 2331890,
+              "denominator": 61760773,
+              "decimal": 0.03775681369791146
+            }
+          },
+          {
+            "hits": 4,
+            "probability": {
+              "numerator": 5829725,
+              "denominator": 1296976233,
+              "decimal": 0.004494858773560887
+            }
+          },
+          {
+            "hits": 5,
+            "probability": {
+              "numerator": 54868,
+              "denominator": 185282319,
+              "decimal": 0.000296131872140482
+            }
+          },
+          {
+            "hits": 6,
+            "probability": {
+              "numerator": 638,
+              "denominator": 61760773,
+              "decimal": 0.000010330181586295884
+            }
+          },
+          {
+            "hits": 7,
+            "probability": {
+              "numerator": 220,
+              "denominator": 1296976233,
+              "decimal": 1.696253134038733e-7
+            }
+          },
+          {
+            "hits": 8,
+            "probability": {
+              "numerator": 5,
+              "denominator": 5187904932,
+              "decimal": 9.637801897947347e-10
+            }
+          },
+          {
+            "hits": 9,
+            "probability": {
+              "numerator": 0,
+              "denominator": 1,
+              "decimal": 0
+            }
+          },
+          {
+            "hits": 10,
+            "probability": {
+              "numerator": 0,
+              "denominator": 1,
+              "decimal": 0
+            }
+          },
+          {
+            "hits": 11,
+            "probability": {
+              "numerator": 0,
+              "denominator": 1,
+              "decimal": 0
+            }
+          }
+        ],
+        "mean_precision": {
+          "numerator": 1,
+          "denominator": 9,
+          "decimal": 0.1111111111111111
+        }
+      },
+      {
+        "K": 90,
+        "mean_hits": {
+          "numerator": 10,
+          "denominator": 1,
+          "decimal": 10
+        },
+        "probability_by_hits": [
+          {
+            "hits": 0,
+            "probability": {
+              "numerator": 0,
+              "denominator": 1,
+              "decimal": 0
+            }
+          },
+          {
+            "hits": 1,
+            "probability": {
+              "numerator": 0,
+              "denominator": 1,
+              "decimal": 0
+            }
+          },
+          {
+            "hits": 2,
+            "probability": {
+              "numerator": 5,
+              "denominator": 157366449604,
+              "decimal": 3.1772973289936305e-11
+            }
+          },
+          {
+            "hits": 3,
+            "probability": {
+              "numerator": 330,
+              "denominator": 39341612401,
+              "decimal": 8.388064948543185e-9
+            }
+          },
+          {
+            "hits": 4,
+            "probability": {
+              "numerator": 28710,
+              "denominator": 39341612401,
+              "decimal": 7.297616505232571e-7
+            }
+          },
+          {
+            "hits": 5,
+            "probability": {
+              "numerator": 164604,
+              "denominator": 5620230343,
+              "decimal": 0.000029287767574333384
+            }
+          },
+          {
+            "hits": 6,
+            "probability": {
+              "numerator": 3497835,
+              "denominator": 5620230343,
+              "decimal": 0.0006223650609545844
+            }
+          },
+          {
+            "hits": 7,
+            "probability": {
+              "numerator": 41974020,
+              "denominator": 5620230343,
+              "decimal": 0.007468380731455013
+            }
+          },
+          {
+            "hits": 8,
+            "probability": {
+              "numerator": 290320305,
+              "denominator": 5620230343,
+              "decimal": 0.05165630005923051
+            }
+          },
+          {
+            "hits": 9,
+            "probability": {
+              "numerator": 7935421670,
+              "denominator": 39341612401,
+              "decimal": 0.2017055526122334
+            }
+          },
+          {
+            "hits": 10,
+            "probability": {
+              "numerator": 64276915527,
+              "denominator": 157366449604,
+              "decimal": 0.40845374403977264
+            }
+          },
+          {
+            "hits": 11,
+            "probability": {
+              "numerator": 12985235460,
+              "denominator": 39341612401,
+              "decimal": 0.330063631547291
+            }
+          }
+        ],
+        "mean_precision": {
+          "numerator": 1,
+          "denominator": 9,
+          "decimal": 0.1111111111111111
+        }
+      }
+    ]
+  }
+}

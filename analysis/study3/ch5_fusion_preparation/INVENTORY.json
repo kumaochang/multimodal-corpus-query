@@ -1,0 +1,434 @@
+{
+  "date": "2026-11-05",
+  "sources": {
+    "data/study3_runs/features_full/features.npz": {
+      "bytes": 165456704,
+      "sha256": "80ab8584dd41383226e0986055480ead9cac774b9e3b5928d4f2bf45d80d1704"
+    },
+    "data/study3_runs/features_full/tfidf_sub.npz": {
+      "bytes": 2868433,
+      "sha256": "37166887f01dbe39e61b3ffde9ed0f746ba76f9e18d5f55c0eb2506ef6c71047"
+    },
+    "data/study3_runs/features_full/features.provenance.json": {
+      "bytes": 738,
+      "sha256": "2deb3bf0753042034b131f4664050c2b7ff319c7becbda27f5193fc0f1bddad4"
+    },
+    "data/study3_runs/unit_table/units_k.npz": {
+      "bytes": 4555880,
+      "sha256": "d443a7566edd113a9ab6356797761de3a48bd427fffbc11d2f6c63451df38222"
+    },
+    "analysis/study3/formal_release/RELEASE_MANIFEST.json": {
+      "bytes": 5163,
+      "sha256": "da58275a96f12d974d29c5b356de86880e88cbd0e3b8eda7b79617ca8b414a81"
+    },
+    "data/study3_stats/formal_release/v1/index/unit_rows.npz": {
+      "bytes": 128208,
+      "sha256": "73ee6d208106e3c3d158f4c810b8c8696048cb5c96cb0ed94ac56ffb25ad96f5"
+    },
+    "data/study3_stats/formal_release/v1/index/condition_index.json": {
+      "bytes": 3502747,
+      "sha256": "9dbe943dbfe6f972a8fc35cde35ea5edd811ad91d42a54ca4b8bf78c8ecb5889"
+    },
+    "data/study3_stats/ch5_fusion/common_ok.npy": {
+      "bytes": 14140,
+      "sha256": "32e34d3b3e7f95c1358baf0556e8f32473b8d14f5471f1efbcb0317867f14d7c"
+    },
+    "pipeline/analysis/ch5_retrieval.py": {
+      "bytes": 17430,
+      "sha256": "3b542963d13db0e846afba45a406dab1e03e009feb17b25594d091920195c7ba"
+    }
+  },
+  "formal_release": "ULFR-v1-20261025",
+  "headers": {
+    "features_full/features.npz": {
+      "ids": {
+        "shape": [
+          14012
+        ],
+        "dtype": "<U29",
+        "fortran_order": false
+      },
+      "lang": {
+        "shape": [
+          14012
+        ],
+        "dtype": "<U6",
+        "fortran_order": false
+      },
+      "whisper": {
+        "shape": [
+          14012,
+          1280
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "mfcc86": {
+        "shape": [
+          14012,
+          86
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "prosody": {
+        "shape": [
+          14012,
+          15
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "prosody_names": {
+        "shape": [
+          15
+        ],
+        "dtype": "<U17",
+        "fortran_order": false
+      },
+      "xlmr_sub": {
+        "shape": [
+          14012,
+          768
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "xlmr_tr": {
+        "shape": [
+          14012,
+          768
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      }
+    },
+    "features_full/tfidf_sub.npz": {
+      "indices": {
+        "shape": [
+          399087
+        ],
+        "dtype": "int32",
+        "fortran_order": false
+      },
+      "indptr": {
+        "shape": [
+          14013
+        ],
+        "dtype": "int32",
+        "fortran_order": false
+      },
+      "format": {
+        "shape": [],
+        "dtype": "|S3",
+        "fortran_order": false
+      },
+      "shape": {
+        "shape": [
+          2
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      },
+      "data": {
+        "shape": [
+          399087
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      }
+    },
+    "unit_table/units_k.npz": {
+      "ids": {
+        "shape": [
+          14012
+        ],
+        "dtype": "<U29",
+        "fortran_order": false
+      },
+      "K": {
+        "shape": [
+          14012,
+          14
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "k_missing": {
+        "shape": [
+          14012
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      },
+      "F": {
+        "shape": [
+          14012,
+          8
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "n_records": {
+        "shape": [
+          14012
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      },
+      "n_tight": {
+        "shape": [
+          14012
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      },
+      "within_shot": {
+        "shape": [
+          14012
+        ],
+        "dtype": "bool",
+        "fortran_order": false
+      },
+      "shot_index": {
+        "shape": [
+          14012
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      }
+    }
+  },
+  "population": {
+    "queries": 384,
+    "source_days": 63,
+    "clips": 109,
+    "ordered_ids_sha256": "c075770fb9c7abed22435cdb3611047f7ee4082b241d38ee8be9eb55495eb0aa",
+    "by_source": [
+      {
+        "source": "ami",
+        "queries": 63,
+        "days": 11,
+        "clips": 17
+      },
+      {
+        "source": "pwn",
+        "queries": 50,
+        "days": 11,
+        "clips": 21
+      },
+      {
+        "source": "tao",
+        "queries": 42,
+        "days": 9,
+        "clips": 14
+      },
+      {
+        "source": "tay",
+        "queries": 90,
+        "days": 10,
+        "clips": 19
+      },
+      {
+        "source": "trv",
+        "queries": 53,
+        "days": 11,
+        "clips": 18
+      },
+      {
+        "source": "tsu",
+        "queries": 86,
+        "days": 11,
+        "clips": 20
+      }
+    ]
+  },
+  "candidate_support": {
+    "W1": {
+      "min_candidates": 41,
+      "max_candidates": 89,
+      "queries_with_no_candidates": 0
+    },
+    "W2": {
+      "min_candidates": 35,
+      "max_candidates": 89,
+      "queries_with_no_candidates": 0
+    },
+    "W3": {
+      "min_candidates": 29,
+      "max_candidates": 89,
+      "queries_with_no_candidates": 0
+    },
+    "X": {
+      "min_candidates": 294,
+      "max_candidates": 342,
+      "queries_with_no_candidates": 0
+    }
+  },
+  "tfidf": {
+    "full_shape": [
+      14012,
+      127095
+    ],
+    "common_nnz": 14347,
+    "common_zero_rows": 0,
+    "common_data_finite": true,
+    "dense_common_float32_bytes": 195217920
+  },
+  "configurations": [
+    [
+      "kin14"
+    ],
+    [
+      "prosody"
+    ],
+    [
+      "prosody",
+      "kin14"
+    ],
+    [
+      "whisper"
+    ],
+    [
+      "whisper",
+      "kin14"
+    ],
+    [
+      "whisper",
+      "prosody"
+    ],
+    [
+      "whisper",
+      "prosody",
+      "kin14"
+    ],
+    [
+      "mfcc86"
+    ],
+    [
+      "mfcc86",
+      "kin14"
+    ],
+    [
+      "mfcc86",
+      "prosody"
+    ],
+    [
+      "mfcc86",
+      "prosody",
+      "kin14"
+    ],
+    [
+      "xlmr_sub"
+    ],
+    [
+      "xlmr_sub",
+      "kin14"
+    ],
+    [
+      "xlmr_sub",
+      "prosody"
+    ],
+    [
+      "xlmr_sub",
+      "prosody",
+      "kin14"
+    ],
+    [
+      "xlmr_sub",
+      "whisper"
+    ],
+    [
+      "xlmr_sub",
+      "whisper",
+      "kin14"
+    ],
+    [
+      "xlmr_sub",
+      "whisper",
+      "prosody"
+    ],
+    [
+      "xlmr_sub",
+      "whisper",
+      "prosody",
+      "kin14"
+    ],
+    [
+      "xlmr_sub",
+      "mfcc86"
+    ],
+    [
+      "xlmr_sub",
+      "mfcc86",
+      "kin14"
+    ],
+    [
+      "xlmr_sub",
+      "mfcc86",
+      "prosody"
+    ],
+    [
+      "xlmr_sub",
+      "mfcc86",
+      "prosody",
+      "kin14"
+    ],
+    [
+      "tfidf_sub"
+    ],
+    [
+      "tfidf_sub",
+      "kin14"
+    ],
+    [
+      "tfidf_sub",
+      "prosody"
+    ],
+    [
+      "tfidf_sub",
+      "prosody",
+      "kin14"
+    ],
+    [
+      "tfidf_sub",
+      "whisper"
+    ],
+    [
+      "tfidf_sub",
+      "whisper",
+      "kin14"
+    ],
+    [
+      "tfidf_sub",
+      "whisper",
+      "prosody"
+    ],
+    [
+      "tfidf_sub",
+      "whisper",
+      "prosody",
+      "kin14"
+    ],
+    [
+      "tfidf_sub",
+      "mfcc86"
+    ],
+    [
+      "tfidf_sub",
+      "mfcc86",
+      "kin14"
+    ],
+    [
+      "tfidf_sub",
+      "mfcc86",
+      "prosody"
+    ],
+    [
+      "tfidf_sub",
+      "mfcc86",
+      "prosody",
+      "kin14"
+    ]
+  ]
+}

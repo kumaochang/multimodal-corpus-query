@@ -1,0 +1,32 @@
+{
+  "schema": "symbolic-similarity-consumer-profiles/1",
+  "adopted_local_date": "2026-11-05",
+  "profiles": {
+    "item5": {
+      "python": "3.10.22",
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "scikit-learn": "1.5.2"
+    },
+    "local_windows_20261105": {
+      "python": "3.12.3",
+      "numpy": "1.26.4",
+      "scipy": "1.15.2",
+      "scikit-learn": "1.6.1"
+    }
+  },
+  "numeric_dependencies": [
+    "numpy",
+    "threadpoolctl"
+  ],
+  "metadata_only_versions": [
+    "scipy",
+    "scikit-learn"
+  ],
+  "shared_numeric_contract": {
+    "dtype": "float64",
+    "layout": "C",
+    "numerical_threads": 1,
+    "ranking": "stable descending, original candidate order"
+  }
+}

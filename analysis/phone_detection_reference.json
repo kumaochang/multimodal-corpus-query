@@ -1,0 +1,68 @@
+{
+  "method": "Original Q21 saved aggregate table; recording identity is SHA-256 of the exact UTF-8 source-recording basename",
+  "overall": {
+    "unwindowed": {
+      "detected": 84,
+      "TP": 20,
+      "FN": 2,
+      "FP": 26,
+      "TN": 54,
+      "precision": 0.43,
+      "recall": 0.91
+    },
+    "first25": {
+      "detected": 38,
+      "TP": 16,
+      "FN": 6,
+      "FP": 12,
+      "TN": 68,
+      "precision": 0.57,
+      "recall": 0.73
+    },
+    "first15": {
+      "detected": 29,
+      "TP": 15,
+      "FN": 7,
+      "FP": 10,
+      "TN": 70,
+      "precision": 0.6,
+      "recall": 0.68
+    },
+    "first10": {
+      "detected": 21,
+      "TP": 11,
+      "FN": 11,
+      "FP": 6,
+      "TN": 74,
+      "precision": 0.65,
+      "recall": 0.5
+    }
+  },
+  "recordings": {
+    "1052357ef37e1673adfc07a4c715d6a99c2a55b1871eb3d5963039c5079d75ff": {
+      "unwindowed": "0.43 / 0.86",
+      "first15": "0.60 / 0.86",
+      "gold_tokens": 11
+    },
+    "a2600a0ac3e01683842f130035b20db367ec752906b581ff03c955b7725d9f56": {
+      "unwindowed": "0.47 / 1.00",
+      "first15": "0.60 / 0.86",
+      "gold_tokens": 10
+    },
+    "88804b9f0a0956d77f83d95d6c525212d6fe94fe8decca2b2871993938f33aa6": {
+      "unwindowed": "0.55 / 0.86",
+      "first15": "0.60 / 0.43",
+      "gold_tokens": 10
+    },
+    "dcfcc5cdfd49ff942a3e8aba2794b47d48d80bfb8138fd9dce87b5c82cfed691": {
+      "unwindowed": "0.33 / 1.00",
+      "first15": "n/a / 0.00",
+      "gold_tokens": 2
+    },
+    "bf1cbbf8bd6b8290dd54327e8e64a954dfedbacc731bf30562fd9f07a42b3610": {
+      "unwindowed": "0.00 / n/a",
+      "first15": "n/a / n/a",
+      "gold_tokens": 0
+    }
+  }
+}

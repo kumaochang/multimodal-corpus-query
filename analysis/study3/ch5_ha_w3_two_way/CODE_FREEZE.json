@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-09",
+  "scope": "Published two-way model scientific code and numerical metadata",
+  "files": {
+    "runner.py": {
+      "bytes": 26505,
+      "sha256": "5db634c6c28d4a6e9dc3bdb8842425d7dbf7ad5f8a366b476601edb03e1546ad"
+    },
+    "design.py": {
+      "bytes": 12709,
+      "sha256": "d56530b451253075bdb37d3abca326a39129ee949a8b2865b7663d706d64e047"
+    },
+    "report.py": {
+      "bytes": 17369,
+      "sha256": "e74a31d00a249401e23dfcf0962cf639582343cc6282fa870bc258c32ab52b25"
+    },
+    "model.stan": {
+      "bytes": 1612,
+      "sha256": "ab1335c1725d272d9cfa4d6b43e857af011abe185f56ff0c244662d7d6ac654e"
+    },
+    "SOURCE_CONTRACT.json": {
+      "bytes": 1601,
+      "sha256": "d73cece7d29ba867a923d191527fdd3e080f5b404d0605ccd748f0be98a9fb28"
+    },
+    "COLUMN_MAPPING.json": {
+      "bytes": 14811,
+      "sha256": "145efc7b0e66e0d283df1d6266b5b3b60a15acd4d5535820ab761d79b01cd7ec"
+    },
+    "DAY_PLAN.json": {
+      "bytes": 4897,
+      "sha256": "f66a20a8a71379512b22a9e39226705733b5b73048c587c78178f760cb52c1fb"
+    }
+  },
+  "original_code_freeze_sha256": "5298a719feecb22a82de98835b434bde392e7c94882b5dfa945456760bbf0a46",
+  "original_scientific_files": {
+    "COLUMN_MAPPING.json": {
+      "bytes": 14811,
+      "sha256": "145efc7b0e66e0d283df1d6266b5b3b60a15acd4d5535820ab761d79b01cd7ec"
+    },
+    "DAY_PLAN.json": {
+      "bytes": 4897,
+      "sha256": "f66a20a8a71379512b22a9e39226705733b5b73048c587c78178f760cb52c1fb"
+    },
+    "design.py": {
+      "bytes": 12709,
+      "sha256": "d56530b451253075bdb37d3abca326a39129ee949a8b2865b7663d706d64e047"
+    },
+    "model.stan": {
+      "bytes": 1612,
+      "sha256": "ab1335c1725d272d9cfa4d6b43e857af011abe185f56ff0c244662d7d6ac654e"
+    },
+    "report.py": {
+      "bytes": 17369,
+      "sha256": "e74a31d00a249401e23dfcf0962cf639582343cc6282fa870bc258c32ab52b25"
+    },
+    "runner.py": {
+      "bytes": 26552,
+      "sha256": "dc0998b96acdd77d2ff7b942d2d4cd924aea57ad424410ff534e14205ad8c4ad"
+    },
+    "SOURCE_CONTRACT.json": {
+      "bytes": 1601,
+      "sha256": "d73cece7d29ba867a923d191527fdd3e080f5b404d0605ccd748f0be98a9fb28"
+    }
+  },
+  "input_data_hashes_unchanged": true
+}

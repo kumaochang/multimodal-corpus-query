@@ -1,0 +1,884 @@
+{
+  "method": {
+    "evaluation_unit": "sentence clip, not token",
+    "gold": "case-insensitive word-boundary ari in XML FORM; agrees with both retained FORM tiers and frozen gold indices",
+    "prediction": "nonoverlapping ari regex occurrences in concatenated saved shipped/pwn phones; first N means phone-list entries, not characters",
+    "precision": "TP/(TP+FP)",
+    "recall": "TP/(TP+FN)",
+    "undefined": "null when denominator is zero",
+    "speaker_pooling": "sum confusion counts over all recordings belonging to a metadata-identified participant; never mean recording ratios"
+  },
+  "overall": {
+    "unwindowed": {
+      "TP": 20,
+      "FN": 2,
+      "FP": 26,
+      "TN": 54,
+      "clips": 102,
+      "gold_tokens": 33,
+      "gold_positive_clips": 22,
+      "predicted_positive_clips": 46,
+      "detected_occurrences": 84,
+      "precision": {
+        "numerator": 20,
+        "denominator": 46,
+        "value": 0.43478260869565216
+      },
+      "recall": {
+        "numerator": 20,
+        "denominator": 22,
+        "value": 0.9090909090909091
+      }
+    },
+    "first25": {
+      "TP": 16,
+      "FN": 6,
+      "FP": 12,
+      "TN": 68,
+      "clips": 102,
+      "gold_tokens": 33,
+      "gold_positive_clips": 22,
+      "predicted_positive_clips": 28,
+      "detected_occurrences": 38,
+      "precision": {
+        "numerator": 16,
+        "denominator": 28,
+        "value": 0.5714285714285714
+      },
+      "recall": {
+        "numerator": 16,
+        "denominator": 22,
+        "value": 0.7272727272727273
+      }
+    },
+    "first15": {
+      "TP": 15,
+      "FN": 7,
+      "FP": 10,
+      "TN": 70,
+      "clips": 102,
+      "gold_tokens": 33,
+      "gold_positive_clips": 22,
+      "predicted_positive_clips": 25,
+      "detected_occurrences": 30,
+      "precision": {
+        "numerator": 15,
+        "denominator": 25,
+        "value": 0.6
+      },
+      "recall": {
+        "numerator": 15,
+        "denominator": 22,
+        "value": 0.6818181818181818
+      }
+    },
+    "first10": {
+      "TP": 11,
+      "FN": 11,
+      "FP": 6,
+      "TN": 74,
+      "clips": 102,
+      "gold_tokens": 33,
+      "gold_positive_clips": 22,
+      "predicted_positive_clips": 17,
+      "detected_occurrences": 21,
+      "precision": {
+        "numerator": 11,
+        "denominator": 17,
+        "value": 0.6470588235294118
+      },
+      "recall": {
+        "numerator": 11,
+        "denominator": 22,
+        "value": 0.5
+      }
+    }
+  },
+  "coverage": {
+    "sentence_clips": 102,
+    "source_recordings": 5,
+    "all_speakers": 4,
+    "speakers_with_gold_ari": 3,
+    "ari_tokens": 33,
+    "ari_positive_clips": 22,
+    "ari_negative_clips": 80
+  },
+  "by_recording": {
+    "recording_group_1": {
+      "unwindowed": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 2,
+        "TN": 13,
+        "clips": 16,
+        "gold_tokens": 2,
+        "gold_positive_clips": 1,
+        "predicted_positive_clips": 3,
+        "detected_occurrences": 4,
+        "precision": {
+          "numerator": 1,
+          "denominator": 3,
+          "value": 0.3333333333333333
+        },
+        "recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        }
+      },
+      "first25": {
+        "TP": 0,
+        "FN": 1,
+        "FP": 0,
+        "TN": 15,
+        "clips": 16,
+        "gold_tokens": 2,
+        "gold_positive_clips": 1,
+        "predicted_positive_clips": 0,
+        "detected_occurrences": 0,
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0
+        }
+      },
+      "first15": {
+        "TP": 0,
+        "FN": 1,
+        "FP": 0,
+        "TN": 15,
+        "clips": 16,
+        "gold_tokens": 2,
+        "gold_positive_clips": 1,
+        "predicted_positive_clips": 0,
+        "detected_occurrences": 0,
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0
+        }
+      },
+      "first10": {
+        "TP": 0,
+        "FN": 1,
+        "FP": 0,
+        "TN": 15,
+        "clips": 16,
+        "gold_tokens": 2,
+        "gold_positive_clips": 1,
+        "predicted_positive_clips": 0,
+        "detected_occurrences": 0,
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0
+        }
+      }
+    },
+    "recording_group_2": {
+      "unwindowed": {
+        "TP": 6,
+        "FN": 1,
+        "FP": 8,
+        "TN": 17,
+        "clips": 32,
+        "gold_tokens": 11,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 14,
+        "detected_occurrences": 29,
+        "precision": {
+          "numerator": 6,
+          "denominator": 14,
+          "value": 0.42857142857142855
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 7,
+          "value": 0.8571428571428571
+        }
+      },
+      "first25": {
+        "TP": 6,
+        "FN": 1,
+        "FP": 6,
+        "TN": 19,
+        "clips": 32,
+        "gold_tokens": 11,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 12,
+        "detected_occurrences": 16,
+        "precision": {
+          "numerator": 6,
+          "denominator": 12,
+          "value": 0.5
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 7,
+          "value": 0.8571428571428571
+        }
+      },
+      "first15": {
+        "TP": 6,
+        "FN": 1,
+        "FP": 4,
+        "TN": 21,
+        "clips": 32,
+        "gold_tokens": 11,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 10,
+        "detected_occurrences": 12,
+        "precision": {
+          "numerator": 6,
+          "denominator": 10,
+          "value": 0.6
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 7,
+          "value": 0.8571428571428571
+        }
+      },
+      "first10": {
+        "TP": 5,
+        "FN": 2,
+        "FP": 3,
+        "TN": 22,
+        "clips": 32,
+        "gold_tokens": 11,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 8,
+        "detected_occurrences": 9,
+        "precision": {
+          "numerator": 5,
+          "denominator": 8,
+          "value": 0.625
+        },
+        "recall": {
+          "numerator": 5,
+          "denominator": 7,
+          "value": 0.7142857142857143
+        }
+      }
+    },
+    "recording_group_3": {
+      "unwindowed": {
+        "TP": 7,
+        "FN": 0,
+        "FP": 8,
+        "TN": 3,
+        "clips": 18,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 15,
+        "detected_occurrences": 31,
+        "precision": {
+          "numerator": 7,
+          "denominator": 15,
+          "value": 0.4666666666666667
+        },
+        "recall": {
+          "numerator": 7,
+          "denominator": 7,
+          "value": 1
+        }
+      },
+      "first25": {
+        "TP": 6,
+        "FN": 1,
+        "FP": 4,
+        "TN": 7,
+        "clips": 18,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 10,
+        "detected_occurrences": 14,
+        "precision": {
+          "numerator": 6,
+          "denominator": 10,
+          "value": 0.6
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 7,
+          "value": 0.8571428571428571
+        }
+      },
+      "first15": {
+        "TP": 6,
+        "FN": 1,
+        "FP": 4,
+        "TN": 7,
+        "clips": 18,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 10,
+        "detected_occurrences": 12,
+        "precision": {
+          "numerator": 6,
+          "denominator": 10,
+          "value": 0.6
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 7,
+          "value": 0.8571428571428571
+        }
+      },
+      "first10": {
+        "TP": 4,
+        "FN": 3,
+        "FP": 1,
+        "TN": 10,
+        "clips": 18,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 5,
+        "detected_occurrences": 7,
+        "precision": {
+          "numerator": 4,
+          "denominator": 5,
+          "value": 0.8
+        },
+        "recall": {
+          "numerator": 4,
+          "denominator": 7,
+          "value": 0.5714285714285714
+        }
+      }
+    },
+    "recording_group_4": {
+      "unwindowed": {
+        "TP": 6,
+        "FN": 1,
+        "FP": 5,
+        "TN": 8,
+        "clips": 20,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 11,
+        "detected_occurrences": 16,
+        "precision": {
+          "numerator": 6,
+          "denominator": 11,
+          "value": 0.5454545454545454
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 7,
+          "value": 0.8571428571428571
+        }
+      },
+      "first25": {
+        "TP": 4,
+        "FN": 3,
+        "FP": 2,
+        "TN": 11,
+        "clips": 20,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 6,
+        "detected_occurrences": 8,
+        "precision": {
+          "numerator": 4,
+          "denominator": 6,
+          "value": 0.6666666666666666
+        },
+        "recall": {
+          "numerator": 4,
+          "denominator": 7,
+          "value": 0.5714285714285714
+        }
+      },
+      "first15": {
+        "TP": 3,
+        "FN": 4,
+        "FP": 2,
+        "TN": 11,
+        "clips": 20,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 5,
+        "detected_occurrences": 6,
+        "precision": {
+          "numerator": 3,
+          "denominator": 5,
+          "value": 0.6
+        },
+        "recall": {
+          "numerator": 3,
+          "denominator": 7,
+          "value": 0.42857142857142855
+        }
+      },
+      "first10": {
+        "TP": 2,
+        "FN": 5,
+        "FP": 2,
+        "TN": 11,
+        "clips": 20,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 4,
+        "detected_occurrences": 5,
+        "precision": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "recall": {
+          "numerator": 2,
+          "denominator": 7,
+          "value": 0.2857142857142857
+        }
+      }
+    },
+    "recording_group_5": {
+      "unwindowed": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 3,
+        "TN": 13,
+        "clips": 16,
+        "gold_tokens": 0,
+        "gold_positive_clips": 0,
+        "predicted_positive_clips": 3,
+        "detected_occurrences": 4,
+        "precision": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "first25": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 0,
+        "TN": 16,
+        "clips": 16,
+        "gold_tokens": 0,
+        "gold_positive_clips": 0,
+        "predicted_positive_clips": 0,
+        "detected_occurrences": 0,
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "first15": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 0,
+        "TN": 16,
+        "clips": 16,
+        "gold_tokens": 0,
+        "gold_positive_clips": 0,
+        "predicted_positive_clips": 0,
+        "detected_occurrences": 0,
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "first10": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 0,
+        "TN": 16,
+        "clips": 16,
+        "gold_tokens": 0,
+        "gold_positive_clips": 0,
+        "predicted_positive_clips": 0,
+        "detected_occurrences": 0,
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      }
+    }
+  },
+  "by_speaker": {
+    "speaker_group_1": {
+      "unwindowed": {
+        "TP": 6,
+        "FN": 1,
+        "FP": 8,
+        "TN": 17,
+        "clips": 32,
+        "gold_tokens": 11,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 14,
+        "detected_occurrences": 29,
+        "precision": {
+          "numerator": 6,
+          "denominator": 14,
+          "value": 0.42857142857142855
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 7,
+          "value": 0.8571428571428571
+        }
+      },
+      "first25": {
+        "TP": 6,
+        "FN": 1,
+        "FP": 6,
+        "TN": 19,
+        "clips": 32,
+        "gold_tokens": 11,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 12,
+        "detected_occurrences": 16,
+        "precision": {
+          "numerator": 6,
+          "denominator": 12,
+          "value": 0.5
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 7,
+          "value": 0.8571428571428571
+        }
+      },
+      "first15": {
+        "TP": 6,
+        "FN": 1,
+        "FP": 4,
+        "TN": 21,
+        "clips": 32,
+        "gold_tokens": 11,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 10,
+        "detected_occurrences": 12,
+        "precision": {
+          "numerator": 6,
+          "denominator": 10,
+          "value": 0.6
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 7,
+          "value": 0.8571428571428571
+        }
+      },
+      "first10": {
+        "TP": 5,
+        "FN": 2,
+        "FP": 3,
+        "TN": 22,
+        "clips": 32,
+        "gold_tokens": 11,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 8,
+        "detected_occurrences": 9,
+        "precision": {
+          "numerator": 5,
+          "denominator": 8,
+          "value": 0.625
+        },
+        "recall": {
+          "numerator": 5,
+          "denominator": 7,
+          "value": 0.7142857142857143
+        }
+      }
+    },
+    "speaker_group_2": {
+      "unwindowed": {
+        "TP": 8,
+        "FN": 0,
+        "FP": 10,
+        "TN": 16,
+        "clips": 34,
+        "gold_tokens": 12,
+        "gold_positive_clips": 8,
+        "predicted_positive_clips": 18,
+        "detected_occurrences": 35,
+        "precision": {
+          "numerator": 8,
+          "denominator": 18,
+          "value": 0.4444444444444444
+        },
+        "recall": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1
+        }
+      },
+      "first25": {
+        "TP": 6,
+        "FN": 2,
+        "FP": 4,
+        "TN": 22,
+        "clips": 34,
+        "gold_tokens": 12,
+        "gold_positive_clips": 8,
+        "predicted_positive_clips": 10,
+        "detected_occurrences": 14,
+        "precision": {
+          "numerator": 6,
+          "denominator": 10,
+          "value": 0.6
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 8,
+          "value": 0.75
+        }
+      },
+      "first15": {
+        "TP": 6,
+        "FN": 2,
+        "FP": 4,
+        "TN": 22,
+        "clips": 34,
+        "gold_tokens": 12,
+        "gold_positive_clips": 8,
+        "predicted_positive_clips": 10,
+        "detected_occurrences": 12,
+        "precision": {
+          "numerator": 6,
+          "denominator": 10,
+          "value": 0.6
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 8,
+          "value": 0.75
+        }
+      },
+      "first10": {
+        "TP": 4,
+        "FN": 4,
+        "FP": 1,
+        "TN": 25,
+        "clips": 34,
+        "gold_tokens": 12,
+        "gold_positive_clips": 8,
+        "predicted_positive_clips": 5,
+        "detected_occurrences": 7,
+        "precision": {
+          "numerator": 4,
+          "denominator": 5,
+          "value": 0.8
+        },
+        "recall": {
+          "numerator": 4,
+          "denominator": 8,
+          "value": 0.5
+        }
+      }
+    },
+    "speaker_group_3": {
+      "unwindowed": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 3,
+        "TN": 13,
+        "clips": 16,
+        "gold_tokens": 0,
+        "gold_positive_clips": 0,
+        "predicted_positive_clips": 3,
+        "detected_occurrences": 4,
+        "precision": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "first25": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 0,
+        "TN": 16,
+        "clips": 16,
+        "gold_tokens": 0,
+        "gold_positive_clips": 0,
+        "predicted_positive_clips": 0,
+        "detected_occurrences": 0,
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "first15": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 0,
+        "TN": 16,
+        "clips": 16,
+        "gold_tokens": 0,
+        "gold_positive_clips": 0,
+        "predicted_positive_clips": 0,
+        "detected_occurrences": 0,
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      },
+      "first10": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 0,
+        "TN": 16,
+        "clips": 16,
+        "gold_tokens": 0,
+        "gold_positive_clips": 0,
+        "predicted_positive_clips": 0,
+        "detected_occurrences": 0,
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        }
+      }
+    },
+    "speaker_group_4": {
+      "unwindowed": {
+        "TP": 6,
+        "FN": 1,
+        "FP": 5,
+        "TN": 8,
+        "clips": 20,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 11,
+        "detected_occurrences": 16,
+        "precision": {
+          "numerator": 6,
+          "denominator": 11,
+          "value": 0.5454545454545454
+        },
+        "recall": {
+          "numerator": 6,
+          "denominator": 7,
+          "value": 0.8571428571428571
+        }
+      },
+      "first25": {
+        "TP": 4,
+        "FN": 3,
+        "FP": 2,
+        "TN": 11,
+        "clips": 20,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 6,
+        "detected_occurrences": 8,
+        "precision": {
+          "numerator": 4,
+          "denominator": 6,
+          "value": 0.6666666666666666
+        },
+        "recall": {
+          "numerator": 4,
+          "denominator": 7,
+          "value": 0.5714285714285714
+        }
+      },
+      "first15": {
+        "TP": 3,
+        "FN": 4,
+        "FP": 2,
+        "TN": 11,
+        "clips": 20,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 5,
+        "detected_occurrences": 6,
+        "precision": {
+          "numerator": 3,
+          "denominator": 5,
+          "value": 0.6
+        },
+        "recall": {
+          "numerator": 3,
+          "denominator": 7,
+          "value": 0.42857142857142855
+        }
+      },
+      "first10": {
+        "TP": 2,
+        "FN": 5,
+        "FP": 2,
+        "TN": 11,
+        "clips": 20,
+        "gold_tokens": 10,
+        "gold_positive_clips": 7,
+        "predicted_positive_clips": 4,
+        "detected_occurrences": 5,
+        "precision": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "recall": {
+          "numerator": 2,
+          "denominator": 7,
+          "value": 0.2857142857142857
+        }
+      }
+    }
+  }
+}

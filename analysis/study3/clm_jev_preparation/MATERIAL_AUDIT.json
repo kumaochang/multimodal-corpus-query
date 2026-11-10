@@ -1,0 +1,290 @@
+{
+  "clm_checks": {
+    "rows": 240,
+    "empty_a": 1,
+    "empty_b": 0,
+    "ordered_ids_sha256": "464a093769b1358858625e1644897d3fdbb9f2898828a84caf1615b895df919b",
+    "finite_in_range": true
+  },
+  "provenance": {
+    "program": "pipeline/analysis/item5/clm_score.py",
+    "contrastive_lm_version": "0.1.0",
+    "weights": "Contrastive-LM/CLM-v0.1-8B",
+    "backbone": "Qwen/Qwen3-8B",
+    "instructions": "Is the speaker asking the listener (or a group that includes the speaker) to do something or not to do something, as in a command, request, urging, invitation, reminder or prohibition?",
+    "options": [
+      "yes, a directive",
+      "no, not a directive"
+    ],
+    "items": 240,
+    "empty_a": 1,
+    "empty_b": 0
+  },
+  "counts": {
+    "items": 280,
+    "unique_utterances": 240,
+    "days": 12,
+    "clips": 90,
+    "batch_counts": {
+      "1": 50,
+      "2": 190,
+      "3": 40
+    },
+    "main_strata": {
+      "suffix_nocue": 60,
+      "suffix_cue": 148,
+      "none_cue": 30,
+      "marker": 2
+    }
+  },
+  "array_schemas": {
+    "text": {
+      "ids": {
+        "shape": [
+          240
+        ],
+        "dtype": "<U29"
+      },
+      "xlmr": {
+        "shape": [
+          240,
+          768
+        ],
+        "dtype": "float64"
+      },
+      "tfidf": {
+        "shape": [
+          240,
+          71529
+        ],
+        "dtype": "float64"
+      },
+      "form": {
+        "shape": [
+          240,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "form_names": {
+        "shape": [
+          4
+        ],
+        "dtype": "<U8"
+      }
+    },
+    "audio": {
+      "ids": {
+        "shape": [
+          240
+        ],
+        "dtype": "<U29"
+      },
+      "whisper": {
+        "shape": [
+          240,
+          1280
+        ],
+        "dtype": "float64"
+      },
+      "prosody": {
+        "shape": [
+          240,
+          15
+        ],
+        "dtype": "float64"
+      },
+      "prosody_names": {
+        "shape": [
+          15
+        ],
+        "dtype": "<U17"
+      }
+    },
+    "kin": {
+      "ids": {
+        "shape": [
+          240
+        ],
+        "dtype": "<U29"
+      },
+      "K": {
+        "shape": [
+          240,
+          14
+        ],
+        "dtype": "float64"
+      },
+      "k_missing": {
+        "shape": [
+          240
+        ],
+        "dtype": "int64"
+      },
+      "F": {
+        "shape": [
+          240,
+          8
+        ],
+        "dtype": "float64"
+      },
+      "F_names": {
+        "shape": [
+          8
+        ],
+        "dtype": "<U13"
+      },
+      "n_records": {
+        "shape": [
+          240
+        ],
+        "dtype": "int64"
+      },
+      "n_tight": {
+        "shape": [
+          240
+        ],
+        "dtype": "int64"
+      },
+      "span_ms": {
+        "shape": [
+          240
+        ],
+        "dtype": "float64"
+      }
+    },
+    "face": {
+      "ids": {
+        "shape": [
+          240
+        ],
+        "dtype": "<U29"
+      },
+      "face": {
+        "shape": [
+          240,
+          26
+        ],
+        "dtype": "float64"
+      },
+      "face_names": {
+        "shape": [
+          26
+        ],
+        "dtype": "<U15"
+      },
+      "face_share": {
+        "shape": [
+          240
+        ],
+        "dtype": "float64"
+      },
+      "face_missing": {
+        "shape": [
+          240
+        ],
+        "dtype": "int64"
+      }
+    }
+  },
+  "question": "Is the speaker asking the listener (or a group that includes the speaker) to do something or not to do something, as in a command, request, urging, invitation, reminder or prohibition?",
+  "options": [
+    "yes, a directive",
+    "no, not a directive"
+  ],
+  "score_direction": "probability of first option",
+  "historical_clm_packages": {
+    "contrastive-lm": "0.1.0",
+    "numpy": "2.3.5",
+    "torch": "2.13.0",
+    "transformers": "5.17.0",
+    "vllm": "0.31.0"
+  },
+  "protected_sources": {
+    "data/study3_runs/item5/audio.npz": {
+      "bytes": 2516270,
+      "sha256": "2497f5d3f3ff2e7d843613f28d7fc318453fa69a58765a57f4489de5fc690bc1",
+      "role": "frozen CLM/features"
+    },
+    "data/study3_runs/item5/face.npz": {
+      "bytes": 84420,
+      "sha256": "6e60a343da148d19547c44acf4d59641a7aed2ea0f9db3638b7f36e8e013af60",
+      "role": "frozen CLM/features"
+    },
+    "data/study3_runs/item5/kin.npz": {
+      "bytes": 80142,
+      "sha256": "98cb04eb8256c99f7b30520f1ca92b0cf673ca45abcab6ccc386bdb9dc73810b",
+      "role": "frozen CLM/features"
+    },
+    "data/study3_runs/item5/text.npz": {
+      "bytes": 138847122,
+      "sha256": "601db363c17a75b04dfcadcefcd2e4ca718d93822c03c114eed546a0eacbc3d2",
+      "role": "frozen CLM/features"
+    },
+    "data/study3_runs/item5/clm.jsonl": {
+      "bytes": 24410,
+      "sha256": "22a34d74c023f07422236cdcce8e544b7cc4defb9480d7990aae8c0b2f52ef0c",
+      "role": "frozen CLM/features"
+    },
+    "data/study3_runs/item5/texts.jsonl": {
+      "bytes": 55367,
+      "sha256": "d4572eecebfb99b87c1421922b272c07ff68575e53105dee5e96cd160e75895e",
+      "role": "frozen CLM/features"
+    },
+    "data/study3_runs/item5/SHA256SUMS.txt": {
+      "bytes": 454,
+      "sha256": "d39e50d6bf435876c7b522e52c808c99fd27277f22e9b0e3f422195ef1e2da4e",
+      "role": "original manifest"
+    },
+    "data/study3_runs/item5/clm.jsonl.provenance.json": {
+      "bytes": 476,
+      "sha256": "a19d42b9c60ffebe103cce162f5cc84ec17c67247069ad448350eac4562df4ce",
+      "role": "original provenance"
+    },
+    "data/study3_runs/annotation/items.json": {
+      "bytes": 88870,
+      "sha256": "99bedb757963ea071d71c58254a7ea2e5d5a7ade6c046c64b05fb83cbfae67e2",
+      "role": "sampling metadata, no judgments"
+    },
+    "data/study3_runs/env_clm.txt": {
+      "bytes": 4303,
+      "sha256": "0b651c220dc3e44889212c3e3eaab1993746da5a7ed0543b57b7ff8aa8530981",
+      "role": "historical CLM package inventory"
+    },
+    "PREREGISTRATION.md": {
+      "bytes": 100615,
+      "sha256": "1122bfe28339973802356ca8989f63247f23abc0db63edb98ac617a420b9734f",
+      "role": "immutable registration/program"
+    },
+    "pipeline/analysis/item5/probe.py": {
+      "bytes": 10321,
+      "sha256": "19dc74610379cccedfc82a00c0079a2cf72e5dbf132daaa8a518ea06c5d44b0a",
+      "role": "immutable registration/program"
+    },
+    "pipeline/analysis/item5/clm_score.py": {
+      "bytes": 2548,
+      "sha256": "d5be895e32748679440285a9562d247053a8a7de5f39c5c5b2f1f7c402a5cd61",
+      "role": "immutable registration/program"
+    },
+    "pipeline/analysis/item5/feat_text.py": {
+      "bytes": 6333,
+      "sha256": "1cfcd0d49b43a8af9fa2b67ea92f31169b06c4b0a7fbaaf9aa2c6e956bbd0198",
+      "role": "immutable registration/program"
+    },
+    "pipeline/analysis/draw_annotation.py": {
+      "bytes": 3948,
+      "sha256": "5d1466b5c1824f72ffb5a9a8c59c18fdbfd3cc628e4cf81c61304d884f15fd06",
+      "role": "immutable registration/program"
+    },
+    "pipeline/analysis/make_annotation_kit.py": {
+      "bytes": 6465,
+      "sha256": "a19ea0a6bdb1dead07fe0c77779b11a256fe7dff9a3a35fbd9a076324f318644",
+      "role": "immutable registration/program"
+    }
+  },
+  "source_version": {
+    "original_sha256": "2268eb2e344a567886178eb666ea9ea79d06df347637c1c8a04375fddfa68884",
+    "public_code_paths_relative_to": "repository root",
+    "data_hashes_changed": false
+  }
+}

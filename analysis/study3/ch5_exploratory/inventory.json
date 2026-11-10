@@ -1,0 +1,22 @@
+{
+  "input_root": "data/study3_runs",
+  "inputs_sha256": {
+    "features_full/features.npz": "80ab8584dd41383226e0986055480ead9cac774b9e3b5928d4f2bf45d80d1704",
+    "features_full/tfidf_sub.npz": "37166887f01dbe39e61b3ffde9ed0f746ba76f9e18d5f55c0eb2506ef6c71047",
+    "features_full/tfidf_tr.npz": "2583b3af57b9bbaad01a5bf2056f3355335daa3b14affcf276a74bcffa43f029",
+    "label_analysis/units.tsv": "0c5f9fd8c80bfbde1f6034b88d37145cd1b76c7684851bae0af6b0e92fdcf554",
+    "unit_table/units_k.npz": "d443a7566edd113a9ab6356797761de3a48bd427fffbc11d2f6c63451df38222",
+    "ch5/ch5_retrieval.json": "bd2d785d8b05fc96565df47ccb867795560b19e87650c7c5659379af5db9d4e2",
+    "ch5/ch5_sensitivity.json": "b39dba230d0d14f6c6e3a9d4d7edd0698c0563bb9dbfb09e22676f2eefe6c72f"
+  },
+  "main_blocks": 28,
+  "main_pool_cells": 108,
+  "query_cache_present_in_existing_json": false,
+  "common": {
+    "all": 3297,
+    "kept": 384
+  },
+  "plan_sha256": "f19a962c1238a7a7e786dd3dc289a6e9b1a78eddf71b90d86befc40d4ca96cb0",
+  "coverage_rows": 910,
+  "interaction_effects_executed": false
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "dissertation-aggregate-distribution/1",
+  "distribution_version": "1",
+  "original_analysis_version": "ULFR-v1-20261025",
+  "scope": "Selected saved aggregate results; original numerical source and complete execution inputs are separate materials.",
+  "files": [
+    {
+      "path": "retrieval/primary.json",
+      "bytes": 299840,
+      "sha256": "74e14a3941cdda8b521f8356fdbf986b354c74722614d082be9646a09c1f3812",
+      "purpose": "Chapter5 primary retrieval and support"
+    },
+    {
+      "path": "retrieval/sensitivity.json",
+      "bytes": 62494,
+      "sha256": "b39dba230d0d14f6c6e3a9d4d7edd0698c0563bb9dbfb09e22676f2eefe6c72f",
+      "purpose": "Registered retrieval sensitivities"
+    },
+    {
+      "path": "applications/pair-class-retrieval.json",
+      "bytes": 11314,
+      "sha256": "3721fb6153f75f7d53572b8b550ee322b478e302c6213e6f1969c369d53e4b3c",
+      "purpose": "Chapter6 ordered-pair and pair-class retrieval"
+    },
+    {
+      "path": "applications/activity-class-comparisons.json",
+      "bytes": 2487,
+      "sha256": "fa15ab4fa2dae0ac17c5cca4cd7502c2cb47ce4bc1acac59ab6f4eb45ae275a2",
+      "purpose": "Activity-class comparisons"
+    },
+    {
+      "path": "retrieval/joint-interval-family.json",
+      "bytes": 11894,
+      "sha256": "b475548103f1bbc28463be1606319e0e4994c543e7c40d128d1aa2fba88618c5",
+      "purpose": "Fixed24 interval family and joint-validity"
+    },
+    {
+      "path": "models/base-contrasts.csv",
+      "bytes": 142316,
+      "sha256": "c5dcaf06bbb8bfe7e5432c72a7820be3378cd68c339e7b832ca432800883ef6f",
+      "purpose": "Hierarchical model saved contrasts"
+    },
+    {
+      "path": "models/selected-attempt-status.csv",
+      "bytes": 17165,
+      "sha256": "bb141d8f5a426aea8bc182609bdd017f228b8ddc77bf7cc38bd2418ba45d346b",
+      "purpose": "68 selected attempts and computational qualifications"
+    },
+    {
+      "path": "models/predictive-check-summary.csv",
+      "bytes": 5388,
+      "sha256": "c7938889972ce68149fe1ee3699fd8ccbba4cd27ca25af871208dec16f5caaae",
+      "purpose": "Aggregate posterior predictive calibration"
+    },
+    {
+      "path": "models/day-refit-comparisons.csv",
+      "bytes": 29385,
+      "sha256": "59c794a3caf24f35ea0fe7e06c20547e4e36ac983d92db2ddf48a77105a08481",
+      "purpose": "Saved day-refit benchmark summaries"
+    }
+  ]
+}

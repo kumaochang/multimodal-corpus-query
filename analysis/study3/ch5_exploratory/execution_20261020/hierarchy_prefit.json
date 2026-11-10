@@ -1,0 +1,1008 @@
+{
+  "models": [
+    {
+      "model": "H0",
+      "pool": "W1",
+      "seed": 202610251,
+      "formula": "R+L+K+RL+RK+LK+RLK",
+      "contrasts": 179,
+      "saturated_coordinates": 180,
+      "metadata_rank": 114,
+      "likelihood_rank": 90,
+      "queries": 384,
+      "days": 63,
+      "clips": 109,
+      "repeated_rows": 2304,
+      "interior_rows": 2280,
+      "structural_zero_rows": 24,
+      "structural_one_rows": 0,
+      "no_candidate_rows": 0,
+      "priors": [
+        {
+          "prior_scale": 0.5,
+          "seed": 202611251,
+          "draws": 256,
+          "probability_quantiles": [
+            0,
+            0.570415606999965,
+            0.997381336169421
+          ],
+          "probability_extreme_fraction": 0.0721096462673611,
+          "pooled_expected_lift_quantiles": [
+            -0.41842781417938146,
+            -0.04659086311632543,
+            0.28855006563827923
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.16975911458333334,
+            0.5390625,
+            0.8744032118055556
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 1,
+          "seed": 202611251,
+          "draws": 256,
+          "probability_quantiles": [
+            0,
+            0.5674322302281481,
+            0.9986497956165014
+          ],
+          "probability_extreme_fraction": 0.10046556260850695,
+          "pooled_expected_lift_quantiles": [
+            -0.4045371579199715,
+            -0.0484545224491614,
+            0.2799256438709546
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.17740885416666669,
+            0.5392795138888888,
+            0.8629014756944444
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 2,
+          "seed": 202611251,
+          "draws": 256,
+          "probability_quantiles": [
+            0,
+            0.5636180340798442,
+            0.9998335776501591
+          ],
+          "probability_extreme_fraction": 0.20578511555989584,
+          "pooled_expected_lift_quantiles": [
+            -0.40471104403643315,
+            -0.05364934970475255,
+            0.2412065976539629
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.1750759548611111,
+            0.5323350694444444,
+            0.828125
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        }
+      ],
+      "model_data_sha256": "b59f6faf40332d328957de74985ddd87d5725e96a12ba04f9da1544e34626e9a",
+      "fit_status": "not_fitted_toolchain_check_pending"
+    },
+    {
+      "model": "H0",
+      "pool": "W2",
+      "seed": 202610252,
+      "formula": "R+L+K+RL+RK+LK+RLK",
+      "contrasts": 179,
+      "saturated_coordinates": 180,
+      "metadata_rank": 114,
+      "likelihood_rank": 90,
+      "queries": 384,
+      "days": 63,
+      "clips": 109,
+      "repeated_rows": 2304,
+      "interior_rows": 2280,
+      "structural_zero_rows": 24,
+      "structural_one_rows": 0,
+      "no_candidate_rows": 0,
+      "priors": [
+        {
+          "prior_scale": 0.5,
+          "seed": 202611252,
+          "draws": 256,
+          "probability_quantiles": [
+            0,
+            0.5820572608275307,
+            0.9971674092504949
+          ],
+          "probability_extreme_fraction": 0.07273186577690972,
+          "pooled_expected_lift_quantiles": [
+            -0.4433465236901433,
+            -0.012263759908038983,
+            0.3178266971263869
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.125,
+            0.5494791666666666,
+            0.8811848958333334
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 1,
+          "seed": 202611252,
+          "draws": 256,
+          "probability_quantiles": [
+            0,
+            0.5768725311154195,
+            0.9985565907794137
+          ],
+          "probability_extreme_fraction": 0.1039581298828125,
+          "pooled_expected_lift_quantiles": [
+            -0.4176199672783231,
+            -0.015380475104161063,
+            0.30768501362421163
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.13981119791666669,
+            0.5457899305555556,
+            0.8729926215277778
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 2,
+          "seed": 202611252,
+          "draws": 256,
+          "probability_quantiles": [
+            0,
+            0.5619109272385447,
+            0.9998325406541559
+          ],
+          "probability_extreme_fraction": 0.21672566731770834,
+          "pooled_expected_lift_quantiles": [
+            -0.3945021775485401,
+            -0.03642026489859424,
+            0.2564308870299242
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.1708984375,
+            0.5277777777777777,
+            0.826171875
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        }
+      ],
+      "model_data_sha256": "bce1f5f1ee905e041f8d38f3f8971e31a9e0f98a3de60f03e3667c99e7f3e39f",
+      "fit_status": "not_fitted_toolchain_check_pending"
+    },
+    {
+      "model": "H0",
+      "pool": "W3",
+      "seed": 202610253,
+      "formula": "R+L+K+RL+RK+LK+RLK",
+      "contrasts": 179,
+      "saturated_coordinates": 180,
+      "metadata_rank": 114,
+      "likelihood_rank": 90,
+      "queries": 384,
+      "days": 63,
+      "clips": 109,
+      "repeated_rows": 2304,
+      "interior_rows": 2280,
+      "structural_zero_rows": 24,
+      "structural_one_rows": 0,
+      "no_candidate_rows": 0,
+      "priors": [
+        {
+          "prior_scale": 0.5,
+          "seed": 202611253,
+          "draws": 256,
+          "probability_quantiles": [
+            0,
+            0.5846063389536544,
+            0.9975458641124073
+          ],
+          "probability_extreme_fraction": 0.07957967122395833,
+          "pooled_expected_lift_quantiles": [
+            -0.4065745363006922,
+            -0.003211360323541172,
+            0.3309072650793088
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.1475151909722222,
+            0.5466579861111112,
+            0.8789605034722222
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 1,
+          "seed": 202611253,
+          "draws": 256,
+          "probability_quantiles": [
+            0,
+            0.582365319173801,
+            0.9985146278161431
+          ],
+          "probability_extreme_fraction": 0.1064487033420139,
+          "pooled_expected_lift_quantiles": [
+            -0.4024121064416888,
+            -0.008820458494421788,
+            0.31769081777998415
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.142578125,
+            0.5423177083333334,
+            0.8690321180555556
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 2,
+          "seed": 202611253,
+          "draws": 256,
+          "probability_quantiles": [
+            0,
+            0.5792900656048166,
+            0.9997691888573558
+          ],
+          "probability_extreme_fraction": 0.2098303900824653,
+          "pooled_expected_lift_quantiles": [
+            -0.3723020375837335,
+            -0.017619282824376446,
+            0.2732579153193077
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.17534722222222224,
+            0.5355902777777778,
+            0.8172200520833334
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        }
+      ],
+      "model_data_sha256": "af0ce5dd31386872b1d091713b0d4bd7a6116cdf017371bbb6f1e19fba73a10c",
+      "fit_status": "not_fitted_toolchain_check_pending"
+    },
+    {
+      "model": "H0",
+      "pool": "X",
+      "seed": 202610254,
+      "formula": "R+L+K+RL+RK+LK+RLK",
+      "contrasts": 179,
+      "saturated_coordinates": 180,
+      "metadata_rank": 114,
+      "likelihood_rank": 108,
+      "queries": 384,
+      "days": 63,
+      "clips": 109,
+      "repeated_rows": 2304,
+      "interior_rows": 2286,
+      "structural_zero_rows": 18,
+      "structural_one_rows": 0,
+      "no_candidate_rows": 0,
+      "priors": [
+        {
+          "prior_scale": 0.5,
+          "seed": 202611254,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0002257474561908583,
+            0.57939496146942,
+            0.9971735606740658
+          ],
+          "probability_extreme_fraction": 0.08132765028211805,
+          "pooled_expected_lift_quantiles": [
+            -0.45085705526710484,
+            -0.023688887968056113,
+            0.301316854179997
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.1247829861111111,
+            0.5562065972222222,
+            0.8746202256944444
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 1,
+          "seed": 202611254,
+          "draws": 256,
+          "probability_quantiles": [
+            0.00012012231149635601,
+            0.5784187662107223,
+            0.9986360048108357
+          ],
+          "probability_extreme_fraction": 0.1142459445529514,
+          "pooled_expected_lift_quantiles": [
+            -0.43972458479503,
+            -0.029740752301807893,
+            0.2735029456120593
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.1374240451388889,
+            0.5473090277777778,
+            0.8526475694444444
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 2,
+          "seed": 202611254,
+          "draws": 256,
+          "probability_quantiles": [
+            0.000012003208716369342,
+            0.5668663454562535,
+            0.9998632183225277
+          ],
+          "probability_extreme_fraction": 0.2244754367404514,
+          "pooled_expected_lift_quantiles": [
+            -0.43988811656924476,
+            -0.05176533812838995,
+            0.24167458101367023
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.14046223958333334,
+            0.5282118055555556,
+            0.8211263020833334
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        }
+      ],
+      "model_data_sha256": "b76d246635d3bb70df83801ba8a1a9e5504fe762780c8fec497c8cbe56e90478",
+      "fit_status": "not_fitted_toolchain_check_pending"
+    },
+    {
+      "model": "HA",
+      "pool": "W1",
+      "seed": 202610261,
+      "formula": "R+L+K+RL+RK+LK+RLK+G+LG+KG+RG+RKG",
+      "contrasts": 214,
+      "saturated_coordinates": 215,
+      "metadata_rank": 191,
+      "likelihood_rank": 185,
+      "queries": 2753,
+      "days": 72,
+      "clips": 191,
+      "repeated_rows": 16518,
+      "interior_rows": 16512,
+      "structural_zero_rows": 6,
+      "structural_one_rows": 0,
+      "no_candidate_rows": 0,
+      "priors": [
+        {
+          "prior_scale": 0.5,
+          "seed": 202611261,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0018209066091411802,
+            0.6750466297183171,
+            0.9979991788181554
+          ],
+          "probability_extreme_fraction": 0.08302377519978206,
+          "pooled_expected_lift_quantiles": [
+            -0.4389801239099581,
+            0.008811226876153166,
+            0.317429516413639
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.16555424385518827,
+            0.611000121080034,
+            0.9202915001816201
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 1,
+          "seed": 202611261,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0009681930132287224,
+            0.6674476949341294,
+            0.9991549269673851
+          ],
+          "probability_extreme_fraction": 0.12347656722968882,
+          "pooled_expected_lift_quantiles": [
+            -0.45226649063908053,
+            -0.007535170316118296,
+            0.2962102194077539
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.14874682164911007,
+            0.5962888969608912,
+            0.9000559995156798
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 2,
+          "seed": 202611261,
+          "draws": 256,
+          "probability_quantiles": [
+            0.00010733405240337183,
+            0.6620985812369127,
+            0.9999448919387256
+          ],
+          "probability_extreme_fraction": 0.25523813037292653,
+          "pooled_expected_lift_quantiles": [
+            -0.427084811361723,
+            -0.03125268167135147,
+            0.25847865700087724
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.17444605884489647,
+            0.5752512410703475,
+            0.8624001089720305
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        }
+      ],
+      "model_data_sha256": "41ea66c4fccd9b11c84e4c2a95241a000e8489389c374a7ed6009c52854c3bcc",
+      "fit_status": "not_fitted_toolchain_check_pending"
+    },
+    {
+      "model": "HA",
+      "pool": "W2",
+      "seed": 202610262,
+      "formula": "R+L+K+RL+RK+LK+RLK+G+LG+KG+RG+RKG",
+      "contrasts": 214,
+      "saturated_coordinates": 215,
+      "metadata_rank": 191,
+      "likelihood_rank": 185,
+      "queries": 2753,
+      "days": 72,
+      "clips": 191,
+      "repeated_rows": 16518,
+      "interior_rows": 16512,
+      "structural_zero_rows": 6,
+      "structural_one_rows": 0,
+      "no_candidate_rows": 0,
+      "priors": [
+        {
+          "prior_scale": 0.5,
+          "seed": 202611262,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0015186035690447418,
+            0.6057101886579346,
+            0.9979669815896538
+          ],
+          "probability_extreme_fraction": 0.0801280232170965,
+          "pooled_expected_lift_quantiles": [
+            -0.4681787762052098,
+            -0.027112104383581165,
+            0.2768364030015075
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.13242371957864146,
+            0.5727993703838237,
+            0.8760897203051217
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 1,
+          "seed": 202611262,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0007965080659649733,
+            0.6032595949194385,
+            0.999170994282928
+          ],
+          "probability_extreme_fraction": 0.1211753371322194,
+          "pooled_expected_lift_quantiles": [
+            -0.4735800384550214,
+            -0.03684447861283048,
+            0.28485910375251894
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.1262864753602131,
+            0.5634762077733382,
+            0.8841264075553942
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 2,
+          "seed": 202611262,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0000730060973864043,
+            0.5998880227634578,
+            0.9999526045683506
+          ],
+          "probability_extreme_fraction": 0.2592730279089478,
+          "pooled_expected_lift_quantiles": [
+            -0.4561764346133008,
+            -0.05498908919986256,
+            0.27056652575333967
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.1454095532146749,
+            0.5445574524760868,
+            0.8689762683133551
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        }
+      ],
+      "model_data_sha256": "6475aeac9e7892e0edbacc34b2773459125b8dd4b74c431a600b7955606ddeab",
+      "fit_status": "not_fitted_toolchain_check_pending"
+    },
+    {
+      "model": "HA",
+      "pool": "W3",
+      "seed": 202610263,
+      "formula": "R+L+K+RL+RK+LK+RLK+G+LG+KG+RG+RKG",
+      "contrasts": 214,
+      "saturated_coordinates": 215,
+      "metadata_rank": 191,
+      "likelihood_rank": 185,
+      "queries": 2753,
+      "days": 72,
+      "clips": 191,
+      "repeated_rows": 16518,
+      "interior_rows": 16512,
+      "structural_zero_rows": 6,
+      "structural_one_rows": 0,
+      "no_candidate_rows": 0,
+      "priors": [
+        {
+          "prior_scale": 0.5,
+          "seed": 202611263,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0012265824639249806,
+            0.6211742790489998,
+            0.9985371149676429
+          ],
+          "probability_extreme_fraction": 0.09573765172841749,
+          "pooled_expected_lift_quantiles": [
+            -0.45347075431602085,
+            -0.024245574215734547,
+            0.3235880603828393
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.14576522581426324,
+            0.5724361302821165,
+            0.9230612059571377
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 1,
+          "seed": 202611263,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0006674067359570851,
+            0.6275131169453569,
+            0.9993909180454109
+          ],
+          "probability_extreme_fraction": 0.13755401304637366,
+          "pooled_expected_lift_quantiles": [
+            -0.4436530534350577,
+            -0.02618183713507195,
+            0.3208970325419711
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.15379434556241675,
+            0.5724058602736408,
+            0.9198677200629617
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 2,
+          "seed": 202611263,
+          "draws": 256,
+          "probability_quantiles": [
+            0.00007500554764424316,
+            0.6440824651039103,
+            0.9999595293695132
+          ],
+          "probability_extreme_fraction": 0.2743716135428018,
+          "pooled_expected_lift_quantiles": [
+            -0.42230799711767886,
+            -0.03852060267158462,
+            0.2858827021296552
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.17682225451023126,
+            0.5606610969851071,
+            0.8832561448117205
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        }
+      ],
+      "model_data_sha256": "c00d7d22f93891005e437654421c30af95d4b784d64456b7995330ffee16c8fb",
+      "fit_status": "not_fitted_toolchain_check_pending"
+    },
+    {
+      "model": "HA",
+      "pool": "X",
+      "seed": 202610264,
+      "formula": "R+L+K+RL+RK+LK+RLK+G+LG+KG+RG+RKG",
+      "contrasts": 214,
+      "saturated_coordinates": 215,
+      "metadata_rank": 191,
+      "likelihood_rank": 191,
+      "queries": 2753,
+      "days": 72,
+      "clips": 191,
+      "repeated_rows": 16518,
+      "interior_rows": 16518,
+      "structural_zero_rows": 0,
+      "structural_one_rows": 0,
+      "no_candidate_rows": 0,
+      "priors": [
+        {
+          "prior_scale": 0.5,
+          "seed": 202611264,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0016412423324144959,
+            0.6125526927432321,
+            0.9977816492142033
+          ],
+          "probability_extreme_fraction": 0.0812527432195181,
+          "pooled_expected_lift_quantiles": [
+            -0.45064503194382716,
+            -0.018314952397879537,
+            0.2991381095634353
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.1430333575493401,
+            0.5759474512652863,
+            0.8945998304879526
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 1,
+          "seed": 202611264,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0008425788626421972,
+            0.6015970855975028,
+            0.9991343189625406
+          ],
+          "probability_extreme_fraction": 0.12513952582031723,
+          "pooled_expected_lift_quantiles": [
+            -0.45201246760722325,
+            -0.027501851211184945,
+            0.2859944667600497
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.14105067199418816,
+            0.5651107882310207,
+            0.8786096985107156
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 2,
+          "seed": 202611264,
+          "draws": 256,
+          "probability_quantiles": [
+            0.00008007555629407081,
+            0.5813743088032166,
+            0.9999442155327658
+          ],
+          "probability_extreme_fraction": 0.25785719555938974,
+          "pooled_expected_lift_quantiles": [
+            -0.44412251978341505,
+            -0.04202956702695508,
+            0.27559909524866966
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.1479749364329822,
+            0.5506719941881584,
+            0.8695286959680348
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        }
+      ],
+      "model_data_sha256": "b63753cfd413d335ab75aafa5d4089a6a56b232763e71998627e82ff1c0d3c9c",
+      "fit_status": "not_fitted_toolchain_check_pending"
+    },
+    {
+      "model": "HB",
+      "pool": "W1",
+      "seed": 202610271,
+      "formula": "S+M+L+K+SL+SK+LK+SM+SLK",
+      "contrasts": 51,
+      "saturated_coordinates": 52,
+      "metadata_rank": 48,
+      "likelihood_rank": 48,
+      "queries": 2079,
+      "days": 60,
+      "clips": 154,
+      "repeated_rows": 8316,
+      "interior_rows": 8316,
+      "structural_zero_rows": 0,
+      "structural_one_rows": 0,
+      "no_candidate_rows": 0,
+      "priors": [
+        {
+          "prior_scale": 0.5,
+          "seed": 202611271,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0014185951880086103,
+            0.37662784889780043,
+            0.9954858159648907
+          ],
+          "probability_extreme_fraction": 0.0712561816077441,
+          "pooled_expected_lift_quantiles": [
+            -0.3172718149511983,
+            0.038552506285272375,
+            0.46432129428074587
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.07894420394420394,
+            0.4313973063973064,
+            0.855940355940356
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 1,
+          "seed": 202611271,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0007978923406083418,
+            0.3807034889554567,
+            0.9977151307671637
+          ],
+          "probability_extreme_fraction": 0.10253577441077441,
+          "pooled_expected_lift_quantiles": [
+            -0.2980278520715695,
+            0.04310879930222927,
+            0.44613352976909193
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.0968013468013468,
+            0.4344035594035594,
+            0.8430886243386244
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 2,
+          "seed": 202611271,
+          "draws": 256,
+          "probability_quantiles": [
+            0.00010210991967980788,
+            0.39041003789065365,
+            0.9997244201207894
+          ],
+          "probability_extreme_fraction": 0.2133335775913901,
+          "pooled_expected_lift_quantiles": [
+            -0.2650020874344663,
+            0.049863153451705396,
+            0.3944573595355966
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.12993025493025495,
+            0.4434223184223184,
+            0.7890061327561327
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        }
+      ],
+      "model_data_sha256": "11f5a57fa9194de3e989de87c3626668fe1016b206510d62f3c03e1adfff241f",
+      "fit_status": "not_fitted_toolchain_check_pending"
+    },
+    {
+      "model": "HB",
+      "pool": "W2",
+      "seed": 202610272,
+      "formula": "S+M+L+K+SL+SK+LK+SM+SLK",
+      "contrasts": 51,
+      "saturated_coordinates": 52,
+      "metadata_rank": 48,
+      "likelihood_rank": 46,
+      "queries": 2079,
+      "days": 60,
+      "clips": 154,
+      "repeated_rows": 8316,
+      "interior_rows": 8308,
+      "structural_zero_rows": 8,
+      "structural_one_rows": 0,
+      "no_candidate_rows": 0,
+      "priors": [
+        {
+          "prior_scale": 0.5,
+          "seed": 202611272,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0014775588005956348,
+            0.3748417428463029,
+            0.9936617987822141
+          ],
+          "probability_extreme_fraction": 0.061294680435305435,
+          "pooled_expected_lift_quantiles": [
+            -0.2918967190967959,
+            0.03017564519037061,
+            0.47059319666216737
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.09949194324194324,
+            0.4155242905242905,
+            0.8598785473785474
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 1,
+          "seed": 202611272,
+          "draws": 256,
+          "probability_quantiles": [
+            0.000874645795537862,
+            0.37029569398123163,
+            0.9962695483361463
+          ],
+          "probability_extreme_fraction": 0.0870286758958634,
+          "pooled_expected_lift_quantiles": [
+            -0.28513273030634595,
+            0.03236486377262461,
+            0.4474381785104493
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.10192700817700817,
+            0.4254449254449254,
+            0.8408639971139971
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 2,
+          "seed": 202611272,
+          "draws": 256,
+          "probability_quantiles": [
+            0.00013285582988622932,
+            0.3668326734528221,
+            0.9994491490779697
+          ],
+          "probability_extreme_fraction": 0.19510300174362674,
+          "pooled_expected_lift_quantiles": [
+            -0.23626704039703394,
+            0.0523115700612505,
+            0.3749618999503527
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.153018278018278,
+            0.4414983164983165,
+            0.7653168590668591
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        }
+      ],
+      "model_data_sha256": "bc3991673f474746d42853ed8383d99891c0d02cd3ff569b7a90d2223b629581",
+      "fit_status": "not_fitted_toolchain_check_pending"
+    },
+    {
+      "model": "HB",
+      "pool": "W3",
+      "seed": 202610273,
+      "formula": "S+M+L+K+SL+SK+LK+SM+SLK",
+      "contrasts": 51,
+      "saturated_coordinates": 52,
+      "metadata_rank": 48,
+      "likelihood_rank": 46,
+      "queries": 2079,
+      "days": 60,
+      "clips": 154,
+      "repeated_rows": 8316,
+      "interior_rows": 8308,
+      "structural_zero_rows": 8,
+      "structural_one_rows": 0,
+      "no_candidate_rows": 0,
+      "priors": [
+        {
+          "prior_scale": 0.5,
+          "seed": 202611273,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0011957772649749062,
+            0.372273682180186,
+            0.995118263553319
+          ],
+          "probability_extreme_fraction": 0.07127450096200096,
+          "pooled_expected_lift_quantiles": [
+            -0.3200874927324333,
+            0.04198651216446159,
+            0.4221858454299368
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.06816678691678692,
+            0.4321188071188071,
+            0.8065927128427128
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 1,
+          "seed": 202611273,
+          "draws": 256,
+          "probability_quantiles": [
+            0.0006911371259720416,
+            0.3688487745827639,
+            0.9974116200224059
+          ],
+          "probability_extreme_fraction": 0.10156156054593554,
+          "pooled_expected_lift_quantiles": [
+            -0.31115421441163094,
+            0.0512246015707912,
+            0.38310478833522643
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.07619348244348244,
+            0.4439033189033189,
+            0.7693753006253006
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        },
+        {
+          "prior_scale": 2,
+          "seed": 202611273,
+          "draws": 256,
+          "probability_quantiles": [
+            0.00009797115544259617,
+            0.36456129470065074,
+            0.9997376843858828
+          ],
+          "probability_extreme_fraction": 0.21435617334054835,
+          "pooled_expected_lift_quantiles": [
+            -0.2505985670843947,
+            0.059296582851522533,
+            0.3423785886889047
+          ],
+          "pooled_replicated_p1_quantiles": [
+            0.1388888888888889,
+            0.44835257335257334,
+            0.730489417989418
+          ],
+          "status": "prior_predictive_only_not_posterior",
+          "assessment": "broad prior permits near-deterministic retrieval; requires outcome calibration and fixed prior-scale sensitivities, no prior selected by effects"
+        }
+      ],
+      "model_data_sha256": "bbf02723db120b171ccd24140a8dab9a63bb6a5c87b40409721f2bcd01675746",
+      "fit_status": "not_fitted_toolchain_check_pending"
+    }
+  ],
+  "elapsed_seconds": 19.211974000034388,
+  "code_sha256": "e773f6efcb51460080c69a096e33eba33b777f4aa5147bc6331942f8350bed62",
+  "stan_sha256": "783ca0df74050b2a19a9d944322ac6735240d02f2185b10a1905362af48d7e69"
+}

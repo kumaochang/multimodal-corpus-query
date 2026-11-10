@@ -1,0 +1,38 @@
+{
+  "schema": "dissertation-aggregate-distribution/1",
+  "distribution_version": "1",
+  "original_analysis_version": "focused-two-way-HA-W3-separate-source-freeze",
+  "scope": "Selected saved aggregate results; original numerical source and complete execution inputs are separate materials.",
+  "files": [
+    {
+      "path": "contrasts/base.json",
+      "bytes": 20232,
+      "sha256": "41e09d4cab526902141039ca9243aad14eebff7d402ab9361f67727022f57fc7",
+      "purpose": "Separate two-way HA W3 contrasts: base"
+    },
+    {
+      "path": "contrasts/prior_half.json",
+      "bytes": 20219,
+      "sha256": "41157090f8b80609d588a3cc34daddf9d926a5c6722d8959292223f4b7f41932",
+      "purpose": "Separate two-way HA W3 contrasts: prior_half"
+    },
+    {
+      "path": "contrasts/prior_double.json",
+      "bytes": 20208,
+      "sha256": "16c9058bfb5fb258b785835aa822916ec9ede503a185d42e14f658e04c823331",
+      "purpose": "Separate two-way HA W3 contrasts: prior_double"
+    },
+    {
+      "path": "contrasts/day_weighted.json",
+      "bytes": 20625,
+      "sha256": "ea12d7b6559b445f37d316ecb3685ff126d8eef432327155a9f86a65663faaed",
+      "purpose": "Separate two-way HA W3 contrasts: day_weighted"
+    },
+    {
+      "path": "contrasts/day_holdout.json",
+      "bytes": 20624,
+      "sha256": "474919c3577eb152ebc7ee76def83bd4a361906af445aac2546e0ecae6a74df3",
+      "purpose": "Separate two-way HA W3 contrasts: day_holdout"
+    }
+  ]
+}

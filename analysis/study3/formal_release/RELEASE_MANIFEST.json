@@ -1,0 +1,138 @@
+{
+  "release": "ULFR-v1-20261025",
+  "scientific_source": "ULFR-v1-20261025",
+  "frozen_inputs": {
+    "features_full/features.npz": "80ab8584dd41383226e0986055480ead9cac774b9e3b5928d4f2bf45d80d1704",
+    "features_full/tfidf_sub.npz": "37166887f01dbe39e61b3ffde9ed0f746ba76f9e18d5f55c0eb2506ef6c71047",
+    "features_full/tfidf_tr.npz": "2583b3af57b9bbaad01a5bf2056f3355335daa3b14affcf276a74bcffa43f029",
+    "label_analysis/units.tsv": "0c5f9fd8c80bfbde1f6034b88d37145cd1b76c7684851bae0af6b0e92fdcf554",
+    "unit_table/units_k.npz": "d443a7566edd113a9ab6356797761de3a48bd427fffbc11d2f6c63451df38222",
+    "ch5/ch5_retrieval.json": "bd2d785d8b05fc96565df47ccb867795560b19e87650c7c5659379af5db9d4e2",
+    "ch5/ch5_sensitivity.json": "b39dba230d0d14f6c6e3a9d4d7edd0698c0563bb9dbfb09e22676f2eefe6c72f"
+  },
+  "environments": {
+    "ranking": {
+      "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+      "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+      "env": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      },
+      "recorded_at": "2026-10-25T14:09:04+0800",
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "threadpools": [
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libopenblas",
+          "version": "0.3.27",
+          "threading_layer": "pthreads",
+          "architecture": "Zen",
+          "binary_sha256": "9b91f6ba8fdba9cf7682371fda53bb228763bd5073ff824edbc4b81e2ddc46bc"
+        },
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libopenblas",
+          "version": "0.3.23.dev",
+          "threading_layer": "pthreads",
+          "architecture": "Zen",
+          "binary_sha256": "9254d0854dd7615e11de28d771ae408878ca8123a7ac204f21e4cc7a376cc2e5"
+        }
+      ],
+      "cpu_model": "AMD Ryzen 9 5950X 16-Core Processor",
+      "cpu_flags_subset": [
+        "avx",
+        "avx2",
+        "fma",
+        "sse4_1",
+        "sse4_2",
+        "sse4a"
+      ]
+    },
+    "posterior": {
+      "python": "3.12.0 | packaged by conda-forge | (main, Oct  3 2023, 08:43:22) [GCC 12.3.0]",
+      "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+      "env": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      },
+      "recorded_at": "2026-10-25T14:17:52+0800",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "threadpools": [
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libscipy_openblas",
+          "version": "0.3.29",
+          "threading_layer": "pthreads",
+          "architecture": "Haswell",
+          "binary_sha256": "0bd815d04b6b54990e3cccc7528fbb696456d09569f533d0390c13f0cdc4dd4a"
+        },
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libscipy_openblas",
+          "version": "0.3.28",
+          "threading_layer": "pthreads",
+          "architecture": "Haswell",
+          "binary_sha256": "3e739a2435af49d2d938749f316aa338c65f41c9ae6615406e7cf83feb662f46"
+        }
+      ],
+      "cpu_model": "AMD Ryzen 9 5950X 16-Core Processor",
+      "cpu_flags_subset": [
+        "avx",
+        "avx2",
+        "fma",
+        "sse4_1",
+        "sse4_2",
+        "sse4a"
+      ]
+    },
+    "cmdstan": "2.37.0",
+    "binaries": {
+      "original": {
+        "exe_sha256": "e34eb38c9d1ea197b88ee93c762f63d273903e3ef8b1b82e0fa92f3bb4c2ee66",
+        "generated_stan_sha256": "a729222cd7fb79c1a1676b19458541863484601cfeb54766ce820504a263862a"
+      },
+      "native_events": {
+        "exe_sha256": "f7edd4d6cb8b809c31d302ed5ad0b6da68e5f3ba88c7b2e17512ac954a706177",
+        "generated_stan_sha256": "d6355bf701930fb6ac9ff604f0cf6e315b17f8b9c91d0ae25dc98e9ab268e6eb"
+      }
+    }
+  },
+  "original_programs": {
+    "ch5_retrieval": [
+      "pipeline/analysis/ch5_retrieval.py",
+      "3b542963d13db0e846afba45a406dab1e03e009feb17b25594d091920195c7ba"
+    ],
+    "s62_lift": [
+      "pipeline/analysis/s62_lift.py",
+      "321c65630824c16a45117df945585e168d8a2949d5ae74a8b1731fbdd8a01eb1"
+    ],
+    "s62_by_label": [
+      "pipeline/analysis/s62_by_label.py",
+      "a71ddd1687e2e60e8d278188130a2f20d3cfc9ef34411aa8e33a94f9143915ec"
+    ],
+    "ch5_sensitivity": [
+      "pipeline/analysis/ch5_sensitivity.py",
+      "8c00d8a92c0613d09b92a4785367d909d51973a17d3ba978e8787950d081bf1c"
+    ]
+  },
+  "original_program_hashes": {
+    "ch5_retrieval": "ed512532b7ac91a25fe4ff16f8e6f98262c642b281e37abaff84f98bed030a6b",
+    "s62_lift": "321c65630824c16a45117df945585e168d8a2949d5ae74a8b1731fbdd8a01eb1",
+    "s62_by_label": "a71ddd1687e2e60e8d278188130a2f20d3cfc9ef34411aa8e33a94f9143915ec",
+    "ch5_sensitivity": "8c00d8a92c0613d09b92a4785367d909d51973a17d3ba978e8787950d081bf1c"
+  },
+  "original_release_manifest_sha256": "0525381fb7746414c190448e3800e9593243119caa25a9065c498a65df4a718f",
+  "public_code_is_portable_copy": true
+}

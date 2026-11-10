@@ -1,0 +1,98 @@
+{
+  "pool_after_exclusion": {
+    "n": 1964,
+    "unique_utterances": 1964,
+    "days": 12,
+    "clips": 112
+  },
+  "batch1": {
+    "n": 50,
+    "unique_utterances": 50,
+    "days": 12,
+    "clips": 40
+  },
+  "batch2": {
+    "n": 190,
+    "unique_utterances": 190,
+    "days": 12,
+    "clips": 80
+  },
+  "batch3_repeats": {
+    "n": 40,
+    "unique_utterances": 40,
+    "days": 11,
+    "clips": 29
+  },
+  "unique_sample": {
+    "n": 240,
+    "unique_utterances": 240,
+    "days": 12,
+    "clips": 90
+  },
+  "decidable_all": {
+    "n": 213,
+    "unique_utterances": 213,
+    "days": 12,
+    "clips": 81
+  },
+  "decidable_primary": {
+    "n": 192,
+    "unique_utterances": 192,
+    "days": 12,
+    "clips": 78
+  },
+  "face_present_primary": {
+    "n": 137,
+    "unique_utterances": 137,
+    "days": 12,
+    "clips": 63
+  },
+  "suffix_primary": {
+    "n": 190,
+    "unique_utterances": 190,
+    "days": 12,
+    "clips": 77
+  },
+  "visual_support": {
+    "unique_sample": {
+      "n": 240,
+      "face_present": 177,
+      "face_missing": 63,
+      "kinematic_observed": 57,
+      "kinematic_imputed": 183
+    },
+    "decidable_primary": {
+      "n": 192,
+      "face_present": 137,
+      "face_missing": 55,
+      "kinematic_observed": 44,
+      "kinematic_imputed": 148
+    }
+  },
+  "pool_by_stratum": {
+    "none_nocue": 486,
+    "suffix_nocue": 947,
+    "suffix_cue": 347,
+    "none_cue": 182,
+    "marker": 2
+  },
+  "batch_by_stratum": {
+    "1": {
+      "suffix_nocue": 13,
+      "suffix_cue": 31,
+      "none_cue": 6
+    },
+    "2": {
+      "suffix_cue": 117,
+      "none_cue": 24,
+      "suffix_nocue": 47,
+      "marker": 2
+    },
+    "3": {
+      "suffix_cue": 27,
+      "suffix_nocue": 8,
+      "none_cue": 4,
+      "marker": 1
+    }
+  }
+}

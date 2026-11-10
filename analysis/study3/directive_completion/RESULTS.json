@@ -1,0 +1,5544 @@
+{
+  "denominators": {
+    "all_first_round": 240,
+    "affirmative": 21,
+    "negative": 192,
+    "cannot_tell": 27,
+    "saved_exclusive_suffix": 208,
+    "saved_exclusive_suffix_decidable": 190,
+    "saved_exclusive_suffix_cannot_tell": 18,
+    "prepriority_ui_utterances": 210,
+    "prepriority_ui_decidable": 192,
+    "prepriority_ui_affirmative": 20,
+    "prepriority_ui_negative": 172,
+    "prepriority_ui_cannot_tell": 18,
+    "marker_overlap_utterances": 2,
+    "eligible_tokens": 444,
+    "unique_normalized_keys": 328,
+    "unit_warning": "192 decidable prepriority candidates is coincidentally equal to a separate primary-sample count; populations are not interchangeable",
+    "weighting": "Unweighted descriptive; no population prevalence claim; no new tests/intervals"
+  },
+  "reference_by_outcome": [
+    {
+      "reference": "affirmative",
+      "all_first_round": 21,
+      "prepriority_ui_unique_utterances": 20,
+      "ui_tokens": 62,
+      "marker_ui_overlap_unique_utterances": 1
+    },
+    {
+      "reference": "negative",
+      "all_first_round": 192,
+      "prepriority_ui_unique_utterances": 172,
+      "ui_tokens": 357,
+      "marker_ui_overlap_unique_utterances": 1
+    },
+    {
+      "reference": "cannot_tell",
+      "all_first_round": 27,
+      "prepriority_ui_unique_utterances": 18,
+      "ui_tokens": 25,
+      "marker_ui_overlap_unique_utterances": 0
+    }
+  ],
+  "book_evidence_by_outcome": [
+    {
+      "book_status": "no_attestation",
+      "reference": "affirmative",
+      "tokens": 54,
+      "unique_utterances": 20
+    },
+    {
+      "book_status": "no_attestation",
+      "reference": "negative",
+      "tokens": 320,
+      "unique_utterances": 163
+    },
+    {
+      "book_status": "no_attestation",
+      "reference": "cannot_tell",
+      "tokens": 25,
+      "unique_utterances": 18
+    },
+    {
+      "book_status": "single_recorded_profile",
+      "reference": "affirmative",
+      "tokens": 8,
+      "unique_utterances": 5
+    },
+    {
+      "book_status": "single_recorded_profile",
+      "reference": "negative",
+      "tokens": 34,
+      "unique_utterances": 30
+    },
+    {
+      "book_status": "single_recorded_profile",
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "book_status": "multiple_recorded_profiles",
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "book_status": "multiple_recorded_profiles",
+      "reference": "negative",
+      "tokens": 3,
+      "unique_utterances": 3
+    },
+    {
+      "book_status": "multiple_recorded_profiles",
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    }
+  ],
+  "full_coverage_grid": [
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 45,
+      "unique_utterances": 18
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 268,
+      "unique_utterances": 146
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 18,
+      "unique_utterances": 13
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 9,
+      "unique_utterances": 5
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 52,
+      "unique_utterances": 43
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 7,
+      "unique_utterances": 7
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 13,
+      "unique_utterances": 12
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 7,
+      "unique_utterances": 4
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 21,
+      "unique_utterances": 20
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 2,
+      "unique_utterances": 2
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "all",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 9,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 4,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 28,
+      "unique_utterances": 14
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 188,
+      "unique_utterances": 98
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 15,
+      "unique_utterances": 11
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 4,
+      "unique_utterances": 4
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 44,
+      "unique_utterances": 35
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 6,
+      "unique_utterances": 6
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 8,
+      "unique_utterances": 8
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 3,
+      "unique_utterances": 3
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 11,
+      "unique_utterances": 11
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 8,
+      "unique_utterances": 3
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 80,
+      "unique_utterances": 48
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 3,
+      "unique_utterances": 2
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 5,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 8,
+      "unique_utterances": 8
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 5,
+      "unique_utterances": 4
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 9,
+      "unique_utterances": 8
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "all",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 29,
+      "unique_utterances": 13
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 162,
+      "unique_utterances": 101
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 9,
+      "unique_utterances": 8
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 8,
+      "unique_utterances": 5
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 28,
+      "unique_utterances": 27
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 4,
+      "unique_utterances": 4
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 9,
+      "unique_utterances": 9
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 3,
+      "unique_utterances": 3
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 20,
+      "unique_utterances": 19
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "u",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 5,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 18,
+      "unique_utterances": 10
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 111,
+      "unique_utterances": 67
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 6,
+      "unique_utterances": 6
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 4,
+      "unique_utterances": 4
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 24,
+      "unique_utterances": 23
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 3,
+      "unique_utterances": 3
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 7,
+      "unique_utterances": 7
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 2,
+      "unique_utterances": 2
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 10,
+      "unique_utterances": 10
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 6,
+      "unique_utterances": 2
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 51,
+      "unique_utterances": 34
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 3,
+      "unique_utterances": 2
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 4,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 4,
+      "unique_utterances": 4
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 2,
+      "unique_utterances": 2
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 9,
+      "unique_utterances": 8
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "u",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 16,
+      "unique_utterances": 10
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 106,
+      "unique_utterances": 78
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 9,
+      "unique_utterances": 6
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 24,
+      "unique_utterances": 21
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 3,
+      "unique_utterances": 3
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 4,
+      "unique_utterances": 3
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 4,
+      "unique_utterances": 2
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 2,
+      "unique_utterances": 2
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "all",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 4,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 3,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "marker",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 10,
+      "unique_utterances": 7
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 77,
+      "unique_utterances": 55
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 9,
+      "unique_utterances": 6
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 20,
+      "unique_utterances": 17
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 3,
+      "unique_utterances": 3
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 2,
+      "unique_utterances": 2
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 29,
+      "unique_utterances": 23
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 4,
+      "unique_utterances": 4
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 3,
+      "unique_utterances": 2
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 1,
+      "unique_utterances": 1
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "suffix_nocue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "affirmative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "negative",
+      "tokens": 0,
+      "unique_utterances": 0
+    },
+    {
+      "ending": "i",
+      "original_stratum": "none_cue",
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "reference": "cannot_tell",
+      "tokens": 0,
+      "unique_utterances": 0
+    }
+  ],
+  "source_key_coverage": [
+    {
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": true,
+      "keys": 12
+    },
+    {
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": false,
+      "keys": 269
+    },
+    {
+      "book_status": "single_recorded_profile",
+      "NTU_FORM_attested": false,
+      "keys": 7
+    },
+    {
+      "book_status": "no_attestation",
+      "NTU_FORM_attested": true,
+      "keys": 38
+    },
+    {
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": true,
+      "keys": 1
+    },
+    {
+      "book_status": "multiple_recorded_profiles",
+      "NTU_FORM_attested": false,
+      "keys": 1
+    }
+  ],
+  "normalization": {
+    "different_raw_forms_share_source_key_count": 19,
+    "tokens_with_any_attestation": 113,
+    "tokens_with_raw_target_equal_to_some_source_token": 104,
+    "tokens_with_some_source_only_equal_after_norm": 56,
+    "overlap": "Last two flags overlap: one key can include both identical and different raw strings",
+    "rule": "Only original ASCII a-z/apostrophe norm; no Unicode or phonetic repair"
+  },
+  "all_three_saved_rank_cost_curves": [
+    {
+      "route": "Audio",
+      "K": 1,
+      "similarity_returned": 1,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 9,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 2,
+      "similarity_returned": 2,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 10,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 3,
+      "similarity_returned": 3,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 11,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 4,
+      "similarity_returned": 4,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 12,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 5,
+      "similarity_returned": 5,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 13,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 6,
+      "similarity_returned": 6,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 14,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 7,
+      "similarity_returned": 7,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 15,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 8,
+      "similarity_returned": 8,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 16,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 9,
+      "similarity_returned": 9,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 17,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 10,
+      "similarity_returned": 10,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 18,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 11,
+      "similarity_returned": 11,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 19,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 12,
+      "similarity_returned": 12,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 20,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 13,
+      "similarity_returned": 13,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 21,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 14,
+      "similarity_returned": 14,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 22,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 15,
+      "similarity_returned": 15,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 23,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 16,
+      "similarity_returned": 16,
+      "similarity_known_positive": 2,
+      "Phone_union_returned": 24,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 17,
+      "similarity_returned": 17,
+      "similarity_known_positive": 2,
+      "Phone_union_returned": 25,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 18,
+      "similarity_returned": 18,
+      "similarity_known_positive": 2,
+      "Phone_union_returned": 26,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 19,
+      "similarity_returned": 19,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 27,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 20,
+      "similarity_returned": 20,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 28,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 21,
+      "similarity_returned": 21,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 29,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 22,
+      "similarity_returned": 22,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 30,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 23,
+      "similarity_returned": 23,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 31,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "Audio",
+      "K": 24,
+      "similarity_returned": 24,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 32,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 25,
+      "similarity_returned": 25,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 33,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 26,
+      "similarity_returned": 26,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 34,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 27,
+      "similarity_returned": 27,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 35,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 28,
+      "similarity_returned": 28,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 35,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 29,
+      "similarity_returned": 29,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 36,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 30,
+      "similarity_returned": 30,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 37,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 31,
+      "similarity_returned": 31,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 38,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 32,
+      "similarity_returned": 32,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 39,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 33,
+      "similarity_returned": 33,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 40,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 34,
+      "similarity_returned": 34,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 41,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 35,
+      "similarity_returned": 35,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 42,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 36,
+      "similarity_returned": 36,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 43,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 37,
+      "similarity_returned": 37,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 44,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 38,
+      "similarity_returned": 38,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 45,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 39,
+      "similarity_returned": 39,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 46,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 40,
+      "similarity_returned": 40,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 47,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 41,
+      "similarity_returned": 41,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 48,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 42,
+      "similarity_returned": 42,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 49,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 43,
+      "similarity_returned": 43,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 50,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 44,
+      "similarity_returned": 44,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 51,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 45,
+      "similarity_returned": 45,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 52,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 46,
+      "similarity_returned": 46,
+      "similarity_known_positive": 6,
+      "Phone_union_returned": 53,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 47,
+      "similarity_returned": 47,
+      "similarity_known_positive": 6,
+      "Phone_union_returned": 53,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 48,
+      "similarity_returned": 48,
+      "similarity_known_positive": 6,
+      "Phone_union_returned": 54,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 49,
+      "similarity_returned": 49,
+      "similarity_known_positive": 6,
+      "Phone_union_returned": 55,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 50,
+      "similarity_returned": 50,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 56,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 51,
+      "similarity_returned": 51,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 57,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 52,
+      "similarity_returned": 52,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 58,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 53,
+      "similarity_returned": 53,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 59,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 54,
+      "similarity_returned": 54,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 60,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 55,
+      "similarity_returned": 55,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 61,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 56,
+      "similarity_returned": 56,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 62,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 57,
+      "similarity_returned": 57,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 63,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 58,
+      "similarity_returned": 58,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 64,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 59,
+      "similarity_returned": 59,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 64,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 60,
+      "similarity_returned": 60,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 65,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 61,
+      "similarity_returned": 61,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 66,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 62,
+      "similarity_returned": 62,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 67,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 63,
+      "similarity_returned": 63,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 68,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 64,
+      "similarity_returned": 64,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 69,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 65,
+      "similarity_returned": 65,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 70,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 66,
+      "similarity_returned": 66,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 71,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 67,
+      "similarity_returned": 67,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 72,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 68,
+      "similarity_returned": 68,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 73,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 69,
+      "similarity_returned": 69,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 74,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 70,
+      "similarity_returned": 70,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 75,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 71,
+      "similarity_returned": 71,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 76,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 72,
+      "similarity_returned": 72,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 77,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 73,
+      "similarity_returned": 73,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 78,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 74,
+      "similarity_returned": 74,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 79,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 75,
+      "similarity_returned": 75,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 80,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 76,
+      "similarity_returned": 76,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 81,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 77,
+      "similarity_returned": 77,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 82,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 78,
+      "similarity_returned": 78,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 82,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 79,
+      "similarity_returned": 79,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 83,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 80,
+      "similarity_returned": 80,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 84,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 81,
+      "similarity_returned": 81,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 85,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 82,
+      "similarity_returned": 82,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 86,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 83,
+      "similarity_returned": 83,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 87,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 84,
+      "similarity_returned": 84,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 88,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 85,
+      "similarity_returned": 85,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 89,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 86,
+      "similarity_returned": 86,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 90,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 87,
+      "similarity_returned": 87,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 90,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 88,
+      "similarity_returned": 88,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 91,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 89,
+      "similarity_returned": 89,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 92,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 90,
+      "similarity_returned": 90,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 93,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 91,
+      "similarity_returned": 91,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 94,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 92,
+      "similarity_returned": 92,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 95,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 93,
+      "similarity_returned": 93,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 96,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 94,
+      "similarity_returned": 94,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 96,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 95,
+      "similarity_returned": 95,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 97,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 96,
+      "similarity_returned": 96,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 98,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 97,
+      "similarity_returned": 97,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 99,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 98,
+      "similarity_returned": 98,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 99,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "Audio",
+      "K": 99,
+      "similarity_returned": 99,
+      "similarity_known_positive": 11,
+      "Phone_union_returned": 99,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 1,
+      "similarity_returned": 1,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 9,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 2,
+      "similarity_returned": 2,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 10,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 3,
+      "similarity_returned": 3,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 11,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 4,
+      "similarity_returned": 4,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 12,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 5,
+      "similarity_returned": 5,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 13,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 6,
+      "similarity_returned": 6,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 14,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 7,
+      "similarity_returned": 7,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 15,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 8,
+      "similarity_returned": 8,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 16,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 9,
+      "similarity_returned": 9,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 17,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 10,
+      "similarity_returned": 10,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 18,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 11,
+      "similarity_returned": 11,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 19,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 12,
+      "similarity_returned": 12,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 20,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 13,
+      "similarity_returned": 13,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 21,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 14,
+      "similarity_returned": 14,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 22,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 15,
+      "similarity_returned": 15,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 23,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 16,
+      "similarity_returned": 16,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 24,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 17,
+      "similarity_returned": 17,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 25,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 18,
+      "similarity_returned": 18,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 25,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 19,
+      "similarity_returned": 19,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 26,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 20,
+      "similarity_returned": 20,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 27,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 21,
+      "similarity_returned": 21,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 27,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 22,
+      "similarity_returned": 22,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 28,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 23,
+      "similarity_returned": 23,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 29,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 24,
+      "similarity_returned": 24,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 30,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 25,
+      "similarity_returned": 25,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 31,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 26,
+      "similarity_returned": 26,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 32,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 27,
+      "similarity_returned": 27,
+      "similarity_known_positive": 2,
+      "Phone_union_returned": 33,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 28,
+      "similarity_returned": 28,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 34,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 29,
+      "similarity_returned": 29,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 35,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 30,
+      "similarity_returned": 30,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 36,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 31,
+      "similarity_returned": 31,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 37,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 32,
+      "similarity_returned": 32,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 38,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 33,
+      "similarity_returned": 33,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 39,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 34,
+      "similarity_returned": 34,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 40,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 35,
+      "similarity_returned": 35,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 41,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 36,
+      "similarity_returned": 36,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 42,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 37,
+      "similarity_returned": 37,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 43,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 38,
+      "similarity_returned": 38,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 44,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 39,
+      "similarity_returned": 39,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 45,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 40,
+      "similarity_returned": 40,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 46,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 41,
+      "similarity_returned": 41,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 47,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 42,
+      "similarity_returned": 42,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 48,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 43,
+      "similarity_returned": 43,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 48,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 44,
+      "similarity_returned": 44,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 49,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 45,
+      "similarity_returned": 45,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 50,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 46,
+      "similarity_returned": 46,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 51,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 47,
+      "similarity_returned": 47,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 52,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 48,
+      "similarity_returned": 48,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 53,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 49,
+      "similarity_returned": 49,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 54,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 50,
+      "similarity_returned": 50,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 55,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 51,
+      "similarity_returned": 51,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 56,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 52,
+      "similarity_returned": 52,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 57,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 53,
+      "similarity_returned": 53,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 58,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 54,
+      "similarity_returned": 54,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 59,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 55,
+      "similarity_returned": 55,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 60,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 56,
+      "similarity_returned": 56,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 61,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 57,
+      "similarity_returned": 57,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 62,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 58,
+      "similarity_returned": 58,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 63,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 59,
+      "similarity_returned": 59,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 64,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 60,
+      "similarity_returned": 60,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 65,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 61,
+      "similarity_returned": 61,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 66,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 62,
+      "similarity_returned": 62,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 67,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 63,
+      "similarity_returned": 63,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 68,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 64,
+      "similarity_returned": 64,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 69,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 65,
+      "similarity_returned": 65,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 69,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 66,
+      "similarity_returned": 66,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 70,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 67,
+      "similarity_returned": 67,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 70,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 68,
+      "similarity_returned": 68,
+      "similarity_known_positive": 6,
+      "Phone_union_returned": 70,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 69,
+      "similarity_returned": 69,
+      "similarity_known_positive": 6,
+      "Phone_union_returned": 71,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 70,
+      "similarity_returned": 70,
+      "similarity_known_positive": 6,
+      "Phone_union_returned": 72,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 71,
+      "similarity_returned": 71,
+      "similarity_known_positive": 6,
+      "Phone_union_returned": 73,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 72,
+      "similarity_returned": 72,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 74,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 73,
+      "similarity_returned": 73,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 75,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 74,
+      "similarity_returned": 74,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 76,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 75,
+      "similarity_returned": 75,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 77,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 76,
+      "similarity_returned": 76,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 78,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 77,
+      "similarity_returned": 77,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 79,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 78,
+      "similarity_returned": 78,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 79,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 79,
+      "similarity_returned": 79,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 80,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 80,
+      "similarity_returned": 80,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 81,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 81,
+      "similarity_returned": 81,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 82,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 82,
+      "similarity_returned": 82,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 83,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 83,
+      "similarity_returned": 83,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 84,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 84,
+      "similarity_returned": 84,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 85,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 85,
+      "similarity_returned": 85,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 86,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 86,
+      "similarity_returned": 86,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 87,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 87,
+      "similarity_returned": 87,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 88,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 88,
+      "similarity_returned": 88,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 89,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 89,
+      "similarity_returned": 89,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 90,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 90,
+      "similarity_returned": 90,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 91,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 91,
+      "similarity_returned": 91,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 92,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 92,
+      "similarity_returned": 92,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 93,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 93,
+      "similarity_returned": 93,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 94,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 94,
+      "similarity_returned": 94,
+      "similarity_known_positive": 11,
+      "Phone_union_returned": 94,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 95,
+      "similarity_returned": 95,
+      "similarity_known_positive": 11,
+      "Phone_union_returned": 95,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 96,
+      "similarity_returned": 96,
+      "similarity_known_positive": 11,
+      "Phone_union_returned": 96,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 97,
+      "similarity_returned": 97,
+      "similarity_known_positive": 11,
+      "Phone_union_returned": 97,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 98,
+      "similarity_returned": 98,
+      "similarity_known_positive": 11,
+      "Phone_union_returned": 98,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_XLMR",
+      "K": 99,
+      "similarity_returned": 99,
+      "similarity_known_positive": 11,
+      "Phone_union_returned": 99,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 1,
+      "similarity_returned": 1,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 9,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 2,
+      "similarity_returned": 2,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 9,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 3,
+      "similarity_returned": 3,
+      "similarity_known_positive": 0,
+      "Phone_union_returned": 10,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 4,
+      "similarity_returned": 4,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 10,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 5,
+      "similarity_returned": 5,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 11,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 6,
+      "similarity_returned": 6,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 12,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 7,
+      "similarity_returned": 7,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 12,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 8,
+      "similarity_returned": 8,
+      "similarity_known_positive": 1,
+      "Phone_union_returned": 13,
+      "Phone_union_known_positive": 2,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 9,
+      "similarity_returned": 9,
+      "similarity_known_positive": 2,
+      "Phone_union_returned": 14,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 10,
+      "similarity_returned": 10,
+      "similarity_known_positive": 2,
+      "Phone_union_returned": 15,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 11,
+      "similarity_returned": 11,
+      "similarity_known_positive": 3,
+      "Phone_union_returned": 15,
+      "Phone_union_known_positive": 3,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 12,
+      "similarity_returned": 12,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 16,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 13,
+      "similarity_returned": 13,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 17,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 14,
+      "similarity_returned": 14,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 18,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 15,
+      "similarity_returned": 15,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 19,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 16,
+      "similarity_returned": 16,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 20,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 17,
+      "similarity_returned": 17,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 20,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 18,
+      "similarity_returned": 18,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 21,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 19,
+      "similarity_returned": 19,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 22,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 20,
+      "similarity_returned": 20,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 23,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 21,
+      "similarity_returned": 21,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 24,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 22,
+      "similarity_returned": 22,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 25,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 23,
+      "similarity_returned": 23,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 26,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 24,
+      "similarity_returned": 24,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 27,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 25,
+      "similarity_returned": 25,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 28,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 26,
+      "similarity_returned": 26,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 29,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 27,
+      "similarity_returned": 27,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 30,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 28,
+      "similarity_returned": 28,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 31,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 29,
+      "similarity_returned": 29,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 32,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 30,
+      "similarity_returned": 30,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 33,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 31,
+      "similarity_returned": 31,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 34,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 32,
+      "similarity_returned": 32,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 35,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 33,
+      "similarity_returned": 33,
+      "similarity_known_positive": 4,
+      "Phone_union_returned": 36,
+      "Phone_union_known_positive": 4,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 34,
+      "similarity_returned": 34,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 37,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 35,
+      "similarity_returned": 35,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 38,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 36,
+      "similarity_returned": 36,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 39,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 37,
+      "similarity_returned": 37,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 40,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 38,
+      "similarity_returned": 38,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 41,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 39,
+      "similarity_returned": 39,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 42,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 40,
+      "similarity_returned": 40,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 43,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 41,
+      "similarity_returned": 41,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 44,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 42,
+      "similarity_returned": 42,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 45,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 43,
+      "similarity_returned": 43,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 46,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 44,
+      "similarity_returned": 44,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 47,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 90,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 45,
+      "similarity_returned": 45,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 48,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 46,
+      "similarity_returned": 46,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 48,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 47,
+      "similarity_returned": 47,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 49,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 48,
+      "similarity_returned": 48,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 50,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 49,
+      "similarity_returned": 49,
+      "similarity_known_positive": 5,
+      "Phone_union_returned": 51,
+      "Phone_union_known_positive": 5,
+      "Forms_union_returned": 91,
+      "Forms_union_known_positive": 10
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 50,
+      "similarity_returned": 50,
+      "similarity_known_positive": 6,
+      "Phone_union_returned": 52,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 51,
+      "similarity_returned": 51,
+      "similarity_known_positive": 6,
+      "Phone_union_returned": 53,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 52,
+      "similarity_returned": 52,
+      "similarity_known_positive": 6,
+      "Phone_union_returned": 54,
+      "Phone_union_known_positive": 6,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 53,
+      "similarity_returned": 53,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 55,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 54,
+      "similarity_returned": 54,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 56,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 55,
+      "similarity_returned": 55,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 57,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 56,
+      "similarity_returned": 56,
+      "similarity_known_positive": 7,
+      "Phone_union_returned": 58,
+      "Phone_union_known_positive": 7,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 57,
+      "similarity_returned": 57,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 59,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 92,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 58,
+      "similarity_returned": 58,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 60,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 59,
+      "similarity_returned": 59,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 61,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 60,
+      "similarity_returned": 60,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 62,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 61,
+      "similarity_returned": 61,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 63,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 93,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 62,
+      "similarity_returned": 62,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 64,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 63,
+      "similarity_returned": 63,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 65,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 64,
+      "similarity_returned": 64,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 66,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 65,
+      "similarity_returned": 65,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 67,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 66,
+      "similarity_returned": 66,
+      "similarity_known_positive": 8,
+      "Phone_union_returned": 68,
+      "Phone_union_known_positive": 8,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 67,
+      "similarity_returned": 67,
+      "similarity_known_positive": 9,
+      "Phone_union_returned": 69,
+      "Phone_union_known_positive": 9,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 68,
+      "similarity_returned": 68,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 70,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 69,
+      "similarity_returned": 69,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 71,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 70,
+      "similarity_returned": 70,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 72,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 71,
+      "similarity_returned": 71,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 73,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 72,
+      "similarity_returned": 72,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 74,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 73,
+      "similarity_returned": 73,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 75,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 74,
+      "similarity_returned": 74,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 75,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 94,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 75,
+      "similarity_returned": 75,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 76,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 76,
+      "similarity_returned": 76,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 77,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 77,
+      "similarity_returned": 77,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 78,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 78,
+      "similarity_returned": 78,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 79,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 79,
+      "similarity_returned": 79,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 80,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 80,
+      "similarity_returned": 80,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 81,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 81,
+      "similarity_returned": 81,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 82,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 95,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 82,
+      "similarity_returned": 82,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 83,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 83,
+      "similarity_returned": 83,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 84,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 84,
+      "similarity_returned": 84,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 85,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 85,
+      "similarity_returned": 85,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 86,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 86,
+      "similarity_returned": 86,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 87,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 87,
+      "similarity_returned": 87,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 88,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 96,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 88,
+      "similarity_returned": 88,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 89,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 89,
+      "similarity_returned": 89,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 90,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 90,
+      "similarity_returned": 90,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 91,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 97,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 91,
+      "similarity_returned": 91,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 92,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 92,
+      "similarity_returned": 92,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 92,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 93,
+      "similarity_returned": 93,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 93,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 94,
+      "similarity_returned": 94,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 94,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 95,
+      "similarity_returned": 95,
+      "similarity_known_positive": 10,
+      "Phone_union_returned": 95,
+      "Phone_union_known_positive": 10,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 96,
+      "similarity_returned": 96,
+      "similarity_known_positive": 11,
+      "Phone_union_returned": 96,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 97,
+      "similarity_returned": 97,
+      "similarity_known_positive": 11,
+      "Phone_union_returned": 97,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 98,
+      "similarity_returned": 98,
+      "similarity_known_positive": 11,
+      "Phone_union_returned": 98,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 98,
+      "Forms_union_known_positive": 11
+    },
+    {
+      "route": "ASR_TFIDF",
+      "K": 99,
+      "similarity_returned": 99,
+      "similarity_known_positive": 11,
+      "Phone_union_returned": 99,
+      "Phone_union_known_positive": 11,
+      "Forms_union_returned": 99,
+      "Forms_union_known_positive": 11
+    }
+  ]
+}

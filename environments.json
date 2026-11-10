@@ -1,0 +1,88 @@
+{
+  "formal_ranking": {
+    "python": "3.10.22",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "blas": [
+      {
+        "library": "NumPy OpenBLAS",
+        "version": "0.3.23.dev"
+      },
+      {
+        "library": "SciPy OpenBLAS",
+        "version": "0.3.27"
+      }
+    ],
+    "threads": 1
+  },
+  "posterior": {
+    "python": "3.12.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "cmdstanpy": "1.3.0",
+    "arviz": "0.22.0",
+    "cmdstan": "2.37.0",
+    "compiler": "g++ 13.3.0",
+    "cpp_options": {
+      "O": 3
+    },
+    "stanc_options": {
+      "O1": true
+    },
+    "threads_per_chain": 1,
+    "additional_dependencies": [
+      "psutil",
+      "threadpoolctl"
+    ],
+    "unrecorded_versions": [
+      "psutil",
+      "threadpoolctl"
+    ]
+  },
+  "registered_judgment": {
+    "python": "3.10.22",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.5.2",
+    "additional_dependencies": [
+      "threadpoolctl"
+    ]
+  },
+  "local_fusion_and_prosody": {
+    "python": "3.12.3",
+    "numpy": "1.26.4",
+    "scipy": "1.15.2",
+    "scikit-learn": "1.6.1",
+    "blas": "MKL 2023.1",
+    "threads": 1,
+    "additional_dependencies": [
+      "psutil",
+      "threadpoolctl"
+    ]
+  },
+  "paiwan_translation_rules": {
+    "dependencies": [
+      "spacy==3.8.16",
+      "lxml",
+      "scipy",
+      "numpy"
+    ],
+    "language_model": "en_core_web_sm==3.8.0",
+    "source": "scripts/study2_recall_check.py"
+  },
+  "feature_preparation": {
+    "status": "Original source retained; use frozen feature outputs for statistical reproduction",
+    "dependencies": [
+      "torch",
+      "transformers",
+      "sentence-transformers",
+      "librosa",
+      "soundfile",
+      "praatio",
+      "allosaurus",
+      "openai-whisper",
+      "omnilingual-asr"
+    ],
+    "historical_versions": "Record-specific; see producer provenance in frozen inputs"
+  }
+}

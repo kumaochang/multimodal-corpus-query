@@ -1,0 +1,22 @@
+{
+  "release": "ULFR-v1-20261025",
+  "local_roots": {
+    "numeric_core": "data/study3_stats/formal_release/v1",
+    "writer_metadata": ".",
+    "frozen_restore_runs": "data/study3_runs"
+  },
+  "overlays": {
+    "interface_c_blocks": {
+      "payload_root": "data/study3_stats/formal_release/v1_full_rankings",
+      "manifest": "analysis/study3/ulfr_local/FULL_RANKING_MANIFEST.json",
+      "manifest_sha256": "c81b8769be5f7fac8d07d0e7df894d52d733609eaa7e47a46f488e6f57c631bc",
+      "package_manifest": "analysis/study3/ulfr_local/FULL_RANKING_PACKAGES.json",
+      "package_manifest_sha256": "d930cc15972bee0d402566bee2e204fd47f78b16bc39670a315ae2198ec82d43",
+      "verification_report": "analysis/study3/ulfr_local/FULL_RANKING_VERIFICATION.json",
+      "verification_report_sha256": "c4013e94f9dda644ffe14d307dbebb0d5d541a42935365b3463716ee1e99abff",
+      "index_sha256": "9dbe943dbfe6f972a8fc35cde35ea5edd811ad91d42a54ca4b8bf78c8ecb5889",
+      "canonical_list": "analysis/study3/ulfr_local/full_ranking_list.tsv",
+      "canonical_list_sha256": "97c5c7504fea14db3b47e21d2ea8323b6f50f5cd0ddbe9bcd402fea38611a8c9"
+    }
+  }
+}

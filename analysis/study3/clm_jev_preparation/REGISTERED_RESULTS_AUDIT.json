@@ -1,0 +1,963 @@
+{
+  "metrics": {
+    "overall": {
+      "CLM_a": {
+        "ap": 0.10483656742764319,
+        "auc": 0.6363420950255835,
+        "clips": 78,
+        "days": 12,
+        "n": 192,
+        "positives": 20,
+        "status": "ok",
+        "weight_sum": 1226.91981981982
+      },
+      "CLM_b": {
+        "ap": 0.06403272685710443,
+        "auc": 0.41672114207980265,
+        "clips": 78,
+        "days": 12,
+        "n": 192,
+        "positives": 20,
+        "status": "ok",
+        "weight_sum": 1226.91981981982
+      },
+      "F": {
+        "ap": 0.16768189752971896,
+        "auc": 0.48299463960172234,
+        "clips": 78,
+        "days": 12,
+        "n": 192,
+        "positives": 20,
+        "status": "ok",
+        "weight_sum": 1226.91981981982
+      },
+      "T": {
+        "ap": 0.08985112401403117,
+        "auc": 0.4615093005275811,
+        "clips": 78,
+        "days": 12,
+        "n": 192,
+        "positives": 20,
+        "status": "ok",
+        "weight_sum": 1226.91981981982
+      },
+      "T+A": {
+        "ap": 0.05637633582112529,
+        "auc": 0.35567485144179545,
+        "clips": 78,
+        "days": 12,
+        "n": 192,
+        "positives": 20,
+        "status": "ok",
+        "weight_sum": 1226.91981981982
+      },
+      "T+A+V": {
+        "ap": 0.05765406914282724,
+        "auc": 0.3480249046487926,
+        "clips": 78,
+        "days": 12,
+        "n": 192,
+        "positives": 20,
+        "status": "ok",
+        "weight_sum": 1226.91981981982
+      },
+      "T+Fa": {
+        "ap": 0.07983647263966043,
+        "auc": 0.49757327362380704,
+        "clips": 78,
+        "days": 12,
+        "n": 192,
+        "positives": 20,
+        "status": "ok",
+        "weight_sum": 1226.91981981982
+      },
+      "T+K": {
+        "ap": 0.07146477646488185,
+        "auc": 0.45052335099372687,
+        "clips": 78,
+        "days": 12,
+        "n": 192,
+        "positives": 20,
+        "status": "ok",
+        "weight_sum": 1226.91981981982
+      },
+      "T+V": {
+        "ap": 0.07916797672840364,
+        "auc": 0.4812356218560543,
+        "clips": 78,
+        "days": 12,
+        "n": 192,
+        "positives": 20,
+        "status": "ok",
+        "weight_sum": 1226.91981981982
+      }
+    },
+    "stratum=marker": {
+      "CLM_a": {
+        "ap": 0.5,
+        "auc": 0,
+        "clips": 2,
+        "days": 1,
+        "n": 2,
+        "positives": 1,
+        "status": "ok",
+        "weight_sum": 2
+      },
+      "CLM_b": {
+        "ap": 1,
+        "auc": 1,
+        "clips": 2,
+        "days": 1,
+        "n": 2,
+        "positives": 1,
+        "status": "ok",
+        "weight_sum": 2
+      },
+      "F": {
+        "ap": 1,
+        "auc": 1,
+        "clips": 2,
+        "days": 1,
+        "n": 2,
+        "positives": 1,
+        "status": "ok",
+        "weight_sum": 2
+      },
+      "T": {
+        "ap": 0.5,
+        "auc": 0,
+        "clips": 2,
+        "days": 1,
+        "n": 2,
+        "positives": 1,
+        "status": "ok",
+        "weight_sum": 2
+      },
+      "T+A": {
+        "ap": 1,
+        "auc": 1,
+        "clips": 2,
+        "days": 1,
+        "n": 2,
+        "positives": 1,
+        "status": "ok",
+        "weight_sum": 2
+      },
+      "T+A+V": {
+        "ap": 1,
+        "auc": 1,
+        "clips": 2,
+        "days": 1,
+        "n": 2,
+        "positives": 1,
+        "status": "ok",
+        "weight_sum": 2
+      },
+      "T+Fa": {
+        "ap": 1,
+        "auc": 1,
+        "clips": 2,
+        "days": 1,
+        "n": 2,
+        "positives": 1,
+        "status": "ok",
+        "weight_sum": 2
+      },
+      "T+K": {
+        "ap": 1,
+        "auc": 1,
+        "clips": 2,
+        "days": 1,
+        "n": 2,
+        "positives": 1,
+        "status": "ok",
+        "weight_sum": 2
+      },
+      "T+V": {
+        "ap": 1,
+        "auc": 1,
+        "clips": 2,
+        "days": 1,
+        "n": 2,
+        "positives": 1,
+        "status": "ok",
+        "weight_sum": 2
+      }
+    },
+    "stratum=suffix_cue": {
+      "CLM_a": {
+        "ap": 0.19959204339192746,
+        "auc": 0.614762931034482,
+        "clips": 62,
+        "days": 12,
+        "n": 132,
+        "positives": 16,
+        "status": "ok",
+        "weight_sum": 309.48648648648646
+      },
+      "CLM_b": {
+        "ap": 0.1674580693203283,
+        "auc": 0.5926724137931025,
+        "clips": 62,
+        "days": 12,
+        "n": 132,
+        "positives": 16,
+        "status": "ok",
+        "weight_sum": 309.48648648648646
+      },
+      "F": {
+        "ap": 0.09009899311796625,
+        "auc": 0.30441810344827525,
+        "clips": 62,
+        "days": 12,
+        "n": 132,
+        "positives": 16,
+        "status": "ok",
+        "weight_sum": 309.48648648648646
+      },
+      "T": {
+        "ap": 0.17352316745208163,
+        "auc": 0.4956896551724132,
+        "clips": 62,
+        "days": 12,
+        "n": 132,
+        "positives": 16,
+        "status": "ok",
+        "weight_sum": 309.48648648648646
+      },
+      "T+A": {
+        "ap": 0.14644021112754352,
+        "auc": 0.5554956896551715,
+        "clips": 62,
+        "days": 12,
+        "n": 132,
+        "positives": 16,
+        "status": "ok",
+        "weight_sum": 309.48648648648646
+      },
+      "T+A+V": {
+        "ap": 0.13015199593609372,
+        "auc": 0.474137931034482,
+        "clips": 62,
+        "days": 12,
+        "n": 132,
+        "positives": 16,
+        "status": "ok",
+        "weight_sum": 309.48648648648646
+      },
+      "T+Fa": {
+        "ap": 0.1357045432295582,
+        "auc": 0.48706896551724066,
+        "clips": 62,
+        "days": 12,
+        "n": 132,
+        "positives": 16,
+        "status": "ok",
+        "weight_sum": 309.48648648648646
+      },
+      "T+K": {
+        "ap": 0.17664004847052786,
+        "auc": 0.5016163793103441,
+        "clips": 62,
+        "days": 12,
+        "n": 132,
+        "positives": 16,
+        "status": "ok",
+        "weight_sum": 309.48648648648646
+      },
+      "T+V": {
+        "ap": 0.12959048547203036,
+        "auc": 0.4628232758620683,
+        "clips": 62,
+        "days": 12,
+        "n": 132,
+        "positives": 16,
+        "status": "ok",
+        "weight_sum": 309.48648648648646
+      }
+    },
+    "stratum=suffix_nocue": {
+      "CLM_a": {
+        "ap": 0.09603174603174602,
+        "auc": 0.6424242424242421,
+        "clips": 40,
+        "days": 12,
+        "n": 58,
+        "positives": 3,
+        "status": "ok",
+        "weight_sum": 915.4333333333333
+      },
+      "CLM_b": {
+        "ap": 0.04856839067365383,
+        "auc": 0.2969696969696968,
+        "clips": 40,
+        "days": 12,
+        "n": 58,
+        "positives": 3,
+        "status": "ok",
+        "weight_sum": 915.4333333333333
+      },
+      "F": {
+        "ap": 0.26785714285714285,
+        "auc": 0.6363636363636364,
+        "clips": 40,
+        "days": 12,
+        "n": 58,
+        "positives": 3,
+        "status": "ok",
+        "weight_sum": 915.4333333333333
+      },
+      "T": {
+        "ap": 0.07139249639249638,
+        "auc": 0.43636363636363606,
+        "clips": 40,
+        "days": 12,
+        "n": 58,
+        "positives": 3,
+        "status": "ok",
+        "weight_sum": 915.4333333333333
+      },
+      "T+A": {
+        "ap": 0.04224137931034483,
+        "auc": 0.21212121212121185,
+        "clips": 40,
+        "days": 12,
+        "n": 58,
+        "positives": 3,
+        "status": "ok",
+        "weight_sum": 915.4333333333333
+      },
+      "T+A+V": {
+        "ap": 0.046719837360231456,
+        "auc": 0.26060606060606045,
+        "clips": 40,
+        "days": 12,
+        "n": 58,
+        "positives": 3,
+        "status": "ok",
+        "weight_sum": 915.4333333333333
+      },
+      "T+Fa": {
+        "ap": 0.07768865121806298,
+        "auc": 0.5151515151515149,
+        "clips": 40,
+        "days": 12,
+        "n": 58,
+        "positives": 3,
+        "status": "ok",
+        "weight_sum": 915.4333333333333
+      },
+      "T+K": {
+        "ap": 0.06074481074481074,
+        "auc": 0.43636363636363606,
+        "clips": 40,
+        "days": 12,
+        "n": 58,
+        "positives": 3,
+        "status": "ok",
+        "weight_sum": 915.4333333333333
+      },
+      "T+V": {
+        "ap": 0.07555555555555556,
+        "auc": 0.49090909090909063,
+        "clips": 40,
+        "days": 12,
+        "n": 58,
+        "positives": 3,
+        "status": "ok",
+        "weight_sum": 915.4333333333333
+      }
+    }
+  },
+  "denominators": {
+    "all_batches_1_2_positives": 21,
+    "primary_positives": 20,
+    "primary_n": 192,
+    "days": 12,
+    "clips": 78,
+    "weighted_positive_share": 0.06998298676609778,
+    "days_with_positive": 9,
+    "face_present_n": 137,
+    "exclusions_by_stratum": {
+      "marker": {
+        "binary_judgments": 2,
+        "cannot_tell": 0,
+        "drawn": 2
+      },
+      "none_cue": {
+        "binary_judgments": 21,
+        "cannot_tell": 9,
+        "drawn": 30
+      },
+      "suffix_cue": {
+        "binary_judgments": 132,
+        "cannot_tell": 16,
+        "drawn": 148
+      },
+      "suffix_nocue": {
+        "binary_judgments": 58,
+        "cannot_tell": 2,
+        "drawn": 60
+      }
+    },
+    "descriptive_by_stratum_and_form": {
+      "form": {
+        "marker": {
+          "n": 2,
+          "positives": 1,
+          "weighted_share": 0.5
+        },
+        "none": {
+          "n": 21,
+          "positives": 1,
+          "weighted_share": 0.04761904761904762
+        },
+        "suffix": {
+          "n": 190,
+          "positives": 19,
+          "weighted_share": 0.06928087221741301
+        }
+      },
+      "stratum": {
+        "marker": {
+          "n": 2,
+          "positives": 1,
+          "weighted_share": 0.5
+        },
+        "none_cue": {
+          "n": 21,
+          "positives": 1,
+          "weighted_share": 0.04761904761904762
+        },
+        "suffix_cue": {
+          "n": 132,
+          "positives": 16,
+          "weighted_share": 0.12121212121212123
+        },
+        "suffix_nocue": {
+          "n": 58,
+          "positives": 3,
+          "weighted_share": 0.051724137931034496
+        }
+      }
+    }
+  },
+  "reporting_restrictions": [
+    "marker: n=2, one day; degenerate resampling, descriptive only; preserve raw values but do not interpret p as replication across days.",
+    "Primary interval crosses zero; no demonstrated incremental advantage. Do not invert scores or choose new models.",
+    "CLM subtitle comparison uses registered positive-direction p; do not turn its high p into an unregistered reverse-direction p.",
+    "One consultant; 40-item three-category kappa, not inter-rater reliability or a 35-item binary kappa.",
+    "Subset contrasts and individual AUC/AP do not establish general retrieval reach or validate activity labels.",
+    "No Jev or new symbolic-versus-similarity assessment was executed."
+  ],
+  "contrasts": {
+    "face_present: T+A - T": {
+      "saved": {
+        "ci95": [
+          -0.3034048264960059,
+          0.2189440665576169
+        ],
+        "clips": 63,
+        "days": 12,
+        "delta": -0.07620285328806187,
+        "invalid_resamples": 0,
+        "n": 137,
+        "p_one_sided": 0.6713328667133287,
+        "positives": 13,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 884.291891891892
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "face_present: T+A+V - CLM_a": {
+      "saved": {
+        "ci95": [
+          -0.32893886557870383,
+          0.05057358768953968
+        ],
+        "clips": 63,
+        "days": 12,
+        "delta": -0.15048629541659253,
+        "invalid_resamples": 1,
+        "n": 137,
+        "p_one_sided": 0.9497,
+        "positives": 13,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 9999,
+        "weight_sum": 884.291891891892
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "face_present: T+A+V - CLM_b": {
+      "saved": {
+        "ci95": [
+          -0.26937728954507617,
+          0.29656590090144996
+        ],
+        "clips": 63,
+        "days": 12,
+        "delta": 0.1172597874126482,
+        "invalid_resamples": 0,
+        "n": 137,
+        "p_one_sided": 0.22447755224477553,
+        "positives": 13,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 884.291891891892
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "face_present: T+Fa - T": {
+      "saved": {
+        "ci95": [
+          -0.08989922257267063,
+          0.148163421674205
+        ],
+        "clips": 63,
+        "days": 12,
+        "delta": 0.09096193344193443,
+        "invalid_resamples": 0,
+        "n": 137,
+        "p_one_sided": 0.1126887311268873,
+        "positives": 13,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 884.291891891892
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "face_present: T+K - T": {
+      "saved": {
+        "ci95": [
+          -0.05335245860015093,
+          0.05780414225197483
+        ],
+        "clips": 63,
+        "days": 12,
+        "delta": 0.021118353948782753,
+        "invalid_resamples": 0,
+        "n": 137,
+        "p_one_sided": 0.32426757324267574,
+        "positives": 13,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 884.291891891892
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "face_present: T+V - F": {
+      "saved": {
+        "ci95": [
+          0.006330253653029568,
+          0.6379291684572309
+        ],
+        "clips": 63,
+        "days": 12,
+        "delta": 0.45393008091337417,
+        "invalid_resamples": 0,
+        "n": 137,
+        "p_one_sided": 0.022897710228977103,
+        "positives": 13,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 884.291891891892
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "face_present: T+V - T": {
+      "saved": {
+        "ci95": [
+          -0.10078773338628551,
+          0.22906087154669236
+        ],
+        "clips": 63,
+        "days": 12,
+        "delta": 0.14650965755491702,
+        "invalid_resamples": 0,
+        "n": 137,
+        "p_one_sided": 0.10968903109689031,
+        "positives": 13,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 884.291891891892
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "face_present: primary T+A+V - T": {
+      "saved": {
+        "ci95": [
+          -0.1631187642525552,
+          0.18176899121656606
+        ],
+        "clips": 63,
+        "days": 12,
+        "delta": 0.06086968190184633,
+        "invalid_resamples": 0,
+        "n": 137,
+        "p_one_sided": 0.24377562243775622,
+        "positives": 13,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 884.291891891892
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "overall: T+A - T": {
+      "saved": {
+        "ci95": [
+          -0.2406541651360435,
+          0.1160647069670125
+        ],
+        "clips": 78,
+        "days": 12,
+        "delta": -0.10583444908578565,
+        "invalid_resamples": 0,
+        "n": 192,
+        "p_one_sided": 0.8573142685731426,
+        "positives": 20,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 1226.91981981982
+      },
+      "reporting_status": "secondary",
+      "shared_day_weights_for_both_models": true
+    },
+    "overall: T+A+V - CLM_a": {
+      "saved": {
+        "ci95": [
+          -0.41427301668740746,
+          -0.1465363234777619
+        ],
+        "clips": 78,
+        "days": 12,
+        "delta": -0.2883171903767909,
+        "invalid_resamples": 0,
+        "n": 192,
+        "p_one_sided": 0.9995000499950005,
+        "positives": 20,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 1226.91981981982
+      },
+      "reporting_status": "secondary",
+      "shared_day_weights_for_both_models": true
+    },
+    "overall: T+A+V - CLM_b": {
+      "saved": {
+        "ci95": [
+          -0.3804980826403486,
+          0.16135016417736928
+        ],
+        "clips": 78,
+        "days": 12,
+        "delta": -0.06869623743101005,
+        "invalid_resamples": 0,
+        "n": 192,
+        "p_one_sided": 0.6458354164583542,
+        "positives": 20,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 1226.91981981982
+      },
+      "reporting_status": "secondary",
+      "shared_day_weights_for_both_models": true
+    },
+    "overall: T+Fa - T": {
+      "saved": {
+        "ci95": [
+          -0.04058035192543866,
+          0.09020163973707243
+        ],
+        "clips": 78,
+        "days": 12,
+        "delta": 0.03606397309622594,
+        "invalid_resamples": 0,
+        "n": 192,
+        "p_one_sided": 0.14508549145085492,
+        "positives": 20,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 1226.91981981982
+      },
+      "reporting_status": "secondary",
+      "shared_day_weights_for_both_models": true
+    },
+    "overall: T+K - T": {
+      "saved": {
+        "ci95": [
+          -0.14044574368253893,
+          0.07168379787476027
+        ],
+        "clips": 78,
+        "days": 12,
+        "delta": -0.010985949533854233,
+        "invalid_resamples": 0,
+        "n": 192,
+        "p_one_sided": 0.531046895310469,
+        "positives": 20,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 1226.91981981982
+      },
+      "reporting_status": "secondary",
+      "shared_day_weights_for_both_models": true
+    },
+    "overall: T+V - F": {
+      "saved": {
+        "ci95": [
+          -0.4610602509276355,
+          0.4677912109622317
+        ],
+        "clips": 78,
+        "days": 12,
+        "delta": -0.0017590177456680567,
+        "invalid_resamples": 0,
+        "n": 192,
+        "p_one_sided": 0.5092490750924907,
+        "positives": 20,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 1226.91981981982
+      },
+      "reporting_status": "secondary",
+      "shared_day_weights_for_both_models": true
+    },
+    "overall: T+V - T": {
+      "saved": {
+        "ci95": [
+          -0.20363865055148755,
+          0.15352293309529835
+        ],
+        "clips": 78,
+        "days": 12,
+        "delta": 0.019726321328473184,
+        "invalid_resamples": 0,
+        "n": 192,
+        "p_one_sided": 0.40005999400059994,
+        "positives": 20,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 1226.91981981982
+      },
+      "reporting_status": "secondary",
+      "shared_day_weights_for_both_models": true
+    },
+    "overall: primary T+A+V - T": {
+      "saved": {
+        "ci95": [
+          -0.36760191554235516,
+          0.09776292144032861
+        ],
+        "clips": 78,
+        "days": 12,
+        "delta": -0.1134843958787885,
+        "invalid_resamples": 0,
+        "n": 192,
+        "p_one_sided": 0.7792220777922207,
+        "positives": 20,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 1226.91981981982
+      },
+      "reporting_status": "primary",
+      "shared_day_weights_for_both_models": true
+    },
+    "stratum=marker: T+A+V - CLM_a": {
+      "saved": {
+        "ci95": [
+          1,
+          1
+        ],
+        "clips": 2,
+        "days": 1,
+        "delta": 1,
+        "invalid_resamples": 0,
+        "n": 2,
+        "p_one_sided": 0.00009999000099990002,
+        "positives": 1,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 2
+      },
+      "reporting_status": "descriptive_single_day_degenerate",
+      "shared_day_weights_for_both_models": true
+    },
+    "stratum=marker: T+A+V - CLM_b": {
+      "saved": {
+        "ci95": [
+          0,
+          0
+        ],
+        "clips": 2,
+        "days": 1,
+        "delta": 0,
+        "invalid_resamples": 0,
+        "n": 2,
+        "p_one_sided": 1,
+        "positives": 1,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 2
+      },
+      "reporting_status": "descriptive_single_day_degenerate",
+      "shared_day_weights_for_both_models": true
+    },
+    "stratum=suffix_cue: T+A+V - CLM_a": {
+      "saved": {
+        "ci95": [
+          -0.34619196428571397,
+          0.06461014936505124
+        ],
+        "clips": 62,
+        "days": 12,
+        "delta": -0.140625,
+        "invalid_resamples": 0,
+        "n": 132,
+        "p_one_sided": 0.9195080491950804,
+        "positives": 16,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 309.48648648648646
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "stratum=suffix_cue: T+A+V - CLM_b": {
+      "saved": {
+        "ci95": [
+          -0.33537212132559424,
+          0.1263178947368424
+        ],
+        "clips": 62,
+        "days": 12,
+        "delta": -0.11853448275862055,
+        "invalid_resamples": 0,
+        "n": 132,
+        "p_one_sided": 0.8424157584241576,
+        "positives": 16,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 309.48648648648646
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "stratum=suffix_nocue: T+A+V - CLM_a": {
+      "saved": {
+        "ci95": [
+          -0.6271186440677967,
+          -0.13432835820895556
+        ],
+        "clips": 40,
+        "days": 12,
+        "delta": -0.38181818181818167,
+        "invalid_resamples": 297,
+        "n": 58,
+        "p_one_sided": 0.9997938994229184,
+        "positives": 3,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 9703,
+        "weight_sum": 915.4333333333333
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "stratum=suffix_nocue: T+A+V - CLM_b": {
+      "saved": {
+        "ci95": [
+          -0.6799999999999999,
+          0.4745762711864407
+        ],
+        "clips": 40,
+        "days": 12,
+        "delta": -0.03636363636363632,
+        "invalid_resamples": 330,
+        "n": 58,
+        "p_one_sided": 0.5070830317443904,
+        "positives": 3,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 9670,
+        "weight_sum": 915.4333333333333
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    },
+    "suffix_only: primary T+A+V - T": {
+      "saved": {
+        "ci95": [
+          -0.38072725599357504,
+          0.08959693537129652
+        ],
+        "clips": 77,
+        "days": 12,
+        "delta": -0.11978186526038515,
+        "invalid_resamples": 0,
+        "n": 190,
+        "p_one_sided": 0.7857214278572143,
+        "positives": 19,
+        "requested_resamples": 10000,
+        "status": "ok",
+        "valid_resamples": 10000,
+        "weight_sum": 1224.9198198198198
+      },
+      "reporting_status": "secondary_subset",
+      "shared_day_weights_for_both_models": true
+    }
+  },
+  "retest": {
+    "n": 40,
+    "categories": 3,
+    "confusion_first_by_repeat": [
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        0,
+        30,
+        0
+      ],
+      [
+        0,
+        0,
+        5
+      ]
+    ],
+    "agreement_n": 36,
+    "observed_agreement": 0.9,
+    "chance_agreement": 0.65625,
+    "kappa": 0.7090909090909091
+  }
+}
