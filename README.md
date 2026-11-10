@@ -29,6 +29,8 @@ Activity-category retrieval uses model-assigned labels as its reference. Machine
 
 The [materials and analysis guide](docs/materials/README.md) lists the analysis programs and saved results, documents required inputs and software environments, and gives commands for running the analyses.
 
+The [registration version index](docs/registration/index.json) links the original protocol and amendment records. The [file-availability catalogue](docs/materials/file-availability.csv) identifies supplied files and the inputs required for reproduction.
+
 Analysis programs are organized under `analysis/`, `pipeline/`, and `scripts/`. Selected retrieval, hierarchical-model, and bodily-activity results are available under [`materials/releases/`](materials/releases/). Additional saved results are stored with their analysis programs or under `data/study3_stats/`.
 
 ## Suggested citation

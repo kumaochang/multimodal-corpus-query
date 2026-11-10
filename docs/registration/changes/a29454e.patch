@@ -1,0 +1,53 @@
+diff --git a/PREREGISTRATION.md b/PREREGISTRATION.md
+index 50442af..8d736a9 100644
+--- a/PREREGISTRATION.md
++++ b/PREREGISTRATION.md
+@@ -248,6 +248,48 @@ stream. The draw is reproducible from the seed and the recorded frame alone.
+ `analysis/study3/draw.json`, which are version controlled. `.gitignore` excludes `data/` whole,
+ so the media live there and the records do not.
+ 
++### Amendment 2, 2026-10-03. Which playlist entries form the day frame.
++
++**Written after the playlist metadata was inspected, and before any Study 3 video was
++downloaded or viewed and before any draw was run.** What had been inspected is the metadata in
++`analysis/study3/frame.json` (commit `4ae0531`): titles, video ids, reported durations, and each
++playlist's own title and count. No broadcast content of any kind had been seen. The findings that
++prompted this amendment are in `analysis/study3/FRAME_FINDINGS_2026-10-03.md`.
++
++*Item changed.* Amendment 1, *The day frame*.
++
++*What it was.* Every entry of a language's TITV playlist whose title carries a parsable
++eight-digit broadcast date is one day in that language's frame.
++
++*What it becomes.* An entry is one day in its language's frame only if all of the following
++hold. Its title carries a parsable eight-digit broadcast date, as in Amendment 1. The title's
++first 【】 bracket opens with the programme name 看見族語. That bracket names the playlist's own
++language, by the Chinese name recorded in `analysis/study3/playlists.json`. An entry whose
++bracket names another language is excluded from the frame and listed. A video id listed more than
++once in a playlist is one entry. No other exclusion is made. In particular, a special edition
++broadcast under the 看見族語 title is in the frame on the same terms as any other 看見族語
++broadcast. The exclusion of Study 1's broadcast days in Amendment 1 is unchanged and is applied
++after this rule. If, after this rule, any date in a language's frame is carried by more than one
++video id, the draw stops and the case is reported rather than resolved.
++
++*Reason.* Section 0.1 defines the corpus as TITV《看見族語》television news, and Study 1's three
++broadcasts are 看見族語 broadcasts. The playlists also hold the programmes that preceded 看見族語
++(族語午間新聞, 族語晚間新聞) and the one that followed it from September 2026 (族語新聞), along with
++one-off specials and entries in other languages. Amendment 1 as written would have admitted all of
++these, and its month-stratified branch would have drawn most days from before 看見族語 began. The
++restriction keeps the sample within the programme the design describes. Whether 族語新聞 is the
++same programme renamed cannot be established from metadata, so it is not admitted.
++
++*Implementation of the draw, fixed before the draw is run.* Amendment 1 fixes the order in which
++the stream serves languages; this fixes the calls within a language. Months and days are sorted
++chronologically. In the month-stratified branch, `rng.choice(n_months, size=12, replace=False)`
++selects twelve months, and then, taking the selected months in chronological order,
++`rng.choice(n_days_in_month)` selects one day within each. In the uniform branch,
++`rng.choice(n_days, size=12, replace=False)` selects twelve days. The within-day draw under §1
++item 2 is `rng.choice(n_clips, size=3, replace=False)` over the day's clip indices in order,
++with days taken in date order. The script is `scripts/draw_study3_sample.py`, and its parameters
++are read from `analysis/study3/design.json`.
++
+ ---
+ 
+ > Format for any amendment: date, the item changed, what it was, what it became, the reason, and

@@ -1,0 +1,101 @@
+{
+  "scope": "Runtime-selected input families referenced by the documented analysis entry points. This complements the exact-path catalogue.",
+  "families": [
+    {
+      "analysis": "Paired local fusion controls",
+      "root_parameter": "--baseline",
+      "required_files": [
+        "MANIFEST.json",
+        "FREEZE.json",
+        "RESULTS.json",
+        "cache.npz"
+      ],
+      "role": "Original saved single-block controls; the later fusion outputs are separate records."
+    },
+    {
+      "analysis": "Paired local prosody controls",
+      "root_parameter": "--baseline",
+      "required_files": [
+        "MANIFEST.json",
+        "FREEZE.json",
+        "RESULTS.json",
+        "original out-of-fold predictions and fold transformations named in the manifest"
+      ],
+      "role": "Original saved local text-model controls."
+    },
+    {
+      "analysis": "Consultant judgments",
+      "root_parameter": "--answers-root",
+      "required_files": [
+        "results_batch_1.csv",
+        "results_batch_2.csv",
+        "results_batch_3.csv"
+      ],
+      "role": "Original responses and timestamps; not part of this distribution."
+    },
+    {
+      "analysis": "Registered judgment execution",
+      "root_parameter": "--bindings",
+      "required_files": [
+        "input bindings with original file hashes",
+        "completion evidence and execution receipt"
+      ],
+      "role": "Input authorization and version bindings checked by the registered entry."
+    },
+    {
+      "analysis": "Paiwan text rules",
+      "root_parameter": "<xml_dir>",
+      "required_files": [
+        "One Hundred Paiwan Texts source XML"
+      ],
+      "role": "Third-party corpus inputs supplied at the path accepted by the corresponding program."
+    },
+    {
+      "analysis": "Phone detection audit",
+      "root_parameter": "--recording-map",
+      "required_files": [
+        "recording-to-XML basename map",
+        "NTU Paiwan ASR source XML"
+      ],
+      "role": "Original corpus metadata and recording mapping."
+    },
+    {
+      "analysis": "Gesture retrieval",
+      "root_parameter": "work/data/aligned_trees and work/data/pose",
+      "required_files": [
+        "aligned tree records",
+        "frozen pose records"
+      ],
+      "role": "Frozen source inputs; no new extraction is required by this inventory."
+    },
+    {
+      "analysis": "Subtitle overlap",
+      "root_parameter": "data/study3_runs/subtitles",
+      "required_files": [
+        "<clip>.subtitles.json files selected by the frozen unit/condition index"
+      ],
+      "role": "Exact assigned subtitle strings required by the saved-rank description."
+    }
+  ],
+  "execution_status": "No scientific program or model was run during this inventory.",
+  "historical_source_identity_requirements": [
+    {
+      "path": "analysis/study3/ch5_subtitle_overlap/PLAN.md",
+      "historical_sha256": "b26e2733a7bab33152bc798f22d2a15da48e25a5dbde47b6dbc515a32dbc5d62",
+      "public_sha256": "c44a9f6c1e937b06cd55b7b958962a069d2b16ba32934f72423bd8228cec2523",
+      "requirement": "Saved-cache verification requires the source identities in the historical plan freeze. For a separate public-copy execution, preserve the saved freeze and results as references and create a new execution tree containing the code, plan and required inputs before creating new reader/freeze outputs."
+    },
+    {
+      "path": "analysis/study3/ch5_subtitle_overlap/pipeline.py",
+      "historical_sha256": "c2a1b4f59154de6df1d9178a42e90f373822ef25adcef250b9114812415f2176",
+      "public_sha256": "2a66f4e89eba038930317782702d6696ef01e283280a6c45f466086b52faea1e",
+      "requirement": "Saved-cache verification requires the source identities in the historical plan freeze. For a separate public-copy execution, preserve the saved freeze and results as references and create a new execution tree containing the code, plan and required inputs before creating new reader/freeze outputs."
+    },
+    {
+      "path": "analysis/study3/ch5_subtitle_overlap/independent_verify.py",
+      "historical_sha256": "042b49019655911e952e24ab20d1c5e2add6b49646e97b741c9678798e235afa",
+      "public_sha256": "d431b0b309987fd4847e3da18eeb90bf279c392c37c61a71917e85f3acb495f5",
+      "requirement": "Saved-cache verification requires the source identities in the historical plan freeze. For a separate public-copy execution, preserve the saved freeze and results as references and create a new execution tree containing the code, plan and required inputs before creating new reader/freeze outputs."
+    }
+  ]
+}

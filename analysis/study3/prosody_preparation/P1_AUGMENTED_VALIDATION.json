@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "OOF_scores_reconstructed": 384,
+  "maximum_probability_reconstruction_error": 2.886579864025407e-15,
+  "models_metric_coordinates": 6,
+  "metric_draws_verified": 60000,
+  "paired_difference_draws_verified": 60000,
+  "shared_day_selections_and_multiplicities_exact": true,
+  "all_text_fold_transform_parameters_equal_local_T": true,
+  "no_refits_per_draw": true,
+  "joint_valid": 10000,
+  "simultaneous_critical_value_independent": 2.770556634477377,
+  "independent_metrics_draw_max_error": 2.55351295663786e-15,
+  "historical_gate_unchanged": true,
+  "protected_sources_unchanged": true,
+  "resources": {
+    "wall_seconds": 2.396459700074047,
+    "peak_working_set_bytes": 403689472,
+    "budget_seconds": 600,
+    "budget_bytes": 4294967296,
+    "OS_hard_memory_cap": false,
+    "measurement": "Windows peak_wset or sampled RSS"
+  },
+  "run_manifest": {
+    "bytes": 3728,
+    "sha256": "43e22e6b01ddcf6a35e84d709941e64cded77be8ff91a373143920c2529a3fc4"
+  }
+}

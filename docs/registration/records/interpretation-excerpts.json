@@ -1,0 +1,11 @@
+{
+  "original_commit": "e972a96db52992732d52f1fef8425f0f7daa4cdc",
+  "original_file_sha256": "c5d41d6ff88241c3705d5ca56f37550f21219efdf65d194cf476c260365edac6",
+  "original_git_blob_sha1": "833644a55c69463f11d806eaa4e6f09182838cf2",
+  "scope": "Verbatim excerpts from the original interpretation record. The complete record is not reproduced here.",
+  "excerpts": [
+    "This record was written before any Study 3 outcome was inspected in this session and changes no registered analysis.",
+    "One Study 3 corpus supplies Chapter 5 and §6.2. The additional Paiwan clips enter §6.1 alone. Design counts are not analyzed counts: the core design is twelve days and 36 clips per language, 216 clips overall (`PREREGISTRATION.md` §0.1; Amendments 1, 2 and 5); §6.1 uses all 120 Paiwan clips from its twelve days (Amendment 9 item 4). Every report supplies actual day, clip and utterance denominators, per language where appropriate, and exclusions. Nothing here supplies an observed count.",
+    "The controlling outcome rule is Amendment 9 item 3, **Rules**: \"the primary result of Amendment 3 item 6 becomes the case table (each reference utterance of the scoring half with its route); the fraction reached by B and not A, with its day-cluster bootstrap, is reported only if the scoring half holds at least 10 reference utterances, and otherwise is stated as not estimable. If the seed half holds no reference utterance, Arm B has no seed and is not run; this is reported.\" The expectation of about zero to ten references is an expectation, never an observed denominator. Route precision and the reference-set proportion remain Amendment 3 item 6 secondaries, subject to defined denominators. A zero denominator is not zero precision or zero recall. The route table remains a case-level illustration even if the fraction can be estimated."
+  ]
+}

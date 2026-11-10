@@ -2,6 +2,14 @@
 
 This guide connects the dissertation's saved results, source programs, input contracts, and command-line entry points. Paths below are relative to the repository root unless a link resolves them from this document. Run commands from the repository root. `python` denotes the interpreter for the relevant analysis environment.
 
+## Registration, sampling, and file locations
+
+The original [registration](../../PREREGISTRATION.md) and [version index](../registration/index.json) document the registered design and its amendments. The index links eleven snapshots, successive file changes, original commit records, and the documented mappings for rewritten commit identifiers. These records retain the dates from the original repository; the public repository has its own Git history. Git dates are repository metadata rather than third-party registration timestamps.
+
+The sampling records are [`frame.json`](../../analysis/study3/frame.json), [`draw.json`](../../analysis/study3/draw.json), and [`split.json`](../../analysis/study3/split.json). They preserve the original sampling frame, ordered random draws, and Paiwan seed/scoring split. [`playlists.json`](../../analysis/study3/playlists.json) identifies the source playlists. The hashes inside the saved records identify the historical inputs. [`SOURCE_VERSIONS.json`](../../SOURCE_VERSIONS.json) also records the distinct identities of public copies whose editorial source references were simplified.
+
+The [file-availability catalogue](file-availability.csv) gives repository-relative paths and availability for the formal result catalogue, ranking-block manifest, frozen input contracts, and program path references. It separates supplied files, required inputs, saved outputs, and historical or generated references. A catalogue entry identifies a record; consult its status before using it as a download location. Large feature arrays, full-ranking payloads, third-party corpus inputs, and consultant response files require their corresponding source materials. The commands below specify the inputs for each analysis.
+
 ## Finding the results
 
 Use the tables below to locate saved results and the programs that produced them.
@@ -33,7 +41,7 @@ The [focused two-way HA W3 materials](../../materials/releases/ha-w3-two-way-v1/
 | Paiwan translation-rule comparison | The rule program prints its contingency table and statistics; the coverage-sensitivity program writes its report when `--output` is given. | [`study2_rebuild.py`](../../analysis/paiwan_texts/study2_rebuild.py) and [`study2_recall_check.py`](../../scripts/study2_recall_check.py) |
 | Surface-form counts | The program prints word-final counts and writes `rule_count_summary.json` to the chosen output directory. | [`symbolic_surface_counts.py`](../../analysis/symbolic_surface_counts.py) |
 | Phone detection | [`phone_detection_results.json`](../../analysis/phone_detection_results.json) | [`q21_speaker_recall_audit.py`](../../analysis/q21_speaker_recall_audit.py) |
-| Subtitle overlap in saved HA W3 retrieval | `analysis/study3/ch5_subtitle_overlap/SUMMARY.json`; reader and derived caches under `data/study3_stats/ch5_subtitle_overlap/` | [`ch5_subtitle_overlap/pipeline.py`](../../analysis/study3/ch5_subtitle_overlap/pipeline.py) |
+| Subtitle overlap in saved HA W3 retrieval | [`SUMMARY.json`](../../analysis/study3/ch5_subtitle_overlap/SUMMARY.json); reader and derived caches under `data/study3_stats/ch5_subtitle_overlap/` | [`ch5_subtitle_overlap/pipeline.py`](../../analysis/study3/ch5_subtitle_overlap/pipeline.py) |
 | Utterance-level feature combinations | [`RESULTS.json`](../../data/study3_stats/ch5_fusion/fusion_local/RESULTS.json); `FUSION_WIDE.csv`, `FUSION_RESULTS.csv`, `FIXED_CONTRASTS.csv`, and `STAGE_COMPARISON.csv` in [`ch5_fusion_preparation/`](../../analysis/study3/ch5_fusion_preparation/) | [`run_adopted.py`](../../analysis/study3/ch5_fusion_preparation/run_adopted.py), [`PLAN.md`](../../analysis/study3/ch5_fusion_preparation/PLAN.md), and `INVENTORY.json` |
 | Judgment prediction and retest | [`REGISTERED_RESULTS_AUDIT.json`](../../analysis/study3/clm_jev_preparation/REGISTERED_RESULTS_AUDIT.json) and [`REGISTERED_RESULTS_COVERAGE.json`](../../analysis/study3/clm_jev_preparation/REGISTERED_RESULTS_COVERAGE.json) | Adopted [`timing_exception_entry.py`](../../analysis/study3/clm_jev_preparation/timing_exception_entry.py), retained [`registered_entry.py`](../../analysis/study3/clm_jev_preparation/registered_entry.py), `evaluation.py`, and `contracts.py` |
 | Directive cases and form-based comparison | [`directive_completion/RESULTS.json`](../../analysis/study3/directive_completion/RESULTS.json) | [`derive.py`](../../analysis/study3/directive_completion/derive.py) and [`symbolic_similarity/PLAN.md`](../../analysis/study3/clm_jev_preparation/symbolic_similarity/PLAN.md) |
@@ -150,7 +158,7 @@ The first command executes the registered retrieval, pair-class, category, and s
 
 #### Subtitle overlap on saved HA W3 rankings
 
-In a new execution tree, use the following stages:
+Use a separate execution tree containing the public code, plan, and required inputs. Keep the supplied saved summaries, reader audit, and plan freeze as reference records outside that execution tree; the following stages create new reader and freeze files there:
 
 ```sh
 python analysis/study3/ch5_subtitle_overlap/pipeline.py reader
@@ -158,7 +166,7 @@ python analysis/study3/ch5_subtitle_overlap/pipeline.py freeze
 python analysis/study3/ch5_subtitle_overlap/pipeline.py analyze
 ```
 
-These stages read and validate the saved XLM-R and TF-IDF subtitle rankings, bind the plan and inputs, then summarize character-bigram Dice overlap and exact-string matches for rank one and the top three. The two string normalizations retain punctuation or remove Unicode punctuation after NFC and whitespace normalization. The reader writes `reader_cache.npz` in `data/study3_stats/ch5_subtitle_overlap/`; analysis writes `SUMMARY.json` beside the program and a derived cache in the data directory. With the existing reader cache, plan freeze, and saved summary in place, the `reproduce` command writes `summary_reproduced.json` in the data directory and compares it with the saved summary. The program reads saved ranks rather than generating new retrieval rankings.
+These stages read and validate the saved XLM-R and TF-IDF subtitle rankings, bind the plan and inputs, then summarize character-bigram Dice overlap and exact-string matches for rank one and the top three. The two string normalizations retain punctuation or remove Unicode punctuation after NFC and whitespace normalization. The reader writes `reader_cache.npz` in `data/study3_stats/ch5_subtitle_overlap/`; analysis writes `SUMMARY.json` beside the program and a derived cache in the data directory. The `reproduce` command checks a reader cache and summary against their matching plan freeze. The supplied historical freeze retains the original source hashes; the public code and plan copies have the distinct identities recorded in `SOURCE_VERSIONS.json`. Historical saved-cache verification therefore requires the corresponding original sources. The program reads saved ranks rather than generating new retrieval rankings.
 
 ### 4. Full hierarchical models
 

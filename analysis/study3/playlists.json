@@ -1,0 +1,35 @@
+{
+  "source": "PREREGISTRATION.md section 7 Amendments 1 and 2. Language order follows the registered seeded stream.",
+  "languages": [
+    {
+      "language": "Amis",
+      "zh": "阿美",
+      "playlist": "https://www.youtube.com/playlist?list=PLtE4cgfvTnt5jbfJonTd_fr82hIJSIYCs"
+    },
+    {
+      "language": "Atayal",
+      "zh": "泰雅",
+      "playlist": "https://www.youtube.com/playlist?list=PLtE4cgfvTnt6NHPJde1khYgB0KNc86Vqy"
+    },
+    {
+      "language": "Paiwan",
+      "zh": "排灣",
+      "playlist": "https://www.youtube.com/playlist?list=PLtE4cgfvTnt6wXmukxdYThWpk8GoEaqSp"
+    },
+    {
+      "language": "Truku",
+      "zh": "太魯閣",
+      "playlist": "https://www.youtube.com/playlist?list=PLtE4cgfvTnt5KsZHhyqnxibXuQE4Wi25z"
+    },
+    {
+      "language": "Tsou",
+      "zh": "鄒",
+      "playlist": "https://www.youtube.com/playlist?list=PLtE4cgfvTnt5khFfaXRhBSUmsqrd_uuXl"
+    },
+    {
+      "language": "Yami",
+      "zh": "雅美",
+      "playlist": "https://www.youtube.com/playlist?list=PLtE4cgfvTnt5N8V-xSlv4qKEZHMmlobkn"
+    }
+  ]
+}

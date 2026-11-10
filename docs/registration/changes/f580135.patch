@@ -1,0 +1,195 @@
+diff --git a/PREREGISTRATION.md b/PREREGISTRATION.md
+index 911f077..39dbbcf 100644
+--- a/PREREGISTRATION.md
++++ b/PREREGISTRATION.md
+@@ -691,6 +691,190 @@ stands on record as Amendment 4 reports it; the decision not to act on it is mad
+ 
+ ---
+ 
++### Amendment 6, 2026-10-07. The subtitle modality leaves Arm B; Arm T and Arm C are added; the form judgement is extended.
++
++#### Inspection statement
++
++**Written after Amendment 5 and before any Study 3 content was inspected.** Since Amendment 5
++was committed (`5f40b6c`), and through the commit of this amendment's draft (`5d35551`) to the
++commit that appends it here, nothing under `data/study3/` has been read, listed or processed,
++and no Study 3 outcome, label distribution, transcript, subtitle or clip content has been
++computed or viewed. One file under `analysis/study3/` was read, in part: `README.md`, for its
++description of the cut rule and its per-language counts table (Paiwan: 12 broadcast days, 120
++clips cut, 36 drawn, 84 not drawn). That file is documentation written during collection and
++contains no content, outcome, label or transcript. A one-paragraph edit to it was made and
++reverted the same session, before the draft commit, so it is unchanged at `5d35551`. The author
++confirms this statement, and the values in items 4 and 5 (25 candidate tokens, 4 broadcast days;
++10 further listener tokens), as of 2026-10-07.
++
++---
++
++#### 1. The translation (subtitle) modality leaves Arm B
++
++*Item changed.* Amendment 3 item 3.
++
++*What it was.* Arm B is "query-by-example at the utterance by multimodal similarity, as in the
++retrieval evaluation of Chapter 5", which leaves the modality set to Chapter 5, and Chapter 5
++includes the translation (subtitle) modality.
++
++*What it becomes.* Arm B's representation is the fusion of the **non-text** modalities only: the
++audio representations, prosody and kinematics, as computed for Chapter 5. It excludes the
++translation (subtitle) modality and the transcription modality of Amendment 4 Part B. Fusion is
++an **equal-weight sum of per-modality similarities, each standardized per query** (z-score over
++that query's candidate row) before summing, so that no modality dominates through the spread of
++its cosine distribution. The weights are fixed here and are not tuned.
++
++*Why.* The reference standard of Amendment 3 item 1 is defined on the TITV Chinese subtitle, and
++Arm B's seeds are chosen by membership in it. With the subtitle modality in the fusion, a seed
++would retrieve its neighbours partly by subtitle similarity, so part of Arm B's reach would be
++the reference standard retrieving itself. That inflates exactly the primary statistic, the
++fraction reached by B and not A. The transcription modality is excluded for a different reason:
++it is form-based, and it is reported as a route of its own (item 2), so that the comparison
++keeps form-based and geometric evidence apart.
++
++The with-subtitle variant is computed once and reported as a **diagnostic of the size of the
++circularity**, never in place of the main result.
++
++#### 2. Arm T, the text route (secondary)
++
++*Item added.* Query-by-example on the **transcription modality alone** (Amendment 4 Part B,
++Paiwan), with Arm B's seeds, scored on the scoring half, returning the same number of
++utterances as Arm A and Arm B (`|T| = |A|`). It is the comparison Amendment 4 B4 names as the
++reason the transcription modality exists: within one language, does a representation of the
++transcribed words retrieve directive utterances as well as the non-text modalities do.
++
++It is **secondary** under B4, reported with the Paiwan pilot CER beside it (read speech 0.116,
++NTU Paiwan ASR 0.173), descriptively, and enters no test. Its place in the write-up is the third
++column of the route comparison: keyword (A), transcribed text (T), non-text multimodal (B).
++
++#### 3. Arm C, form-filtered multimodal re-ranking
++
++*Item added.* Arm B asks whether the geometric route reaches directive utterances the form-based
++route misses (a gain in **recall**). Arm C asks the complementary question: among the
++utterances a form-based search over-retrieves, can multimodal similarity separate the directive
++ones (a gain in **precision**). It is defined for the imperative suffix `-u` only, in Paiwan
++only. `-i` is not attempted: in 100 Paiwan Texts only 103 of 1,113 `-i` tokens carry `hort`, so
++a candidate set cannot be defined on form with any useful concentration.
++
++- **Candidate set.** Utterances in the scoring half whose transcription (normalized as in
++  Amendment 4 B2) contains at least one whitespace-delimited token of two or more characters
++  ending in `u`. The rule is fixed here and no word is excluded from it afterwards.
++- **Seeds.** The reference-set utterances of the seed half whose transcription contains a
++  candidate token by the same rule. If fewer than five exist, all reference-set utterances of
++  the seed half are used, and which rule applied is reported.
++- **Score.** For each candidate, the mean of its standardized fused similarity (item 1's
++  representation) to the seeds.
++- **Framing-only baseline.** The same procedure with the representation replaced by the shot
++  framing measures of §4.3 alone. This is the control for the confound of `analysis/q7`–`q10`:
++  in television news, an anchor addressing the camera is the most directive-looking visual
++  configuration, and it is a property of the shot. If framing alone ranks the candidates about
++  as well, the multimodal contribution is not established.
++- **Primary statistic.** Average precision of the Arm C ranking against the reference standard,
++  **minus** the average precision of the framing-only ranking, with a 95% interval from the
++  cluster bootstrap at the broadcast day (§1 item 1). Secondary: Arm C's average precision
++  against the base rate (the proportion of reference-set utterances among the candidates), and
++  precision in the top decile, descriptive.
++- **Units.** Utterances lying within one shot are the primary analysis; utterances straddling a
++  shot boundary are the declared secondary analysis, as in `analysis/q15`.
++- **What the reference standard does and does not establish here.** It judges whether an
++  utterance is directive, not whether the word-final `u` in it is the imperative suffix; an
++  utterance can be directive and contain an unrelated final `u`. The second question is answered
++  only by the human check of item 5, and the write-up keeps the two apart.
++- **Test eligibility.** A test is run only if the candidate set contains reference-set
++  utterances in at least four broadcast days of the scoring half. Otherwise Arm C is reported
++  descriptively. Counting reference-set membership is permitted before scoring, since Amendment 3
++  item 1 fixes and reports the reference set before either route is scored.
++
++A null is a result: if Arm C does not beat the framing-only ranking, that is reported as a
++negative finding about multimodal disambiguation on this material.
++
++#### 4. The conditional whole-day extension, for Arm C only
++
++*Item added.* Television news may contain few imperatives, so Arm C's candidate set may be small
++on the registered sample. Whether to extend is decided **now**, by a rule on counts, not later
++by inspection of results.
++
++- **Trigger.** After the transcription modality has been computed on the registered sample and
++  **before any Arm C score is computed**, count the candidate tokens of item 3 in the scoring
++  half and the broadcast days they span. If there are **fewer than 25 candidate tokens, or they
++  span fewer than 4 broadcast days**, the extension runs. Otherwise it does not. The two counts
++  and the decision are recorded before Arm C is scored. The trigger looks only at form-level
++  counts; it never looks at reference-set membership, Arm C scores or any other outcome.
++- **The extension.** Arm C is run on the **whole broadcasts** of the twelve Paiwan days, all ten
++  clips of each (120 clips: the 36 drawn and the 84 not drawn), keeping the seed/scoring split of
++  Amendment 3 item 4 at the day level. Using whole days involves no selection, so it introduces
++  no sampling bias. It adds utterances, not clusters: inference remains over the same six
++  scoring days, and the write-up says so.
++- **Scope.** The 84 undrawn clips enter **Arm C and nothing else**. Every other analysis,
++  Arms A, B and T included, remains on the registered 216 clips. This amends the statement in
++  `analysis/study3/README.md` that the undrawn clips enter no analysis, for this one arm.
++  The pipeline steps Arm C needs (utterance boundaries, transcription, subtitle OCR for the
++  reference standard, shot segmentation and framing measures, the non-text features) are run on
++  them; labeling is not, since Arm C does not use labels.
++- **No further extension is pre-registered.** Drawing new Paiwan broadcast days for Arm C is not
++  provided for here. If it is done later, the added analysis is reported as exploratory.
++
++#### 5. The form judgement, extended
++
++*Item changed.* Amendment 3 item 8.
++
++*What it was.* Form judgement and function judgement are recorded separately on 40 tokens, ten
++per cell of the A/B table; the form judgement concerns the detector's targets.
++
++*What it becomes.* For every checked token the listener records **every** directive form the
++utterance contains, from: `ari`; `maya`; the imperative suffix `-u`; the imperative or hortative
++suffix `-i`; another directive form (written down); none. Several may be recorded together. The
++function judgement is recorded separately, as before.
++
++**Ten further tokens** are drawn at random from the top decile of the Arm C ranking, with
++`default_rng(20261007)`, before any Arm C outcome is examined, and checked the same way. They are
++the only evidence on whether the `-u` that Arm C ranks highly is the imperative suffix.
++
++*Why.* It lets the result be reported against three levels of visibility of directive form:
++forms a search can key on (`ari`, `maya`), forms present but too small to key on (`-u`, `-i`),
++and no form at all. The cells reached by B and not A are the ones the argument turns on, and the
++listener's form judgement is what says which level they fall on.
++
++*How it is reported.* Descriptively only, with Wilson intervals. At ten tokens per cell the
++intervals are wide (five of ten gives roughly 0.24 to 0.76), and no proportion from this check
++is tested or compared across cells.
++
++#### 6. How §6.1.3 is reported
++
++Not a change to any analysis; recorded so that the layout is fixed before results exist.
++
++1. The route comparison: the reference set divided among A only, B only, both and neither
++   (primary, Amendment 3 item 6), with Arm T's reach given beside it (secondary).
++2. The human-check table: for each cell, the forms recorded by the listener, grouped into the
++   three levels of item 5.
++3. Arm C: average precision against the framing-only baseline and the base rate, with whether
++   the item 4 extension ran.
++
++#### 6a. A text-only structured classifier, exploratory
++
++Declared so that its place is fixed in advance, though §5 already permits exploratory analyses.
++A structured classifier with confidence scores (TypeSafe AI's Jev, or another) may be run on
++Study 3 Paiwan transcripts **only after every registered §6.1.3 outcome has been computed and
++recorded**. Its output never enters the reference standard, the definition or scoring of any
++arm, or the human-check draws, and every result from it is labeled exploratory. Its calibration
++is assessed first on Study 2 material (`00_dissertation_outline.md` §7.5), not on Study 3.
++
++#### 7. Not changed
++
++§1 to §5 except as stated; Amendment 3 items 1, 2, 4, 5, 6 and 7; the reference standard; the
++detector operating point (§4 item 10); Amendments 4 and 5; the corpus.
++
++---
++
++#### Consequences outside this document
++
++- `analysis/study3/README.md` states that the undrawn clips enter no analysis. That paragraph
++  gains the Arm C exception of item 4, in a follow-up commit after this one.
++- `00_dissertation_outline.md` §4.5, §6.1 and §7.5, `CLAUDE.md`/`AGENTS.md` §4 and `glossary.md`
++  describe this amendment as drafted; they are updated to "in force" in the same follow-up commit.
++
++---
++
+ > Format for any amendment: date, the item changed, what it was, what it became, the reason, and
+ > whether any Study 3 data had been inspected at the time. An amendment made after inspection is
+ > recorded as such and the affected analysis is reported as exploratory.

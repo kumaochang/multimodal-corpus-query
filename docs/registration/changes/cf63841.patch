@@ -1,0 +1,110 @@
+diff --git a/PREREGISTRATION.md b/PREREGISTRATION.md
+index 3ac8729..3db22b9 100644
+--- a/PREREGISTRATION.md
++++ b/PREREGISTRATION.md
+@@ -1426,6 +1426,105 @@ Arm A's patterns; Arm B's equal-k rule; the subtitle reading (Amendment 7).
+ 
+ ---
+ 
++### Amendment 10, 2026-10-14. Pose sampling is recorded and the tight-frame minimum is stated in time; high-dimensional sources are reduced separately; an exposure is disclosed.
++
++#### Inspection statement
++
++**Written after Amendment 9 (pushed 2026-10-14 05:22:05 UTC+8, `d032dc5`) and before any Study 3
++outcome was inspected.** Since then the following was done with Study 3, and nothing else.
++
++- **Data layer, 84 added Paiwan clips** (RUNBOOK §14), under the rules of Amendment 9's statement:
++  steps 7, 8, MOCO stage 5, 11 and 12 finished, and 9b finished at 11:03 (UTC+8) with exit code 0.
++  Counts, exit codes and provenance totals only.
++- **216-clip pose** (RUNBOOK step 10) continued; the 84-clip pose was queued behind it by the
++  author (`pipeline/server/ext84_step10.sh`).
++- **Inadvertent exposure, about 07:38 to 07:40 (UTC+8).** While checking the log of MOCO stage 5
++  for the 84 clips (`data/study3_runs/ext84/logs/step9_stage5.log`), the server-side session
++  printed one log line with non-ASCII characters masked: a substring search for "error" had
++  matched OCR text, and the mask left Latin letters visible. The line showed one OCR reading and
++  its correction, `Cererror` and `Ceremony`, apparently from a banner. Which clip, frame or time
++  it came from is not known and nothing else was displayed. It bears on no registered outcome and
++  no analysis was changed (`analysis/study3/run_log.md`, `a6d86bc`, rebased as `5bbaafd` on the
++  server). Since then log checks match only line-initial patterns and print counts and line
++  numbers, never line content.
++- **Pose sampling check (author, by hand).** From one Study 3 pose file the author printed two
++  numbers: the frame-index step between consecutive records (8) and the span of a record
++  (266.9 ms). No keypoint or other content was printed.
++- **Environment and process checks** (server): package and provider versions, GPU and CPU use of
++  the pose process, the process tree of two leftover shells, file names and timestamps. No content.
++- **Packages** installed in the `sub` environment (numpy 2.2.6, soundfile 0.14.0; deviation (j)).
++- **Amendment 9 RUNBOOK §15 chain** (Gemini language judgement, candidate pool, draw, annotation
++  kit) started automatically after 9b; when the author checked, its output folder
++  `data/study3_runs/annotation/` did not yet exist: no candidate pool, draw or kit existed, and no
++  item had been judged.
++
++No Study 3 label, judgement, reference set, route score, kinematic, face or framing measure has
++been computed or seen. **The author confirms this statement as of 2026-10-14.**
++
++---
++
++#### 1. Pose sampling of Study 3, recorded
++
++*Item recorded.* RUNBOOK step 10 ran `make_pose_2026.py` without `--sample-interval`, so the MOCO
++default applies: one pose record every 8 video frames (266.9 ms, about 3.75 per second). Study 1's
++pose files have one record every 4 frames (133.5 ms; all 30 clips). The step 10 command was
++written for Study 3 without checking Study 1's files; this is the cause. All 300 Study 3 clips
++(216 and 84) use the same setting, so every Study 3 comparison is made at one sampling rate. The
++kinematic variables (standard deviations of body and face positions, hand-presence ratios) have
++the same expected values at either rate; the sparser sampling makes each utterance's estimate
++noisier, which works against detecting a kinematic effect. Comparisons of kinematic values
++between Study 1 and Study 3 are reported with this difference stated. The pose is not rerun.
++
++#### 2. The tight-frame minimum is stated in time
++
++*What it was.* Amendment 9 item 6 point 1 requires "at least 8 tight frames"; item 5 (block K)
++and item 8 use that minimum. The figure assumed Study 1's sampling, where 8 frames are about 1 s (working notes, D2:
++"at least 8 tight frames (about 1 s)").
++
++*What it becomes.* In all three places: **at least 1 s of tight frames**, that is, at least
++ceil(1000 / span) tight pose records, which is **4** records at Study 3's span of 266.9 ms. An
++utterance below the minimum is "missing" for block K (training-fold mean plus a missing indicator)
++and is not a unit of item 6 point 2 or item 8. The number of utterances below the minimum is
++reported per language.
++
++*Why.* Kept at 8 records, the minimum would have meant about 2.1 s and excluded most utterances
++(Study 1's mean utterance length is about 2.5 s), which is not what was intended.
++
++#### 3. High-dimensional sources are reduced separately (Amendment 9 item 5, Models)
++
++*What it was.* "Inside each training fold, every block is standardized and reduced by PCA to
++min(16, n_train - 1) components, so that blocks enter with equal dimension."
++
++*What it becomes.* Inside each training fold, every **source** is standardized (training-fold
++mean and standard deviation). A source with more than 16 columns is then reduced by PCA to
++min(16, n_train - 1) components: the XLM-R embedding, the TF-IDF vector, the Whisper encoder
++embedding, and the face measures of block Fa if they have more than 16 columns. A source with 16 columns or fewer enters unreduced:
++the form-class indicators, the 15 prosodic features, the kinematic variables with their missing
++indicator, the 8 framing measures, and the face-presence share and missing indicator. A block is
++the concatenation of its sources: T = XLM-R + TF-IDF + form; A = Whisper + prosody; K; Fa; F.
++The TF-IDF vectorizer is the one of Amendment 4 B2 (fitted once on all Study 3 transcription
++inputs of the five covered languages, Amendment 5), applied to the items.
++
++*Why.* Reduced as one block, the TF-IDF columns (thousands) would dominate the first components
++of T and the 4 form indicators, the strongest text cue, would be largely lost; likewise the
++Whisper columns (1,280) would swamp the 15 prosodic features in A. This would weaken the
++text-only model by construction and inflate the primary statistic AUC(T+A+V) minus AUC(T) in the
++direction of the hypothesis. Found while writing the code, before any item was judged.
++
++#### 4. Not changed
++
++Everything else in Amendments 1 to 9.
++
++---
++
++#### Consequences outside this document
++
++- `pipeline/server/RUNBOOK.md` step 10 and §14.4: the sampling interval is recorded.
++- `00_dissertation_outline.md` §4.3 and §7.4: item 1.
++- `pipeline/DISCLOSURES_PENDING.md`: the exposure is now disclosed here.
++
++---
++
+ > Format for any amendment: date, the item changed, what it was, what it became, the reason, and
+ > whether any Study 3 data had been inspected at the time. An amendment made after inspection is
+ > recorded as such and the affected analysis is reported as exploratory.

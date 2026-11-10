@@ -1,0 +1,156 @@
+diff --git a/PREREGISTRATION.md b/PREREGISTRATION.md
+index e780447..d6c8e6e 100644
+--- a/PREREGISTRATION.md
++++ b/PREREGISTRATION.md
+@@ -1006,6 +1006,151 @@ point (§4 item 10); the corpus.
+ 
+ ---
+ 
++### Amendment 8, 2026-10-12. What "the existing utterance boundaries" means for Study 3, and how they are fixed.
++
++#### Inspection statement
++
++**Written after Amendment 7 and before any Study 3 content was inspected.** Since Amendment 7 was
++appended, the following was done with the Study 3 clips, and nothing else.
++
++- **Transfer, 2026-10-11, all after Amendment 7 was appended (`6244f32`, 19:07 UTC+8).** The
++  author ran the following commands, supplied in writing in the working conversation, by hand.
++  On the author's Windows machine (PowerShell): the 216 file paths were read from
++  `pipeline/server/clips_216_drawn.sha256` into a list file; `tar -cf study3_216.tar -T <list>`
++  (no compression, 20:35 UTC+8); `tar -czf moco2026.tar.gz moco2026`; `scp` of both archives to
++  the processing server. On the server (SSH): `tar -xf ~/study3_216.tar` and
++  `tar -xzf ~/moco2026.tar.gz` (no `-v`, no output); `sha256sum -c
++  pipeline/server/clips_216_drawn.sha256 | grep -v ': OK$'` (no output, i.e. all 216 OK);
++  `mkdir -p work/clips work/data data/study3_runs`; `ln -s` of the 216 clips into `work/clips/`
++  (20:56 UTC+8); `ls work/clips | wc -l` (216); removal of the archives. The only other checks
++  suggested were counts (`(Get-Content <list>).Count`, `tar -tf study3_216.tar | Measure-Object`),
++  which print a number. The author ran no other command on these files. The file times on the
++  author's machine and on the server agree with these steps.
++- **Checks on the server, 2026-10-12.** `sha256sum -c pipeline/server/clips_216_drawn.sha256`
++  (216 OK; its output, the 216 file names and OK, was written to a file in the session's scratch
++  folder and only counts were displayed); `du -sh` on `data/study3`, `data/study3/clips` and
++  `work` (totals only: 12G, 12G, 884K); file counts with `ls -A | wc -l` and
++  `ls data/study3/clips/*.mp4 | wc -l` (1, 216, 216); `readlink -f` on the 216 links piped into
++  `grep -c`, and `find -L work/clips -type l | wc -l`, which printed counts only (216, 0);
++  `git check-ignore -v work data/study3`, which printed only ignore rules; and a Python import
++  probe run with `work/` as the working directory, which read nothing under `work/clips/`.
++- The file names are those of `analysis/study3/manifest.json`, already disclosed in Amendment 7.
++
++No Study 3 clip has been decoded, transcribed, segmented, read by OCR or a model, or played, and no
++Study 3 output of any kind exists. Every measurement behind this amendment was made on Study 1's
++30 clips, on three public files from the `pyannote-audio` and `whisper` repositories
++(`tutorials/assets/sample.wav` and its reference annotation `sample.rttm`; `tests/jfk.flac`) and
++on synthetic audio. The draft was committed as `1163acf`; between that commit and the commit that
++appends it here nothing under `data/study3/` or `work/` on the server was processed.
++**The author confirms this statement as of 2026-10-12.**
++
++---
++
++#### 1. The boundaries are those of one fixed run
++
++*Item clarified.* Amendment 4 Part B2 ("The existing utterance boundaries, unchanged"), Amendment 7
++item 4 ("the existing utterance boundaries"), and every other use of the phrase. For Study 1 the
++phrase names files that exist. For Study 3 no boundaries exist; the phrase can only mean the
++procedure that produced Study 1's.
++
++*What it becomes.* Study 3's utterance boundaries are the `utterances` tier of the aligned trees
++produced by **one run** of MOCO stages 2 to 4 (`moco2026/`, byte-identical to the copy used for
++Study 1's files as far as they survive; Whisper `large-v2` with the decoding settings written in
++`make_modern_pipeline.py`, unchanged), in the environment recorded in `analysis/study3/run_log.md`.
++Two things are added to make that run reproducible and to stop it from being chosen:
++
++1. **Seed.** The PyTorch random seed is set to `20261012` immediately before Whisper decodes each
++   clip, by a wrapper that calls the unmodified `make_modern_pipeline.py`. Whisper's temperature
++   fallback samples; without a seed, two runs on the same machine differ (item 3). The seed
++   selects one draw from the same procedure and does not change the procedure.
++2. **Freeze.** The first complete run is the result. It is not repeated in order to obtain
++   different boundaries. An interrupted run is resumed (finished clips are skipped, and the
++   per-clip seed makes the resumed clips identical to an uninterrupted run). A run that fails for a
++   technical reason is repeated from the start with the same seed, and the failure is reported.
++
++*Check before Study 3.* Two seeded runs are made on Study 1's 30 clips on the server and
++compared. The result is reported whatever it is. If they are not identical, the seed is still
++used and the remaining non-identity is reported as the run-to-run variation of the Study 3
++boundaries.
++
++*Result of the check (2026-10-12).* Two seeded runs (S1, S2) on Study 1's 30 clips gave
++byte-identical `_whisper.json` files for all 30 clips and identical boundaries (1,938 utterances in
++each; 30 of 30 clips identical; 412 segments with temperature above 0 in each). Against Study 1,
++S1 agrees on 38.0% of boundaries within ±0.1 s and 60.2% within ±0.5 s, within the range of the
++unseeded reruns in item 3. The seed removes run-to-run variation on this server; it does not
++remove the difference from Study 1.
++
++#### 2. Utterances that are one whole Whisper window
++
++*Item added.* Whisper sometimes returns a whole 30-second decoding window as one segment (Study 1:
++2 such segments in 30 clips; two reruns on the server: 6 and 7). They are not boundaries found in
++the speech. Whether alignment keeps one varies with the environment and with the segment: Study 1's files
++dropped both of its own, which the server's alignment keeps; of the server's own segments, the
++alignment kept 4 of 6 in one rerun and 4 of 7 in the other.
++
++*What it becomes.* They are kept in the primary analysis, so that the procedure is unchanged. A
++**sensitivity analysis** repeats every Arm comparison and every utterance-level estimate after
++removing utterances whose duration lies in [29.9 s, 30.1 s]. Their number per language is
++reported. Both results are reported; the primary analysis is the one with them.
++
++#### 3. Reproducibility of the boundaries, as measured before Study 3
++
++*Item recorded.* Measured on Study 1's 30 clips (Study 1: 2,140 utterances, 4,280 boundaries):
++
++| Comparison | Boundaries within ±0.1 s | within ±0.5 s | Identical clips |
++|---|---|---|---|
++| Alignment only: Study 1's Whisper output realigned on the server | 99.98% | 100% | 21 / 30 |
++| Two unseeded Whisper runs on the server | 60.2% | 75.5% | 6 / 30 |
++| Server rerun against Study 1 | 33.7% | 59.4% | 0 / 30 |
++
++The six clips that are identical between the two server runs are exactly those in which Whisper
++used no temperature fallback in either run. Four clips used no fallback in any of the three runs
++and their Whisper segments still differ from Study 1's (segment counts 104 against 109, 141 against
++108, 60 against 71 and 114 against 112; segment-boundary agreement within ±0.5 s 56.6% to 100%,
++a segment-level figure, unlike the utterance-level table above), so part of the difference from
++Study 1 is not sampling; Study 1's software versions and hardware are not recorded and the cause
++is not established.
++
++*Consequences for reporting.* (a) Study 1's boundaries are one draw of the same procedure, and so
++are Study 3's. (b) Comparisons between Study 1 and Study 3 that depend on utterance counts or
++boundaries (utterances per clip, utterance duration, the share of clip time inside an utterance,
++the subtitle assignment error of Amendment 7) are reported with the figures above. (c) Settings
++calibrated on Study 1 utterances (the pause detector of `pipeline/stages/audio_utils.py`) were
++calibrated on one draw; this is stated where they are used. (d) Within Study 3, all Arms are scored
++on the same boundaries, so the variation does not favour one Arm over another.
++
++#### 4. The rebuilt environment, recorded
++
++*Item recorded, not changed.* MOCO's setup script cannot be reproduced from today's package
++indexes, and Study 1's environment was not recorded. The departures from the setup script needed
++to run it, each with its reason and a check, are listed in `analysis/study3/run_log.md`
++(deviations (a) to (i)). Three bear on the boundaries and are stated here:
++
++- `alignphones/data/allosaurus_ipas.txt` is regenerated by `moco2026/build-ipa.py` (230 entries,
++  `<blk>` first), the script written for Study 1's machine. The copy shipped with `moco2026/`,
++  which is the one `new_make_allosaurus.py` generates from `phone.txt` when the file is missing,
++  has 229 entries without `<blk>`, and with it every alignment fails silently.
++- `make_modern_pipeline.py` line 77 raises a TypeError under pyannote.audio 3.3.2 after Whisper
++  has finished. It is not modified: diarization feeds only speaker labels, which are empty in all
++  2,145 of Study 1's utterance records.
++- The path mismatch between `new_make_align_phones.py` and `make_modern_pipeline.py` is not
++  repaired, for the same reason.
++
++#### 5. Not changed
++
++The definition of the utterance as the retrieval and labeling unit; Whisper's model and decoding
++settings; the alignment programs; everything Amendments 1 to 7 fix.
++
++---
++
++#### Consequences outside this document
++
++- `pipeline/server/RUNBOOK.md` step 6 runs stage 4.2 through the seeding wrapper and records the
++  seed in the provenance file.
++- `00_dissertation_outline.md` §4.3 and §7.4 report item 3.
++
++---
++
+ > Format for any amendment: date, the item changed, what it was, what it became, the reason, and
+ > whether any Study 3 data had been inspected at the time. An amendment made after inspection is
+ > recorded as such and the affected analysis is reported as exploratory.

@@ -1,0 +1,6192 @@
+{
+ "rule": "PREREGISTRATION.md section 1 item 2; section 7 Amendments 1 and 2",
+ "inputs": {
+  "design": {
+   "path": "analysis/study3/design.json",
+   "sha256": "3f44fac15181f31a03e9cd88b075d5ecd090efc6c50899abd535f96109842042"
+  },
+  "frame": {
+   "path": "analysis/study3/frame.json",
+   "sha256": "0eeba294179b2e46536223dc44bad866debdfaf93116396735ca028a91bae68b"
+  },
+  "study1_days": {
+   "path": "pilot/labels.json",
+   "sha256": "78d1fdf59d4b90fbc415acf1100266b321090a47479938b59318b885292a53c7"
+  }
+ },
+ "numpy_version": "1.26.4",
+ "design": {
+  "seed": 20261005,
+  "days_per_language": 12,
+  "min_months_for_month_stratified_draw": 12,
+  "clips_per_day": 10,
+  "clips_drawn_per_day": 3,
+  "programme": "看見族語",
+  "study1_days": "pilot/labels.json",
+  "additional_exclusions_if_present": [
+   {
+    "language": "Truku",
+    "broadcast_date": "20260302"
+   }
+  ]
+ },
+ "additional_exclusions_fired": [],
+ "languages": {
+  "Amis": {
+   "frame": {
+    "days": 107,
+    "months": 25,
+    "first": "20240805",
+    "last": "20260831",
+    "excluded_other_programme": 134,
+    "excluded_other_language": [
+     {
+      "position": 20,
+      "video_id": "UiF7S_99T_4",
+      "broadcast_date": "20260505",
+      "title": "【看見族語－噶瑪蘭族語】20260505｜原住民族電視台_1"
+     }
+    ],
+    "excluded_by_identity": [
+     {
+      "video_id": "gcMR4MLevnA",
+      "broadcast_date": "20260302",
+      "title": "【看見族語－阿美族語】20260302｜原住民族電視台",
+      "reason": "Study 1 broadcast day"
+     }
+    ],
+    "eligible_days": [
+     {
+      "broadcast_date": "20240805",
+      "video_id": "7g8LemO-aQ4",
+      "title": "【看見族語-阿美族語】20240805｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240812",
+      "video_id": "HTzl_tgxCAA",
+      "title": "【看見族語-阿美族語】20240812｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240826",
+      "video_id": "mPvw7K1oItk",
+      "title": "【看見族語-阿美族語】20240826｜原住民族電視台",
+      "duration_s": 2970
+     },
+     {
+      "broadcast_date": "20240828",
+      "video_id": "tY9KN8ocAv4",
+      "title": "【看見族語-阿美族語】20240828｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240902",
+      "video_id": "ZkQCyKuSGNQ",
+      "title": "【看見族語-阿美族語】20240902｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240904",
+      "video_id": "N9ZNWz-ZwOI",
+      "title": "【看見族語-阿美族語】20240904｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240909",
+      "video_id": "PGeLvEP-pM0",
+      "title": "【看見族語-阿美族語】20240909｜原住民族電視台",
+      "duration_s": 3016
+     },
+     {
+      "broadcast_date": "20240916",
+      "video_id": "phd2kL3W0GQ",
+      "title": "【看見族語-阿美族語】20240916｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240923",
+      "video_id": "YilYsQcvf1g",
+      "title": "【看見族語-阿美族語】20240923｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240930",
+      "video_id": "mP40VDoF8OU",
+      "title": "【看見族語-阿美族語】20240930｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20241002",
+      "video_id": "IlQm4Ti_l8c",
+      "title": "【看見族語-阿美族語】20241002｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241007",
+      "video_id": "a0oT-medmzE",
+      "title": "【看見族語-阿美族語】20241007｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241014",
+      "video_id": "NhhI6B508NE",
+      "title": "【看見族語-阿美族語】20241014｜原住民族電視台",
+      "duration_s": 2970
+     },
+     {
+      "broadcast_date": "20241021",
+      "video_id": "4oXzS3EZjl0",
+      "title": "【看見族語-阿美族語】20241021｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241028",
+      "video_id": "LGwyrSZtkiw",
+      "title": "【看見族語-阿美族語】20241028｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241104",
+      "video_id": "VmbSrHWqnfE",
+      "title": "【看見族語-阿美族語】20241104｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241111",
+      "video_id": "StCdRkYKBas",
+      "title": "【看見族語-阿美族語】20241111｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241118",
+      "video_id": "W4nctERO-OM",
+      "title": "【看見族語-阿美族語】20241118｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241125",
+      "video_id": "MENTLDCkdEA",
+      "title": "【看見族語-阿美族語】20241125｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20241202",
+      "video_id": "feVC_huTDao",
+      "title": "【看見族語-阿美族語】20241202｜原住民族電視台",
+      "duration_s": 2971
+     },
+     {
+      "broadcast_date": "20241209",
+      "video_id": "U9_Z0PKCnww",
+      "title": "【看見族語-阿美族語】20241209｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241216",
+      "video_id": "6CORQYgzhaQ",
+      "title": "【看見族語-阿美族語】20241216｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241223",
+      "video_id": "IIy_7zZENsg",
+      "title": "【看見族語-阿美族語】20241223｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241230",
+      "video_id": "7bHMaypbZSk",
+      "title": "【看見族語-阿美族語】20241230｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250106",
+      "video_id": "j71-P_9OuHA",
+      "title": "【看見族語-阿美族語】20250106｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250113",
+      "video_id": "TCV9QWBg89E",
+      "title": "【看見族語-阿美族語】20250113｜原住民族電視台",
+      "duration_s": 2970
+     },
+     {
+      "broadcast_date": "20250120",
+      "video_id": "lAufZ0HkKZk",
+      "title": "【看見族語-阿美族語】20250120｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250203",
+      "video_id": "G-NrnfSfQQc",
+      "title": "【看見族語-阿美族語】20250203｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250210",
+      "video_id": "P_vKdUiBm2M",
+      "title": "【看見族語-阿美族語】20250210｜原住民族電視台",
+      "duration_s": 2970
+     },
+     {
+      "broadcast_date": "20250217",
+      "video_id": "7d8CcC4eFY0",
+      "title": "【看見族語-阿美族語】20250217｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250224",
+      "video_id": "u0xfEWb2jSM",
+      "title": "【看見族語-阿美族語】20250224｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250303",
+      "video_id": "6aJJz3Wv6YQ",
+      "title": "【看見族語-阿美族語】20250303｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250310",
+      "video_id": "CDPtY2z-7DQ",
+      "title": "【看見族語-阿美族語】20250310｜原住民族電視台",
+      "duration_s": 2971
+     },
+     {
+      "broadcast_date": "20250317",
+      "video_id": "Yo-g3uKfKZc",
+      "title": "【看見族語-阿美族語】20250317｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250324",
+      "video_id": "ILRB-QFCP0w",
+      "title": "【看見族語-阿美族語】20250324｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250331",
+      "video_id": "X94SB3WnHMY",
+      "title": "【看見族語-阿美族語】20250331｜原住民族電視台",
+      "duration_s": 3001
+     },
+     {
+      "broadcast_date": "20250407",
+      "video_id": "6_HR4VdD0MM",
+      "title": "【看見族語-阿美族語】20250407｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250414",
+      "video_id": "zEuvynUIsxY",
+      "title": "【看見族語-阿美族語】20250414｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250421",
+      "video_id": "1dk31sZTVHs",
+      "title": "【看見族語-阿美族語】20250421｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250428",
+      "video_id": "xJ5mjWz1O-o",
+      "title": "【看見族語-阿美族語】20250428｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250505",
+      "video_id": "KfvPtgNtDns",
+      "title": "【看見族語-阿美族語】20250505｜原住民族電視台",
+      "duration_s": 3091
+     },
+     {
+      "broadcast_date": "20250512",
+      "video_id": "Qko26CuVKco",
+      "title": "【看見族語-阿美族語】20250512｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250519",
+      "video_id": "nDD3y7hnH38",
+      "title": "【看見族語-阿美族語】20250519｜原住民族電視台",
+      "duration_s": 2971
+     },
+     {
+      "broadcast_date": "20250526",
+      "video_id": "awQ80Aw6Tzg",
+      "title": "【看見族語-阿美族語】20250526｜原住民族電視台",
+      "duration_s": 2971
+     },
+     {
+      "broadcast_date": "20250602",
+      "video_id": "4iGgHLjgSmk",
+      "title": "【看見族語-阿美族語】20250602｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250609",
+      "video_id": "GFybTDLODn0",
+      "title": "【看見族語-阿美族語】20250609｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250616",
+      "video_id": "0L57WA1nfhw",
+      "title": "【看見族語-阿美族語】20250616｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250623",
+      "video_id": "5fAr9QMfEas",
+      "title": "【看見族語-阿美族語】20250623｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250630",
+      "video_id": "6ZmduuCot9E",
+      "title": "【看見族語-阿美族語】20250630｜原住民族電視台",
+      "duration_s": 2901
+     },
+     {
+      "broadcast_date": "20250707",
+      "video_id": "tygH6CU5dME",
+      "title": "【看見族語-阿美族語】20250707｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250714",
+      "video_id": "4yyIl_NPImM",
+      "title": "【看見族語-阿美族語】20250714｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250721",
+      "video_id": "E9QF3O2NG2Y",
+      "title": "【看見族語-阿美族語】20250721｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250728",
+      "video_id": "cbAGAqJfqzE",
+      "title": "【看見族語-阿美族語】20250728｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20250804",
+      "video_id": "lJmp94Uq66g",
+      "title": "【看見族語-阿美族語】20250804｜原住民族電視台",
+      "duration_s": 3031
+     },
+     {
+      "broadcast_date": "20250811",
+      "video_id": "B748UBI0Mak",
+      "title": "【看見族語-阿美族語】20250811｜原住民族電視台",
+      "duration_s": 3031
+     },
+     {
+      "broadcast_date": "20250818",
+      "video_id": "x8tHv6reuNw",
+      "title": "【看見族語-阿美族語】20250818｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250825",
+      "video_id": "P5ZXuI6Gu-o",
+      "title": "【看見族語-阿美族語】20250825｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250901",
+      "video_id": "09ZI9Xfh_k0",
+      "title": "【看見族語-阿美族語】20250901｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250908",
+      "video_id": "zWz5z7z3_6M",
+      "title": "【看見族語-阿美族語】20250908｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250915",
+      "video_id": "6F5jxqzMM54",
+      "title": "【看見族語-阿美族語】20250915｜原住民族電視台",
+      "duration_s": 3061
+     },
+     {
+      "broadcast_date": "20250922",
+      "video_id": "UUc2dfA0Nmk",
+      "title": "【看見族語-阿美族語】20250922｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250929",
+      "video_id": "-aLi9eBvSyE",
+      "title": "【看見族語-阿美族語】20250929｜原住民族電視台",
+      "duration_s": 3001
+     },
+     {
+      "broadcast_date": "20251006",
+      "video_id": "AAhLL5KTpLg",
+      "title": "【看見族語-阿美族語】20251006｜原住民族電視台",
+      "duration_s": 2791
+     },
+     {
+      "broadcast_date": "20251013",
+      "video_id": "uPj06MuLRuU",
+      "title": "【看見族語-阿美族語】20251013｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251020",
+      "video_id": "C7m-DAU6MSI",
+      "title": "【看見族語-阿美族語】20251020｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251027",
+      "video_id": "DrGlDLEgYDY",
+      "title": "【看見族語-阿美族語】20251027｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251103",
+      "video_id": "7LHuR1b8z8E",
+      "title": "【看見族語-阿美族語】20251103｜原住民族電視台",
+      "duration_s": 2971
+     },
+     {
+      "broadcast_date": "20251110",
+      "video_id": "Tiu_M5IQtPU",
+      "title": "【看見族語-阿美族語】20251110｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20251117",
+      "video_id": "e2CHJO4Z1-g",
+      "title": "【看見族語-阿美族語】20251117｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20251124",
+      "video_id": "MAlAEkUfuKE",
+      "title": "【看見族語-阿美族語】20251124｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251201",
+      "video_id": "aLmes9_7E8Q",
+      "title": "【看見族語-阿美族語】20251201｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20251208",
+      "video_id": "pOyxvFFGP30",
+      "title": "【看見族語-阿美族語】20251208｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251215",
+      "video_id": "G4w7IXX4xe4",
+      "title": "【看見族語-阿美族語】20251215｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20251222",
+      "video_id": "ZXQaJJ88EAY",
+      "title": "【看見族語-阿美族語】20251222｜原住民族電視台",
+      "duration_s": 3002
+     },
+     {
+      "broadcast_date": "20260105",
+      "video_id": "10bQQ9gx-MI",
+      "title": "【看見族語-阿美族語】20260105｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260112",
+      "video_id": "HPEQD-B9vK4",
+      "title": "【看見族語-阿美族語】20260112｜原住民族電視台",
+      "duration_s": 2882
+     },
+     {
+      "broadcast_date": "20260119",
+      "video_id": "YZRGU8pAlbg",
+      "title": "【看見族語-阿美族語】20260119｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260126",
+      "video_id": "PNuCtK1UF0g",
+      "title": "【看見族語-阿美族語】20260126｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260202",
+      "video_id": "PJb_Eiet5qI",
+      "title": "【看見族語-阿美族語】20260202｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260209",
+      "video_id": "qtvytM_fHg8",
+      "title": "【看見族語－阿美族語】20260209｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20260216",
+      "video_id": "0VZ9zFK-DKs",
+      "title": "【看見族語-阿美族語】20260216｜原住民族電視台",
+      "duration_s": 1561
+     },
+     {
+      "broadcast_date": "20260223",
+      "video_id": "uvsG2brSmUo",
+      "title": "【看見族語－阿美族語】20260223｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260309",
+      "video_id": "bzWvX8Iu-O8",
+      "title": "【看見族語－阿美族語】20260309｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20260316",
+      "video_id": "Yyk8BEiU7UM",
+      "title": "【看見族語－阿美族語】20260316｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260323",
+      "video_id": "CgSLO7oCQYQ",
+      "title": "【看見族語－阿美族語】20260323｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260330",
+      "video_id": "riuAe_Pp0dc",
+      "title": "【看見族語－阿美族語】20260330｜原住民族電視台",
+      "duration_s": 3001
+     },
+     {
+      "broadcast_date": "20260406",
+      "video_id": "gbhI3x4xk_4",
+      "title": "【看見族語－阿美族語】20260406｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260413",
+      "video_id": "Mm-dX29jErM",
+      "title": "【看見族語－阿美族語】20260413｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20260420",
+      "video_id": "CBLuCmo64oM",
+      "title": "【看見族語－阿美族語】20260420｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260427",
+      "video_id": "G0oBMzXDYtQ",
+      "title": "【看見族語－阿美族語】20260427｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20260504",
+      "video_id": "wT0Lng6FoFo",
+      "title": "【看見族語－阿美族語】20260504｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260511",
+      "video_id": "gJFPYkGsFzI",
+      "title": "【看見族語－阿美族語】20260511｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260518",
+      "video_id": "EiUApiK_62Q",
+      "title": "【看見族語－阿美族語】20260518｜原住民族電視台",
+      "duration_s": 2882
+     },
+     {
+      "broadcast_date": "20260525",
+      "video_id": "UTGENCL0IXM",
+      "title": "【看見族語－阿美族語】20260525｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260601",
+      "video_id": "owyTPlc7Vdg",
+      "title": "【看見族語－阿美族語】20260601｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260608",
+      "video_id": "pd2Pa_Gfyag",
+      "title": "【看見族語－阿美族語】20260608｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20260622",
+      "video_id": "C_8pi0WI2i4",
+      "title": "【看見族語－阿美族語】20260622｜原住民族電視台",
+      "duration_s": 3001
+     },
+     {
+      "broadcast_date": "20260629",
+      "video_id": "ft8Q6kALKuw",
+      "title": "【看見族語－阿美族語】20260629｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260706",
+      "video_id": "yXhVrTaxquE",
+      "title": "【看見族語－阿美族語】20260706｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260713",
+      "video_id": "m90cZb7L6uY",
+      "title": "【看見族語－阿美族語】20260713｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260720",
+      "video_id": "OgEm8O7FtO0",
+      "title": "【看見族語－阿美族語】20260720｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20260727",
+      "video_id": "x2br01cPorU",
+      "title": "【看見族語－阿美族語】20260727｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260803",
+      "video_id": "ODdXN9Bm7N4",
+      "title": "【看見族語－阿美族語】20260803｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260810",
+      "video_id": "1klAkZuQdQY",
+      "title": "【看見族語－阿美族語】20260810｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260817",
+      "video_id": "kvdlTl-XyQI",
+      "title": "【看見族語－阿美族語】20260817｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260824",
+      "video_id": "6se3zB9p2Q4",
+      "title": "【看見族語－阿美族語】20260824｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260831",
+      "video_id": "tBgb2gBCxus",
+      "title": "【看見族語－阿美族語】20260831｜原住民族電視台",
+      "duration_s": 2941
+     }
+    ]
+   },
+   "branch": "month-stratified",
+   "shortfall": 0,
+   "drawn_days": [
+    {
+     "broadcast_date": "20241002",
+     "video_id": "IlQm4Ti_l8c",
+     "title": "【看見族語-阿美族語】20241002｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      2,
+      5,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20241125",
+     "video_id": "MENTLDCkdEA",
+     "title": "【看見族語-阿美族語】20241125｜原住民族電視台",
+     "duration_s": 2941,
+     "clip_indices_drawn": [
+      3,
+      5,
+      7
+     ]
+    },
+    {
+     "broadcast_date": "20250106",
+     "video_id": "j71-P_9OuHA",
+     "title": "【看見族語-阿美族語】20250106｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      5,
+      7
+     ]
+    },
+    {
+     "broadcast_date": "20250203",
+     "video_id": "G-NrnfSfQQc",
+     "title": "【看見族語-阿美族語】20250203｜原住民族電視台",
+     "duration_s": 2941,
+     "clip_indices_drawn": [
+      2,
+      5,
+      8
+     ]
+    },
+    {
+     "broadcast_date": "20250526",
+     "video_id": "awQ80Aw6Tzg",
+     "title": "【看見族語-阿美族語】20250526｜原住民族電視台",
+     "duration_s": 2971,
+     "clip_indices_drawn": [
+      4,
+      8,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20250804",
+     "video_id": "lJmp94Uq66g",
+     "title": "【看見族語-阿美族語】20250804｜原住民族電視台",
+     "duration_s": 3031,
+     "clip_indices_drawn": [
+      1,
+      4,
+      7
+     ]
+    },
+    {
+     "broadcast_date": "20251006",
+     "video_id": "AAhLL5KTpLg",
+     "title": "【看見族語-阿美族語】20251006｜原住民族電視台",
+     "duration_s": 2791,
+     "clip_indices_drawn": [
+      5,
+      8,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20251215",
+     "video_id": "G4w7IXX4xe4",
+     "title": "【看見族語-阿美族語】20251215｜原住民族電視台",
+     "duration_s": 2910,
+     "clip_indices_drawn": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "broadcast_date": "20260223",
+     "video_id": "uvsG2brSmUo",
+     "title": "【看見族語－阿美族語】20260223｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      1,
+      4,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20260316",
+     "video_id": "Yyk8BEiU7UM",
+     "title": "【看見族語－阿美族語】20260316｜原住民族電視台",
+     "duration_s": 2941,
+     "clip_indices_drawn": [
+      2,
+      3,
+      5
+     ]
+    },
+    {
+     "broadcast_date": "20260504",
+     "video_id": "wT0Lng6FoFo",
+     "title": "【看見族語－阿美族語】20260504｜原住民族電視台",
+     "duration_s": 2941,
+     "clip_indices_drawn": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20260706",
+     "video_id": "yXhVrTaxquE",
+     "title": "【看見族語－阿美族語】20260706｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      9,
+      10
+     ]
+    }
+   ]
+  },
+  "Atayal": {
+   "frame": {
+    "days": 105,
+    "months": 24,
+    "first": "20240805",
+    "last": "20260831",
+    "excluded_other_programme": 147,
+    "excluded_other_language": [],
+    "excluded_by_identity": [],
+    "eligible_days": [
+     {
+      "broadcast_date": "20240805",
+      "video_id": "PfmYSUa74hU",
+      "title": "【看見族語-泰雅族語】20240805｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240812",
+      "video_id": "dfoh9x1qCv4",
+      "title": "【看見族語-泰雅族語】20240812｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240819",
+      "video_id": "3ouWK3NpUNY",
+      "title": "【看見族語-泰雅族語】20240819｜原住民族電視台",
+      "duration_s": 2821
+     },
+     {
+      "broadcast_date": "20240826",
+      "video_id": "VGKTyd5aF5k",
+      "title": "【看見族語-泰雅族語】20240826｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240902",
+      "video_id": "LnH-z7L7nik",
+      "title": "【看見族語-泰雅族語】20240902｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240909",
+      "video_id": "5qh7u628xs4",
+      "title": "【看見族語-泰雅族語】20240909｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240916",
+      "video_id": "FBtnFATkCxI",
+      "title": "【看見族語-泰雅族語】20240916｜原住民族電視台",
+      "duration_s": 2821
+     },
+     {
+      "broadcast_date": "20240923",
+      "video_id": "V4jveZsIRts",
+      "title": "【看見族語-泰雅族語】20240923｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240930",
+      "video_id": "z9ohKUN13Y8",
+      "title": "【看見族語-泰雅族語】20240930｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241007",
+      "video_id": "uPSHac42h4o",
+      "title": "【看見族語-泰雅族語】20241007｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241014",
+      "video_id": "Xl39GbS2Nk0",
+      "title": "【看見族語-泰雅族語】20241014｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241017",
+      "video_id": "00buP380Aw8",
+      "title": "【看見族語-泰雅族語】20241017｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241021",
+      "video_id": "4B5Yqd9vya8",
+      "title": "【看見族語-泰雅族語】20241021｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241024",
+      "video_id": "4IoDEwtqqL0",
+      "title": "【看見族語-泰雅族語】20241024｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20241028",
+      "video_id": "jz73rP8FXp8",
+      "title": "【看見族語-泰雅族語】20241028｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241104",
+      "video_id": "MRaYUAoU0iA",
+      "title": "【看見族語-泰雅族語】20241104｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241111",
+      "video_id": "mdtPEpVA4kQ",
+      "title": "【看見族語-泰雅族語】20241111｜原住民族電視台",
+      "duration_s": 2882
+     },
+     {
+      "broadcast_date": "20241118",
+      "video_id": "Ua6M3MfStD8",
+      "title": "【看見族語-泰雅族語】20241118｜原住民族電視台",
+      "duration_s": 2821
+     },
+     {
+      "broadcast_date": "20241125",
+      "video_id": "6epH6cMxI0c",
+      "title": "【看見族語-泰雅族語】20241125｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241202",
+      "video_id": "oj9r1dkNlU4",
+      "title": "【看見族語-泰雅族語】20241202｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241209",
+      "video_id": "jx-uhjwTua0",
+      "title": "【看見族語-泰雅族語】20241209｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241216",
+      "video_id": "UB4g9XynGdk",
+      "title": "【看見族語-泰雅族語】20241216｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241223",
+      "video_id": "stybwAaYjqo",
+      "title": "【看見族語-泰雅族語】20241223｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20241230",
+      "video_id": "TGc5z-HLSTw",
+      "title": "【看見族語-泰雅族語】20241230｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250106",
+      "video_id": "Cl4vfEWX94k",
+      "title": "【看見族語-泰雅族語】20250106｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250113",
+      "video_id": "ycfcgqfgDjg",
+      "title": "【看見族語-泰雅族語】20250113｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250120",
+      "video_id": "8TLjM9zfeqo",
+      "title": "【看見族語-泰雅族語】20250120｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250203",
+      "video_id": "0-T8693D2pg",
+      "title": "【看見族語-泰雅族語】20250203｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250210",
+      "video_id": "3JF4RdKNaQQ",
+      "title": "【看見族語-泰雅族語】20250210｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250217",
+      "video_id": "fkI5AG2t-GU",
+      "title": "【看見族語-泰雅族語】20250217｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250224",
+      "video_id": "sfhmgMjmThc",
+      "title": "【看見族語-泰雅族語】20250224｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250303",
+      "video_id": "PJ01ithqc38",
+      "title": "【看見族語-泰雅族語】20250303｜原住民族電視台",
+      "duration_s": 3061
+     },
+     {
+      "broadcast_date": "20250310",
+      "video_id": "KKS2tuZhVRc",
+      "title": "【看見族語-泰雅族語】20250310｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250317",
+      "video_id": "xMUGuQDcFBo",
+      "title": "【看見族語-泰雅族語】20250317｜原住民族電視台",
+      "duration_s": 2850
+     },
+     {
+      "broadcast_date": "20250324",
+      "video_id": "W_WQbfSjE-o",
+      "title": "【看見族語-泰雅族語】20250324｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250331",
+      "video_id": "ZS2vkOIsZuY",
+      "title": "【看見族語-泰雅族語】20250331｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250407",
+      "video_id": "jZSeYsNQWaM",
+      "title": "【看見族語-泰雅族語】20250407｜原住民族電視台",
+      "duration_s": 3061
+     },
+     {
+      "broadcast_date": "20250414",
+      "video_id": "GYfBqdI01TU",
+      "title": "【看見族語-泰雅族語】20250414｜原住民族電視台",
+      "duration_s": 2871
+     },
+     {
+      "broadcast_date": "20250421",
+      "video_id": "CZQKwlN7XBY",
+      "title": "【看見族語-泰雅族語】20250421｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250428",
+      "video_id": "xi5E8y5GUro",
+      "title": "【看見族語-泰雅族語】20250428｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250505",
+      "video_id": "nB5CZvh1xlA",
+      "title": "【看見族語-泰雅族語】20250505｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250512",
+      "video_id": "IgEEwII8RQg",
+      "title": "【看見族語-泰雅族語】20250512｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250519",
+      "video_id": "LIvA0FcYoPQ",
+      "title": "【看見族語-泰雅族語】20250519｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250526",
+      "video_id": "gV5ELXC-YC8",
+      "title": "【看見族語-泰雅族語】20250526｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250602",
+      "video_id": "30Keio47CTY",
+      "title": "【看見族語-泰雅族語】20250602｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250609",
+      "video_id": "dIUqCcn4PJA",
+      "title": "【看見族語-泰雅族語】20250609｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250616",
+      "video_id": "nW5FGGL8lA0",
+      "title": "【看見族語-泰雅族語】20250616｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250623",
+      "video_id": "IEK73iAdfQM",
+      "title": "【看見族語-泰雅族語】20250623｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250630",
+      "video_id": "5H8i24RX68w",
+      "title": "【看見族語-泰雅族語】20250630｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250707",
+      "video_id": "jw_jSz4QNQI",
+      "title": "【看見族語-泰雅族語】20250707｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250714",
+      "video_id": "0KJCwQU-n_I",
+      "title": "【看見族語-泰雅族語】20250714｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250721",
+      "video_id": "inBVqwCc9Ok",
+      "title": "【看見族語-泰雅族語】20250721｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250728",
+      "video_id": "zuKmWQqVULM",
+      "title": "【看見族語-泰雅族語】20250728｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250804",
+      "video_id": "yp-90oUYEUQ",
+      "title": "【看見族語-泰雅族語】20250804｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250811",
+      "video_id": "il3TmqG1ujM",
+      "title": "【看見族語-泰雅族語】20250811｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250818",
+      "video_id": "YXWLYmfd2wo",
+      "title": "【看見族語-泰雅族語】20250818｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250825",
+      "video_id": "FU7SSoLACAE",
+      "title": "【看見族語-泰雅族語】20250825｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250901",
+      "video_id": "mOo1--x12H0",
+      "title": "【看見族語-泰雅族語】20250901｜原住民族電視台",
+      "duration_s": 2882
+     },
+     {
+      "broadcast_date": "20250908",
+      "video_id": "NmuueVxUY4U",
+      "title": "【看見族語-泰雅族語】20250908｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250915",
+      "video_id": "o94oBPL8GeA",
+      "title": "【看見族語-泰雅族語】20250915｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250922",
+      "video_id": "9nSQ2rXpMb4",
+      "title": "【看見族語-泰雅族語】20250922｜原住民族電視台",
+      "duration_s": 2851
+     },
+     {
+      "broadcast_date": "20250924",
+      "video_id": "ZfqENusYNJ4",
+      "title": "【看見族語-泰雅族語】20250924｜原住民族電視台",
+      "duration_s": 2951
+     },
+     {
+      "broadcast_date": "20250929",
+      "video_id": "7XJR_5UoDI0",
+      "title": "【看見族語-泰雅族語】20250929｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251006",
+      "video_id": "tVDrmjCMzdk",
+      "title": "【看見族語-泰雅族語】20251006｜原住民族電視台",
+      "duration_s": 2879
+     },
+     {
+      "broadcast_date": "20251013",
+      "video_id": "jOrmDG6e5UY",
+      "title": "【看見族語-泰雅族語】20251013｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251020",
+      "video_id": "tfPAtrxEIN8",
+      "title": "【看見族語-泰雅族語】20251020｜原住民族電視台",
+      "duration_s": 2589
+     },
+     {
+      "broadcast_date": "20251027",
+      "video_id": "BM5XxoGPRt8",
+      "title": "【看見族語-泰雅族語】20251027｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251103",
+      "video_id": "xcE02rGrDFc",
+      "title": "【看見族語-泰雅族語】20251103｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251110",
+      "video_id": "R3xLP54SeYM",
+      "title": "【看見族語-泰雅族語】20251110｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251117",
+      "video_id": "wal0aWzv60I",
+      "title": "【看見族語-泰雅族語】20251117｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251124",
+      "video_id": "s3FJvYVUaTs",
+      "title": "【看見族語-泰雅族語】20251124｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251201",
+      "video_id": "akP7T1m0ZGA",
+      "title": "【看見族語-泰雅族語】20251201｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251208",
+      "video_id": "e7fJK0awA7A",
+      "title": "【看見族語-泰雅族語】20251208｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251222",
+      "video_id": "jdiUDhaCflQ",
+      "title": "【看見族語-泰雅族語】20251222｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251229",
+      "video_id": "ChBN1inMMNE",
+      "title": "【看見族語-泰雅族語】20251229｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260209",
+      "video_id": "Cc_zt0nYGwE",
+      "title": "【看見族語－泰雅族語】20260209｜原住民族電視台",
+      "duration_s": 2882
+     },
+     {
+      "broadcast_date": "20260216",
+      "video_id": "O4jFkQeXEvY",
+      "title": "【看見族語-泰雅族語】20260216｜原住民族電視台",
+      "duration_s": 1371
+     },
+     {
+      "broadcast_date": "20260223",
+      "video_id": "YOXEFBA5Ups",
+      "title": "【看見族語－泰雅族語】20260223｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260302",
+      "video_id": "6eXgN5tifmk",
+      "title": "【看見族語－泰雅族語】20260302｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260309",
+      "video_id": "ZH_fih10-aE",
+      "title": "【看見族語－泰雅族語】20260309｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260323",
+      "video_id": "SFDJiSFT0eQ",
+      "title": "【看見族語－泰雅族語】20260323｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260330",
+      "video_id": "j71hHr-6188",
+      "title": "【看見族語－泰雅族語】20260330｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260406",
+      "video_id": "0R3Lxuq5uzQ",
+      "title": "【看見族語－泰雅族語】20260406｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260413",
+      "video_id": "JCk5DUe8FXE",
+      "title": "【看見族語－泰雅族語】20260413｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260420",
+      "video_id": "H6yEGVQJ4d8",
+      "title": "【看見族語－泰雅族語】20260420｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260427",
+      "video_id": "J_K0mfiCvIU",
+      "title": "【看見族語－泰雅族語】20260427｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260504",
+      "video_id": "4HqaTpJPVOU",
+      "title": "【看見族語－泰雅族語】20260504｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260511",
+      "video_id": "2PTE7iaTC9I",
+      "title": "【看見族語－泰雅族語】20260511｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260518",
+      "video_id": "0tOyRU9O8dQ",
+      "title": "【看見族語－泰雅族語】20260518｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260525",
+      "video_id": "HfhYEoiNU0s",
+      "title": "【看見族語－泰雅族語】20260525｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260601",
+      "video_id": "jVIl2qfhW6M",
+      "title": "【看見族語－泰雅族語】20260601｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260608",
+      "video_id": "6YC6P-sDrHQ",
+      "title": "【看見族語－泰雅族語】20260608｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260615",
+      "video_id": "w8WSvIJfpjU",
+      "title": "【看見族語－泰雅族語】20260615｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260622",
+      "video_id": "iSMkaK4GFYY",
+      "title": "【看見族語－泰雅族語】20260622｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260629",
+      "video_id": "fl3LmETYK2c",
+      "title": "【看見族語－泰雅族語】20260629｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260706",
+      "video_id": "q54lBJnGrWM",
+      "title": "【看見族語－泰雅族語】20260706｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260713",
+      "video_id": "MXBLsEScOCU",
+      "title": "【看見族語－泰雅族語】20260713｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260720",
+      "video_id": "J_D8Fsypgi8",
+      "title": "【看見族語－泰雅族語】20260720｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260727",
+      "video_id": "Ug6Q-woRNgY",
+      "title": "【看見族語－泰雅族語】20260727｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260803",
+      "video_id": "sjAZm2-RtAQ",
+      "title": "【看見族語－泰雅族語】20260803｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260810",
+      "video_id": "2O4ryO8t0_I",
+      "title": "【看見族語－泰雅族語】20260810｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260811",
+      "video_id": "j-nJ2-x-dbc",
+      "title": "【看見族語－泰雅族語】20260811｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260817",
+      "video_id": "aNpP2iRxGCs",
+      "title": "【看見族語－泰雅族語】20260817｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260824",
+      "video_id": "p1-GLRGCrUk",
+      "title": "【看見族語－泰雅族語】20260824｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20260831",
+      "video_id": "kxwGCjfvEaI",
+      "title": "【看見族語－泰雅族語】20260831｜原住民族電視台",
+      "duration_s": 2881
+     }
+    ]
+   },
+   "branch": "month-stratified",
+   "shortfall": 0,
+   "drawn_days": [
+    {
+     "broadcast_date": "20240909",
+     "video_id": "5qh7u628xs4",
+     "title": "【看見族語-泰雅族語】20240909｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      1,
+      6,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20241024",
+     "video_id": "4IoDEwtqqL0",
+     "title": "【看見族語-泰雅族語】20241024｜原住民族電視台",
+     "duration_s": 2910,
+     "clip_indices_drawn": [
+      1,
+      4,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20241104",
+     "video_id": "MRaYUAoU0iA",
+     "title": "【看見族語-泰雅族語】20241104｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      1,
+      9,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20250203",
+     "video_id": "0-T8693D2pg",
+     "title": "【看見族語-泰雅族語】20250203｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "broadcast_date": "20250303",
+     "video_id": "PJ01ithqc38",
+     "title": "【看見族語-泰雅族語】20250303｜原住民族電視台",
+     "duration_s": 3061,
+     "clip_indices_drawn": [
+      1,
+      3,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20250519",
+     "video_id": "LIvA0FcYoPQ",
+     "title": "【看見族語-泰雅族語】20250519｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      4,
+      5,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20250623",
+     "video_id": "IEK73iAdfQM",
+     "title": "【看見族語-泰雅族語】20250623｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      1,
+      9,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20250721",
+     "video_id": "inBVqwCc9Ok",
+     "title": "【看見族語-泰雅族語】20250721｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      5,
+      6,
+      8
+     ]
+    },
+    {
+     "broadcast_date": "20251222",
+     "video_id": "jdiUDhaCflQ",
+     "title": "【看見族語-泰雅族語】20251222｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      8,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20260406",
+     "video_id": "0R3Lxuq5uzQ",
+     "title": "【看見族語－泰雅族語】20260406｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      6,
+      8,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20260518",
+     "video_id": "0tOyRU9O8dQ",
+     "title": "【看見族語－泰雅族語】20260518｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      7,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20260810",
+     "video_id": "2O4ryO8t0_I",
+     "title": "【看見族語－泰雅族語】20260810｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      5,
+      8,
+      10
+     ]
+    }
+   ]
+  },
+  "Paiwan": {
+   "frame": {
+    "days": 99,
+    "months": 25,
+    "first": "20240803",
+    "last": "20260829",
+    "excluded_other_programme": 141,
+    "excluded_other_language": [],
+    "excluded_by_identity": [
+     {
+      "video_id": "QvYem38zQ_g",
+      "broadcast_date": "20260307",
+      "title": "【看見族語－排灣族語】20260307｜原住民族電視台",
+      "reason": "Study 1 broadcast day"
+     }
+    ],
+    "eligible_days": [
+     {
+      "broadcast_date": "20240803",
+      "video_id": "bkuQTp2Jqx4",
+      "title": "【看見族語-排灣族語】20240803｜原住民族電視台",
+      "duration_s": 2900
+     },
+     {
+      "broadcast_date": "20240810",
+      "video_id": "CaE7Fv3N4Ik",
+      "title": "【看見族語-排灣族語】20240810｜原住民族電視台",
+      "duration_s": 2921
+     },
+     {
+      "broadcast_date": "20240817",
+      "video_id": "ZFozq_qv8Jw",
+      "title": "【看見族語-排灣族語】20240817｜原住民族電視台",
+      "duration_s": 2890
+     },
+     {
+      "broadcast_date": "20240824",
+      "video_id": "7oulGHk89sI",
+      "title": "【看見族語-排灣族語】20240824｜原住民族電視台",
+      "duration_s": 2931
+     },
+     {
+      "broadcast_date": "20240907",
+      "video_id": "rspeQkwqbMs",
+      "title": "【看見族語-排灣族語】20240907｜原住民族電視台",
+      "duration_s": 2901
+     },
+     {
+      "broadcast_date": "20240914",
+      "video_id": "stC46T9TSVQ",
+      "title": "【看見族語-排灣族語】20240914｜原住民族電視台",
+      "duration_s": 2901
+     },
+     {
+      "broadcast_date": "20240921",
+      "video_id": "Q7-Zdx40_wY",
+      "title": "【看見族語-排灣族語】20240921｜原住民族電視台",
+      "duration_s": 2892
+     },
+     {
+      "broadcast_date": "20240928",
+      "video_id": "2sepEmm_jmw",
+      "title": "【看見族語-排灣族語】20240928｜原住民族電視台",
+      "duration_s": 2901
+     },
+     {
+      "broadcast_date": "20241005",
+      "video_id": "MlITCnpM9SU",
+      "title": "【看見族語-排灣族語】20241005｜原住民族電視台",
+      "duration_s": 2900
+     },
+     {
+      "broadcast_date": "20241019",
+      "video_id": "ImSedJtJQGw",
+      "title": "【看見族語-排灣族語】20241019｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20241026",
+      "video_id": "US7eI8IF_ik",
+      "title": "【看見族語-排灣族語】20241026｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20241102",
+      "video_id": "b-mlcNojvdg",
+      "title": "【看見族語-排灣族語】20241102｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20241109",
+      "video_id": "D8xvF8jTSVA",
+      "title": "【看見族語-排灣族語】20241109｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20241116",
+      "video_id": "jdW38_JuDV0",
+      "title": "【看見族語-排灣族語】20241116｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20241123",
+      "video_id": "yFvesPdQwkM",
+      "title": "【看見族語-排灣族語】20241123｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20241130",
+      "video_id": "X3OJfSgPfxg",
+      "title": "【看見族語-排灣族語】20241130｜原住民族電視台",
+      "duration_s": 2901
+     },
+     {
+      "broadcast_date": "20241207",
+      "video_id": "n0-Cjf0XVPI",
+      "title": "【看見族語-排灣族語】20241207｜原住民族電視台",
+      "duration_s": 2971
+     },
+     {
+      "broadcast_date": "20241214",
+      "video_id": "1YwmUq8Qp1o",
+      "title": "【看見族語-排灣族語】20241214｜原住民族電視台",
+      "duration_s": 2921
+     },
+     {
+      "broadcast_date": "20241221",
+      "video_id": "vhArzFGA7nI",
+      "title": "【看見族語-排灣族語】20241221｜原住民族電視台",
+      "duration_s": 2901
+     },
+     {
+      "broadcast_date": "20241228",
+      "video_id": "ZFj2t2v6rCU",
+      "title": "【看見族語-排灣族語】20241228｜原住民族電視台",
+      "duration_s": 2901
+     },
+     {
+      "broadcast_date": "20250104",
+      "video_id": "Eb2sbHXcB_Q",
+      "title": "【看見族語-排灣族語】20250104｜原住民族電視台",
+      "duration_s": 2930
+     },
+     {
+      "broadcast_date": "20250111",
+      "video_id": "3D3tnFYEumo",
+      "title": "【看見族語-排灣族語】20250111｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250118",
+      "video_id": "Tw2Agn0sTvA",
+      "title": "【看見族語-排灣族語】20250118｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20250125",
+      "video_id": "BouQo8CUoaE",
+      "title": "【看見族語-排灣族語】20250125｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250208",
+      "video_id": "41NiwKYL4qQ",
+      "title": "【看見族語-排灣族語】20250208｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250215",
+      "video_id": "DGPViSU5kps",
+      "title": "【看見族語-排灣族語】20250215｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250222",
+      "video_id": "oitLRgAEp7I",
+      "title": "【看見族語-排灣族語】20250222｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250301",
+      "video_id": "bN8s-Hqf_Sw",
+      "title": "【看見族語-排灣族語】20250301｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20250308",
+      "video_id": "FFwqTmCO6SE",
+      "title": "【看見族語-排灣族語】20250308｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250315",
+      "video_id": "VYsITehN40M",
+      "title": "【看見族語-排灣族語】20250315｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250322",
+      "video_id": "Wk_2nW2GEoI",
+      "title": "【看見族語-排灣族語】20250322｜原住民族電視台",
+      "duration_s": 2930
+     },
+     {
+      "broadcast_date": "20250329",
+      "video_id": "nXuPR5FlKCo",
+      "title": "【看見族語-排灣族語】20250329｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20250405",
+      "video_id": "K2tRbbDWdJg",
+      "title": "【看見族語-排灣族語】20250405｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250412",
+      "video_id": "Rnt2Mq1c1ao",
+      "title": "【看見族語-排灣族語】20250412｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250419",
+      "video_id": "i0RVMeCsB1A",
+      "title": "【看見族語-排灣族語】20250419｜原住民族電視台",
+      "duration_s": 2961
+     },
+     {
+      "broadcast_date": "20250426",
+      "video_id": "KGlUV4ZtcFM",
+      "title": "【看見族語-排灣族語】20250426｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250503",
+      "video_id": "0Xaampl_m0M",
+      "title": "【看見族語-排灣族語】20250503｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250510",
+      "video_id": "k8y0t8EjCPk",
+      "title": "【看見族語-排灣族語】20250510｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20250517",
+      "video_id": "_Kb2ygm2bLo",
+      "title": "【看見族語-排灣族語】20250517｜原住民族電視台",
+      "duration_s": 2900
+     },
+     {
+      "broadcast_date": "20250524",
+      "video_id": "txAx4_v5bYM",
+      "title": "【看見族語-排灣族語】20250524｜原住民族電視台",
+      "duration_s": 2981
+     },
+     {
+      "broadcast_date": "20250531",
+      "video_id": "R9p4Pi6KplA",
+      "title": "【看見族語-排灣族語】20250531｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20250607",
+      "video_id": "cG31krWdU3k",
+      "title": "【看見族語-排灣族語】20250607｜原住民族電視台",
+      "duration_s": 2901
+     },
+     {
+      "broadcast_date": "20250614",
+      "video_id": "DgCaKvH3Crg",
+      "title": "【看見族語-排灣族語】20250614｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250621",
+      "video_id": "bFu8sQ41JAs",
+      "title": "【看見族語-排灣族語】20250621｜原住民族電視台",
+      "duration_s": 2900
+     },
+     {
+      "broadcast_date": "20250628",
+      "video_id": "GwFq3WX5xQA",
+      "title": "【看見族語-排灣族語】20250628｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250705",
+      "video_id": "k2XDbPZHHdk",
+      "title": "【看見族語-排灣族語】20250705｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250712",
+      "video_id": "qJBBEKOmacs",
+      "title": "【看見族語-排灣族語】20250712｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250719",
+      "video_id": "cFG5pL5RSic",
+      "title": "【看見族語-排灣族語】20250719｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20250726",
+      "video_id": "KWA43cyzPqY",
+      "title": "【看見族語-排灣族語】20250726｜原住民族電視台",
+      "duration_s": 2890
+     },
+     {
+      "broadcast_date": "20250802",
+      "video_id": "yH9_EuRKAc8",
+      "title": "【看見族語-排灣族語】20250802｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250809",
+      "video_id": "g64cvNzdrpw",
+      "title": "【看見族語-排灣族語】20250809｜原住民族電視台",
+      "duration_s": 2991
+     },
+     {
+      "broadcast_date": "20250816",
+      "video_id": "npyZKiZQUH8",
+      "title": "【看見族語-排灣族語】20250816｜原住民族電視台",
+      "duration_s": 2961
+     },
+     {
+      "broadcast_date": "20250823",
+      "video_id": "drjodYsf3Eo",
+      "title": "【看見族語-排灣族語】20250823｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250830",
+      "video_id": "R9QfG7A5suA",
+      "title": "【看見族語-排灣族語】20250830｜原住民族電視台",
+      "duration_s": 2901
+     },
+     {
+      "broadcast_date": "20250906",
+      "video_id": "yjdtYfgntkA",
+      "title": "【看見族語-排灣族語】20250906｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250913",
+      "video_id": "CmVFUIl2bRs",
+      "title": "【看見族語-排灣族語】20250913｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250920",
+      "video_id": "Z5R3FR9J-mQ",
+      "title": "【看見族語-排灣族語】20250920｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20250927",
+      "video_id": "kpKzGazIIeM",
+      "title": "【看見族語-排灣族語】20250927｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20251004",
+      "video_id": "rG8Maa4LgoM",
+      "title": "【看見族語-排灣族語】20251004｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251011",
+      "video_id": "Kwjwl2OSfRU",
+      "title": "【看見族語-排灣族語】20251011｜原住民族電視台",
+      "duration_s": 2931
+     },
+     {
+      "broadcast_date": "20251018",
+      "video_id": "wwwnpZ3qOlc",
+      "title": "【看見族語-排灣族語】20251018｜原住民族電視台",
+      "duration_s": 2921
+     },
+     {
+      "broadcast_date": "20251025",
+      "video_id": "PRDlmPLRO-c",
+      "title": "【看見族語-排灣族語】20251025｜原住民族電視台",
+      "duration_s": 2921
+     },
+     {
+      "broadcast_date": "20251101",
+      "video_id": "mYDvxDEzhS0",
+      "title": "【看見族語-排灣族語】20251101｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251108",
+      "video_id": "RvATGSDaGoE",
+      "title": "【看見族語-排灣族語】20251108｜原住民族電視台",
+      "duration_s": 2921
+     },
+     {
+      "broadcast_date": "20251115",
+      "video_id": "q2CI4QlQJnU",
+      "title": "【看見族語-排灣族語】20251115｜原住民族電視台",
+      "duration_s": 2901
+     },
+     {
+      "broadcast_date": "20251122",
+      "video_id": "M4I14un_96Y",
+      "title": "【看見族語-排灣族語】20251122｜原住民族電視台",
+      "duration_s": 2980
+     },
+     {
+      "broadcast_date": "20251129",
+      "video_id": "daIkd1c2Pmw",
+      "title": "【看見族語-排灣族語】20251129｜原住民族電視台",
+      "duration_s": 3001
+     },
+     {
+      "broadcast_date": "20251213",
+      "video_id": "YuKLatDe9dU",
+      "title": "【看見族語-排灣族語】20251213｜原住民族電視台",
+      "duration_s": 2981
+     },
+     {
+      "broadcast_date": "20251220",
+      "video_id": "undizOl4vl8",
+      "title": "【看見族語-排灣族語】20251220｜原住民族電視台",
+      "duration_s": 2931
+     },
+     {
+      "broadcast_date": "20260103",
+      "video_id": "hTY6lyD97kI",
+      "title": "【看見族語-排灣族語】20260103｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20260110",
+      "video_id": "FjU9Nty2pH8",
+      "title": "【看見族語-排灣族語】20260110｜原住民族電視台",
+      "duration_s": 2921
+     },
+     {
+      "broadcast_date": "20260124",
+      "video_id": "BMHyQfcWPVc",
+      "title": "【看見族語-排灣族語】20260124｜原住民族電視台",
+      "duration_s": 2901
+     },
+     {
+      "broadcast_date": "20260131",
+      "video_id": "u8LBlEG8gt4",
+      "title": "【看見族語-排灣族語】20260131｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20260214",
+      "video_id": "OHb-UJWVVWY",
+      "title": "【看見族語－排灣族語】20260214｜原住民族電視台",
+      "duration_s": 2991
+     },
+     {
+      "broadcast_date": "20260221",
+      "video_id": "G3IGor-57mI",
+      "title": "【看見族語－排灣族語】20260221｜原住民族電視台",
+      "duration_s": 1471
+     },
+     {
+      "broadcast_date": "20260228",
+      "video_id": "U2eWWihJ0_I",
+      "title": "【看見族語－排灣族語】20260228｜原住民族電視台",
+      "duration_s": 2900
+     },
+     {
+      "broadcast_date": "20260314",
+      "video_id": "jPNGZbMxn6U",
+      "title": "【看見族語－排灣族語】20260314｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20260321",
+      "video_id": "seHkQab5laI",
+      "title": "【看見族語－排灣族語】20260321｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20260328",
+      "video_id": "LcnENcdx15o",
+      "title": "【看見族語－排灣族語】20260328｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260404",
+      "video_id": "ea2yf1C22Bs",
+      "title": "【看見族語－排灣族語】20260404｜原住民族電視台",
+      "duration_s": 2931
+     },
+     {
+      "broadcast_date": "20260411",
+      "video_id": "M6ciD5_IZxk",
+      "title": "【看見族語－排灣族語】20260411｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260418",
+      "video_id": "D5iZ3d3_jdQ",
+      "title": "【看見族語－排灣族語】20260418｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20260425",
+      "video_id": "O9Eq1JJ0hEM",
+      "title": "【看見族語－排灣族語】20260425｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20260502",
+      "video_id": "mXkh6_ESCAU",
+      "title": "【看見族語－排灣族語】20260502｜原住民族電視台",
+      "duration_s": 2931
+     },
+     {
+      "broadcast_date": "20260509",
+      "video_id": "_OixUDSwB9Q",
+      "title": "【看見族語－排灣族語】20260509｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260516",
+      "video_id": "Nn-pV-mRXyg",
+      "title": "【看見族語－排灣族語】20260516｜原住民族電視台",
+      "duration_s": 2960
+     },
+     {
+      "broadcast_date": "20260523",
+      "video_id": "VOG9xjUjQY4",
+      "title": "【看見族語－排灣族語】20260523｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260530",
+      "video_id": "GFOnjiZYwfM",
+      "title": "【看見族語－排灣族語】20260530｜原住民族電視台",
+      "duration_s": 2991
+     },
+     {
+      "broadcast_date": "20260606",
+      "video_id": "-cCpGYIFtG4",
+      "title": "【看見族語－排灣族語】20260606｜原住民族電視台",
+      "duration_s": 2960
+     },
+     {
+      "broadcast_date": "20260613",
+      "video_id": "NHCD1oWg56Q",
+      "title": "【看見族語－排灣族語】20260613｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260620",
+      "video_id": "I6ctrKD5H54",
+      "title": "【看見族語－排灣族語】20260620｜原住民族電視台",
+      "duration_s": 2900
+     },
+     {
+      "broadcast_date": "20260627",
+      "video_id": "YSBj9Vs-cTU",
+      "title": "【看見族語－排灣族語】20260627｜原住民族電視台",
+      "duration_s": 2980
+     },
+     {
+      "broadcast_date": "20260704",
+      "video_id": "s4E2w2yX6qs",
+      "title": "【看見族語－排灣族語】20260704｜原住民族電視台",
+      "duration_s": 2900
+     },
+     {
+      "broadcast_date": "20260711",
+      "video_id": "_VKfbYhN0Tw",
+      "title": "【看見族語－排灣族語】20260711｜原住民族電視台",
+      "duration_s": 2950
+     },
+     {
+      "broadcast_date": "20260718",
+      "video_id": "xDDuYLnLYcA",
+      "title": "【看見族語－排灣族語】20260718｜原住民族電視台",
+      "duration_s": 2960
+     },
+     {
+      "broadcast_date": "20260725",
+      "video_id": "AJfaZDNwtsM",
+      "title": "【看見族語－排灣族語】20260725｜原住民族電視台",
+      "duration_s": 2930
+     },
+     {
+      "broadcast_date": "20260801",
+      "video_id": "TnO5drRgB5g",
+      "title": "【看見族語－排灣族語】20260801｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260808",
+      "video_id": "I5ca0B5UNH4",
+      "title": "【看見族語－排灣族語】20260808｜原住民族電視台",
+      "duration_s": 2930
+     },
+     {
+      "broadcast_date": "20260829",
+      "video_id": "jdoXNc9k2Ck",
+      "title": "【看見族語－排灣族語】20260829｜原住民族電視台",
+      "duration_s": 2910
+     }
+    ]
+   },
+   "branch": "month-stratified",
+   "shortfall": 0,
+   "drawn_days": [
+    {
+     "broadcast_date": "20241116",
+     "video_id": "jdW38_JuDV0",
+     "title": "【看見族語-排灣族語】20241116｜原住民族電視台",
+     "duration_s": 2910,
+     "clip_indices_drawn": [
+      1,
+      2,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20241207",
+     "video_id": "n0-Cjf0XVPI",
+     "title": "【看見族語-排灣族語】20241207｜原住民族電視台",
+     "duration_s": 2971,
+     "clip_indices_drawn": [
+      1,
+      6,
+      8
+     ]
+    },
+    {
+     "broadcast_date": "20250222",
+     "video_id": "oitLRgAEp7I",
+     "title": "【看見族語-排灣族語】20250222｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      5,
+      6,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20250412",
+     "video_id": "Rnt2Mq1c1ao",
+     "title": "【看見族語-排灣族語】20250412｜原住民族電視台",
+     "duration_s": 2941,
+     "clip_indices_drawn": [
+      3,
+      8,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20250503",
+     "video_id": "0Xaampl_m0M",
+     "title": "【看見族語-排灣族語】20250503｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      5,
+      7,
+      8
+     ]
+    },
+    {
+     "broadcast_date": "20250621",
+     "video_id": "bFu8sQ41JAs",
+     "title": "【看見族語-排灣族語】20250621｜原住民族電視台",
+     "duration_s": 2900,
+     "clip_indices_drawn": [
+      3,
+      5,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20250823",
+     "video_id": "drjodYsf3Eo",
+     "title": "【看見族語-排灣族語】20250823｜原住民族電視台",
+     "duration_s": 2911,
+     "clip_indices_drawn": [
+      3,
+      5,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20250906",
+     "video_id": "yjdtYfgntkA",
+     "title": "【看見族語-排灣族語】20250906｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      2,
+      8,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20260214",
+     "video_id": "OHb-UJWVVWY",
+     "title": "【看見族語－排灣族語】20260214｜原住民族電視台",
+     "duration_s": 2991,
+     "clip_indices_drawn": [
+      2,
+      3,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20260411",
+     "video_id": "M6ciD5_IZxk",
+     "title": "【看見族語－排灣族語】20260411｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      5,
+      7
+     ]
+    },
+    {
+     "broadcast_date": "20260502",
+     "video_id": "mXkh6_ESCAU",
+     "title": "【看見族語－排灣族語】20260502｜原住民族電視台",
+     "duration_s": 2931,
+     "clip_indices_drawn": [
+      5,
+      7,
+      8
+     ]
+    },
+    {
+     "broadcast_date": "20260808",
+     "video_id": "I5ca0B5UNH4",
+     "title": "【看見族語－排灣族語】20260808｜原住民族電視台",
+     "duration_s": 2930,
+     "clip_indices_drawn": [
+      1,
+      4,
+      9
+     ]
+    }
+   ]
+  },
+  "Truku": {
+   "frame": {
+    "days": 96,
+    "months": 25,
+    "first": "20240801",
+    "last": "20260827",
+    "excluded_other_programme": 129,
+    "excluded_other_language": [],
+    "excluded_by_identity": [
+     {
+      "video_id": "4soan5qNeKY",
+      "broadcast_date": "20260305",
+      "title": "【看見族語－太魯閣族語】20260305｜原住民族電視台",
+      "reason": "Study 1 broadcast day"
+     }
+    ],
+    "eligible_days": [
+     {
+      "broadcast_date": "20240801",
+      "video_id": "zQOc6owcpFs",
+      "title": "【看見族語-太魯閣族語】20240801｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240808",
+      "video_id": "IfHlF8WIsuw",
+      "title": "【看見族語-太魯閣族語】20240808｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240815",
+      "video_id": "ZeYLoOdA_Zw",
+      "title": "【看見族語-太魯閣族語】20240815｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240822",
+      "video_id": "agEcyT1_KWY",
+      "title": "【看見族語-太魯閣族語】20240822｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240829",
+      "video_id": "PWMKpEvNWLU",
+      "title": "【看見族語-太魯閣族語】20240829｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240905",
+      "video_id": "R2PnWrzIuMo",
+      "title": "【看見族語-太魯閣族語】20240905｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240912",
+      "video_id": "xjuJe29dJx8",
+      "title": "【看見族語-太魯閣族語】20240912｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240919",
+      "video_id": "Y3mIYSkEx8U",
+      "title": "【看見族語-太魯閣族語】20240919｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240926",
+      "video_id": "eHyy5k5_M-M",
+      "title": "【看見族語-太魯閣族語】20240926｜原住民族電視台",
+      "duration_s": 2821
+     },
+     {
+      "broadcast_date": "20241003",
+      "video_id": "H1ikmNO3GGw",
+      "title": "【看見族語-太魯閣族語】20241003｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241031",
+      "video_id": "edsPiOExZHQ",
+      "title": "【看見族語-太魯閣族語】20241031｜康芮颱風特別報導｜原住民族電視台",
+      "duration_s": 3341
+     },
+     {
+      "broadcast_date": "20241107",
+      "video_id": "wcJoBG4eGH8",
+      "title": "【看見族語-太魯閣族語】20241107｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241114",
+      "video_id": "60sILgikr6A",
+      "title": "【看見族語-太魯閣族語】20241114｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241121",
+      "video_id": "G40x7ecYkNk",
+      "title": "【看見族語-太魯閣族語】20241121｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241128",
+      "video_id": "cxlEnQwPM_c",
+      "title": "【看見族語-太魯閣族語】20241128｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20241205",
+      "video_id": "KUM_r4OfN7A",
+      "title": "【看見族語-太魯閣族語】20241205｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241212",
+      "video_id": "dbenEXN1n48",
+      "title": "【看見族語-太魯閣族語】20241212｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241219",
+      "video_id": "9_DX9BvLAEM",
+      "title": "【看見族語-太魯閣族語】20241219｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241226",
+      "video_id": "guJEtvxn14M",
+      "title": "【看見族語-太魯閣族語】20241226｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250102",
+      "video_id": "srQJKICds4I",
+      "title": "【看見族語-太魯閣族語】20250102｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250109",
+      "video_id": "chInOUMJflg",
+      "title": "【看見族語-太魯閣族語】20250109｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250116",
+      "video_id": "JV1Am2UyvW0",
+      "title": "【看見族語-太魯閣族語】20250116｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250123",
+      "video_id": "5luYwj8oe1A",
+      "title": "【看見族語-太魯閣族語】20250123｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250206",
+      "video_id": "_GRXMwNC1P8",
+      "title": "【看見族語-太魯閣族語】20250206｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250213",
+      "video_id": "wq3mGcQ1dSc",
+      "title": "【看見族語-太魯閣族語】20250213｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250220",
+      "video_id": "AQ9n9E0WXWg",
+      "title": "【看見族語-太魯閣族語】20250220｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250227",
+      "video_id": "zGmNAdV6q2o",
+      "title": "【看見族語-太魯閣族語】20250227｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250306",
+      "video_id": "nD36tcTC90Y",
+      "title": "【看見族語-太魯閣族語】20250306｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250313",
+      "video_id": "3ZWvLX9_T_w",
+      "title": "【看見族語-太魯閣族語】20250313｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250320",
+      "video_id": "TgyvFDVAl9k",
+      "title": "【看見族語-太魯閣族語】20250320｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250327",
+      "video_id": "neRWkiyLvTY",
+      "title": "【看見族語-太魯閣族語】20250327｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250403",
+      "video_id": "zC2dlZ0DQEI",
+      "title": "【看見族語-太魯閣族語】20250403｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250410",
+      "video_id": "A34VJHZvZ_o",
+      "title": "【看見族語-太魯閣族語】20250410｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250417",
+      "video_id": "zInwZzZAmEc",
+      "title": "【看見族語-太魯閣族語】20250417｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250424",
+      "video_id": "-1IHUvQXXOQ",
+      "title": "【看見族語-太魯閣族語】20250424｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250501",
+      "video_id": "d5wg1OLuueQ",
+      "title": "【看見族語-太魯閣族語】20250501｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250508",
+      "video_id": "SyKVVuN86XM",
+      "title": "【看見族語-太魯閣族語】20250508｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250515",
+      "video_id": "NYl_jUMvxjY",
+      "title": "【看見族語-太魯閣族語】20250515｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250522",
+      "video_id": "TTzFWZ7ugtQ",
+      "title": "【看見族語-太魯閣族語】20250522｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250529",
+      "video_id": "A5V3ijo9KRc",
+      "title": "【看見族語-太魯閣族語】20250529｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250605",
+      "video_id": "26XnNjVKqcM",
+      "title": "【看見族語-太魯閣族語】20250605｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250612",
+      "video_id": "UnN9HT9fc7A",
+      "title": "【看見族語-太魯閣族語】20250612｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250619",
+      "video_id": "neORyBJPivg",
+      "title": "【看見族語-太魯閣族語】20250619｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250626",
+      "video_id": "oG97vmO-yrM",
+      "title": "【看見族語-太魯閣族語】20250626｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250703",
+      "video_id": "FFUPsX69o9M",
+      "title": "【看見族語-太魯閣族語】20250703｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250710",
+      "video_id": "ZoMPN1139-I",
+      "title": "【看見族語-太魯閣族語】20250710｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250717",
+      "video_id": "r716sxzQPaM",
+      "title": "【看見族語-太魯閣族語】20250717｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250724",
+      "video_id": "VgbXDOpUP9E",
+      "title": "【看見族語-太魯閣族語】20250724｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250731",
+      "video_id": "k4cSGKrFpc4",
+      "title": "【看見族語-太魯閣族語】20250731｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250807",
+      "video_id": "SmyWe4RyFaU",
+      "title": "【看見族語-太魯閣族語】20250807｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250814",
+      "video_id": "bXhLPwuz2RA",
+      "title": "【看見族語-太魯閣族語】20250814｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250821",
+      "video_id": "f8e9xQlavyI",
+      "title": "【看見族語-太魯閣族語】20250821｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250828",
+      "video_id": "Out_2W0zoSQ",
+      "title": "【看見族語-太魯閣族語】20250828｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250904",
+      "video_id": "AizQASI369A",
+      "title": "【看見族語-太魯閣族語】20250904｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250911",
+      "video_id": "And8tzKDXEQ",
+      "title": "【看見族語-太魯閣族語】20250911｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250918",
+      "video_id": "I0DUul-o4Q8",
+      "title": "【看見族語-太魯閣族語】20250918｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250925",
+      "video_id": "8i4CjxEjrKc",
+      "title": "【看見族語-太魯閣族語】20250925｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20251002",
+      "video_id": "1zNSIgzLbp0",
+      "title": "【看見族語-太魯閣族語】20251002｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251009",
+      "video_id": "gDMNM6NMEpg",
+      "title": "【看見族語-太魯閣族語】20251009｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251016",
+      "video_id": "BhO95eAamUY",
+      "title": "【看見族語-太魯閣族語】20251016｜原住民族電視台",
+      "duration_s": 2712
+     },
+     {
+      "broadcast_date": "20251023",
+      "video_id": "9hBL_sWh7Yk",
+      "title": "【看見族語-太魯閣族語】20251023｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251030",
+      "video_id": "4_pwkZLUkfg",
+      "title": "【看見族語-太魯閣族語】20251030｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251106",
+      "video_id": "Ismo7Xos1oA",
+      "title": "【看見族語-太魯閣族語】20251106｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251113",
+      "video_id": "7NWGqExXzwI",
+      "title": "【看見族語-太魯閣族語】20251113｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251120",
+      "video_id": "lZS4hiNX1VY",
+      "title": "【看見族語-太魯閣族語】20251120｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251127",
+      "video_id": "qZj9SbIe3pA",
+      "title": "【看見族語-太魯閣族語】20251127｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251204",
+      "video_id": "n3vJZBYqnlQ",
+      "title": "【看見族語-太魯閣族語】20251204｜原住民族電視台",
+      "duration_s": 2882
+     },
+     {
+      "broadcast_date": "20251211",
+      "video_id": "m0RcDEaHkuI",
+      "title": "【看見族語-太魯閣族語】20251211｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251225",
+      "video_id": "JTwcAledWuo",
+      "title": "【看見族語-太魯閣族語】20251225｜原住民族電視台",
+      "duration_s": 2882
+     },
+     {
+      "broadcast_date": "20260101",
+      "video_id": "0LV7M_Mh6XE",
+      "title": "【看見族語-太魯閣族語】20260101｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260108",
+      "video_id": "67SQZHlwP2I",
+      "title": "【看見族語-太魯閣族語】20260108｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260212",
+      "video_id": "igp-BnGjSQc",
+      "title": "【看見族語－太魯閣族語】20260212｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260226",
+      "video_id": "PT-AbK8cBPY",
+      "title": "【看見族語－太魯閣族語】20260226｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260312",
+      "video_id": "UZgANLIsnhk",
+      "title": "【看見族語－太魯閣族語】20260312｜原住民族電視台",
+      "duration_s": 2882
+     },
+     {
+      "broadcast_date": "20260319",
+      "video_id": "C7jaHaLwqcE",
+      "title": "【看見族語－太魯閣族語】20260319｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260326",
+      "video_id": "cINLDzNAA1k",
+      "title": "【看見族語－太魯閣族語】20260326｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260402",
+      "video_id": "jQ5LqFiRuH0",
+      "title": "【看見族語－太魯閣族語】20260402｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260409",
+      "video_id": "zOwz9Vt-mD0",
+      "title": "【看見族語－太魯閣族語】20260409｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260416",
+      "video_id": "0bWf4coLuDs",
+      "title": "【看見族語－太魯閣族語】20260416｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260430",
+      "video_id": "sAvVaniR7Ss",
+      "title": "【看見族語－太魯閣族語】20260430｜原住民族電視台",
+      "duration_s": 2761
+     },
+     {
+      "broadcast_date": "20260507",
+      "video_id": "Ys9JeS9sbh0",
+      "title": "【看見族語－太魯閣族語】20260507｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260514",
+      "video_id": "n28oZng-NHo",
+      "title": "【看見族語－太魯閣族語】20260514｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260521",
+      "video_id": "8e5QPInpZoI",
+      "title": "【看見族語－太魯閣族語】20260521｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260528",
+      "video_id": "xo0_Bt0ZM4E",
+      "title": "【看見族語－太魯閣族語】20260528｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260604",
+      "video_id": "cyAQae9A5yk",
+      "title": "【看見族語－太魯閣族語】20260604｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260611",
+      "video_id": "MJmQ7fjUZfI",
+      "title": "【看見族語－太魯閣族語】20260611｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260618",
+      "video_id": "6eoXRartwbk",
+      "title": "【看見族語－太魯閣族語】20260618｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260625",
+      "video_id": "XT2Lvk4-Vec",
+      "title": "【看見族語－太魯閣族語】20260625｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20260702",
+      "video_id": "UtQ7yfsy_Y8",
+      "title": "【看見族語－太魯閣族語】20260702｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260709",
+      "video_id": "05WmBmIFgy8",
+      "title": "【看見族語－太魯閣族語】20260709｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260723",
+      "video_id": "gvzce57Kmdg",
+      "title": "【看見族語－太魯閣族語】20260723｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260730",
+      "video_id": "0zypuyLhe8c",
+      "title": "【看見族語－太魯閣族語】20260730｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260806",
+      "video_id": "p7c9YfVlgTk",
+      "title": "【看見族語－太魯閣族語】20260806｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260813",
+      "video_id": "ma4uXvy_ybc",
+      "title": "【看見族語－太魯閣族語】20260813｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260820",
+      "video_id": "x3IY4erp3ic",
+      "title": "【看見族語－太魯閣族語】20260820｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260827",
+      "video_id": "3MmprWa8KS0",
+      "title": "【看見族語－太魯閣族語】20260827｜原住民族電視台",
+      "duration_s": 2881
+     }
+    ]
+   },
+   "branch": "month-stratified",
+   "shortfall": 0,
+   "drawn_days": [
+    {
+     "broadcast_date": "20240829",
+     "video_id": "PWMKpEvNWLU",
+     "title": "【看見族語-太魯閣族語】20240829｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      2,
+      5,
+      6
+     ]
+    },
+    {
+     "broadcast_date": "20241003",
+     "video_id": "H1ikmNO3GGw",
+     "title": "【看見族語-太魯閣族語】20241003｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      5,
+      7,
+      8
+     ]
+    },
+    {
+     "broadcast_date": "20250116",
+     "video_id": "JV1Am2UyvW0",
+     "title": "【看見族語-太魯閣族語】20250116｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      1,
+      4,
+      8
+     ]
+    },
+    {
+     "broadcast_date": "20250227",
+     "video_id": "zGmNAdV6q2o",
+     "title": "【看見族語-太魯閣族語】20250227｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      2,
+      3,
+      5
+     ]
+    },
+    {
+     "broadcast_date": "20250320",
+     "video_id": "TgyvFDVAl9k",
+     "title": "【看見族語-太魯閣族語】20250320｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      4,
+      5,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20250522",
+     "video_id": "TTzFWZ7ugtQ",
+     "title": "【看見族語-太魯閣族語】20250522｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      5,
+      7
+     ]
+    },
+    {
+     "broadcast_date": "20250612",
+     "video_id": "UnN9HT9fc7A",
+     "title": "【看見族語-太魯閣族語】20250612｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      5,
+      9,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20250703",
+     "video_id": "FFUPsX69o9M",
+     "title": "【看見族語-太魯閣族語】20250703｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      2,
+      5,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20250828",
+     "video_id": "Out_2W0zoSQ",
+     "title": "【看見族語-太魯閣族語】20250828｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20251030",
+     "video_id": "4_pwkZLUkfg",
+     "title": "【看見族語-太魯閣族語】20251030｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      5,
+      6,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20251225",
+     "video_id": "JTwcAledWuo",
+     "title": "【看見族語-太魯閣族語】20251225｜原住民族電視台",
+     "duration_s": 2882,
+     "clip_indices_drawn": [
+      4,
+      6,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20260528",
+     "video_id": "xo0_Bt0ZM4E",
+     "title": "【看見族語－太魯閣族語】20260528｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      5,
+      6,
+      7
+     ]
+    }
+   ]
+  },
+  "Tsou": {
+   "frame": {
+    "days": 101,
+    "months": 24,
+    "first": "20240807",
+    "last": "20260826",
+    "excluded_other_programme": 143,
+    "excluded_other_language": [],
+    "excluded_by_identity": [],
+    "eligible_days": [
+     {
+      "broadcast_date": "20240807",
+      "video_id": "2t0Gkr1mftA",
+      "title": "【看見族語-鄒族語】20240807｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240814",
+      "video_id": "jtTg43QfzMk",
+      "title": "【看見族語-鄒族語】20240814｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240821",
+      "video_id": "TDkPsik1eNo",
+      "title": "【看見族語-鄒族語】20240821｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240828",
+      "video_id": "1XTKrA8bnUA",
+      "title": "【看見族語-鄒族語】20240828｜原住民族電視台",
+      "duration_s": 2821
+     },
+     {
+      "broadcast_date": "20240904",
+      "video_id": "OlxzNX4dMRU",
+      "title": "【看見族語-鄒族語】20240904｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240911",
+      "video_id": "Et_O4D4wRPY",
+      "title": "【看見族語-鄒族語】20240911｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240918",
+      "video_id": "feKygyP5rUw",
+      "title": "【看見族語-鄒族語】20240918｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20240925",
+      "video_id": "yZXsAseX-e0",
+      "title": "【看見族語-鄒族語】20240925｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241002",
+      "video_id": "FGfuZRsqJEs",
+      "title": "【看見族語-鄒族語】20241002｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241009",
+      "video_id": "obr1x3zFEWM",
+      "title": "【看見族語-鄒族語】20241009｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20241016",
+      "video_id": "qoaescbxFww",
+      "title": "【看見族語-鄒族語】20241016｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241023",
+      "video_id": "Fo2Li0vF7r0",
+      "title": "【看見族語-鄒族語】20241023｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20241030",
+      "video_id": "z0UBepqoc5E",
+      "title": "【看見族語-鄒族語】20241030｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241106",
+      "video_id": "Mk-80Wu8lUY",
+      "title": "【看見族語-鄒族語】20241106｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241113",
+      "video_id": "XUOt7UcBrA4",
+      "title": "【看見族語-鄒族語】20241113｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241120",
+      "video_id": "QgcMWBw-uoM",
+      "title": "【看見族語-鄒族語】20241120｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241127",
+      "video_id": "SauUHgOrVjg",
+      "title": "【看見族語-鄒族語】20241127｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250101",
+      "video_id": "cywNBZcrplw",
+      "title": "【看見族語-鄒族語】20250101｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250108",
+      "video_id": "5eIiycX0uCA",
+      "title": "【看見族語-鄒族語】20250108｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250115",
+      "video_id": "bvn3LRq8QY8",
+      "title": "【看見族語-鄒族語】20250115｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250122",
+      "video_id": "EDVQqsGAg9M",
+      "title": "【看見族語-鄒族語】20250122｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250205",
+      "video_id": "RSNjUHXiKxE",
+      "title": "【看見族語-鄒族語】20250205｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250212",
+      "video_id": "Vc4CctnD548",
+      "title": "【看見族語-鄒族語】20250212｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250219",
+      "video_id": "CIVxfySqumw",
+      "title": "【看見族語-鄒族語】20250219｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250226",
+      "video_id": "6p2-2gA3zhA",
+      "title": "【看見族語-鄒族語】20250226｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250305",
+      "video_id": "PewTnswvLno",
+      "title": "【看見族語-鄒族語】20250305｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250312",
+      "video_id": "paGS-YcA1JA",
+      "title": "【看見族語-鄒族語】20250312｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250319",
+      "video_id": "54tdSAY0cYY",
+      "title": "【看見族語-鄒族語】20250319｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250326",
+      "video_id": "BAWYJKPA1kY",
+      "title": "【看見族語-鄒族語】20250326｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250402",
+      "video_id": "KU7RloAe5g8",
+      "title": "【看見族語-鄒族語】20250402｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250409",
+      "video_id": "ub0MLXOVhdU",
+      "title": "【看見族語-鄒族語】20250409｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250416",
+      "video_id": "NrZI9RUch8g",
+      "title": "【看見族語-鄒族語】20250416｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250423",
+      "video_id": "Vp3bEzo46Fc",
+      "title": "【看見族語-鄒族語】20250423｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250430",
+      "video_id": "Cu5gy5dDWNQ",
+      "title": "【看見族語-鄒族語】20250430｜原住民族電視台",
+      "duration_s": 3121
+     },
+     {
+      "broadcast_date": "20250507",
+      "video_id": "nlJrHfdgygk",
+      "title": "【看見族語-鄒族語】20250507｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250514",
+      "video_id": "BeTH0SnFlHU",
+      "title": "【看見族語-鄒族語】20250514｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250521",
+      "video_id": "dYPMCNLo8pw",
+      "title": "【看見族語-鄒族語】20250521｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250528",
+      "video_id": "8JmhuEK2PMI",
+      "title": "【看見族語-鄒族語】20250528｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250604",
+      "video_id": "6Wpukio0K1c",
+      "title": "【看見族語-鄒族語】20250604｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250611",
+      "video_id": "S6ukGChX9PE",
+      "title": "【看見族語-鄒族語】20250611｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20250618",
+      "video_id": "ReIO9ythfPg",
+      "title": "【看見族語-鄒族語】20250618｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250625",
+      "video_id": "hu53j6q2D5A",
+      "title": "【看見族語-鄒族語】20250625｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250702",
+      "video_id": "xmLLZIPjjhs",
+      "title": "【看見族語-鄒族語】20250702｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250709",
+      "video_id": "gTv2biW0IHg",
+      "title": "【看見族語-鄒族語】20250709｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250716",
+      "video_id": "EEFa96Fx7cE",
+      "title": "【看見族語-鄒族語】20250716｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250723",
+      "video_id": "L7Cgf8oJE2o",
+      "title": "【看見族語-鄒族語】20250723｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250730",
+      "video_id": "8V4BG2YPp4M",
+      "title": "【看見族語-鄒族語】20250730｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250806",
+      "video_id": "l5JMyln6wEA",
+      "title": "【看見族語-鄒族語】20250806｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250813",
+      "video_id": "vK-hesiCvqY",
+      "title": "【看見族語-鄒族語】20250813｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250820",
+      "video_id": "aJXWsODUqyE",
+      "title": "【看見族語-鄒族語】20250820｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250827",
+      "video_id": "0C74UWDkiEQ",
+      "title": "【看見族語-鄒族語】20250827｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250903",
+      "video_id": "iOb0v-4ZELY",
+      "title": "【看見族語-鄒族語】20250903｜原住民族電視台",
+      "duration_s": 2701
+     },
+     {
+      "broadcast_date": "20250910",
+      "video_id": "s-VNS6z1ZmM",
+      "title": "【看見族語-鄒族語】20250910｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250917",
+      "video_id": "hGfy8gOjRqY",
+      "title": "【看見族語-鄒族語】20250917｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250924",
+      "video_id": "ABzcUbUauCA",
+      "title": "【看見族語-鄒族語】20250924｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251001",
+      "video_id": "jCOt-ZIYYqs",
+      "title": "【看見族語-鄒族語】20251001｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251008",
+      "video_id": "x3frLo0bu20",
+      "title": "【看見族語-鄒族語】20251008｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251015",
+      "video_id": "CrygvILuo70",
+      "title": "【看見族語-鄒族語】20251015｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251022",
+      "video_id": "-qS3H4IwP_0",
+      "title": "【看見族語-鄒族語】20251022｜原住民族電視台",
+      "duration_s": 2921
+     },
+     {
+      "broadcast_date": "20251029",
+      "video_id": "zRwDq61yaFk",
+      "title": "【看見族語-鄒族語】20251029｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251105",
+      "video_id": "uzj3ijNAwgQ",
+      "title": "【看見族語-鄒族語】20251105｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251112",
+      "video_id": "nI2sJETK1ik",
+      "title": "【看見族語-鄒族語】20251112｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251119",
+      "video_id": "4oczCaMSPEI",
+      "title": "【看見族語-鄒族語】20251119｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251126",
+      "video_id": "d1xI3NLVq_g",
+      "title": "【看見族語-鄒族語】20251126｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251203",
+      "video_id": "WBqZiMXoRWQ",
+      "title": "【看見族語-鄒族語】20251203｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251210",
+      "video_id": "oDtzi_Qbusk",
+      "title": "【看見族語-鄒族語】20251210｜原住民族電視台",
+      "duration_s": 2882
+     },
+     {
+      "broadcast_date": "20251217",
+      "video_id": "v_hIr6teHns",
+      "title": "【看見族語-鄒族語】20251217｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251224",
+      "video_id": "raJgoBzQ6FI",
+      "title": "【看見族語-鄒族語】20251224｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251231",
+      "video_id": "QFamw-NyNc8",
+      "title": "【看見族語-鄒族語】20251231｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260107",
+      "video_id": "wTI6M3oDXt4",
+      "title": "【看見族語-鄒族語】20260107｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260114",
+      "video_id": "MX2jOE10ij8",
+      "title": "【看見族語-鄒族語】20260114｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260128",
+      "video_id": "11pLUguXNUg",
+      "title": "【看見族語-鄒族語】20260128｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260204",
+      "video_id": "7DIwt0O_-GY",
+      "title": "【看見族語-鄒族語】20260204｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260211",
+      "video_id": "1bUQdbTuMO0",
+      "title": "【看見族語－鄒族語】20260211｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260225",
+      "video_id": "jiXVme8GA6s",
+      "title": "【看見族語－鄒族語】20260225｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260304",
+      "video_id": "FzSugo9Pjhs",
+      "title": "【看見族語－鄒族語】20260304｜原住民族電視台",
+      "duration_s": 2882
+     },
+     {
+      "broadcast_date": "20260311",
+      "video_id": "i4qJRdY1nv4",
+      "title": "【看見族語－鄒族語】20260311｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260318",
+      "video_id": "Sw8rDsndCN4",
+      "title": "【看見族語－鄒族語】20260318｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260325",
+      "video_id": "FHOp0heoB3M",
+      "title": "【看見族語－鄒族語】20260325｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260401",
+      "video_id": "OkNsQAO5XQc",
+      "title": "【看見族語－鄒族語】20260401｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20260408",
+      "video_id": "ZwT297IXSu0",
+      "title": "【看見族語－鄒族語】20260408｜原住民族電視台-",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260415",
+      "video_id": "AfEKSPAIXlk",
+      "title": "【看見族語－鄒族語】20260415｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260422",
+      "video_id": "lMbZSNTz308",
+      "title": "【看見族語－鄒族語】20260422｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260429",
+      "video_id": "_HYPYhWKTH0",
+      "title": "【看見族語－鄒族語】20260429｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260506",
+      "video_id": "73qX88woMPQ",
+      "title": "【看見族語－鄒族語】20260506｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260513",
+      "video_id": "OrUDJsQgxsE",
+      "title": "【看見族語－鄒族語】20260513｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260520",
+      "video_id": "NcKKPboSyyw",
+      "title": "【看見族語－鄒族語】20260520｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260527",
+      "video_id": "kF0H8-uh9kQ",
+      "title": "【看見族語－鄒族語】20260527｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260603",
+      "video_id": "j4f0-1D-ZMQ",
+      "title": "【看見族語－鄒族語】20260603｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260610",
+      "video_id": "OY32o6Lrnhg",
+      "title": "【看見族語－鄒族語】20260610｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260617",
+      "video_id": "X36mtpLK6ow",
+      "title": "【看見族語－鄒族語】20260617｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260624",
+      "video_id": "7BAkwoAOM8I",
+      "title": "【看見族語－鄒族語】20260624｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260701",
+      "video_id": "C6NtJJ-7TVw",
+      "title": "【看見族語－鄒族語】20260701｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260708",
+      "video_id": "8ZvVCcq5Nlg",
+      "title": "【看見族語－鄒族語】20260708｜原住民族電視台",
+      "duration_s": 2910
+     },
+     {
+      "broadcast_date": "20260715",
+      "video_id": "-6w5KyCzaFk",
+      "title": "【看見族語－鄒族語】20260715｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260722",
+      "video_id": "gbIe2bZ33BU",
+      "title": "【看見族語－鄒族語】20260722｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260729",
+      "video_id": "43bYkGUIqxI",
+      "title": "【看見族語－鄒族語】20260729｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260805",
+      "video_id": "FzB2AgUMAno",
+      "title": "【看見族語－鄒族語】20260805｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260812",
+      "video_id": "4V9debOqt1M",
+      "title": "【看見族語－鄒族語】20260812｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260819",
+      "video_id": "lMGVDEJWcQw",
+      "title": "【看見族語－鄒族語】20260819｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260826",
+      "video_id": "nchwqRgJNhM",
+      "title": "【看見族語－鄒族語】20260826｜原住民族電視台",
+      "duration_s": 2881
+     }
+    ]
+   },
+   "branch": "month-stratified",
+   "shortfall": 0,
+   "drawn_days": [
+    {
+     "broadcast_date": "20240821",
+     "video_id": "TDkPsik1eNo",
+     "title": "【看見族語-鄒族語】20240821｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      2,
+      3,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20241009",
+     "video_id": "obr1x3zFEWM",
+     "title": "【看見族語-鄒族語】20241009｜原住民族電視台",
+     "duration_s": 2911,
+     "clip_indices_drawn": [
+      2,
+      3,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20250115",
+     "video_id": "bvn3LRq8QY8",
+     "title": "【看見族語-鄒族語】20250115｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      2,
+      4,
+      6
+     ]
+    },
+    {
+     "broadcast_date": "20250507",
+     "video_id": "nlJrHfdgygk",
+     "title": "【看見族語-鄒族語】20250507｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      6,
+      8
+     ]
+    },
+    {
+     "broadcast_date": "20250611",
+     "video_id": "S6ukGChX9PE",
+     "title": "【看見族語-鄒族語】20250611｜原住民族電視台",
+     "duration_s": 2910,
+     "clip_indices_drawn": [
+      1,
+      2,
+      5
+     ]
+    },
+    {
+     "broadcast_date": "20250702",
+     "video_id": "xmLLZIPjjhs",
+     "title": "【看見族語-鄒族語】20250702｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "broadcast_date": "20251029",
+     "video_id": "zRwDq61yaFk",
+     "title": "【看見族語-鄒族語】20251029｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20251217",
+     "video_id": "v_hIr6teHns",
+     "title": "【看見族語-鄒族語】20251217｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      6,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20260304",
+     "video_id": "FzSugo9Pjhs",
+     "title": "【看見族語－鄒族語】20260304｜原住民族電視台",
+     "duration_s": 2882,
+     "clip_indices_drawn": [
+      1,
+      4,
+      5
+     ]
+    },
+    {
+     "broadcast_date": "20260401",
+     "video_id": "OkNsQAO5XQc",
+     "title": "【看見族語－鄒族語】20260401｜原住民族電視台",
+     "duration_s": 2911,
+     "clip_indices_drawn": [
+      5,
+      9,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20260715",
+     "video_id": "-6w5KyCzaFk",
+     "title": "【看見族語－鄒族語】20260715｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      4,
+      9,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20260819",
+     "video_id": "lMGVDEJWcQw",
+     "title": "【看見族語－鄒族語】20260819｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      7,
+      10
+     ]
+    }
+   ]
+  },
+  "Yami": {
+   "frame": {
+    "days": 104,
+    "months": 25,
+    "first": "20240806",
+    "last": "20260825",
+    "excluded_other_programme": 128,
+    "excluded_other_language": [],
+    "excluded_by_identity": [],
+    "eligible_days": [
+     {
+      "broadcast_date": "20240806",
+      "video_id": "lckmfGwEiik",
+      "title": "【看見族語-雅美 (達悟) 族語】20240806｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240813",
+      "video_id": "18iGvAZL7qE",
+      "title": "【看見族語-雅美 (達悟) 族語】20240813｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240820",
+      "video_id": "R7QbEvAJQKE",
+      "title": "【看見族語-雅美 (達悟) 族語】20240820｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240827",
+      "video_id": "I4ykUPdB4Lo",
+      "title": "【看見族語-雅美 (達悟) 族語】20240827｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240903",
+      "video_id": "UIybs7zyDZ8",
+      "title": "【看見族語-雅美 (達悟) 族語】20240903｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240910",
+      "video_id": "s3HRwYCvVcQ",
+      "title": "【看見族語-雅美 (達悟) 族語】20240910｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20240917",
+      "video_id": "6A4yYIEaZyQ",
+      "title": "【看見族語-雅美 (達悟) 族語】20240917｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20240924",
+      "video_id": "jVHhkjHA8Gs",
+      "title": "【看見族語-雅美 (達悟) 族語】20240924｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241001",
+      "video_id": "jiz4S_e5NXg",
+      "title": "【看見族語-雅美 (達悟) 族語】20241001｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241008",
+      "video_id": "4tILzaUIqIk",
+      "title": "【看見族語-雅美 (達悟) 族語】20241008｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241015",
+      "video_id": "vyL61Hgu4aI",
+      "title": "【看見族語-雅美 (達悟) 族語】20241015｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241022",
+      "video_id": "bx_4k5kSJFI",
+      "title": "【看見族語-雅美 (達悟) 族語】20241022｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20241029",
+      "video_id": "nWXR8n-Bjro",
+      "title": "【看見族語-雅美 (達悟) 族語】20241029｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20241105",
+      "video_id": "O-jexjj6QJ4",
+      "title": "【看見族語-雅美 (達悟) 族語】20241105｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241112",
+      "video_id": "yawJMoTbkHk",
+      "title": "【看見族語-雅美 (達悟) 族語】20241112｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241119",
+      "video_id": "7DIyPY7uJMc",
+      "title": "【看見族語-雅美 (達悟) 族語】20241119｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241126",
+      "video_id": "WNzUJkJRquI",
+      "title": "【看見族語-雅美 (達悟) 族語】20241126｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241203",
+      "video_id": "hWbH58vNjvQ",
+      "title": "【看見族語-雅美 (達悟) 族語】20241203｜原住民族電視台",
+      "duration_s": 2891
+     },
+     {
+      "broadcast_date": "20241210",
+      "video_id": "wrUUPXtRP98",
+      "title": "【看見族語-雅美 (達悟) 族語】20241210｜原住民族電視台",
+      "duration_s": 2821
+     },
+     {
+      "broadcast_date": "20241217",
+      "video_id": "Z-L__ICu9bw",
+      "title": "【看見族語-雅美 (達悟) 族語】20241217｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20241224",
+      "video_id": "SBcyeGt-ntc",
+      "title": "【看見族語-雅美 (達悟) 族語】20241224｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20241231",
+      "video_id": "fQzGdMYCbZg",
+      "title": "【看見族語-雅美 (達悟) 族語】20241231｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250107",
+      "video_id": "n9uar4OAS90",
+      "title": "【看見族語-雅美 (達悟) 族語】20250107｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250114",
+      "video_id": "4Ta-k1wfYjg",
+      "title": "【看見族語-雅美 (達悟) 族語】20250114｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250121",
+      "video_id": "zzGgnBicRk4",
+      "title": "【看見族語-雅美 (達悟) 族語】20250121｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250204",
+      "video_id": "dMZY3wFXc_o",
+      "title": "【看見族語-雅美 (達悟) 族語】20250204｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250211",
+      "video_id": "Y8ndtyWYq5I",
+      "title": "【看見族語-雅美 (達悟) 族語】20250211｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250218",
+      "video_id": "cRktlWHRKcc",
+      "title": "【看見族語-雅美 (達悟) 族語】20250218｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250225",
+      "video_id": "AUZex3eyDbU",
+      "title": "【看見族語-雅美 (達悟) 族語】20250225｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250304",
+      "video_id": "vrACv7uyTqE",
+      "title": "【看見族語-雅美 (達悟) 族語】20250304｜原住民族電視台",
+      "duration_s": 2930
+     },
+     {
+      "broadcast_date": "20250311",
+      "video_id": "ZM4oalD6OZs",
+      "title": "【看見族語-雅美 (達悟) 族語】20250311｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250318",
+      "video_id": "7ZlCOTBZfVM",
+      "title": "【看見族語-雅美 (達悟) 族語】20250318｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250325",
+      "video_id": "4tVS32Aq3us",
+      "title": "【看見族語-雅美 (達悟) 族語】20250325｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250401",
+      "video_id": "athTB9ZyME4",
+      "title": "【看見族語-雅美 (達悟) 族語】20250401｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250408",
+      "video_id": "fjBH5e9zFpQ",
+      "title": "【看見族語-雅美 (達悟) 族語】20250408｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250415",
+      "video_id": "ueAmJ52Oiko",
+      "title": "【看見族語-雅美 (達悟) 族語】20250415｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250422",
+      "video_id": "74LerNKhoJ0",
+      "title": "【看見族語-雅美 (達悟) 族語】20250422｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250429",
+      "video_id": "eAtKmKIp06g",
+      "title": "【看見族語-雅美 (達悟) 族語】20250429｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250506",
+      "video_id": "Izmq4dclacc",
+      "title": "【看見族語-雅美 (達悟) 族語】20250506｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250513",
+      "video_id": "TJzA48dNqoI",
+      "title": "【看見族語-雅美 (達悟) 族語】20250513｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250520",
+      "video_id": "sKg9qBszRCI",
+      "title": "【看見族語-雅美 (達悟) 族語】20250520｜原住民族電視台",
+      "duration_s": 2882
+     },
+     {
+      "broadcast_date": "20250527",
+      "video_id": "JqpjHxXOuF0",
+      "title": "【看見族語-雅美 (達悟) 族語】20250527｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250603",
+      "video_id": "SGBFTKaNcDc",
+      "title": "【看見族語-雅美 (達悟) 族語】20250603｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250610",
+      "video_id": "79EykzSZKkM",
+      "title": "【看見族語-雅美 (達悟) 族語】20250610｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250617",
+      "video_id": "qaCsScp8knI",
+      "title": "【看見族語-雅美 (達悟) 族語】20250617｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250624",
+      "video_id": "QWv3DNpGs_U",
+      "title": "【看見族語-雅美 (達悟) 族語】20250624｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20250701",
+      "video_id": "8mTfiFF5gMk",
+      "title": "【看見族語-雅美 (達悟) 族語】20250701｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250708",
+      "video_id": "qpJnw8Zz_Zw",
+      "title": "【看見族語-雅美 (達悟) 族語】20250708｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250715",
+      "video_id": "nVRlBw9wjP8",
+      "title": "【看見族語-雅美 (達悟) 族語】20250715｜原住民族電視台",
+      "duration_s": 2821
+     },
+     {
+      "broadcast_date": "20250729",
+      "video_id": "yE8HCgt32mQ",
+      "title": "【看見族語-雅美 (達悟) 族語】20250729｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250805",
+      "video_id": "beEvKLntTCk",
+      "title": "【看見族語-雅美 (達悟) 族語】20250805｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250812",
+      "video_id": "aIIyAmJjKWA",
+      "title": "【看見族語-雅美 (達悟) 族語】20250812｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250819",
+      "video_id": "EDLfHQ6qhEc",
+      "title": "【看見族語-雅美 (達悟) 族語】20250819｜原住民族電視台",
+      "duration_s": 3001
+     },
+     {
+      "broadcast_date": "20250826",
+      "video_id": "xe6cnL_QrQY",
+      "title": "【看見族語-雅美 (達悟) 族語】20250826｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250902",
+      "video_id": "vxgq4RYVVRc",
+      "title": "【看見族語-雅美 (達悟) 族語】20250902｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250909",
+      "video_id": "fIh7mSXQzTM",
+      "title": "【看見族語-雅美 (達悟) 族語】20250909｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250916",
+      "video_id": "wPlW_v78oYA",
+      "title": "【看見族語-雅美 (達悟) 族語】20250916｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20250923",
+      "video_id": "B6hnJEhOxaw",
+      "title": "【看見族語-雅美 (達悟) 族語】20250923｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20250930",
+      "video_id": "-RV9WKvCI7M",
+      "title": "【看見族語-雅美 (達悟) 族語】20250930｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20251007",
+      "video_id": "FtsyXb9c_FE",
+      "title": "【看見族語-雅美 (達悟) 族語】20251007｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251014",
+      "video_id": "07tmJfTXU5c",
+      "title": "【看見族語-雅美 (達悟) 族語】20251014｜原住民族電視台",
+      "duration_s": 2885
+     },
+     {
+      "broadcast_date": "20251021",
+      "video_id": "XHFkn2NKLkA",
+      "title": "【看見族語-雅美 (達悟) 族語】20251021｜原住民族電視台",
+      "duration_s": 2921
+     },
+     {
+      "broadcast_date": "20251028",
+      "video_id": "QTzLEfdVwdE",
+      "title": "【看見族語-雅美 (達悟) 族語】20251028｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251104",
+      "video_id": "52FxJBOqtII",
+      "title": "【看見族語-雅美 (達悟) 族語】20251104｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20251111",
+      "video_id": "-hF-VgEJDao",
+      "title": "【看見族語-雅美 (達悟) 族語】20251111｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251118",
+      "video_id": "aWMAaRXkxGo",
+      "title": "【看見族語-雅美 (達悟) 族語】20251118｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251125",
+      "video_id": "sbfg7QaFvc0",
+      "title": "【看見族語-雅美 (達悟) 族語】20251125｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251202",
+      "video_id": "J3U-1lizM8g",
+      "title": "【看見族語-雅美 (達悟) 族語】20251202｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251209",
+      "video_id": "Ljw54SiA3lo",
+      "title": "【看見族語-雅美 (達悟) 族語】20251209｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20251216",
+      "video_id": "t-d3_ocCz1o",
+      "title": "【看見族語-雅美 (達悟) 族語】20251216｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251223",
+      "video_id": "rSKz-hqW0xM",
+      "title": "【看見族語-雅美 (達悟) 族語】20251223｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20251230",
+      "video_id": "db7pUNoA_DY",
+      "title": "【看見族語-雅美 (達悟) 族語】20251230｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260106",
+      "video_id": "j2kAid9TLR0",
+      "title": "【看見族語－雅美 (達悟) 族語】20260106｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260120",
+      "video_id": "3ygRPOicWRE",
+      "title": "【看見族語-雅美 (達悟) 族語】20260120｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260127",
+      "video_id": "bgNFTzKjaR4",
+      "title": "【看見族語-雅美 (達悟) 族語】20260127｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20260203",
+      "video_id": "isdrQcPM1rM",
+      "title": "【看見族語-雅美 (達悟) 族語】20260203｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260210",
+      "video_id": "fAvvWAA3TVk",
+      "title": "【看見族語－雅美（達悟）族語】20260210｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260217",
+      "video_id": "jDuZY7O9mZM",
+      "title": "【看見族語-雅美 (達悟) 族語】20260217｜原住民族電視台",
+      "duration_s": 2951
+     },
+     {
+      "broadcast_date": "20260224",
+      "video_id": "Y47i_i8pF4w",
+      "title": "【看見族語－雅美（達悟）族語】20260224｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260303",
+      "video_id": "rGrhvvD0nes",
+      "title": "【看見族語－雅美（達悟）族語】20260303｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260310",
+      "video_id": "TFWIoNkc1qs",
+      "title": "【看見族語－雅美（達悟）族語】20260310｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260317",
+      "video_id": "8z28C2HiSeo",
+      "title": "【看見族語－雅美（達悟）族語】20260317｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260324",
+      "video_id": "H_xqpioIzHA",
+      "title": "【看見族語－雅美（達悟）族語】20260324｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260331",
+      "video_id": "hsvn5OU-RvM",
+      "title": "【看見族語－雅美（達悟）族語】20260331｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20260407",
+      "video_id": "5MZWEpYRMbw",
+      "title": "【看見族語－雅美（達悟）族語】20260407｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260414",
+      "video_id": "w7t89bxsEI0",
+      "title": "【看見族語－雅美（達悟）族語】20260414｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260421",
+      "video_id": "HmrSzZfu4Zk",
+      "title": "【看見族語－雅美（達悟）族語】20260421｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260428",
+      "video_id": "cGmbKG9jU8E",
+      "title": "【看見族語－雅美（達悟）族語】20260428｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260505",
+      "video_id": "haqIRB0T5wI",
+      "title": "【看見族語－雅美（達悟）族語】20260505｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260512",
+      "video_id": "o-GrWVGwNz8",
+      "title": "【看見族語－雅美（達悟）族語】20260512｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260519",
+      "video_id": "esGKfz8d3w0",
+      "title": "【看見族語－雅美（達悟）族語】20260519｜原住民族電視台",
+      "duration_s": 2911
+     },
+     {
+      "broadcast_date": "20260526",
+      "video_id": "J4fQ2UYHCfY",
+      "title": "【看見族語－雅美（達悟）族語】20260526｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260602",
+      "video_id": "Mi7EDyWz_Xc",
+      "title": "【看見族語－雅美（達悟）族語】20260602｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260609",
+      "video_id": "4ph9fbHZ4eM",
+      "title": "【看見族語－雅美（達悟）族語】20260609｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260616",
+      "video_id": "bTBioV2vgE4",
+      "title": "【看見族語－雅美（達悟）族語】20260616｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260623",
+      "video_id": "iHteEwB355A",
+      "title": "【看見族語－雅美（達悟）族語】20260623｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260630",
+      "video_id": "r339rikRmYE",
+      "title": "【看見族語－雅美（達悟）族語】20260630｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260707",
+      "video_id": "22RePjHQE8c",
+      "title": "【看見族語－雅美（達悟）族語】20260707｜原住民族電視台",
+      "duration_s": 2941
+     },
+     {
+      "broadcast_date": "20260714",
+      "video_id": "NIJZOG48Qjk",
+      "title": "【看見族語－雅美（達悟）族語】20260714｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260721",
+      "video_id": "j_vwr6XlK3w",
+      "title": "【看見族語－雅美（達悟）族語】20260721｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260728",
+      "video_id": "RkhRtdMUkJs",
+      "title": "【看見族語－雅美（達悟）族語】20260728｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260804",
+      "video_id": "0kK7cdh0o54",
+      "title": "【看見族語－雅美（達悟）族語】20260804｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260818",
+      "video_id": "kVL6NB66fBs",
+      "title": "【看見族語－雅美（達悟）族語】20260818｜原住民族電視台",
+      "duration_s": 2881
+     },
+     {
+      "broadcast_date": "20260825",
+      "video_id": "NeQwLcSfEhs",
+      "title": "【看見族語－雅美（達悟）族語】20260825｜原住民族電視台",
+      "duration_s": 2881
+     }
+    ]
+   },
+   "branch": "month-stratified",
+   "shortfall": 0,
+   "drawn_days": [
+    {
+     "broadcast_date": "20241022",
+     "video_id": "bx_4k5kSJFI",
+     "title": "【看見族語-雅美 (達悟) 族語】20241022｜原住民族電視台",
+     "duration_s": 2941,
+     "clip_indices_drawn": [
+      2,
+      4,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20241126",
+     "video_id": "WNzUJkJRquI",
+     "title": "【看見族語-雅美 (達悟) 族語】20241126｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      2,
+      5,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20250225",
+     "video_id": "AUZex3eyDbU",
+     "title": "【看見族語-雅美 (達悟) 族語】20250225｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      7,
+      8
+     ]
+    },
+    {
+     "broadcast_date": "20250422",
+     "video_id": "74LerNKhoJ0",
+     "title": "【看見族語-雅美 (達悟) 族語】20250422｜原住民族電視台",
+     "duration_s": 2911,
+     "clip_indices_drawn": [
+      2,
+      6,
+      7
+     ]
+    },
+    {
+     "broadcast_date": "20250701",
+     "video_id": "8mTfiFF5gMk",
+     "title": "【看見族語-雅美 (達悟) 族語】20250701｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      1,
+      6,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20250826",
+     "video_id": "xe6cnL_QrQY",
+     "title": "【看見族語-雅美 (達悟) 族語】20250826｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      4,
+      6,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20251028",
+     "video_id": "QTzLEfdVwdE",
+     "title": "【看見族語-雅美 (達悟) 族語】20251028｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      2,
+      7,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20260120",
+     "video_id": "3ygRPOicWRE",
+     "title": "【看見族語-雅美 (達悟) 族語】20260120｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      5,
+      7,
+      10
+     ]
+    },
+    {
+     "broadcast_date": "20260428",
+     "video_id": "cGmbKG9jU8E",
+     "title": "【看見族語－雅美（達悟）族語】20260428｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      2,
+      8,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20260526",
+     "video_id": "J4fQ2UYHCfY",
+     "title": "【看見族語－雅美（達悟）族語】20260526｜原住民族電視台",
+     "duration_s": 2941,
+     "clip_indices_drawn": [
+      2,
+      5,
+      7
+     ]
+    },
+    {
+     "broadcast_date": "20260616",
+     "video_id": "bTBioV2vgE4",
+     "title": "【看見族語－雅美（達悟）族語】20260616｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      1,
+      4,
+      9
+     ]
+    },
+    {
+     "broadcast_date": "20260728",
+     "video_id": "RkhRtdMUkJs",
+     "title": "【看見族語－雅美（達悟）族語】20260728｜原住民族電視台",
+     "duration_s": 2881,
+     "clip_indices_drawn": [
+      3,
+      7,
+      10
+     ]
+    }
+   ]
+  }
+ },
+ "stream": [
+  {
+   "step": 1,
+   "language": "Amis",
+   "purpose": "months",
+   "call": "rng.choice(25, size=12, replace=False)",
+   "result": [
+    9,
+    23,
+    6,
+    21,
+    5,
+    16,
+    2,
+    3,
+    14,
+    12,
+    19,
+    18
+   ]
+  },
+  {
+   "step": 2,
+   "language": "Amis",
+   "purpose": "day in 202410",
+   "call": "rng.choice(5)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 3,
+   "language": "Amis",
+   "purpose": "day in 202411",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 4,
+   "language": "Amis",
+   "purpose": "day in 202501",
+   "call": "rng.choice(3)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 5,
+   "language": "Amis",
+   "purpose": "day in 202502",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 6,
+   "language": "Amis",
+   "purpose": "day in 202505",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 7,
+   "language": "Amis",
+   "purpose": "day in 202508",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 8,
+   "language": "Amis",
+   "purpose": "day in 202510",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 9,
+   "language": "Amis",
+   "purpose": "day in 202512",
+   "call": "rng.choice(4)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 10,
+   "language": "Amis",
+   "purpose": "day in 202602",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 11,
+   "language": "Amis",
+   "purpose": "day in 202603",
+   "call": "rng.choice(4)",
+   "result": [
+    1
+   ]
+  },
+  {
+   "step": 12,
+   "language": "Amis",
+   "purpose": "day in 202605",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 13,
+   "language": "Amis",
+   "purpose": "day in 202607",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 14,
+   "language": "Atayal",
+   "purpose": "months",
+   "call": "rng.choice(24, size=12, replace=False)",
+   "result": [
+    19,
+    2,
+    9,
+    3,
+    1,
+    23,
+    10,
+    16,
+    11,
+    6,
+    7,
+    20
+   ]
+  },
+  {
+   "step": 15,
+   "language": "Atayal",
+   "purpose": "day in 202409",
+   "call": "rng.choice(5)",
+   "result": [
+    1
+   ]
+  },
+  {
+   "step": 16,
+   "language": "Atayal",
+   "purpose": "day in 202410",
+   "call": "rng.choice(6)",
+   "result": [
+    4
+   ]
+  },
+  {
+   "step": 17,
+   "language": "Atayal",
+   "purpose": "day in 202411",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 18,
+   "language": "Atayal",
+   "purpose": "day in 202502",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 19,
+   "language": "Atayal",
+   "purpose": "day in 202503",
+   "call": "rng.choice(5)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 20,
+   "language": "Atayal",
+   "purpose": "day in 202505",
+   "call": "rng.choice(4)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 21,
+   "language": "Atayal",
+   "purpose": "day in 202506",
+   "call": "rng.choice(5)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 22,
+   "language": "Atayal",
+   "purpose": "day in 202507",
+   "call": "rng.choice(4)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 23,
+   "language": "Atayal",
+   "purpose": "day in 202512",
+   "call": "rng.choice(4)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 24,
+   "language": "Atayal",
+   "purpose": "day in 202604",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 25,
+   "language": "Atayal",
+   "purpose": "day in 202605",
+   "call": "rng.choice(4)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 26,
+   "language": "Atayal",
+   "purpose": "day in 202608",
+   "call": "rng.choice(6)",
+   "result": [
+    1
+   ]
+  },
+  {
+   "step": 27,
+   "language": "Paiwan",
+   "purpose": "months",
+   "call": "rng.choice(25, size=12, replace=False)",
+   "result": [
+    3,
+    18,
+    12,
+    10,
+    13,
+    9,
+    20,
+    21,
+    24,
+    4,
+    8,
+    6
+   ]
+  },
+  {
+   "step": 28,
+   "language": "Paiwan",
+   "purpose": "day in 202411",
+   "call": "rng.choice(5)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 29,
+   "language": "Paiwan",
+   "purpose": "day in 202412",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 30,
+   "language": "Paiwan",
+   "purpose": "day in 202502",
+   "call": "rng.choice(3)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 31,
+   "language": "Paiwan",
+   "purpose": "day in 202504",
+   "call": "rng.choice(4)",
+   "result": [
+    1
+   ]
+  },
+  {
+   "step": 32,
+   "language": "Paiwan",
+   "purpose": "day in 202505",
+   "call": "rng.choice(5)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 33,
+   "language": "Paiwan",
+   "purpose": "day in 202506",
+   "call": "rng.choice(4)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 34,
+   "language": "Paiwan",
+   "purpose": "day in 202508",
+   "call": "rng.choice(5)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 35,
+   "language": "Paiwan",
+   "purpose": "day in 202509",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 36,
+   "language": "Paiwan",
+   "purpose": "day in 202602",
+   "call": "rng.choice(3)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 37,
+   "language": "Paiwan",
+   "purpose": "day in 202604",
+   "call": "rng.choice(4)",
+   "result": [
+    1
+   ]
+  },
+  {
+   "step": 38,
+   "language": "Paiwan",
+   "purpose": "day in 202605",
+   "call": "rng.choice(5)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 39,
+   "language": "Paiwan",
+   "purpose": "day in 202608",
+   "call": "rng.choice(3)",
+   "result": [
+    1
+   ]
+  },
+  {
+   "step": 40,
+   "language": "Truku",
+   "purpose": "months",
+   "call": "rng.choice(25, size=12, replace=False)",
+   "result": [
+    11,
+    12,
+    14,
+    5,
+    10,
+    21,
+    7,
+    6,
+    0,
+    2,
+    9,
+    16
+   ]
+  },
+  {
+   "step": 41,
+   "language": "Truku",
+   "purpose": "day in 202408",
+   "call": "rng.choice(5)",
+   "result": [
+    4
+   ]
+  },
+  {
+   "step": 42,
+   "language": "Truku",
+   "purpose": "day in 202410",
+   "call": "rng.choice(2)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 43,
+   "language": "Truku",
+   "purpose": "day in 202501",
+   "call": "rng.choice(4)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 44,
+   "language": "Truku",
+   "purpose": "day in 202502",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 45,
+   "language": "Truku",
+   "purpose": "day in 202503",
+   "call": "rng.choice(4)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 46,
+   "language": "Truku",
+   "purpose": "day in 202505",
+   "call": "rng.choice(5)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 47,
+   "language": "Truku",
+   "purpose": "day in 202506",
+   "call": "rng.choice(4)",
+   "result": [
+    1
+   ]
+  },
+  {
+   "step": 48,
+   "language": "Truku",
+   "purpose": "day in 202507",
+   "call": "rng.choice(5)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 49,
+   "language": "Truku",
+   "purpose": "day in 202508",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 50,
+   "language": "Truku",
+   "purpose": "day in 202510",
+   "call": "rng.choice(5)",
+   "result": [
+    4
+   ]
+  },
+  {
+   "step": 51,
+   "language": "Truku",
+   "purpose": "day in 202512",
+   "call": "rng.choice(3)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 52,
+   "language": "Truku",
+   "purpose": "day in 202605",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 53,
+   "language": "Tsou",
+   "purpose": "months",
+   "call": "rng.choice(24, size=12, replace=False)",
+   "result": [
+    19,
+    9,
+    10,
+    13,
+    18,
+    2,
+    0,
+    8,
+    4,
+    23,
+    15,
+    22
+   ]
+  },
+  {
+   "step": 54,
+   "language": "Tsou",
+   "purpose": "day in 202408",
+   "call": "rng.choice(4)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 55,
+   "language": "Tsou",
+   "purpose": "day in 202410",
+   "call": "rng.choice(5)",
+   "result": [
+    1
+   ]
+  },
+  {
+   "step": 56,
+   "language": "Tsou",
+   "purpose": "day in 202501",
+   "call": "rng.choice(4)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 57,
+   "language": "Tsou",
+   "purpose": "day in 202505",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 58,
+   "language": "Tsou",
+   "purpose": "day in 202506",
+   "call": "rng.choice(4)",
+   "result": [
+    1
+   ]
+  },
+  {
+   "step": 59,
+   "language": "Tsou",
+   "purpose": "day in 202507",
+   "call": "rng.choice(5)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 60,
+   "language": "Tsou",
+   "purpose": "day in 202510",
+   "call": "rng.choice(5)",
+   "result": [
+    4
+   ]
+  },
+  {
+   "step": 61,
+   "language": "Tsou",
+   "purpose": "day in 202512",
+   "call": "rng.choice(5)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 62,
+   "language": "Tsou",
+   "purpose": "day in 202603",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 63,
+   "language": "Tsou",
+   "purpose": "day in 202604",
+   "call": "rng.choice(5)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 64,
+   "language": "Tsou",
+   "purpose": "day in 202607",
+   "call": "rng.choice(5)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 65,
+   "language": "Tsou",
+   "purpose": "day in 202608",
+   "call": "rng.choice(4)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 66,
+   "language": "Yami",
+   "purpose": "months",
+   "call": "rng.choice(25, size=12, replace=False)",
+   "result": [
+    17,
+    8,
+    11,
+    12,
+    14,
+    20,
+    3,
+    6,
+    2,
+    23,
+    21,
+    22
+   ]
+  },
+  {
+   "step": 67,
+   "language": "Yami",
+   "purpose": "day in 202410",
+   "call": "rng.choice(5)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 68,
+   "language": "Yami",
+   "purpose": "day in 202411",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 69,
+   "language": "Yami",
+   "purpose": "day in 202502",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 70,
+   "language": "Yami",
+   "purpose": "day in 202504",
+   "call": "rng.choice(5)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 71,
+   "language": "Yami",
+   "purpose": "day in 202507",
+   "call": "rng.choice(4)",
+   "result": [
+    0
+   ]
+  },
+  {
+   "step": 72,
+   "language": "Yami",
+   "purpose": "day in 202508",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 73,
+   "language": "Yami",
+   "purpose": "day in 202510",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 74,
+   "language": "Yami",
+   "purpose": "day in 202601",
+   "call": "rng.choice(3)",
+   "result": [
+    1
+   ]
+  },
+  {
+   "step": 75,
+   "language": "Yami",
+   "purpose": "day in 202604",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 76,
+   "language": "Yami",
+   "purpose": "day in 202605",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 77,
+   "language": "Yami",
+   "purpose": "day in 202606",
+   "call": "rng.choice(5)",
+   "result": [
+    2
+   ]
+  },
+  {
+   "step": 78,
+   "language": "Yami",
+   "purpose": "day in 202607",
+   "call": "rng.choice(4)",
+   "result": [
+    3
+   ]
+  },
+  {
+   "step": 79,
+   "language": "Amis",
+   "purpose": "clips of 20241002",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    1,
+    4,
+    8
+   ]
+  },
+  {
+   "step": 80,
+   "language": "Amis",
+   "purpose": "clips of 20241125",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    2,
+    4,
+    6
+   ]
+  },
+  {
+   "step": 81,
+   "language": "Amis",
+   "purpose": "clips of 20250106",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    6,
+    2,
+    4
+   ]
+  },
+  {
+   "step": 82,
+   "language": "Amis",
+   "purpose": "clips of 20250203",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    7,
+    1,
+    4
+   ]
+  },
+  {
+   "step": 83,
+   "language": "Amis",
+   "purpose": "clips of 20250526",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    9,
+    7,
+    3
+   ]
+  },
+  {
+   "step": 84,
+   "language": "Amis",
+   "purpose": "clips of 20250804",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    3,
+    0,
+    6
+   ]
+  },
+  {
+   "step": 85,
+   "language": "Amis",
+   "purpose": "clips of 20251006",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    9,
+    4,
+    7
+   ]
+  },
+  {
+   "step": 86,
+   "language": "Amis",
+   "purpose": "clips of 20251215",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    3,
+    4,
+    2
+   ]
+  },
+  {
+   "step": 87,
+   "language": "Amis",
+   "purpose": "clips of 20260223",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    9,
+    0,
+    3
+   ]
+  },
+  {
+   "step": 88,
+   "language": "Amis",
+   "purpose": "clips of 20260316",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    2,
+    4,
+    1
+   ]
+  },
+  {
+   "step": 89,
+   "language": "Amis",
+   "purpose": "clips of 20260504",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    9,
+    7,
+    8
+   ]
+  },
+  {
+   "step": 90,
+   "language": "Amis",
+   "purpose": "clips of 20260706",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    2,
+    9,
+    8
+   ]
+  },
+  {
+   "step": 91,
+   "language": "Atayal",
+   "purpose": "clips of 20240909",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    0,
+    5,
+    8
+   ]
+  },
+  {
+   "step": 92,
+   "language": "Atayal",
+   "purpose": "clips of 20241024",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    9,
+    0,
+    3
+   ]
+  },
+  {
+   "step": 93,
+   "language": "Atayal",
+   "purpose": "clips of 20241104",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    8,
+    0,
+    9
+   ]
+  },
+  {
+   "step": 94,
+   "language": "Atayal",
+   "purpose": "clips of 20250203",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    3,
+    1,
+    2
+   ]
+  },
+  {
+   "step": 95,
+   "language": "Atayal",
+   "purpose": "clips of 20250303",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    2,
+    0,
+    9
+   ]
+  },
+  {
+   "step": 96,
+   "language": "Atayal",
+   "purpose": "clips of 20250519",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    3,
+    4,
+    8
+   ]
+  },
+  {
+   "step": 97,
+   "language": "Atayal",
+   "purpose": "clips of 20250623",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    0,
+    9,
+    8
+   ]
+  },
+  {
+   "step": 98,
+   "language": "Atayal",
+   "purpose": "clips of 20250721",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    7,
+    5,
+    4
+   ]
+  },
+  {
+   "step": 99,
+   "language": "Atayal",
+   "purpose": "clips of 20251222",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    2,
+    7,
+    8
+   ]
+  },
+  {
+   "step": 100,
+   "language": "Atayal",
+   "purpose": "clips of 20260406",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    7,
+    8,
+    5
+   ]
+  },
+  {
+   "step": 101,
+   "language": "Atayal",
+   "purpose": "clips of 20260518",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    2,
+    9,
+    6
+   ]
+  },
+  {
+   "step": 102,
+   "language": "Atayal",
+   "purpose": "clips of 20260810",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    4,
+    7,
+    9
+   ]
+  },
+  {
+   "step": 103,
+   "language": "Paiwan",
+   "purpose": "clips of 20241116",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    1,
+    0,
+    8
+   ]
+  },
+  {
+   "step": 104,
+   "language": "Paiwan",
+   "purpose": "clips of 20241207",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    7,
+    0,
+    5
+   ]
+  },
+  {
+   "step": 105,
+   "language": "Paiwan",
+   "purpose": "clips of 20250222",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    5,
+    4,
+    8
+   ]
+  },
+  {
+   "step": 106,
+   "language": "Paiwan",
+   "purpose": "clips of 20250412",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    7,
+    2,
+    8
+   ]
+  },
+  {
+   "step": 107,
+   "language": "Paiwan",
+   "purpose": "clips of 20250503",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    7,
+    4,
+    6
+   ]
+  },
+  {
+   "step": 108,
+   "language": "Paiwan",
+   "purpose": "clips of 20250621",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    4,
+    8,
+    2
+   ]
+  },
+  {
+   "step": 109,
+   "language": "Paiwan",
+   "purpose": "clips of 20250823",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    9,
+    4,
+    2
+   ]
+  },
+  {
+   "step": 110,
+   "language": "Paiwan",
+   "purpose": "clips of 20250906",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    9,
+    1,
+    7
+   ]
+  },
+  {
+   "step": 111,
+   "language": "Paiwan",
+   "purpose": "clips of 20260214",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    8,
+    2,
+    1
+   ]
+  },
+  {
+   "step": 112,
+   "language": "Paiwan",
+   "purpose": "clips of 20260411",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    4,
+    6,
+    2
+   ]
+  },
+  {
+   "step": 113,
+   "language": "Paiwan",
+   "purpose": "clips of 20260502",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    7,
+    6,
+    4
+   ]
+  },
+  {
+   "step": 114,
+   "language": "Paiwan",
+   "purpose": "clips of 20260808",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    3,
+    8,
+    0
+   ]
+  },
+  {
+   "step": 115,
+   "language": "Truku",
+   "purpose": "clips of 20240829",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    4,
+    1,
+    5
+   ]
+  },
+  {
+   "step": 116,
+   "language": "Truku",
+   "purpose": "clips of 20241003",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    4,
+    7,
+    6
+   ]
+  },
+  {
+   "step": 117,
+   "language": "Truku",
+   "purpose": "clips of 20250116",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    0,
+    7,
+    3
+   ]
+  },
+  {
+   "step": 118,
+   "language": "Truku",
+   "purpose": "clips of 20250227",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    2,
+    1,
+    4
+   ]
+  },
+  {
+   "step": 119,
+   "language": "Truku",
+   "purpose": "clips of 20250320",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    4,
+    3,
+    9
+   ]
+  },
+  {
+   "step": 120,
+   "language": "Truku",
+   "purpose": "clips of 20250522",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    6,
+    4,
+    2
+   ]
+  },
+  {
+   "step": 121,
+   "language": "Truku",
+   "purpose": "clips of 20250612",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    4,
+    9,
+    8
+   ]
+  },
+  {
+   "step": 122,
+   "language": "Truku",
+   "purpose": "clips of 20250703",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    1,
+    8,
+    4
+   ]
+  },
+  {
+   "step": 123,
+   "language": "Truku",
+   "purpose": "clips of 20250828",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    7,
+    8,
+    6
+   ]
+  },
+  {
+   "step": 124,
+   "language": "Truku",
+   "purpose": "clips of 20251030",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    5,
+    4,
+    9
+   ]
+  },
+  {
+   "step": 125,
+   "language": "Truku",
+   "purpose": "clips of 20251225",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    3,
+    5,
+    8
+   ]
+  },
+  {
+   "step": 126,
+   "language": "Truku",
+   "purpose": "clips of 20260528",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    6,
+    5,
+    4
+   ]
+  },
+  {
+   "step": 127,
+   "language": "Tsou",
+   "purpose": "clips of 20240821",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    1,
+    2,
+    9
+   ]
+  },
+  {
+   "step": 128,
+   "language": "Tsou",
+   "purpose": "clips of 20241009",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    2,
+    1,
+    9
+   ]
+  },
+  {
+   "step": 129,
+   "language": "Tsou",
+   "purpose": "clips of 20250115",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    5,
+    1,
+    3
+   ]
+  },
+  {
+   "step": 130,
+   "language": "Tsou",
+   "purpose": "clips of 20250507",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    5,
+    7,
+    2
+   ]
+  },
+  {
+   "step": 131,
+   "language": "Tsou",
+   "purpose": "clips of 20250611",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    4,
+    1,
+    0
+   ]
+  },
+  {
+   "step": 132,
+   "language": "Tsou",
+   "purpose": "clips of 20250702",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    4,
+    3,
+    2
+   ]
+  },
+  {
+   "step": 133,
+   "language": "Tsou",
+   "purpose": "clips of 20251029",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    8,
+    7,
+    9
+   ]
+  },
+  {
+   "step": 134,
+   "language": "Tsou",
+   "purpose": "clips of 20251217",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    2,
+    9,
+    5
+   ]
+  },
+  {
+   "step": 135,
+   "language": "Tsou",
+   "purpose": "clips of 20260304",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    0,
+    4,
+    3
+   ]
+  },
+  {
+   "step": 136,
+   "language": "Tsou",
+   "purpose": "clips of 20260401",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    9,
+    8,
+    4
+   ]
+  },
+  {
+   "step": 137,
+   "language": "Tsou",
+   "purpose": "clips of 20260715",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    8,
+    3,
+    9
+   ]
+  },
+  {
+   "step": 138,
+   "language": "Tsou",
+   "purpose": "clips of 20260819",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    6,
+    9,
+    2
+   ]
+  },
+  {
+   "step": 139,
+   "language": "Yami",
+   "purpose": "clips of 20241022",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    3,
+    9,
+    1
+   ]
+  },
+  {
+   "step": 140,
+   "language": "Yami",
+   "purpose": "clips of 20241126",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    8,
+    4,
+    1
+   ]
+  },
+  {
+   "step": 141,
+   "language": "Yami",
+   "purpose": "clips of 20250225",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    7,
+    2,
+    6
+   ]
+  },
+  {
+   "step": 142,
+   "language": "Yami",
+   "purpose": "clips of 20250422",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    6,
+    1,
+    5
+   ]
+  },
+  {
+   "step": 143,
+   "language": "Yami",
+   "purpose": "clips of 20250701",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    9,
+    0,
+    5
+   ]
+  },
+  {
+   "step": 144,
+   "language": "Yami",
+   "purpose": "clips of 20250826",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    5,
+    8,
+    3
+   ]
+  },
+  {
+   "step": 145,
+   "language": "Yami",
+   "purpose": "clips of 20251028",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    6,
+    1,
+    8
+   ]
+  },
+  {
+   "step": 146,
+   "language": "Yami",
+   "purpose": "clips of 20260120",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    4,
+    9,
+    6
+   ]
+  },
+  {
+   "step": 147,
+   "language": "Yami",
+   "purpose": "clips of 20260428",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    1,
+    8,
+    7
+   ]
+  },
+  {
+   "step": 148,
+   "language": "Yami",
+   "purpose": "clips of 20260526",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    4,
+    6,
+    1
+   ]
+  },
+  {
+   "step": 149,
+   "language": "Yami",
+   "purpose": "clips of 20260616",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    3,
+    0,
+    8
+   ]
+  },
+  {
+   "step": 150,
+   "language": "Yami",
+   "purpose": "clips of 20260728",
+   "call": "rng.choice(10, size=3, replace=False)",
+   "result": [
+    6,
+    2,
+    9
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+diff --git a/PREREGISTRATION.md b/PREREGISTRATION.md
+index 5ba3be6..50442af 100644
+--- a/PREREGISTRATION.md
++++ b/PREREGISTRATION.md
+@@ -204,7 +204,51 @@ must not be edited afterwards.
+ 
+ ## 7. Amendments
+ 
+-None.
++### Amendment 1, 2026-10-03. The day draw.
++
++**Written before any Study 3 video was downloaded or viewed.** No Study 3 data of any kind had
++been inspected when this was written, and none had been collected.
++
++*What was missing.* §1 item 2 fixes the draw of three clips from within a broadcast day. It does
++not fix which twelve days are drawn from each language's playlist, and it does not state the
++order in which the single random stream is consumed. Both are sampling decisions and both are
++fixed here. Nothing in §1 item 2 is changed.
++
++*The day frame.* For each language, every entry of its TITV playlist whose title carries a
++parsable eight-digit broadcast date is one day in that language's frame. Entries whose date
++cannot be parsed are excluded and listed. The frame is built from playlist metadata alone, with
++no video downloaded and no content viewed.
++
++*Exclusion of Study 1's broadcast days.* Study 1 used every one of the ten clips of each of
++three broadcast days, and those days have been worked on extensively (§0.2). They are removed
++from the day frame in whole, before the draw: **Amis 20260302, Paiwan 20260307, Truku 20260305**
++(`data/h264/`, `pilot/labels.json`, and `youtube_download/PROVENANCE.md` for their sources). The
++exclusion is by identity, not by content. It is what keeps §2 item 6, which confines the outcome
++test to the Study 3 corpus, from requiring an exclusion made after the data have been seen. The
++three languages with no Study 1 day, Atayal, Tsou and Yami, lose nothing. If an entry dated
++20260302 appears in the Truku playlist, that day is excluded as well and the fact is reported:
++one extra excluded day costs nothing, a missed exclusion costs the blindness of the whole Truku
++sample.
++
++*The day draw.* If a language's frame spans twelve or more distinct calendar months, twelve
++distinct months are drawn uniformly at random without replacement, and one day is drawn
++uniformly at random within each drawn month. If the frame spans fewer than twelve months, twelve
++days are drawn uniformly at random from the frame without replacement. If the frame holds fewer
++than twelve days, all are taken and the shortfall is recorded. The month-stratified branch is
++what delivers the spread across months that §0.1 describes. Which branch applies is determined
++by the frame, which is metadata, and is recorded with the frame.
++
++*The stream.* One `numpy.random.default_rng(20261005)` instance serves the whole design,
++consumed in this order: every day draw first, languages in alphabetical order (Amis, Atayal,
++Paiwan, Truku, Tsou, Yami); then every within-day clip draw under §1 item 2, languages in the
++same order and days in date order; then any top-up draw under §1 item 4, continuing the same
++stream. The draw is reproducible from the seed and the recorded frame alone.
++
++*Records.* The frame and the draw are written to `analysis/study3/frame.json` and
++`analysis/study3/draw.json`, which are version controlled. `.gitignore` excludes `data/` whole,
++so the media live there and the records do not.
++
++---
+ 
+ > Format for any amendment: date, the item changed, what it was, what it became, the reason, and
+ > whether any Study 3 data had been inspected at the time. An amendment made after inspection is

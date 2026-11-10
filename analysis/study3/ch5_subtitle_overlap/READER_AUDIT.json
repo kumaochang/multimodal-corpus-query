@@ -1,0 +1,959 @@
+{
+  "passed": true,
+  "UTC": "2026-10-30T15:06:37.685148+00:00",
+  "release": "ULFR-v1-20261025",
+  "reader": "independent ZIP reader; original reader and manifests unchanged",
+  "queries": 2753,
+  "source_days": 72,
+  "clips": 191,
+  "conditions": [
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|tfidf_sub|ami",
+      "queries": 365,
+      "entries": 111754,
+      "equal_adjacent_score_pairs": 1
+    },
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|tfidf_sub|pwn",
+      "queries": 497,
+      "entries": 215642,
+      "equal_adjacent_score_pairs": 413
+    },
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|tfidf_sub|tao",
+      "queries": 404,
+      "entries": 143242,
+      "equal_adjacent_score_pairs": 345
+    },
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|tfidf_sub|tay",
+      "queries": 429,
+      "entries": 164888,
+      "equal_adjacent_score_pairs": 1423
+    },
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|tfidf_sub|trv",
+      "queries": 605,
+      "entries": 331996,
+      "equal_adjacent_score_pairs": 0
+    },
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|tfidf_sub|tsu",
+      "queries": 453,
+      "entries": 182292,
+      "equal_adjacent_score_pairs": 1107
+    },
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|xlmr_sub|ami",
+      "queries": 365,
+      "entries": 111754,
+      "equal_adjacent_score_pairs": 205
+    },
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|xlmr_sub|pwn",
+      "queries": 497,
+      "entries": 215642,
+      "equal_adjacent_score_pairs": 932
+    },
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|xlmr_sub|tao",
+      "queries": 404,
+      "entries": 143242,
+      "equal_adjacent_score_pairs": 607
+    },
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|xlmr_sub|tay",
+      "queries": 429,
+      "entries": 164888,
+      "equal_adjacent_score_pairs": 1725
+    },
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|xlmr_sub|trv",
+      "queries": 605,
+      "entries": 331996,
+      "equal_adjacent_score_pairs": 1087
+    },
+    {
+      "condition": "supplement_new|A|six_common|union_MI|W3|xlmr_sub|tsu",
+      "queries": 453,
+      "entries": 182292,
+      "equal_adjacent_score_pairs": 1568
+    }
+  ],
+  "full_entries_checked": 2299628,
+  "top10_bitwise_checked": true,
+  "ordered_route_pairing_checked": true,
+  "model_saved_hits_checked": true,
+  "tie_precision_provenance": "Pinned fr_rank_supplement.score asserts float32 S before stable argsort; compares stored candidate-bank positions, not global row order",
+  "subtitle_required_units": 2753,
+  "subtitle_files": 191,
+  "subtitle_duplicate_IDs": 0,
+  "subtitle_missing_IDs": 0,
+  "required_empty_or_whitespace_subtitles": 0,
+  "labels": [
+    "Explaining",
+    "Reporting",
+    "Urging",
+    "Celebrating",
+    "Comforting"
+  ],
+  "sources": [
+    "ami",
+    "tay",
+    "pwn",
+    "tao",
+    "trv",
+    "tsu"
+  ],
+  "routes": [
+    "xlmr_sub",
+    "tfidf_sub"
+  ],
+  "inputs": {
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/index/condition_index.json": {
+      "bytes": 3502747,
+      "sha256": "9dbe943dbfe6f972a8fc35cde35ea5edd811ad91d42a54ca4b8bf78c8ecb5889"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/MANIFEST.json": {
+      "bytes": 1007784,
+      "sha256": "9eb75b434317887c69710cf364a24c94e432ab31cee256593ef8e8ced9654721"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/index/unit_rows.npz": {
+      "bytes": 128208,
+      "sha256": "73ee6d208106e3c3d158f4c810b8c8696048cb5c96cb0ed94ac56ffb25ad96f5"
+    },
+    "data/server_transfer/restore/data/study3_runs/features_full/features.npz": {
+      "bytes": 165456704,
+      "sha256": "80ab8584dd41383226e0986055480ead9cac774b9e3b5928d4f2bf45d80d1704"
+    },
+    "corpus/study3/index_manifest.json": {
+      "bytes": 75352,
+      "sha256": "8f497770e96188d12f36c6b3238509e62eb4952208bf894425048b716469813a"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/writer_verified/analysis/study3/formal_release/fr_rank_supplement.py": {
+      "bytes": 9850,
+      "sha256": "dd5bd1048b53faab2f98b75bb6e2346421384d34f9dc7557171ecd733bc7642d"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/supplement/runA/execution/HA_W3_model_data.npz": {
+      "bytes": 1237038,
+      "sha256": "6417e9783238a7af27baecf95817e095a2998d6ee5e26d337daf4d9d5dde1429"
+    },
+    "data/server_transfer/HA_W3_subtitle_fullblocks_ULFR-v1/HA_W3_subtitle_fullblocks_ULFR-v1.zip": {
+      "bytes": 10478972,
+      "sha256": "b957bdb60b838346226b315466394ed83b0b41351ff905cdc372138006413209"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/7b/7b559e069620fb0891eb1b9deec7a0f812bc88646d93b9aa73d230e40a93f5da.npz": {
+      "bytes": 19307,
+      "sha256": "227f74f63a1ae041276b4b9bc9e0b91416bbc804825bf91a46be3c6585489b3c"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/df/dffdde41fa60f10fb83d463ebe7200dc7ab0cfd7f04af7c998b0a7a3050ab2ad.npz": {
+      "bytes": 26215,
+      "sha256": "0b3f4ac25a49844a9ad436275b60f1c1eec682235e8355ac65a5c788688eb922"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/5e/5ed971e5971df613e6a47c12691f50c2371df8f183e81e6ff5d8edc6a3f72404.npz": {
+      "bytes": 21227,
+      "sha256": "c05c50c816ea128a5758c15f0a5fffc9cd3e23cacb4d6eb3d133487be7eab1b4"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/15/155f5e92842775e9d22901dacc597120cb781b1f38ad30c4f7ef70044c38fae3.npz": {
+      "bytes": 22602,
+      "sha256": "e024cdde12d5e0f3d4616663adf3d0b1a758e35c4d215a4629e378f4f40a5fc0"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/b6/b65be63588973f3aa20ee491ab8551ff29b4459243645ccea56819764e78057c.npz": {
+      "bytes": 32287,
+      "sha256": "ddab238c492a5a8c4a0077f502baca5b346397b95f4850710374653a12cdb1a1"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/40/40dc3f6615c57b00291ffcacc06af87c4d80b95676bc558c96ed1727387ac0e5.npz": {
+      "bytes": 23795,
+      "sha256": "fee92e43f6af101fc48edb2ab6ad4126158725677398648a6ff317b687172b14"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/c4/c4ab578c698b8d5d9f2d556a6f2620d7f230caf3179137bbae55e396a4fd5e35.npz": {
+      "bytes": 16943,
+      "sha256": "0dd41e081f27f9358ec9de53ed213d43f9e38b865641837a893d8267c0f6513a"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/68/68729b5b7d09db0c176b74c58758b2bbe79e2ee01bb8c14a40e3c8cec27fda3c.npz": {
+      "bytes": 22783,
+      "sha256": "951e6f018052b8b2e170b0897040cf799f146b4108ad742f817b94a9c62e1cfc"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/b9/b908af5a44080b6842c2eaccf35c21ec31c7f679230f3bb718f4083360ce0925.npz": {
+      "bytes": 18708,
+      "sha256": "9f801849e5fc807223f5cb6eee85b3b7ae7a40315796fb9ca0602dba2a55729a"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/6c/6c068ccca0763faaf540460521a43ccad61de8299987dd196f819829387c902c.npz": {
+      "bytes": 19685,
+      "sha256": "8b91fb1770c58a9a16b6661bda7c06f8b78d7f727c83719056382d1a8f0e0721"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/d9/d9c2f430c28e6388bc45024869fdf7be8617f9b067347cec2cc5a676939a236c.npz": {
+      "bytes": 27793,
+      "sha256": "7ac810b1184ced5146656d32df03892f965691c9733f17f38c65bb8bff81fa99"
+    },
+    "data/server_transfer/formal_release_ULFR-v1_20261025_181849/numeric_verified/rankings/topk10/61/61d2c262c4cb668851beb78a575ca281d8c498e39dd52b44399b5f1118c0e206.npz": {
+      "bytes": 20812,
+      "sha256": "975940b857d23050d293d470f258e976315898cf88d7b1e82efb3608a81db208"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20241002-02.subtitles.json": {
+      "bytes": 33209,
+      "sha256": "c5ed175a06de74415584fbf6a92329ad28b0e537dc1fabbc85faac72ce04486d"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20241002-09.subtitles.json": {
+      "bytes": 55352,
+      "sha256": "941fee81594825c667f693bed9183da39f58dad602b433163ea937cd17aaa490"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20241125-03.subtitles.json": {
+      "bytes": 32536,
+      "sha256": "c40625226059bf53c4b4d7aa25db69387a82378a34a3b08eaf0174641b957cca"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20241125-05.subtitles.json": {
+      "bytes": 21804,
+      "sha256": "5bce96fd288a6ca7d35127a814cc14cc141198096786d851ff9d76e030e032ec"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20241125-07.subtitles.json": {
+      "bytes": 50318,
+      "sha256": "d16867e2769f01301c8b329faf575aa79c20e8b8e755c1cf3a68913d2c63c794"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20250106-03.subtitles.json": {
+      "bytes": 27008,
+      "sha256": "6609fcdc7296b736e16ee84b0ab3ba2bf5771fbc97f9c31aacfcab4a4ce245bf"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20250106-05.subtitles.json": {
+      "bytes": 24759,
+      "sha256": "9f95cd7434db13748c392c390f42719bff3731895852204c89f89048f6f47217"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20250106-07.subtitles.json": {
+      "bytes": 44867,
+      "sha256": "13fb7be3f8f5b70687a2e146184146f86cbf49c19c4f08faa0a112e055c3a426"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20250203-02.subtitles.json": {
+      "bytes": 29465,
+      "sha256": "0be4ef61ffa1bbef794887c6d6c722fa8f3fdf67fa04488cbdccd4dc2f7293d5"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20250203-05.subtitles.json": {
+      "bytes": 29339,
+      "sha256": "09db4df804a120ec11de5a12f89535610c5e3acc36b24b62a8492ddfbc42595c"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20250526-08.subtitles.json": {
+      "bytes": 51987,
+      "sha256": "ad51cba9a8c5932d0ff745b6c24c7ffbee52612a8dec7e64c116e5401416f764"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20250526-10.subtitles.json": {
+      "bytes": 32975,
+      "sha256": "7c6a4b28c555965d422fccfbad4745d24f1c1df3165d67e8becca5a335ed824b"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20250804-01.subtitles.json": {
+      "bytes": 43756,
+      "sha256": "34b4198893b2dfb6ffbef5369b0f6541c419a1cca97815adb9080a3e45e9c581"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20250804-04.subtitles.json": {
+      "bytes": 48918,
+      "sha256": "9f1474f40b3b089d50316005af853f7c14d483f61298462b9d3fe6e95730d50c"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20250804-07.subtitles.json": {
+      "bytes": 52198,
+      "sha256": "18112086dc528d30a7efc57a808ae15fbf7f2cf0085230337c52f63bd4ba04ed"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20251006-08.subtitles.json": {
+      "bytes": 12259,
+      "sha256": "95b191a60e96056917dc8296333554ad5e19e63e4f5d250f790e656860191ea8"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20251006-10.subtitles.json": {
+      "bytes": 39346,
+      "sha256": "eaf5ccce86a7ce3ef4afb6d402b8f8710e063b3909b1663ef81208fd4e858804"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20251215-03.subtitles.json": {
+      "bytes": 44518,
+      "sha256": "0786c9d05776626387062efb49251371c8a9cce6111d8068010fec3f092b44ca"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20251215-05.subtitles.json": {
+      "bytes": 39542,
+      "sha256": "301512cc867db9a1c702b2b9f5fc6f1b4d2c51bb32f7807f0f754d5d01d220e0"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20260223-01.subtitles.json": {
+      "bytes": 29808,
+      "sha256": "a9b8330a672fa5c99fb3b5bfc07371b9d96144bef23fd627201366c6946b43e3"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20260223-04.subtitles.json": {
+      "bytes": 18524,
+      "sha256": "a622d94017b2af8e8cf2668d871c60df701ca431caf927168e3423c75322e4bd"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20260223-10.subtitles.json": {
+      "bytes": 25102,
+      "sha256": "f8d17878e6312abc4dc6e875845ead666ff74b9e2229c7feda942058905022ef"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20260316-02.subtitles.json": {
+      "bytes": 26590,
+      "sha256": "23c5914439be756c30f1fee8acbd5a9dd750f0ad725198a1596fcec4d62725ce"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20260316-03.subtitles.json": {
+      "bytes": 32942,
+      "sha256": "0402f45cd33e617342639364cd7886268c18271ace1f146b699e229ff36e885c"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20260504-09.subtitles.json": {
+      "bytes": 23659,
+      "sha256": "8799dd47d7d85fe21baa1c327b0730fb802966dbac885ae2b407af4e86dd1114"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20260504-10.subtitles.json": {
+      "bytes": 32887,
+      "sha256": "bc0f77f201a7c1febd2385dc3ea595d5f2db9e3dda9626680852d6d7e8916dd6"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Amis-20260706-10.subtitles.json": {
+      "bytes": 34002,
+      "sha256": "0fcd81bf5306a999f56bf13bff6dc5bde3b100833ea8d8b1c206360b288c32e2"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20240909-01.subtitles.json": {
+      "bytes": 29708,
+      "sha256": "1ca0c0bdb6a337721558254049b70786f50081df007665b0e54b00bfbb3456f8"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20240909-06.subtitles.json": {
+      "bytes": 31379,
+      "sha256": "bc43a1c1d81a433162ddc5b39d9a0d3dcf6117e200105d04cb59e47d7f7ef3db"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20240909-09.subtitles.json": {
+      "bytes": 35901,
+      "sha256": "dfe29231237c36314ab208415770fe2dfd4f8f327f26209f5f79436140922058"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20241024-01.subtitles.json": {
+      "bytes": 30930,
+      "sha256": "c3531329529b90ebe6bbfc30f2349187eed1c724862eb6c06f99dc98c6da5308"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20241024-04.subtitles.json": {
+      "bytes": 35845,
+      "sha256": "02c3bb9b4041513f13b96808822e3b22e96d79876f2465134fc64222811594fc"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20241104-01.subtitles.json": {
+      "bytes": 35534,
+      "sha256": "03fda3fa3611c9f42c36098336c5277c4e10c9042483123b020c1fabe2d988d3"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20241104-09.subtitles.json": {
+      "bytes": 40708,
+      "sha256": "3304771eda2ea5154811e7af8355e880e21392c4ecb8619294a4a535a990ea66"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20241104-10.subtitles.json": {
+      "bytes": 26687,
+      "sha256": "129888aa744650b036a8826a219ae8ce4a0d976d1166e08d203a92fab1a83e6e"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250203-02.subtitles.json": {
+      "bytes": 37873,
+      "sha256": "35bf787a603804c54550f97ff6f25dfb433008b5fdc5f931d891ee33bc2aa18f"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250203-03.subtitles.json": {
+      "bytes": 25916,
+      "sha256": "6310ff1bc8f2d19e1a557a06559a735c4866f049b32afbfb389e0cde14975c94"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250203-04.subtitles.json": {
+      "bytes": 42748,
+      "sha256": "04f2211dc4b876a5f74a8d5a932b21a518e608ac5a36ab79c6953eee33a8b682"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250303-03.subtitles.json": {
+      "bytes": 31998,
+      "sha256": "baf447e41a46adaf376ae805bf65e6f4e0bacb0960722abb00a04feed58db321"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250303-10.subtitles.json": {
+      "bytes": 44430,
+      "sha256": "a5d25be4a73cc7c18368a24c3003e04ae661c6cf787865455f9fc20af5e07372"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250519-04.subtitles.json": {
+      "bytes": 30282,
+      "sha256": "abb9f3d53e98bd9982f4dfa14fdb73c74355295d61caadef0de4cf3091d65276"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250519-05.subtitles.json": {
+      "bytes": 46209,
+      "sha256": "b1101ded179a83e9c496a576a8a75b44ba556aeb3129f62e308970cfc8e0f954"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250519-09.subtitles.json": {
+      "bytes": 26875,
+      "sha256": "1f7a0d2d07e733a7f781498da5af5780aa7a3d4fd4fa62737c5ae1b59c331c82"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250623-09.subtitles.json": {
+      "bytes": 35050,
+      "sha256": "1c6c6fc169414807db5d99d3bcb91bcf50b20aa3c75eebeac3263f7fb5f15e02"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250623-10.subtitles.json": {
+      "bytes": 29557,
+      "sha256": "751c07b63fdf045ca06ec4a067a2433310cb4abb5ef7d72722f460316ea5e060"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250721-05.subtitles.json": {
+      "bytes": 50357,
+      "sha256": "b10358fddee728cc87ce6c4733c4928095026e177b20fc18027185e6aefed999"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250721-06.subtitles.json": {
+      "bytes": 48307,
+      "sha256": "6a9ff5bda7a18a435a0eced8486ee5d92b91943f0a38828e9f6b829a76141ddc"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20250721-08.subtitles.json": {
+      "bytes": 35040,
+      "sha256": "66a8e16c1fd70167337e9a45b83b2fa5c9f45105aa81ba7eb8b8517737e5ec2f"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20251222-03.subtitles.json": {
+      "bytes": 31686,
+      "sha256": "5ff5b1474bf26f1e6bcfa049bd008a6f0639534a16b277045f165daa4203a9f0"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20251222-08.subtitles.json": {
+      "bytes": 38963,
+      "sha256": "2e7e259649d29257e74dba326155c8f6c7dc102e5b884f34af2e889e4d28db03"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20251222-09.subtitles.json": {
+      "bytes": 42719,
+      "sha256": "88ead14388bfa6526bb19ae094020631e3b76511f420d8a45f319073ac8873f4"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20260406-06.subtitles.json": {
+      "bytes": 38584,
+      "sha256": "7f9f554f284d5f8f3db5657b13fc7fa2740e4c6338aa0b76c84856d3873a43ce"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20260406-08.subtitles.json": {
+      "bytes": 38806,
+      "sha256": "ff52c835ffc34d43c883a9e42a46432b0f71526c37d16a3c193dcc7d54f7b6d2"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20260406-09.subtitles.json": {
+      "bytes": 35420,
+      "sha256": "04b4ef0718460d2694bbb11db2b06dc85a227b89a8f44d9ad65e68bc0afdd034"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20260518-03.subtitles.json": {
+      "bytes": 34419,
+      "sha256": "e1be6d75f595b5db32b9b79dd6b52e470fde18ece6b7a87f81f5e7447431c501"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20260518-10.subtitles.json": {
+      "bytes": 30868,
+      "sha256": "d1b191c11bd8d858547d4b95b25d4525768f0e1a4a139b51157db929789ee091"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20260810-05.subtitles.json": {
+      "bytes": 33943,
+      "sha256": "1d4429b4f0155010878ca897fd7c58378b5a77ad0c5368b796439cde6997176d"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20260810-08.subtitles.json": {
+      "bytes": 19851,
+      "sha256": "44b0bc2d5506d57cb3282787aea413656792a370fbca10da87ce7f8ffe3c351c"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Atayal-20260810-10.subtitles.json": {
+      "bytes": 25893,
+      "sha256": "49bc889d9f6b1fb108adba29a879343701334fd9019e2519a885ace7f45f5f43"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20241116-01.subtitles.json": {
+      "bytes": 29710,
+      "sha256": "58fca58d469e9d399b79f147ca3ad9c2751e95e4fbb15e8f0d7822ca9771f20e"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20241116-02.subtitles.json": {
+      "bytes": 36394,
+      "sha256": "5afe5231ba9f088fdc984c2a4ba823c33301427c33d4c67eb4dbe5683bfea72b"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20241116-09.subtitles.json": {
+      "bytes": 38302,
+      "sha256": "02b60a774073f67a0eb62cb26cbeb361118fbdd0a25d9760b927eeafcc9e03f6"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20241207-01.subtitles.json": {
+      "bytes": 28532,
+      "sha256": "3afc62352e0dc544f193d8b5304a79bc225c71167c1696e2cbf6652cf96f16b7"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20241207-06.subtitles.json": {
+      "bytes": 44626,
+      "sha256": "7ff00ff05b52701ab305a62074192f43055ba92b77aa75cbd3d1ca543ba94181"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250222-05.subtitles.json": {
+      "bytes": 30265,
+      "sha256": "66858c6fb1800a63cc9aa2e84bbc5495fa2008f8924cc74290dada710f039f88"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250222-06.subtitles.json": {
+      "bytes": 42064,
+      "sha256": "a9f86820f19819d5ab93aaf0504342b6384fc4bf5943c9250aa9d25e495ba54e"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250222-09.subtitles.json": {
+      "bytes": 33072,
+      "sha256": "3eea48bb94b94464df5f653ef2c2982c833609ebcd8f922e8d4a2b8bb2b08d88"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250412-03.subtitles.json": {
+      "bytes": 31631,
+      "sha256": "395721bf231cac2f24a3e9e9742109a649abeae0ff50b84bdad29d3ef62340cb"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250412-08.subtitles.json": {
+      "bytes": 49850,
+      "sha256": "39ca9e0430a39d856629e02e08ccdf4f8471d0e619bfcc7250b5f98b324803b8"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250412-09.subtitles.json": {
+      "bytes": 32433,
+      "sha256": "9aa46b59725184ad04b2cd10c1d904a477c7f6a9cdda12ddf78b385cebd1f811"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250503-07.subtitles.json": {
+      "bytes": 33822,
+      "sha256": "95bb213690139326a3f67944f091158970d520b7b796756e6e22e907ba67681c"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250503-08.subtitles.json": {
+      "bytes": 32501,
+      "sha256": "223d672783bccb821807c3e3908776d7a52e4dbcb500b6f9a55a40ec5a1b6fa8"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250621-03.subtitles.json": {
+      "bytes": 28018,
+      "sha256": "c5c1619642aa0446b70c7545fb939d7feba762c3a562e80dc556393f99ba14d7"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250621-05.subtitles.json": {
+      "bytes": 26851,
+      "sha256": "51f8c35cb24a176a0225b42d1d6e90853794bef066c2d9bf31f5fab20da555ed"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250621-09.subtitles.json": {
+      "bytes": 27313,
+      "sha256": "bf1cc1e3e4c16f25d08611bde6bff6e829a35b3710a6c670a89cf3e247ba27dd"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250823-03.subtitles.json": {
+      "bytes": 38423,
+      "sha256": "42b3310b13a8b31ecdb39934bc14541f8b344a0a8abb2d5b9d39c56e3b1bf5bf"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250823-05.subtitles.json": {
+      "bytes": 48132,
+      "sha256": "03ea7d030147de495a1457d360b3596334f1ee114703d2f8e44dd8570ca9b96e"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250823-10.subtitles.json": {
+      "bytes": 31918,
+      "sha256": "0d4d2202d1cbbfb244ff531d85e5a04b0c9805345dc41a43d39868eadb6ba4fd"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250906-02.subtitles.json": {
+      "bytes": 38399,
+      "sha256": "d5cef29304bc1dc6664c352403d09cb8db01f4b303469552f05bce8eae43d84d"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250906-08.subtitles.json": {
+      "bytes": 33973,
+      "sha256": "8309feae010ca57f9374a12027c67775f7e05fb92482eab9abe1a19ddbd3eecb"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20250906-10.subtitles.json": {
+      "bytes": 33791,
+      "sha256": "3de4c0f5f9f28985022ab6646df2f2f5b195fa57d3e43add44a91d9a7bd8d5a7"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20260214-02.subtitles.json": {
+      "bytes": 37980,
+      "sha256": "f6e23655e8cd97a3b69859e3c7c13d17a53c9cff9e629b6b8a735e2211840e6d"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20260214-03.subtitles.json": {
+      "bytes": 38239,
+      "sha256": "dee17e5cf95f979226b49bb8f8fe93f3721143d0d6afcd6bb2ea296cd52e2d4b"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20260214-09.subtitles.json": {
+      "bytes": 38550,
+      "sha256": "e698971f69e229196db752b1e7f0c1dec4e54932fbb9c8c93aa3ce8800248329"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20260411-03.subtitles.json": {
+      "bytes": 32697,
+      "sha256": "61f05b3171e11e2ec97e9f18aab9cb6260184ae5c61b150764af3b87deedf73a"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20260411-05.subtitles.json": {
+      "bytes": 51571,
+      "sha256": "186a25b2708fa9677970fc1c2cdbf293e88961342280113696fbe1909a4ac7ba"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20260411-07.subtitles.json": {
+      "bytes": 54437,
+      "sha256": "b1cde4353cb0ab3cb82fd072bde41bf88b034649c305326dd92945e6ac996187"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20260502-05.subtitles.json": {
+      "bytes": 10907,
+      "sha256": "6abda1c6811a7127f19b5ffdac2c66397b745f77b2bd2126b7352fa66882fd81"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20260502-07.subtitles.json": {
+      "bytes": 27509,
+      "sha256": "77755e5322a85c5756f08cc7f73562d6d642aa0469d273e0b7a01ea9b083e8f2"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20260808-01.subtitles.json": {
+      "bytes": 23390,
+      "sha256": "0408eea5cb91ea7fbf2dbeb7632555b973b25aa12711d14c42bece4224f9f445"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20260808-04.subtitles.json": {
+      "bytes": 33398,
+      "sha256": "f1ae65b363078676069181fc9593356ea98fd85484ab489f5827f0aefaec2844"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Paiwan-20260808-09.subtitles.json": {
+      "bytes": 32085,
+      "sha256": "1d05f0d1c69b106575d65def0c3f219e477384234eb0dcba59867409d29a9b07"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20240829-05.subtitles.json": {
+      "bytes": 31727,
+      "sha256": "5c29801fb0517ccf3f25121016371bdbe4989b8581f5696e59526f87e6f20e41"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20240829-06.subtitles.json": {
+      "bytes": 33989,
+      "sha256": "1849bd4bca74202ce7e310d959b60797926fc05a8d0e17109a416af5accaced9"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20241003-05.subtitles.json": {
+      "bytes": 19677,
+      "sha256": "3244971cf4946c582ab735adc259668dad5678f26329d8fbfc6b9d33b61ad044"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20241003-07.subtitles.json": {
+      "bytes": 56346,
+      "sha256": "990a81541beb84db56f60417ea36ef07c5dddc2f0a555303cf2351914d502384"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20241003-08.subtitles.json": {
+      "bytes": 43386,
+      "sha256": "ba74fb7888911d835aadfd1160bd44da2cc7a02f7aaa73cd72f900859f24d005"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250116-01.subtitles.json": {
+      "bytes": 26454,
+      "sha256": "34b3267b4ae036bbda1e49d1eaef0b1346b51c817341bc9c1d7629ee804693c3"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250116-04.subtitles.json": {
+      "bytes": 36879,
+      "sha256": "ffa9a37984eb5a988e15fd17d8ffbaafe9857635c567fd58bf378a7eb7811753"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250116-08.subtitles.json": {
+      "bytes": 41246,
+      "sha256": "1fb66f4111a41e0455875fc6535c14fc52f4ca92215f27eeba3d0537f1a0c047"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250227-02.subtitles.json": {
+      "bytes": 34923,
+      "sha256": "f17792f205ffe4b93da7b89e4164327bbd3482eadd1724b1f5c13c23aa15fa16"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250227-03.subtitles.json": {
+      "bytes": 23963,
+      "sha256": "c6be628e55f0677f10f033cb5a0309fcbe8a0c0381f05e7c4e6db503959f9602"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250227-05.subtitles.json": {
+      "bytes": 49556,
+      "sha256": "dfd9614ed676c6b48229b9464ee5f68114a8efc2a1bd4bf067575975703d9031"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250320-04.subtitles.json": {
+      "bytes": 35536,
+      "sha256": "cded9e324784673fd6930bf9f96e4efe03b47b601e8b096b437176b895b4e839"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250320-05.subtitles.json": {
+      "bytes": 26134,
+      "sha256": "28084f07c006ac57c83c95f7c18acea66b67e0de2208826b7038cbe1c30805e7"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250320-10.subtitles.json": {
+      "bytes": 36771,
+      "sha256": "08134c81a7f62176bd411b8c36b096d48317e503d58ee5d732e5429103d20d1f"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250522-05.subtitles.json": {
+      "bytes": 50323,
+      "sha256": "5f8523e785758fdd2a485d9879cbf9c7fa50b511e37828b6fa9f363e97fa2c4e"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250522-07.subtitles.json": {
+      "bytes": 37451,
+      "sha256": "8df3f114f3748047fea070dbee38bcd0d03fd5c5c36a128c6cbb53628bc8d22d"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250612-05.subtitles.json": {
+      "bytes": 41020,
+      "sha256": "23bd26f95309b60d7a28b0af2aaa45a85af2ad825c04606e39b8bdc73bda7dbd"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250612-09.subtitles.json": {
+      "bytes": 31069,
+      "sha256": "85e966108af6fea06959e466252841c834772dfdbf89b160e820d8253fa3d539"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250612-10.subtitles.json": {
+      "bytes": 53492,
+      "sha256": "7b556d0bfaa6f4777ba58a70b01755b45af084aa2ce8ec33d23d6df5d7e33495"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250703-02.subtitles.json": {
+      "bytes": 26863,
+      "sha256": "e478e0a42dc001f030c840f05060f5f6a6bdd359c7d94882e84543ed00a6bcde"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250703-05.subtitles.json": {
+      "bytes": 46545,
+      "sha256": "a4d7f7f54ab1f5881b761713854d0a19e4c6f1813031d503e4fe2497ffe105c6"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250703-09.subtitles.json": {
+      "bytes": 28648,
+      "sha256": "2dd690f7cda73d9b06c8efb0bb46425b4a286b11b895acb9da86bc297fc3a45b"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250828-07.subtitles.json": {
+      "bytes": 40401,
+      "sha256": "f742c691ee2b03cd73eced4a252ea25463744a5f3b230e9def88cf1fc5da6d18"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250828-08.subtitles.json": {
+      "bytes": 52387,
+      "sha256": "e45078b424bd68f4a940a7b13d4c34c49605776f0633b83eac5387e8a7f764bc"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20250828-09.subtitles.json": {
+      "bytes": 37898,
+      "sha256": "527f4d93476e86a19168f78f2b368a1b9823bd000329f56d1a74563273b13932"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20251030-05.subtitles.json": {
+      "bytes": 50806,
+      "sha256": "31620675731ef5ef763d4cf3c5011330380d1c2827b6c9d4116da55e81f99200"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20251030-06.subtitles.json": {
+      "bytes": 52273,
+      "sha256": "8a9d9b37037aebb2dc8aa3523326cbb73bbff1694390f443e00589f92e292668"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20251030-10.subtitles.json": {
+      "bytes": 27616,
+      "sha256": "0623c63da7bee4d9c52d09f335fb0fcb5b09b1f03efd498486ea4f76d580f544"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20251225-04.subtitles.json": {
+      "bytes": 29927,
+      "sha256": "f7809649d3ab1768b72b7da932eea026deb561c74e668e134980751b30437041"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20251225-06.subtitles.json": {
+      "bytes": 49288,
+      "sha256": "a6555a2d1261544d6ec0707c935fd8a451071a1acfcd6dc22786e8798397e11b"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20251225-09.subtitles.json": {
+      "bytes": 43468,
+      "sha256": "f6354828505ff17d906124528fe9f4713a8b66903c6555024f13d4b77dc45577"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20260528-05.subtitles.json": {
+      "bytes": 33106,
+      "sha256": "8c43ae137a113e8741f790bfdc846433a4bd80a58a1638d47c0eaf1786c71792"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Truku-20260528-07.subtitles.json": {
+      "bytes": 27652,
+      "sha256": "b9ad97d17071a33f74ae4161d4a8a83d4c51ba40ba97306b69b80b05e7063735"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20240821-02.subtitles.json": {
+      "bytes": 31097,
+      "sha256": "065e70bf2d81e64ac9ca933e5f7c07b1def690eeab87df2719f1d1b671f690da"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20240821-03.subtitles.json": {
+      "bytes": 36369,
+      "sha256": "74244800049e464c6c4c35c2ace6b38ea2eb74fd8436428a3dcdd8deb713b37f"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20240821-10.subtitles.json": {
+      "bytes": 26625,
+      "sha256": "0ed34cf35b0929beb645603f6b9c6c3d9353d7fd8db4af7b644518dccf253b34"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20241009-02.subtitles.json": {
+      "bytes": 36580,
+      "sha256": "97f811cdd7c7472e8cc838bbeb76207ee836c6f86372df666c24cdf83039d488"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20241009-03.subtitles.json": {
+      "bytes": 33314,
+      "sha256": "19df9561529d17b25753fa6f6f5f41d57ad415c1082048437e14bc0460c0ec70"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20241009-10.subtitles.json": {
+      "bytes": 24572,
+      "sha256": "27b3ee1bceab086951f2dc38d387f411bd958b43bf1674f5721bfd1b780f7864"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20250115-02.subtitles.json": {
+      "bytes": 33955,
+      "sha256": "b253f9dbb8de2869c8c339a23098f30b7ca1ea6cd45619318336914a299e3782"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20250115-04.subtitles.json": {
+      "bytes": 41023,
+      "sha256": "e92ee51d2d7691d0ed20da0eb518c669f526aa0d0ceab86b244e7875060bdc48"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20250115-06.subtitles.json": {
+      "bytes": 55426,
+      "sha256": "2265dcc1c91c2799646099425f087eb3f66324453161cdaffc3acb51804389d1"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20250507-03.subtitles.json": {
+      "bytes": 31304,
+      "sha256": "97691715c48a2c0880fba4b9eb5c13730b5e24a4ad3d80c2858ebefe9dfb7aa1"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20250507-06.subtitles.json": {
+      "bytes": 49731,
+      "sha256": "93378d3bbe881b572c0fc60af7b2e75aea3154a8e46e8509556ebb3233338a8c"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20250507-08.subtitles.json": {
+      "bytes": 45585,
+      "sha256": "9b170e881493b1be668ec0df3e58b8fbd6d94463dc3087f7df14b1e54ff53854"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20250611-01.subtitles.json": {
+      "bytes": 33661,
+      "sha256": "fd2c070faabab1187f7d5284dedd42001c407ead39cd18f1a9f05371e1409fc9"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20250611-02.subtitles.json": {
+      "bytes": 31472,
+      "sha256": "ce619b34e06aa65b9ec2f8afc81d016b9c58af6805d039277238b953e875fecf"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20250611-05.subtitles.json": {
+      "bytes": 44511,
+      "sha256": "f05eb1a9844b7d091b8b9948a2a1ac272c7c0ff0abfdba0c8791c9aaf50dde28"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20250702-03.subtitles.json": {
+      "bytes": 33324,
+      "sha256": "69d5dfe261a9ef9e6881a774d5ec87ed84f5c543293f8d8867e9bdbf005bb55d"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20250702-05.subtitles.json": {
+      "bytes": 35841,
+      "sha256": "028eb7352b1ce4a3c34a07de6a5eeebc5cfaacee838b9f3d1848569586a9021e"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20251029-08.subtitles.json": {
+      "bytes": 53690,
+      "sha256": "b70c88399bfd1e62d3ac445ce2f707b50ae6e843f229d876f7ba5a1824ae4ae0"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20251029-09.subtitles.json": {
+      "bytes": 40214,
+      "sha256": "ce7484d16b2b03d36494687aa15c27beb849df4b395b235dc4163cb8ec8ff5a6"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20251029-10.subtitles.json": {
+      "bytes": 37140,
+      "sha256": "1a94f7190459c19f173aeb970e1a7aba0fe01e765b1b0750bc4a59f5843916ab"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20251217-03.subtitles.json": {
+      "bytes": 33399,
+      "sha256": "f4bbe085129c4e637dc799941f6a3fd5723e82faa9c5060202ae6549a4cf9c5a"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20251217-06.subtitles.json": {
+      "bytes": 41007,
+      "sha256": "9ab65bc0f7f873129a66dca0bdc094baa4c9fdc172ac0cfb67dd47c1812c4971"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20251217-10.subtitles.json": {
+      "bytes": 42871,
+      "sha256": "be54d37bf0dbc9f08652a9203f0cf00af4de8e2626afa612506f81c33d88b571"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260304-01.subtitles.json": {
+      "bytes": 30585,
+      "sha256": "cfb7d83b9710128a26d82cb6a1c1246b8828bc95795ecdb1b82bcc865e989b83"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260304-04.subtitles.json": {
+      "bytes": 20543,
+      "sha256": "7a7ca6243ab3abb8c29b35505122ce021b3ec0eef7cb9d32e4ccb797f12bda55"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260304-05.subtitles.json": {
+      "bytes": 24563,
+      "sha256": "19c5bcad54d6b14e1c588fc9249600ece26507b9262ce181339fd717bba63e06"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260401-05.subtitles.json": {
+      "bytes": 47611,
+      "sha256": "346038f4d25eb66e4c0f8d2c97b70b23820b6bba2ff62309a5870cf98f743137"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260401-09.subtitles.json": {
+      "bytes": 33644,
+      "sha256": "331d5fcaf2c6a5913bb8957920c09629a161fb955a621c5e807a158a15ca7ce1"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260401-10.subtitles.json": {
+      "bytes": 32440,
+      "sha256": "eab82448aa0e5f3ec8aa6004a5951f3841ecf2b15c4eb9bff5fd09e334496bdd"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260715-04.subtitles.json": {
+      "bytes": 27033,
+      "sha256": "f47aee117a4d40e7992f6727f4debbced49cfad55c3ed96be963fe67369e2ee1"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260715-09.subtitles.json": {
+      "bytes": 33997,
+      "sha256": "bb8bd000ac7a30b9a7fd47591cad8597e4a38991cc05d1e1ffbd0a77276f2d9d"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260715-10.subtitles.json": {
+      "bytes": 33213,
+      "sha256": "edb08ddb3eece7ccf8e1df1ef72c9292cab5407bb4fdefc6908529b01c24c6c0"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260819-03.subtitles.json": {
+      "bytes": 34905,
+      "sha256": "b2a1c6d7da56dde05643bd3953a6013829a91f46758f167912db82f72e599ed5"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260819-07.subtitles.json": {
+      "bytes": 43106,
+      "sha256": "24f562ad740b66668ccb43563c0f25957bfb50797c1f955cd300ae28a477678c"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Tsou-20260819-10.subtitles.json": {
+      "bytes": 40641,
+      "sha256": "77aaf473534af33d905e0e9d4679f5d8e05fb517bd1a2ec61238245f3d92bfbd"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20241022-02.subtitles.json": {
+      "bytes": 27865,
+      "sha256": "b88ce3618805e4e6b86c499a5da0c993ab9b5c298696c17e31f5ce0c326ef525"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20241022-04.subtitles.json": {
+      "bytes": 40574,
+      "sha256": "72dcaba2da4b554eb270df8edb8d58dd26643df2a2a7f6e95e6487321dbc318e"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20241022-10.subtitles.json": {
+      "bytes": 32674,
+      "sha256": "c26009fc362b71fe8cf0e923224a7e67b1ba14bb1f4158376971546753774827"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20241126-02.subtitles.json": {
+      "bytes": 30872,
+      "sha256": "d71b91f06aa35f811a33280d307815ca82fbdfa42ea621f71044411f1284d9af"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20241126-05.subtitles.json": {
+      "bytes": 14768,
+      "sha256": "9ac51993056244e982e229e0163dbcbbb6f30f95fdef05f3719d1d1c46c0d6a7"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20241126-09.subtitles.json": {
+      "bytes": 20644,
+      "sha256": "a0cc83ae5bdb291b11460032ad810651f129a9d511bf8f813c17c074e3b86620"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250225-03.subtitles.json": {
+      "bytes": 25322,
+      "sha256": "dabda5a162b64b1e7689ad8b42517f335b9ed1dd51047348469fb601af8809c1"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250225-07.subtitles.json": {
+      "bytes": 43614,
+      "sha256": "41aa8a87c56178b3d03ed6cab336d88a0e781bb476d73048a4f59d81fef49db9"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250225-08.subtitles.json": {
+      "bytes": 48369,
+      "sha256": "48a06b5bd4aa49e532fc0253eb260cc797e5c262ddedd4c0686099c783426b49"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250422-02.subtitles.json": {
+      "bytes": 28722,
+      "sha256": "b485609c9e1124408ff1b766fec9435c4469f9f27918ca3fd2045fabd5de1828"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250422-06.subtitles.json": {
+      "bytes": 39834,
+      "sha256": "33d9f093568558f13d49d682d2d98cd4432e6ed17da2434121cfa91ec49777fe"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250422-07.subtitles.json": {
+      "bytes": 25938,
+      "sha256": "63aaa64d0ef4095aae9449a506dccda6c209f9c01d99955a39e79969bfd68087"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250701-01.subtitles.json": {
+      "bytes": 32381,
+      "sha256": "6e669036a3e4b9d022ab88b5ddb3f7096b88524e2c626898a597f35c49c6031c"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250701-06.subtitles.json": {
+      "bytes": 41828,
+      "sha256": "2fb9927fcdfe8c4f165e8ffa3a892ce9e0d481bece47d52aef49c2e2f085823b"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250701-10.subtitles.json": {
+      "bytes": 32594,
+      "sha256": "1d736348828fd7d52ece03aaed8b5734dedc0bab4ce6cb8c9b5eb4cab50a8a57"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250826-04.subtitles.json": {
+      "bytes": 40375,
+      "sha256": "b0a255365f0e3c30f146054fa117ed1d087e9fe91238ed0bf05bafaa77a0aaf5"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250826-06.subtitles.json": {
+      "bytes": 45900,
+      "sha256": "073b30645512a568000728d01873d444235f7d7476bce77aad983167a0ccb9ca"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20250826-09.subtitles.json": {
+      "bytes": 53757,
+      "sha256": "f1aa880c14199c63fee50ac8382f2af5624eb99371272dd8ee67860b884c6908"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20251028-07.subtitles.json": {
+      "bytes": 49339,
+      "sha256": "6130f8397de2862859f8eef2746944bca7b53a90a7e6be33810a63121986ddd4"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20251028-09.subtitles.json": {
+      "bytes": 37007,
+      "sha256": "ce7407c7064ec1d4cf565469a18975b7696a84a2717a7b1b10cf52785f5f4a28"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20260120-07.subtitles.json": {
+      "bytes": 33324,
+      "sha256": "9440ce87c84f1430191d1713fb7d81e017219d7aee484e7bac7ae8b46e029408"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20260120-10.subtitles.json": {
+      "bytes": 27907,
+      "sha256": "82b377cd68ec21d8f4a2772867a8b99f5a8572179ab523eb174cf23a5622dd97"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20260428-08.subtitles.json": {
+      "bytes": 24964,
+      "sha256": "9c8e88179b58052a02cb8f016672f231bd18d8d388b04966fef5619fe62b2e4d"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20260428-09.subtitles.json": {
+      "bytes": 27326,
+      "sha256": "5f9d894527249acbcf0a391cd135b43aae259a4d2f1f13eec6e24e606012d402"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20260526-02.subtitles.json": {
+      "bytes": 33725,
+      "sha256": "a86f932a469e4e4c59c1197f739f8937e27594f60c9b782af3b915af7b2bb406"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20260526-05.subtitles.json": {
+      "bytes": 14842,
+      "sha256": "206198f394fd4527b1e5d4ea5243b69780341a0379677aed0d06bd62d1ae9c78"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20260526-07.subtitles.json": {
+      "bytes": 17634,
+      "sha256": "ec1ad2e90797deabad70dd99edbcb1060b812836a2288739f6a8f5fca87dc322"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20260616-01.subtitles.json": {
+      "bytes": 22692,
+      "sha256": "2ac77b695017654fb8199153d5be7a86f66a1169d9b2f75587c4ca4c3fa64044"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20260616-04.subtitles.json": {
+      "bytes": 21700,
+      "sha256": "57d4224abe1f3a80d3107d6059c482e3b45f18aed8ca325c2c2f69226320fd8f"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20260728-07.subtitles.json": {
+      "bytes": 25793,
+      "sha256": "dee698093ec91004c238aa1ced9f43a60672165794ebd1248e0e56bae6a9fb8a"
+    },
+    "data/server_transfer/restore/data/study3_runs/subtitles/news-Yami-20260728-10.subtitles.json": {
+      "bytes": 24507,
+      "sha256": "9bed769eea67704b800717c259223812a275a35df78bb9a8322286900a44b134"
+    }
+  },
+  "reader_cache_sha256": "a72844c436709ca188536b5159cab995fb1dbe7438ef3d5fa9277844005faae7"
+}

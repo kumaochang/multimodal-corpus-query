@@ -1,0 +1,249 @@
+diff --git a/PREREGISTRATION.md b/PREREGISTRATION.md
+index 643d19a..d1ceb65 100644
+--- a/PREREGISTRATION.md
++++ b/PREREGISTRATION.md
+@@ -377,6 +377,244 @@ gradient and its primary test; §3 items 8 and 9; §4 item 10; §5; and the corp
+ 
+ ---
+ 
++### Amendment 4, 2026-10-07. Bunun replaces Tsou, and a transcription modality is added.
++
++#### The inspection statement this amendment rests on
++
++**Written after Study 3 collection and before any Study 3 content was inspected.** Collection is
++complete under Amendments 1 and 2 (216 clips, twelve days in each of six languages). No Study 3
++outcome, label distribution or clip content has been computed or viewed for any analysis
++purpose. The author confirms this statement as of 2026-10-07.
++
++What *has* been seen is the result of an ASR pilot run on material **outside** the Study 3
++corpus: 族語E樂園「情境族語」season 1 read speech (50 sentences in each of `ami`, `pwn`, `tay`,
++`trv`, `tao`, `bnn`) and NTU Paiwan ASR (102 clips). The pilot's decision rule was committed
++before the run (`scripts/asr_pilot/README.md`, commit `f6bb612`). The pilot script
++(`scripts/asr_pilot/omni_pilot.py`) reads only the 族語E樂園 audio it downloads and
++`data/ntu_paiwan_asr/`, and the run was made under written instructions that forbade opening,
++reading or listing anything under `data/study3/` or `analysis/study3/`. The pilot is the reason for this amendment, so its
++rule, its result and its limits are stated here in full. The rule took effect at commit `f6bb612`,
++as its own text provides; the committed file still opens with "Status: DRAFT" and was
++deliberately not edited after the result was seen.
++
++One further disclosure. To place the Bunun draw (A4) without disturbing the existing one, the
++author authorized reading **metadata only** under `analysis/study3/`. Each JSON file was loaded
++by a script that printed only the fields listed:
++
++- `analysis/study3/playlists.json`: the whole file (the six languages' names, their playlist
++  URLs and the `source` note).
++- `analysis/study3/frame.json`: the top-level `yt_dlp_version`, the command prefix of each
++  language's `yt_dlp_command`, and each language's `playlist_url` and `summary.entries` (the
++  number of entries the playlist listing returned, before date parsing and the Amendment 2
++  filter; between 306 and 365, none equal to 100).
++- `analysis/study3/draw.json`: the list of top-level keys; the number of `stream` steps (150);
++  the language and purpose of the last step (Yami, clips of the 2026-07-28 broadcast); and the
++  set of purpose types (`clips`, `day`, `months`).
++- `analysis/study3/sources.json`: a count of the yt-dlp version and command prefix across the
++  72 records.
++- `analysis/study3/design.json`: existence checked only; not opened.
++
++Nothing under `data/study3/` was opened, listed or checked by name. One repository-wide search
++for `*.py` files (ripgrep, looking for the code that computes the text modality) also covered
++both directories; it returned no match from either and printed nothing from them. No manifest,
++clip, transcript, OCR output, label or other content was opened. One day identifier (the Yami date above) was seen as
++part of the draw record.
++
++#### Part A. Bunun replaces Tsou
++
++##### A1. What is changed
++
++*Items changed.* §0.1, the list of six languages. Amendment 1, *The stream*, only insofar as it
++names Tsou. §2 item 7.
++
++*What it was.* Six languages: Amis, Paiwan, Truku, Atayal, Tsou, Yami.
++
++*What it becomes.* Six languages: Amis, Paiwan, Truku, Atayal, **Bunun**, Yami. Tsou leaves the
++Study 3 analyses.
++
++##### A2. Why
++
++The transcription modality of Part B needs an ASR system for each language in the design. Meta
++Omnilingual ASR supports `ami`, `pwn`, `tay`, `trv`, `bnn` and `tao`, and does not support `tsu`.
++With Tsou in the design, the transcription modality would run under one model for five languages
++and a different, zero-shot model for the sixth, so transcript quality would vary with language by
++construction.
++
++Supported is not the same as usable, so the substitution was made conditional on a pilot with a
++rule fixed in advance (`scripts/asr_pilot/README.md`, commit `f6bb612`): switch only if Bunun's
++median CER is at most 0.25 and at least four of the five retained languages also reach it. The
++result (`scripts/asr_pilot/results/summary.json`):
++
++| Language | Median CER (n = 50) |
++| --- | --- |
++| `tay` | 0.081 |
++| `trv` | 0.089 |
++| `bnn` | 0.095 |
++| `ami` | 0.116 |
++| `pwn` | 0.116 |
++| `tao` | 0.182 |
++
++All six pass; the rule's outcome is to switch. The reason for the change is the instrument's
++coverage, a property of the tool and not of any Study 3 content.
++
++##### A3. What the substitution does not change
++
++The distance classes keep their sizes. Bunun belongs to a Formosan primary branch outside
++Atayalic, so it takes Tsou's place in the Middle class: **Short 1 pair (Atayal and Truku), Middle
++9 pairs, Long 5 pairs (Yami against the other five)**, exactly as §2 item 5 counts them. The
++primary test, Middle against Long, is unchanged.
++
++§1 items 1 to 4, §3, §4 and Amendment 3 are unchanged. Amendment 3 concerns Paiwan only and does
++not involve Tsou.
++
++##### A4. Drawing the Bunun sample without disturbing the existing draw
++
++Amendment 1 serves every draw from one `default_rng(20261005)` stream with languages in
++alphabetical order, and Amendment 3 item 4 continues that stream. Inserting Bunun into that order
++would change every draw after it, including Paiwan's, Truku's and Yami's days and the Paiwan seed
++split. **The existing draw is therefore left exactly as it is**, and Bunun is drawn from a
++separate stream:
++
++- **Frame.** Built by the rules of Amendments 1 and 2 from the Bunun playlist: an entry is a day
++  only if its first 【】 bracket opens with 看見族語 and names 布農族語. No Study 1 day exists for
++  Bunun, so nothing is excluded by identity. The playlist is added to
++  `analysis/study3/playlists.json`: `PLtE4cgfvTnt6sYPyiGk9iwz6uf-qetSH5`, titled
++  【族語新聞】布農族語 on the TITV News channel (`UCkceO_uT0eWlMhX-04rxAMQ`), the only Bunun
++  playlist among the channel's 39 (listed 2026-10-07, metadata only). Confirmed by the author.
++- **State of the existing stream.** At the time of writing the `default_rng(20261005)` stream
++  stands at step 150, and the Paiwan seed split of Amendment 3 item 4 has not yet been drawn. It
++  will continue from step 150 as Amendment 3 provides. Nothing in this amendment consumes a value
++  from it.
++- **Stream.** `numpy.random.default_rng(202610074)` (the amendment date followed by the
++  amendment number), used only for Bunun: the day draw first, by the branch rule of Amendment 1
++  with the calls of Amendment 2, then the within-day draw of §1 item 2.
++- **Top-up.** §1 item 4 applies to Bunun from the same separate stream.
++- **Records.** Appended to `analysis/study3/frame.json` and `draw.json` under a Bunun key, with
++  the seed recorded beside it. Media go to `data/study3/` as for the other languages. Existing
++  entries in these files are not edited.
++- **Tooling.** The Bunun frame is built with the same yt-dlp version and settings that built the
++  existing frames, recorded here. If the playlist returns a truncated listing (yt-dlp
++  2026.03.03 returns only the first 100 entries), the frame step stops and nothing is drawn.
++  The existing frames and all 72 broadcasts were retrieved with yt-dlp 2026.08.19, run as
++  `YTDLP="C:/Users/user/miniconda3/python.exe -m yt_dlp"`, as recorded in
++  `analysis/study3/frame.json` and `sources.json`; Bunun uses the same.
++
++##### A5. The Tsou material already collected
++
++The Tsou clips (twelve days, 36 drawn clips) were collected under Amendments 1 and 2 and have not
++been inspected. They are **retained on disk and not opened**. They take no part in any Study 3
++analysis, primary or exploratory. The dissertation reports that they were collected and set
++aside, and why. Leaving an exploratory use open would leave room to decide after the primary
++results whether Tsou is worth looking at, which this amendment exists to prevent.
++
++##### A6. §2 item 7
++
++§2 item 7 declared an alternative analysis subdividing the Middle class "once Tsou data are in".
++Its rationale was specific to Tsou. **It is withdrawn.** A subdivision written for Bunun now,
++after the pilot, would be a new hypothesis rather than the one registered, and is not added.
++
++#### Part B. A transcription modality is added
++
++##### B1. What is added
++
++*Item added.* A fifth modality for the retrieval evaluation: **transcription**, an embedding of
++the Omnilingual ASR transcript of each utterance in its own language.
++
++*Why.* The existing text modality is the OCR of the TITV Chinese subtitle. It is a translation,
++not the language itself, and it is **not independent of the labels**: §3 item 9 records that
++`extract_ocr_summary` passes subtitle text to the labeling model. A modality built from the
++speech itself does not reach the labeler, and it is the strongest available form-based
++representation of the language, which is what the umbrella thesis needs as its comparison.
++
++The existing text modality is renamed **translation (subtitle)** in the write-up and its
++dependence on the labeler's input is stated wherever its result is reported. Nothing about how
++it is computed changes.
++
++##### B2. How it is produced
++
++- **Model.** `omniASR_LLM_7B_v2` with the language code given, the model of the pilot. The
++  environment is `scripts/asr_pilot/environment.txt`.
++- **Segmentation.** The existing utterance boundaries, unchanged. Each utterance is passed to the
++  model as a separate segment; an utterance longer than 40 s is split at its longest internal
++  pause and the transcripts joined. The number of such splits is reported.
++- **Normalization.** As in the pilot: NFC, lowercase, apostrophe variants unified, punctuation
++  removed except `'` and `^`.
++- **Embedding.** No Study 3 code for either text modality exists yet. Both are computed by one
++  program with identical settings, so that they differ only in their input, and the settings
++  are those of the Study 1 subtitle modality (`pilot/experiment.py`), in keeping with B1's "nothing
++  about how it is computed changes":
++  - `FacebookAI/xlm-roberta-base`, `max_length` 512, mean of `last_hidden_state` masked by the
++    attention mask. The Hugging Face revision hash is recorded at the first run and used for
++    both modalities thereafter. The number of truncated inputs is reported.
++  - No centering. Cosine similarity on the pooled vectors.
++  - An empty input (no transcript, or no subtitle) gives a zero vector, as in Study 1; the number
++    of empty inputs per language and modality is reported.
++  - The input unit is the retrieval unit of §3 item 8 for both modalities.
++- **Non-neural reference.** As in Study 1: TF-IDF with `analyzer="char_wb"`, n-grams 1 to 3,
++  `sublinear_tf=True`, `norm="l2"`, fitted once on all Study 3 inputs of that modality together.
++- **Sensitivity analysis, both modalities.** The same vectors centered on the mean of each
++  language's valid rows, then L2-normalized (the procedure of `corpus/build_similarity.py`,
++  scoped per language). Reported beside the main result, never in its place. XLM-R was not
++  trained on these languages, so the neural result is read against the n-gram reference;
++  tuning or fine-tuning an encoder is outside this amendment.
++
++##### B3. What the pilot cannot tell us, and what is reported instead
++
++The pilot's CERs are an optimistic bound. 族語E樂園 and NTU Paiwan ASR are public, and
++Omnilingual's training data may contain either; some per-dialect medians (0.02, 0.04) are low
++enough to suggest it. The pilot also used clean read speech, not broadcast news.
++
++§3 rules out new bulk human annotation for Study 3, and that applies here: **no news gold set is
++transcribed, and transcript quality on Study 3 material is not measured.** What the write-up
++reports instead, with the limits stated:
++
++- **Read speech, all six languages.** The pilot's median CER per language
++  (`scripts/asr_pilot/results/summary.json`), described as an optimistic bound.
++- **Spontaneous speech, Paiwan only.** The secondary result on NTU Paiwan ASR (102 clips, median
++  CER 0.173, against 0.116 on read speech), the only existing human transcription of spontaneous
++  speech available for any of the six languages. It is reported as one language's indication of
++  how far quality falls off read speech, not as an estimate for the others.
++- **Glottal and epiglottal marks.** The pilot shows these (`'`, `^`) are systematically dropped
++  (`taisic’an` → `taisicaan`, `ina^` → `ina`). The rate at which they are lost is computed on the
++  pilot data and reported separately from CER, because in most of these languages they are
++  phonemic.
++
++Because news-speech quality is unknown for five of the six languages, B4 confines the modality
++more tightly than it would with a news gold set.
++
++##### B4. Where the transcription modality may and may not enter
++
++Transcript quality differs by language, it is not measured on news speech, and the language with
++the worst pilot CER, Yami, is the **only** member of the Long class. Lower retrieval for Yami
++under this modality would point in the predicted direction of the distance gradient whether or
++not the gradient exists.
++
++- **Not in the primary test of §2 item 5.** The primary distance-gradient test is run on the
++  modalities already declared, exactly as before.
++- **Secondary only.** Results for the transcription modality are reported as secondary
++  analyses, each with the language's pilot CER beside it.
++- **No cross-language inference under this modality.** Per-language results are reported side
++  by side, descriptively. No test across languages or distance classes is run on the
++  transcription modality, and no difference between languages under it is read as a linguistic
++  difference, because the quality of the input is not known to be comparable.
++- **The comparison the modality exists for** is within language: does the transcription
++  modality retrieve directive utterances as well as the geometric modalities do on the same
++  language's material.
++
++#### Consequences outside this document
++
++These are not governed by the pre-registration (§5 excludes Chapters 1 to 3) but follow from it:
++
++- Chapter 3 replaces Tsou with Bunun, including §3.4's discussion of the Tsou auxiliary and the
++  absence of a dedicated imperative focus form, which is lost as a case.
++- `reference_grammars/` now holds 布農語語法概論 (黃慧娟、施朝凱; 郡群 dialect), and
++  `祈使標記跨語言對照.md` has a Bunun row. Its implications section was written with Tsou and is
++  rewritten before any Study 3 data are seen. The grammar describes 郡群 only, which Chapter 3
++  states wherever it describes Bunun imperatives.
++- `analysis/study3/README.md` records the Bunun collection and the status of the Tsou clips.
++
++---
++
+ > Format for any amendment: date, the item changed, what it was, what it became, the reason, and
+ > whether any Study 3 data had been inspected at the time. An amendment made after inspection is
+ > recorded as such and the affected analysis is reported as exploratory.

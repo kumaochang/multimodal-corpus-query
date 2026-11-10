@@ -1,0 +1,56 @@
+{
+ "rule": "PREREGISTRATION.md Amendment 3 item 4; implementation in scripts/draw_study3_split.py",
+ "inputs": {
+  "draw": {
+   "path": "analysis/study3/draw.json",
+   "sha256": "41d44cbe5bcb66b28f9ed71513e0249fbaa85381cfcbd7d1735c18fe290b0109"
+  }
+ },
+ "numpy_version": "2.2.6",
+ "numpy_version_of_draw": "1.26.4",
+ "replayed_steps": 150,
+ "step": {
+  "step": 151,
+  "language": "Paiwan",
+  "purpose": "seed half of the 12 days",
+  "call": "rng.choice(12, size=6, replace=False)",
+  "result": [
+   0,
+   8,
+   3,
+   10,
+   7,
+   11
+  ]
+ },
+ "paiwan_days_in_date_order": [
+  "20241116",
+  "20241207",
+  "20250222",
+  "20250412",
+  "20250503",
+  "20250621",
+  "20250823",
+  "20250906",
+  "20260214",
+  "20260411",
+  "20260502",
+  "20260808"
+ ],
+ "seed_half": [
+  "20241116",
+  "20250412",
+  "20250906",
+  "20260214",
+  "20260502",
+  "20260808"
+ ],
+ "scoring_half": [
+  "20241207",
+  "20250222",
+  "20250503",
+  "20250621",
+  "20250823",
+  "20260411"
+ ]
+}

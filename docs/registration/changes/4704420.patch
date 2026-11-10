@@ -1,0 +1,87 @@
+diff --git a/PREREGISTRATION.md b/PREREGISTRATION.md
+index d1ceb65..911f077 100644
+--- a/PREREGISTRATION.md
++++ b/PREREGISTRATION.md
+@@ -615,6 +615,82 @@ These are not governed by the pre-registration (§5 excludes Chapters 1 to 3) bu
+ 
+ ---
+ 
++### Amendment 5, 2026-10-07. Tsou is kept, and Amendment 4 Part A is withdrawn.
++
++#### Inspection statement
++
++**Written after Amendment 4 and before any Study 3 content was inspected.** Nothing has been
++inspected beyond what Amendment 4 discloses. Since Amendment 4 was committed (`0e61e39`), no
++Bunun frame has been built, no Bunun draw made, no Bunun video downloaded and no file written
++under `analysis/study3/` or `data/study3/`. The only file read under `analysis/study3/` was
++`playlists.json` (already read in full and disclosed in Amendment 4), read again to check its
++formatting before the Bunun entry was added; the entry was not added. Nothing under
++`data/study3/` was read. The four collection scripts were not re-read after the commit; what was
++said about them rested on reading them as code earlier the same day. The author confirms this
++statement as of 2026-10-07.
++
++#### 1. What is changed
++
++*Items changed.* Amendment 4 Part A (A1 to A6) is withdrawn in whole. Amendment 4 Part B is
++narrowed to five languages (item 3 below).
++
++*What it was.* Bunun replaces Tsou; Bunun is drawn from a separate `default_rng(202610074)`
++stream; the Tsou clips are set aside; §2 item 7 is withdrawn.
++
++*What it becomes.* The six languages of §0.1 as first registered: Amis, Atayal, Paiwan, Truku,
++Tsou, Yami. Everything Amendment 4 Part A changed returns to its state before Amendment 4:
++
++- §0.1 and Amendment 1, *The stream*, stand as written. The existing draw (`analysis/study3/draw.json`,
++  150 steps of `default_rng(20261005)`) and the existing frame, sources and clips stand as they
++  are, and Amendment 3 item 4 continues that stream from step 150 as it provides.
++- The Tsou clips are part of the Study 3 corpus on the same terms as the other five languages.
++- §2 item 7 stands as registered.
++- The distance classes are those of §2 item 5: Short 1 pair, Middle 9, Long 5.
++- Nothing for Bunun is built, drawn or downloaded. The separate stream `default_rng(202610074)`
++  is never used.
++
++#### 2. Why
++
++Amendment 4's pilot rule established that substituting Bunun was **admissible**: Omnilingual ASR
++reaches the threshold on Bunun read speech. Implementing it showed its cost. Amendment 1 consumes
++one stream in alphabetical language order, day draws for every language before any clip draw, so
++Bunun can enter the design only by a second stream or by redrawing every language's clips and
++the days of Paiwan, Truku and Yami. Either departs from the single-stream design that Amendment 1
++fixed.
++
++The benefit, meanwhile, was reduced by Amendment 4 itself. A2 justified the substitution by the
++transcription modality: with Tsou unsupported, transcript quality would vary with language by
++construction. B4 then confined the transcription modality to **within-language** comparison and
++ruled out any test across languages or distance classes under it. Under that restriction, a
++language without ASR loses only its own within-language comparison and biases nothing else.
++Keeping the registered design intact is worth more than one further within-language comparison.
++
++This reasoning uses no Study 3 data and does not depend on any pilot CER. The pilot's result
++stands on record as Amendment 4 reports it; the decision not to act on it is made here.
++
++#### 3. Part B, narrowed to five languages
++
++- **Coverage.** The transcription modality is computed for Amis, Atayal, Paiwan, Truku and Yami
++  (`ami`, `tay`, `pwn`, `trv`, `tao`). Omnilingual ASR does not support `tsu`, and **no Tsou
++  transcription modality is computed**, zero-shot or otherwise; the write-up states this as a
++  limitation. Tsou takes part in every other modality and in every primary analysis.
++- **B3.** "Read speech, all six languages" reads as the pilot's median CER for the five covered
++  languages; the Bunun result is reported only as part of the pilot record.
++- **B2 and B4** apply unchanged to the five covered languages. The TF-IDF reference is fitted on
++  the transcription inputs of those five.
++- **Disclosure and pilot record.** Amendment 4's inspection statement, its disclosure of the
++  metadata read and its account of the pilot remain in force as written.
++
++#### Consequences outside this document
++
++- Chapter 3 keeps Tsou, including §3.4's discussion of the Tsou auxiliary.
++- `reference_grammars/` keeps 布農語語法概論 and the Bunun row of `祈使標記跨語言對照.md` as
++  reference material, marked as not a Study 3 language. The table's implications section stands
++  as written for the six registered languages.
++- `analysis/study3/README.md` records that no Bunun collection was made.
++
++---
++
+ > Format for any amendment: date, the item changed, what it was, what it became, the reason, and
+ > whether any Study 3 data had been inspected at the time. An amendment made after inspection is
+ > recorded as such and the affected analysis is reported as exploratory.

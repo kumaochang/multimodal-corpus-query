@@ -1,0 +1,405 @@
+# Pre-registration — Study 3
+
+**Status: IN FORCE.**
+Drafted 2026-10-03. The seven open values listed in §0.3 were confirmed by the author on
+2026-10-03, unchanged from the drafted proposals. The file takes effect at the commit that
+carries this status line, and that commit precedes any inspection of the Study 3 corpus.
+**This file is not edited from here on**; changes go in §7 as dated amendments.
+
+---
+
+## 0. Scope
+
+### 0.1 What this covers
+
+The **Study 3 corpus**: TITV《看見族語》television news, six languages (Amis, Paiwan, Truku,
+Atayal, Tsou, Yami), three clips sampled at random from each of twelve broadcast days per
+language, 36 clips per language, **216 clips in total**, spread across months. None of this
+material has been collected at the time of drafting.
+
+It does not cover Chapters 1 to 3, which depend on no new data, and it does not cover Study 1 or
+Study 2, which are complete.
+
+### 0.2 What has already been seen, stated so that nothing here is mistaken for a blind design
+
+The author has worked extensively with **Study 1's 30 clips** (Amis, Paiwan, Truku, ten each)
+and has run four families of representation on them. That is precisely why §2 item 6 names the
+primary kinematic variant in advance and why **no outcome test in Study 3 is run on Study 1's
+material**.
+
+The detector operating point in §4 item 10 was chosen on the **NTU Paiwan ASR corpus**, which is
+independent of the Study 3 corpus, and is fixed here before any Study 3 data are touched.
+
+The measurements that preceded this document are listed in the appendix.
+
+### 0.3 The seven values settled before this file took effect
+
+| # | Item | Confirmed 2026-10-03 |
+|---|---|---|
+| 1 | §1 item 2 | `default_rng(20261005)`, 3 of 10 without replacement, fixed iteration order |
+| 2 | §1 item 3 | tested on its own only at **≥15 broadcast days and ≥25 clips** |
+| 3 | §1 item 4 | no label-driven top-up; up to **4 extra whole broadcast days** per language |
+| 4 | §3 item 8 | **the utterance**, on the principle that the label unit follows the retrieval unit |
+| 5 | §3 item 9 | music proportion (Celebrating higher), speaker-change rate (Reporting lower) |
+| 6 | §4 item 11 | **25 tokens**, stratified by target and by Urging / not, fixed seed, drawn first |
+| 7 | §2 item 5 | monotone non-increasing Short ≥ Middle ≥ Long; **primary test Middle vs Long**, Short descriptive only |
+
+---
+
+## 1. Design and inference
+
+**1. The bootstrap cluster is the broadcast day.** Anchor, studio, lighting and news cycle are
+day-level properties; clips within a day and utterances within a clip are not independent.
+Permutation tests permute at day level too. Day count, clip count and utterance count are all
+reported.
+
+**2. The random-selection rule** for the three clips drawn from each broadcast day:
+`numpy.random.default_rng(20261005)`, drawing 3 of the day's 10 clips without replacement,
+iterating languages alphabetically and days in date order, so the draw is reproducible from the
+seed alone. A broadcast day that yields fewer than 10 clips is sampled 3 of however many exist;
+a day yielding fewer than 3 contributes all of them and still counts as one cluster. Both cases
+are recorded.
+
+**3. The primary contrast is Explaining against the pooled remainder.** A single category is
+tested on its own only if it occurs in **at least 15 broadcast days and at least 25 clips**;
+otherwise it is reported descriptively. The threshold is stated in days as well as clips because
+the broadcast day is the inference unit, and a category present in only a handful of days has
+too few clusters for cluster-robust inference to behave.
+Projecting Study 1's label distribution onto 216 clips gives roughly Explaining 101, Urging 58,
+Celebrating 36, Reporting 22, Comforting 0, so the threshold is expected to bind on Reporting
+and Comforting. That projection comes from three languages and one broadcast day each and may
+be wrong; the threshold is fixed here regardless. The primary contrast does not depend on it.
+This rule is fixed before the label distribution is seen. Category quotas are **not** fixed,
+because the category is unknowable when the video is collected.
+
+**4. The top-up procedure** should a category fall short. **Topping up by searching for the
+scarce category is not permitted**, because selecting material by label breaks the unstratified
+design. Instead, up to **four additional whole broadcast days per language** may be drawn at
+random from the same sampling frame by the rule in item 2, continuing the seeded sequence. Any
+day drawn this way **enters every analysis**, not only the one that motivated it. If the
+category still falls short, it is reported descriptively.
+
+---
+
+## 2. The gesture section (§6.2)
+
+**5. The genetic-distance gradient prediction and its test.** Cross-lingual retrieval lift is
+predicted to be **monotone non-increasing across Short, Middle, Long** as those classes are
+defined in `glossary.md`: Short is within Atayalic (Atayal-Truku), Middle is across Formosan
+primary branches, Long is Formosan against Malayo-Polynesian, that is Yami against the other
+five.
+
+**The primary test is Middle against Long**, 9 pairs against 5. **Short is reported
+descriptively and is not tested**, because it contains **exactly one language pair** and a class
+of one cannot support a test. This is a property of the six-language design, not of the result,
+and it is stated here so that it is not discovered afterwards.
+
+**6. The kinematic variant list, with the primary named in advance.** Four representation
+families have already been tried on Study 1's material, so this is where forking paths are
+worst. The outcome test runs on the Study 3 corpus only; a further result on Study 1's material
+would not be evidence.
+
+**7. Whether the middle distance class is subdivided** once Tsou data are in is declared here as
+an **alternative analysis**, not decided after seeing results. Both the undivided and the
+subdivided analyses are reported if it is run.
+
+---
+
+## 3. The labels
+
+No new bulk human annotation is done for Study 3. The labels are model output. What follows is
+fixed in advance so that none of it is selected afterwards.
+
+**8. The labeling unit, and the dual-unit agreement rate.** The same labeling model is run at
+**both** the clip and the finer unit, and the rate at which the finer unit's label differs from
+the label it would inherit is reported. This measures model self-consistency, not correctness,
+but for the question being asked, how often a clip label misdescribes the units beneath it,
+self-consistency is the right quantity. The same measurement supplies the label-inheritance rate
+that §6.2's shot-level test requires.
+
+**The labeling unit is the utterance**, on the principle that **the relevance criterion is
+labeled at the same unit as the one being retrieved** (`analysis/q15`: the utterance is the
+retrieval unit for every modality). Clip labels are produced as well, and retained for describing
+the corpus and for the dual-unit rate, but anything evaluated at the utterance uses utterance
+labels. No threshold switches between them: a rule that depends on the measured disagreement
+rate would be a decision made after seeing data.
+
+**9. What stands in for annotation.** Three measures, declared here:
+
+- **two-model agreement**, between `scripts/label_with_claude.py` (claude-haiku-4-5, five
+  keyframes plus an OCR summary) and a second labeling model;
+- **self-consistency under perturbation** of keyframe sampling points and of category order in
+  the prompt;
+- **a criterion check against the audio channel**, which the labeler never receives. The
+  on-screen ticker is **not** independent of the labeler: `extract_ocr_summary` filters only
+  `label == "logo"`, so ticker, title and subtitle text all reach it (verified 2026-10-03).
+  Two measures, each with its direction fixed here:
+  **(i) music proportion**, from the `music` segments in `data/output_gemini/`, predicted
+  **higher for Celebrating** than for the pooled remainder;
+  **(ii) speaker-change rate**, from segment boundaries in the same source, predicted **lower
+  for Reporting** than for the pooled remainder, since anchor-read material is monologic.
+  Each is a directional prediction, not a search for whichever measure separates best.
+
+These bound **reliability, not validity**, and the write-up says so. Validity rests on Study 1's
+human validation of the same taxonomy, model family and genre (κ_inter = 0.747,
+κ_avg(VLM) = 0.765), **which covers three of the six languages at the clip level**, and on the
+spot check in item 11.
+
+---
+
+## 4. §6.1.3
+
+**10. The detector operating point is unwindowed.** Measured on NTU Paiwan ASR over 102 clips
+and three speakers: unwindowed `ari` runs at recall 0.91 and precision 0.43. Restricting the
+search to the first 15 phones raises precision to 0.60 but drops recall to 0.68 and does so
+unevenly by speaker (0.86 / 0.86 / 0.43); a speaker-varying bias is the one kind this design
+cannot afford. The windowed variants (first 25, 15 and 10 phones) are declared here as a
+**sensitivity analysis**. **`maya` is never windowed.** `ari` and `maya` are reported
+separately throughout; `maya`'s performance is measured on its own and not inherited from
+`ari`'s.
+
+**11. The two tests the stage must carry, and the shape of its analyses.**
+
+- **The false-positive test.** Whether the detector's false positives correlate with the label.
+  At precision 0.43, with 26 false positives against 20 true ones in the validation material, a
+  modest correlation would manufacture an effect. Q7-Q10 is the case in this project where a
+  nuisance variable tracked a label.
+- **Form to label reports the full label distribution** of the utterances where the detector
+  fires, against the corpus-wide distribution. It is **not** a binarized Urging-versus-rest test,
+  and it carries no prior that the targets should concentrate in Urging. Reversing the
+  conditioning is not an alternative: P(U|F)/P(U) = P(F|U)/P(F), and the independence test is
+  symmetric in rows and columns.
+- **Form to function** judges force by a rule-based criterion over the published human
+  translation, which here is the TITV Chinese subtitle, following Study 2's method. **No LLM
+  judges function.**
+- **The spot check.** A Paiwan-competent listener checks 20 to 30 retrieved tokens. The sampling
+  rule is fixed here so the sample is not chosen after the results are seen: **25 tokens drawn
+  by stratified random sampling from the detector's hits in the Paiwan material, stratified by
+  target (`ari` / `maya`) and by whether the utterance's label is Urging, allocated
+  proportionally to the hit counts, with a fixed seed, drawn before any §6.1.3 result is
+  computed.** If fewer than 25 hits exist, all are checked. **Non-Urging hits are included by
+  construction**; a sample drawn only from Urging hits would be confirmatory. Form judgement and
+  function judgement are recorded separately, and every disagreeing case is listed rather than
+  summarized as a rate.
+
+---
+
+## 5. Not pre-registered, deliberately
+
+- **The category distribution**, which cannot be known before collection. This document fixes
+  what will be done once it is known, which is what pre-registration is for here.
+- **Chapters 1 to 3**, which depend on no new data.
+- **Exploratory analyses**, which remain permitted and are labeled as exploratory in the text.
+
+---
+
+## 6. What this document is and is not
+
+It is a repository-internal pre-registration: a file whose commit timestamp precedes the
+collection of the Study 3 corpus. It is not registered with an external service. Its force comes
+from the commit, so the commit must happen before the first clip is inspected, and this file
+must not be edited afterwards.
+
+---
+
+## 7. Amendments
+
+### Amendment 1, 2026-10-03. The day draw.
+
+**Written before any Study 3 video was downloaded or viewed.** No Study 3 data of any kind had
+been inspected when this was written, and none had been collected.
+
+*What was missing.* §1 item 2 fixes the draw of three clips from within a broadcast day. It does
+not fix which twelve days are drawn from each language's playlist, and it does not state the
+order in which the single random stream is consumed. Both are sampling decisions and both are
+fixed here. Nothing in §1 item 2 is changed.
+
+*The day frame.* For each language, every entry of its TITV playlist whose title carries a
+parsable eight-digit broadcast date is one day in that language's frame. Entries whose date
+cannot be parsed are excluded and listed. The frame is built from playlist metadata alone, with
+no video downloaded and no content viewed.
+
+*Exclusion of Study 1's broadcast days.* Study 1 used every one of the ten clips of each of
+three broadcast days, and those days have been worked on extensively (§0.2). They are removed
+from the day frame in whole, before the draw: **Amis 20260302, Paiwan 20260307, Truku 20260305**
+(`data/h264/`, `pilot/labels.json`, and `youtube_download/PROVENANCE.md` for their sources). The
+exclusion is by identity, not by content. It is what keeps §2 item 6, which confines the outcome
+test to the Study 3 corpus, from requiring an exclusion made after the data have been seen. The
+three languages with no Study 1 day, Atayal, Tsou and Yami, lose nothing. If an entry dated
+20260302 appears in the Truku playlist, that day is excluded as well and the fact is reported:
+one extra excluded day costs nothing, a missed exclusion costs the blindness of the whole Truku
+sample.
+
+*The day draw.* If a language's frame spans twelve or more distinct calendar months, twelve
+distinct months are drawn uniformly at random without replacement, and one day is drawn
+uniformly at random within each drawn month. If the frame spans fewer than twelve months, twelve
+days are drawn uniformly at random from the frame without replacement. If the frame holds fewer
+than twelve days, all are taken and the shortfall is recorded. The month-stratified branch is
+what delivers the spread across months that §0.1 describes. Which branch applies is determined
+by the frame, which is metadata, and is recorded with the frame.
+
+*The stream.* One `numpy.random.default_rng(20261005)` instance serves the whole design,
+consumed in this order: every day draw first, languages in alphabetical order (Amis, Atayal,
+Paiwan, Truku, Tsou, Yami); then every within-day clip draw under §1 item 2, languages in the
+same order and days in date order; then any top-up draw under §1 item 4, continuing the same
+stream. The draw is reproducible from the seed and the recorded frame alone.
+
+*Records.* The frame and the draw are written to `analysis/study3/frame.json` and
+`analysis/study3/draw.json`, which are version controlled. `.gitignore` excludes `data/` whole,
+so the media live there and the records do not.
+
+### Amendment 2, 2026-10-03. Which playlist entries form the day frame.
+
+**Written after the playlist metadata was inspected, and before any Study 3 video was
+downloaded or viewed and before any draw was run.** What had been inspected is the metadata in
+`analysis/study3/frame.json` (commit `4ae0531`): titles, video ids, reported durations, and each
+playlist's own title and count. No broadcast content of any kind had been seen. The findings that
+prompted this amendment are in `analysis/study3/FRAME_FINDINGS_2026-10-03.md`.
+
+*Item changed.* Amendment 1, *The day frame*.
+
+*What it was.* Every entry of a language's TITV playlist whose title carries a parsable
+eight-digit broadcast date is one day in that language's frame.
+
+*What it becomes.* An entry is one day in its language's frame only if all of the following
+hold. Its title carries a parsable eight-digit broadcast date, as in Amendment 1. The title's
+first 【】 bracket opens with the programme name 看見族語. That bracket names the playlist's own
+language, by the Chinese name recorded in `analysis/study3/playlists.json`. An entry whose
+bracket names another language is excluded from the frame and listed. A video id listed more than
+once in a playlist is one entry. No other exclusion is made. In particular, a special edition
+broadcast under the 看見族語 title is in the frame on the same terms as any other 看見族語
+broadcast. The exclusion of Study 1's broadcast days in Amendment 1 is unchanged and is applied
+after this rule. If, after this rule, any date in a language's frame is carried by more than one
+video id, the draw stops and the case is reported rather than resolved.
+
+*Reason.* Section 0.1 defines the corpus as TITV《看見族語》television news, and Study 1's three
+broadcasts are 看見族語 broadcasts. The playlists also hold the programmes that preceded 看見族語
+(族語午間新聞, 族語晚間新聞) and the one that followed it from September 2026 (族語新聞), along with
+one-off specials and entries in other languages. Amendment 1 as written would have admitted all of
+these, and its month-stratified branch would have drawn most days from before 看見族語 began. The
+restriction keeps the sample within the programme the design describes. Whether 族語新聞 is the
+same programme renamed cannot be established from metadata, so it is not admitted.
+
+*Implementation of the draw, fixed before the draw is run.* Amendment 1 fixes the order in which
+the stream serves languages; this fixes the calls within a language. Months and days are sorted
+chronologically. In the month-stratified branch, `rng.choice(n_months, size=12, replace=False)`
+selects twelve months, and then, taking the selected months in chronological order,
+`rng.choice(n_days_in_month)` selects one day within each. In the uniform branch,
+`rng.choice(n_days, size=12, replace=False)` selects twelve days. The within-day draw under §1
+item 2 is `rng.choice(n_clips, size=3, replace=False)` over the day's clip indices in order,
+with days taken in date order. The script is `scripts/draw_study3_sample.py`, and its parameters
+are read from `analysis/study3/design.json`.
+
+---
+
+### Amendment 3, 2026-10-05. The symbolic detector becomes the baseline, not the subject.
+
+**Written after collection and before any Study 3 content was inspected.** Collection is
+complete under Amendments 1 and 2: 72 broadcasts, 720 clips cut, 216 drawn, twelve days in each
+of six languages (`analysis/study3/manifest.json`, `draw.json`). `analysis/study3/README.md`
+records that no Study 3 content was inspected for any analysis purpose during collection, and
+**the author confirmed this on 2026-10-05**. Nothing here changes the corpus: the sample was
+drawn for reasons that have nothing to do with §6.1's analysis, so no choice in this amendment
+can bias it.
+
+*Item changed.* §4, "§6.1.3", in its entirety. **§4 item 10, the detector operating point, is not
+changed.** §4 item 11's sample size is superseded below.
+
+*What it was.* §6.1.3 detected `ari` and `maya` in recognizer output and set the hit set against
+the VLM labels, reporting three analyses: form to function, form to label, and retrieval to
+function.
+
+*What it becomes.* §6.1.3 is **a comparison of two retrieval routes against one reference
+standard.** The two forms remain, inside the symbolic route, as the instrument.
+
+*Why.* Chapter 3 argues that form-based query cannot reach directive force in these languages.
+§6.1.3 as written then ran a form-based search, on the two forms §3.4 declares to be the
+exceptions, which made the chapter's main application a demonstration of the exception rather
+than of the thesis. Nothing in the repository argued the step from "Study 2's function-first
+query surfaced these two forms" to "these two forms are the object of study"; the selection was
+then reinforced by retrievability, which is a property of the detector and not of the language.
+The forms are no longer the research object. The question is the one §7.1 of the outline states:
+how much of the directive material a form-based route reaches, and whether a geometric route
+reaches more.
+
+**1. The reference standard.** The Study 3 Paiwan utterances whose time-aligned TITV Chinese
+subtitle satisfies the rule-based directive criterion of Study 2, unchanged. It is a published
+human translation judged by a stated rule, which is why it can serve as a yardstick for both
+routes. Source text is `data/ocr_vlm/`; the alignment from the clip-level string to the utterance
+is work to be built and its error rate is reported. **No model judges force.** The reference set
+is fixed, and its size reported, before either route is scored.
+
+**2. Arm A, symbolic.** The detector of §4 item 10, unchanged: `ari` and `maya` over Allosaurus
+`pwn` phone strings, **unwindowed**, windowed variants as sensitivity analysis. **Paiwan only**:
+the other five languages have no comparable target and two have no phone inventory in the
+recognizer at all (`analysis/q19`), so the route is undefined for them and the asymmetry is
+stated rather than worked around.
+
+**3. Arm B, geometric.** Query-by-example at the utterance by multimodal similarity, as in the
+retrieval evaluation of Chapter 5.
+
+**4. Seeds and the split.** The twelve Paiwan broadcast days are divided into a **seed half and a
+scoring half, six and six**, drawn by continuing the single `default_rng(20261005)` stream after
+every draw of Amendment 1, taking 6 of the 12 Paiwan days without replacement in date order.
+Arm B's seeds are the reference-set utterances of the seed half. **Both arms are scored on the
+scoring half only.** Study 1's and Study 2's material supplies no seeds, so §2 item 6 is not
+engaged.
+
+**5. The two routes return the same number of utterances.** `k` for Arm B is set so that
+`|B| = |A|` on the scoring half, determined after Arm A has run and before Arm B is scored. This
+removes the one free parameter that could otherwise advantage either route, and makes the
+comparison one of what each route reaches rather than of how much each returns.
+
+**6. The outcome.** Of the reference set in the scoring half, the fraction reached by A only, by
+B only, by both, and by neither. **The primary statistic is the fraction reached by B and not by
+A**, with a cluster bootstrap at the broadcast day per §1 item 1. Secondary: the precision of
+each route against the reference set, and the size of the reference set as a proportion of all
+Paiwan utterances in the scoring half. Study 2's finding that 37.6% of directive sentences carry
+no imperative or hortative suffix is from a different corpus and register and **is not a
+predicted value here**.
+
+**A null is a result and is reported as one.** If Arm B reaches nothing Arm A does not, that is a
+negative finding about the geometric route on this material, stated plainly.
+
+**7. Withdrawn with the superseded design.** The binarized Urging-versus-rest test and the lift
+statistic, and with them the question of which direction to condition in. The full label
+distribution of each cell is still reported, descriptively, because it is informative about what
+the labeler does; **no claim about directive force rests on it.**
+
+**8. The human component, superseding §4 item 11's sample size.** **40 tokens, ten from each of
+the four cells of item 6**, stratified by cell, fixed seed, drawn before any outcome is computed.
+If a cell holds fewer than ten, all of it is checked and the shortfall recorded. Form judgement
+and function judgement are recorded separately, and every disagreeing case is listed rather than
+summarized as a rate. The rest of §4 item 11 stands.
+
+**9. Not changed.** §1 items 1 to 4; §2 in full, including the gesture section's distance
+gradient and its primary test; §3 items 8 and 9; §4 item 10; §5; and the corpus itself.
+
+---
+
+> Format for any amendment: date, the item changed, what it was, what it became, the reason, and
+> whether any Study 3 data had been inspected at the time. An amendment made after inspection is
+> recorded as such and the affected analysis is reported as exploratory.
+
+---
+
+## Appendix. Measurements that preceded this document
+
+Scripts and results are in `analysis/`. All predate this draft.
+
+| Ref | What it established |
+|---|---|
+| `q7`-`q10` | The cross-lingual gesture effect is carried by shot framing; the claim is withdrawn |
+| `q11` | Power for the shot-level test |
+| `q12` | Why the standard representation diagnostic was blind to that confound |
+| `q13`-`q15` | Shot segmentation, ICC and design effect; the utterance is the retrieval unit and the shot enters as an inclusion criterion and a covariate |
+| `q16` | Label-noise direction of bias |
+| `q17` | No countable polar interrogatives in the Study 1 material |
+| `q18`-`q19` | The phone layer run without a language inventory emits effectively one inventory across three languages; restricting it recovers the target |
+| `q20` | `ari` signal-to-noise 1:2.1 and 1:2.2 across two independent Paiwan corpora |
+| `q21` | Detector precision and recall on recognizer output; the operating point in item 10 |
+| `q22` | No ready evaluation set for utterance-boundary detection |
+| `q23` | The Study 1 prosody result is configuration-dependent |
+
+Claim-level grading for all of the above, including the errors made and corrected along the way,
+is in `claim_audit_2026-09.md`.

@@ -1,0 +1,212 @@
+{
+  "news-Paiwan-20260307-01": {
+    "label": "Reporting",
+    "confidence": "high",
+    "rationale": "主播在攝影棚播報縣政府營養午餐免費政策，並穿插學校實地訪問畫面，呈現政策宣傳與新聞報導形式，缺乏明顯的慰問、慶祝、教導或呼籲等互動特徵。",
+    "seg_id": "news-Paiwan-20260307-01",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Amis-20260302-01": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片主要呈現彰化縣南鄭國小如何教導原住民族語言和文化的教學現場，包括老師講解課程安排、學生學習情形，以及教育機構如何為下一代傳承族群文化，具有明顯的教導和文化傳承功能。",
+    "seg_id": "news-Amis-20260302-01",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Amis-20260302-02": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片主要呈現耆老與民眾分享阿美族傳統草藥知識與文化傳承，包括族語教學、傳統療癒植物應用等內容，具有明顯的文化傳承與知識分享特徵。",
+    "seg_id": "news-Amis-20260302-02",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Amis-20260302-03": {
+    "label": "Celebrating",
+    "confidence": "high",
+    "rationale": "影片主要記錄興昌部落東八幡神社的祈福慰靈法會活動，涉及日本法會團隊來台進行儀式、紀念太平洋戰役亡靈，以及部落與日本友人共同建造神社的歷史，具有慶祝、紀念與文化交流的特色。",
+    "seg_id": "news-Amis-20260302-03",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Amis-20260302-04": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片主要呈現耆老詳細解說阿美族語言詞彙（如'piteran'）的文化內涵與生活應用，包括傳統生活智慧與做人處事道理的傳承，具有明顯的文化教導與知識分享特徵。",
+    "seg_id": "news-Amis-20260302-04",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Amis-20260302-05": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片展示耆老在公開場合講解族語文化內涵、傳統祭祀儀式的意義，以及文化小辭典的教學內容，具有明確的文化傳承和知識分享的特徵。",
+    "seg_id": "news-Amis-20260302-05",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Amis-20260302-06": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片主要展示原住民族語言教學（文化小辭典）和文化傳承課程（植物染、竹編工藝），呈現耆老向學習者講解傳統知識和技藝的教導互動，具有明顯的文化傳承與知識分享特徵。",
+    "seg_id": "news-Amis-20260302-06",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Amis-20260302-07": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片展示藝術工作者詳細講解植物纖維創作技藝、植物染色過程，並有學員實際操作學習，屬於文化技藝傳承與教導的互動性質。",
+    "seg_id": "news-Amis-20260302-07",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Amis-20260302-08": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片展示植物染技藝的教學過程，耆老/師傅向學員說明如何處理素材、講解染料特性和創作方法，具有文化傳承與知識分享的典型特徵。",
+    "seg_id": "news-Amis-20260302-08",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Amis-20260302-09": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片主要呈現耆老向年輕人傳授傳統手工藝技能和文化知識，包括示範織布等傳統工藝，體現典型的文化傳承與教導互動性質。",
+    "seg_id": "news-Amis-20260302-09",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Amis-20260302-10": {
+    "label": "Celebrating",
+    "confidence": "high",
+    "rationale": "影片主要呈現棒球選手職業生涯的最後賽季，包含頒獎典禮、隊友與教練的致敬，以及對其職棒生涯的歡慶與見證，具有明顯的榮耀慶祝性質。",
+    "seg_id": "news-Amis-20260302-10",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Paiwan-20260307-02": {
+    "label": "Urging",
+    "confidence": "high",
+    "rationale": "政府官員在公開場合宣布政策補助和建置計畫，表達政府與部落站在一起的決心，呼籲社區自主購置設備，展現政策推動和資源整合的訴求性質。",
+    "seg_id": "news-Paiwan-20260307-02",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Paiwan-20260307-03": {
+    "label": "Urging",
+    "confidence": "high",
+    "rationale": "影片主要呈現獅子會捐款支持屏東基督教醫院智能醫療大樓興建計畫，核心內容是呼籲社會大眾關注偏鄉醫療需求，並期盼更多企業與民眾投入支持，具有明顯的公益訴求和社會動員特性。",
+    "seg_id": "news-Paiwan-20260307-03",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Paiwan-20260307-04": {
+    "label": "Urging",
+    "confidence": "high",
+    "rationale": "影片主要內容是屏基醫院推廣免費六癌篩檢服務，透過癌症患者康復案例分享，呼籲民眾把握機會進行定期健檢，具有明顯的政策推廣和勸告性質。",
+    "seg_id": "news-Paiwan-20260307-04",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Paiwan-20260307-05": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "耆老詳細講解傳統織布技法、設計理念和創作過程，展示各式織布作品，具有明確的文化傳承與知識分享特徵。",
+    "seg_id": "news-Paiwan-20260307-05",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Paiwan-20260307-06": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "藝術創作者詳細講解其織布作品的創作理念、製作過程、材料運用與文化傳承，具有知識分享與文化傳承的特徵。",
+    "seg_id": "news-Paiwan-20260307-06",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Paiwan-20260307-07": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "耆老在教室中向年輕學員詳細解說傳統織布工藝的技術與文化意義，並進行實際示範教導，這是典型的文化傳承與知識教導互動。",
+    "seg_id": "news-Paiwan-20260307-07",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Paiwan-20260307-08": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片展示耆老與年輕人共同進行傳統編織工藝的過程，耆老Nadolan老師親身示範和教導編織技法，體現原住民文化傳承與知識分享的互動性質。",
+    "seg_id": "news-Paiwan-20260307-08",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Paiwan-20260307-09": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片展示傳統排灣族家屋的復振計畫，通過展示建築構件名稱、傳統工法施作過程、空間配置等，進行文化傳承與知識教導，體現耆老與青年的共同參與和文化傳承的語用特色。",
+    "seg_id": "news-Paiwan-20260307-09",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Paiwan-20260307-10": {
+    "label": "Celebrating",
+    "confidence": "high",
+    "rationale": "影片記錄春日國小舉辦音樂專輯成果發表會，展示學童透過古謠隊傳承族語文化，具有慶祝、展演與文化傳承並重的特質，但以成果發表會的慶祝性質為主。",
+    "seg_id": "news-Paiwan-20260307-10",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Truku-20260305-01": {
+    "label": "Urging",
+    "confidence": "high",
+    "rationale": "影片呈現釣客對花蓮縣府開放垂釣區域但同時實施停車管制的政策提出質疑與反對，釣客表達不滿並質問縣府政策的比例原則性，具有對政策訴求和勸告性質的互動特徵。",
+    "seg_id": "news-Truku-20260305-01",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Truku-20260305-02": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片主要呈現太魯閣牌樓的歷史背景、修復過程、技術細節與安全考量，由文資單位人員和工程專家進行專業解說和知識傳承。",
+    "seg_id": "news-Truku-20260305-02",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Truku-20260305-03": {
+    "label": "Reporting",
+    "confidence": "high",
+    "rationale": "影片為新聞播報形式，主播在攝影棚介紹育兒彈性工時政策，雖涉及企業實例和民眾訪談，但整體結構為標準新聞報導，無明顯的慰問、慶祝、教導傳承或呼籲勸告的互動性質。",
+    "seg_id": "news-Truku-20260305-03",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Truku-20260305-04": {
+    "label": "Urging",
+    "confidence": "high",
+    "rationale": "影片主要內容涉及婦女團體對性別薪資差距政策的訴求和呼籲，包括要求政府制定整體政策、建立薪資透明制度等政策倡議，具有明顯的政策說明與施壓性質。",
+    "seg_id": "news-Truku-20260305-04",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Truku-20260305-05": {
+    "label": "Urging",
+    "confidence": "high",
+    "rationale": "影片主要呈現噶哈巫族人為正名而向戶政事務所陳情訴求，並記錄族人的文化復振努力與政策溝通過程，具有明顯的政策訴求和呼籲性質。",
+    "seg_id": "news-Truku-20260305-05",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Truku-20260305-06": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "講者透過展示文件、流程圖表，詳細說明噶哈巫族民族認定的歷史背景、申請要件與審查流程，具有教導與知識傳承的互動性質。",
+    "seg_id": "news-Truku-20260305-06",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Truku-20260305-07": {
+    "label": "Urging",
+    "confidence": "high",
+    "rationale": "影片主要呈現噶哈巫族人為爭取正式族群身分認定的訴求，強調政府應認同其族語與身分，具有明確的政策訴求與呼籲性質。",
+    "seg_id": "news-Truku-20260305-07",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Truku-20260305-08": {
+    "label": "Celebrating",
+    "confidence": "high",
+    "rationale": "影片主要報導2026國標舞亞巡賽和116年全國原住民族運動會的籌備與揭牌典禮，展示排灣族小舞者的優異表現和運動會的規劃成果，具有慶祝、歡迎和表彰的互動性質。",
+    "seg_id": "news-Truku-20260305-08",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Truku-20260305-09": {
+    "label": "Urging",
+    "confidence": "high",
+    "rationale": "花蓮縣政府透過創意行李箱開箱活動、推出優惠專案與旅遊平台合作，呼籲國內外旅客來花蓮旅遊，以振興地震後的觀光產業，具有明顯的政策訴求與勸告性質。",
+    "seg_id": "news-Truku-20260305-09",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "news-Truku-20260305-10": {
+    "label": "Explaining",
+    "confidence": "high",
+    "rationale": "影片主要呈現陳香兒老師帶領學員進行漂流木創作課程，從材料介紹、創作理念到實作示範，體現文化傳承和知識分享的教導性質。",
+    "seg_id": "news-Truku-20260305-10",
+    "model": "claude-haiku-4-5-20251001"
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "scope": "Original registration snapshots and path-limited amendment changes, with original Git metadata. These are exported records; the public repository has a separate Git history.",
+  "timestamp_interpretation": "Author and committer dates are original repository metadata, not independent third-party registration timestamps.",
+  "current_registration": "PREREGISTRATION.md",
+  "versions": [
+    {
+      "original_commit": "e6f5bf23b184961486f5b5edc4e95106ae46dc43",
+      "author_date": "2026-10-03T05:32:16Z",
+      "committer_date": "2026-10-03T05:32:16Z",
+      "subject": "Lock the pre-registration for Study 3",
+      "snapshot": "docs/registration/versions/e6f5bf2.md",
+      "git_blob_sha1": "5ba3be63ac47e3e808e8048d5466eb78dc39ce45",
+      "sha256": "17f9cac66a52b0ac5849d8fe403f5033cf478b3f3064168cf3e423941f29aa71",
+      "bytes": 13309
+    },
+    {
+      "original_commit": "3b65deedcec4e83471e361b9adb7bc915beb15da",
+      "author_date": "2026-10-03T06:37:52Z",
+      "committer_date": "2026-10-03T06:37:52Z",
+      "subject": "Amendment 1: fix the day draw, before any Study 3 video is collected",
+      "snapshot": "docs/registration/versions/3b65dee.md",
+      "git_blob_sha1": "50442af4b467322ed84a133a8e63d8c62d4beab2",
+      "sha256": "c88bbd1ace82400156be1017c07f4ad47018a20ebe95b02ccc93f082c0171221",
+      "bytes": 16341,
+      "change_from_previous": "docs/registration/changes/3b65dee.patch"
+    },
+    {
+      "original_commit": "a29454e3f2b40ae86560a9188dac92a91a8db0d2",
+      "author_date": "2026-10-03T14:54:06+08:00",
+      "committer_date": "2026-10-03T14:54:06+08:00",
+      "subject": "Amendment 2: restrict the Study 3 day frame to 看見族語; add the draw script",
+      "snapshot": "docs/registration/versions/a29454e.md",
+      "git_blob_sha1": "8d736a9cfd84f98e4131193c9ccabfa9e649a075",
+      "sha256": "0a6e3f8f2807505dc58134deecd5473a7522c53dcbf9627f5d910e47a468955b",
+      "bytes": 19505,
+      "change_from_previous": "docs/registration/changes/a29454e.patch"
+    },
+    {
+      "original_commit": "8c30cbf38a3ee3b635c3b535c8d5d0cc976cdb52",
+      "author_date": "2026-10-05T13:51:34Z",
+      "committer_date": "2026-10-05T13:51:34Z",
+      "subject": "Amendment 3 in force: two retrieval routes against one reference standard",
+      "snapshot": "docs/registration/versions/8c30cbf.md",
+      "git_blob_sha1": "643d19a8b451f2ca4f78ee989977a730854be265",
+      "sha256": "8a48b6e614990dc6793b3d633cdba01c10fc108d5af85c58eca28352e07c21cb",
+      "bytes": 25154,
+      "change_from_previous": "docs/registration/changes/8c30cbf.patch"
+    },
+    {
+      "original_commit": "0e61e39a7f23a6ed1f1b849c06030d4d1b7f21db",
+      "author_date": "2026-10-07T19:37:54+08:00",
+      "committer_date": "2026-10-07T19:37:54+08:00",
+      "subject": "preregistration: Amendment 4, Bunun replaces Tsou; transcription modality added",
+      "snapshot": "docs/registration/versions/0e61e39.md",
+      "git_blob_sha1": "d1ceb65ed86cf11dfb78efea15eb787e37c039d8",
+      "sha256": "74b2746cc8e94267d841e2da34c69dbb4e9f7419f45070032d0cc295e97d15df",
+      "bytes": 39752,
+      "change_from_previous": "docs/registration/changes/0e61e39.patch"
+    },
+    {
+      "original_commit": "4704420e7f5580ef8a7e757961eb122aced73df1",
+      "author_date": "2026-10-07T20:04:35+08:00",
+      "committer_date": "2026-10-07T20:04:35+08:00",
+      "subject": "preregistration: Amendment 5, Tsou kept; Amendment 4 Part A withdrawn",
+      "snapshot": "docs/registration/versions/4704420.md",
+      "git_blob_sha1": "911f07777011edff426156007fd5d8f43642430f",
+      "sha256": "44aff572cba4b32fde91d48503c5d79b879434d617207ac7267787e07dd18393",
+      "bytes": 44334,
+      "change_from_previous": "docs/registration/changes/4704420.patch"
+    },
+    {
+      "original_commit": "f58013591ec6cc6f8e7d40603a6a09ca14e95bf8",
+      "author_date": "2026-10-07T20:51:15+08:00",
+      "committer_date": "2026-10-07T20:51:15+08:00",
+      "subject": "preregistration: Amendment 6, subtitle modality leaves Arm B; Arms T and C added; form judgement extended",
+      "snapshot": "docs/registration/versions/f580135.md",
+      "git_blob_sha1": "39dbbcf744ee5e33de2ff144832626327bc44b6c",
+      "sha256": "c09a7d6b0b14c92505ceac8012a8d84f7ed345474f227e049a1f9c2377b8b47e",
+      "bytes": 56207,
+      "change_from_previous": "docs/registration/changes/f580135.patch"
+    },
+    {
+      "original_commit": "6244f32cfa708fc0a048cff43fbd80934728724c",
+      "author_date": "2026-10-11T11:07:56Z",
+      "committer_date": "2026-10-11T11:07:56Z",
+      "subject": "preregistration: Amendment 7, line-based subtitle source for the reference standard; phone layer recorded",
+      "snapshot": "docs/registration/versions/6244f32.md",
+      "git_blob_sha1": "e780447ed5be3d121bebd7124d6bb904b834da29",
+      "sha256": "14237ebe9f56496589a111390b361a58f59c44db6071cc23ae53dffdc2836944",
+      "bytes": 64835,
+      "change_from_previous": "docs/registration/changes/6244f32.patch"
+    },
+    {
+      "original_commit": "2b99dfc18a628e19e8a3d0e80146b839f854e395",
+      "author_date": "2026-10-12T11:59:15Z",
+      "committer_date": "2026-10-12T11:59:15Z",
+      "subject": "preregistration: Amendment 8, Study 3 utterance boundaries (one seeded run, frozen; 30 s window sensitivity; reproducibility recorded); RUNBOOK step 6 follows it",
+      "snapshot": "docs/registration/versions/2b99dfc.md",
+      "git_blob_sha1": "d6c8e6ef37d4727d3826b4bc5d2bc59d8a50c3af",
+      "sha256": "5112333638add65217e19196664ac0780325b52f4a74e83ca1574a30157598d8",
+      "bytes": 74325,
+      "change_from_previous": "docs/registration/changes/2b99dfc.patch"
+    },
+    {
+      "original_commit": "d032dc554c77ee9e233052915b508aeb005fa256",
+      "author_date": "2026-10-13T20:52:01Z",
+      "committer_date": "2026-10-13T21:17:18Z",
+      "subject": "preregistration: Amendment 9, Mandarin exclusion (all languages; §6.2 and Chapter 5 primary); Chinese directive criterion; registered route comparison kept with stated expectation; 120 Paiwan clips; judged directive experiment (ari/maya/-u/-i) as new §6.1 primary, face and kinematic blocks, CLM-8B text baseline; open choices fixed; same-community contrast for §6.2; audio checks withdrawn",
+      "snapshot": "docs/registration/versions/d032dc5.md",
+      "git_blob_sha1": "3ac8729ff61d1a9be8598d174d835a7c0f877b7b",
+      "sha256": "cf3e228fd746c21497c3e73df9176b2008cf00fa538ccbc994776b35a64f2770",
+      "bytes": 94321,
+      "change_from_previous": "docs/registration/changes/d032dc5.patch"
+    },
+    {
+      "original_commit": "cf63841600528b552601a538cfeef9072e685e01",
+      "author_date": "2026-10-14T04:47:32Z",
+      "committer_date": "2026-10-14T04:47:32Z",
+      "subject": "preregistration: Amendment 10, pose sampling recorded (every 8 frames); tight-frame minimum stated in time (1 s = 4 records); per-source PCA so form and prosody are not swamped; post-Amendment-9 exposure disclosed",
+      "snapshot": "docs/registration/versions/cf63841.md",
+      "git_blob_sha1": "3db22b9826fcb9a29a370919ed91f353f9b488de",
+      "sha256": "1122bfe28339973802356ca8989f63247f23abc0db63edb98ac617a420b9734f",
+      "bytes": 100615,
+      "change_from_previous": "docs/registration/changes/cf63841.patch"
+    }
+  ],
+  "commit_records": [
+    {
+      "cited_identifier": "0c3932f",
+      "available_object": true,
+      "original_commit": "0c3932fa164c57e236b360a0da82e2201366c6bc",
+      "author_date": "2026-10-13T16:09:46Z",
+      "committer_date": "2026-10-13T16:09:46Z",
+      "commit_object_sha256": "d848b19730774f60df06ff5c4310c6787ef97e862d580f55f2b1442794240b6c",
+      "commit_object_utf8": "tree 27f4e4dfdec8da768871652303584f072e82c689\nparent 13677846307738e52310599ad5ff0fa45a07d75f\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791907786 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791907786 +0000\n\nlabel_units.py: retry transient provider errors (503/529/429, network) with backoff; counted\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_011at4owXwCFtPLAXiP1oj73\n"
+    },
+    {
+      "cited_identifier": "0e61e39",
+      "available_object": true,
+      "original_commit": "0e61e39a7f23a6ed1f1b849c06030d4d1b7f21db",
+      "author_date": "2026-10-07T19:37:54+08:00",
+      "committer_date": "2026-10-07T19:37:54+08:00",
+      "commit_object_sha256": "bc6d5094aacd31d87107d0b81e4645b774efdbc80cd70e2a398d96cb2e9aa956",
+      "commit_object_utf8": "tree e8832ae3320e7a4b4cfe6f867ad6c47d6dafc078\nparent 84b212bf64167a7df0f96e3b108c7639ec4200f3\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791373074 +0800\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791373074 +0800\n\npreregistration: Amendment 4, Bunun replaces Tsou; transcription modality added\n"
+    },
+    {
+      "cited_identifier": "0fec9ac",
+      "available_object": true,
+      "original_commit": "0fec9ace27a35a4f7b9aa089445ef37be9b4532c",
+      "author_date": "2026-10-14T09:25:31+08:00",
+      "committer_date": "2026-10-16T23:08:40+08:00",
+      "commit_object_sha256": "d154eb8736b4686be3fa2d4b162cd9c46c0a58a35f201306bd4473192907f763",
+      "commit_object_utf8": "tree 5a9ff445dabe82a43eb4c9025e6df1badac93aa0\nparent 89263fb2c2aa176f3daa0535171ac31891415671\nauthor kumaochang <mcku1115@gmail.com> 1791941131 +0800\ncommitter kumaochang <mcku1115@gmail.com> 1792163320 +0800\n\nStudy 3 run log: inadvertent exposure (2026-10-14 ~07:38, two OCR words in an Extension 84 stage 5 log line), disclosed; log-checking rule tightened\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n"
+    },
+    {
+      "cited_identifier": "1163acf",
+      "available_object": true,
+      "original_commit": "1163acf3e581d349d13fd6f0e078bfce3cdb008b",
+      "author_date": "2026-10-12T10:51:21Z",
+      "committer_date": "2026-10-12T10:51:21Z",
+      "commit_object_sha256": "79948af8cade787755a0b4fb6bb660c258e3d82ba3591cb51900ca88befe5ebd",
+      "commit_object_utf8": "tree d8df774329920526e6aba2ede47b63d40848cbb1\nparent d5ed4346ab49d0a8becec24eda1c7e0bfac4e5a4\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791802281 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791802281 +0000\n\nAmendment 8 draft: Study 3 utterance boundaries (seed, freeze, 30 s window sensitivity, reproducibility)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_011at4owXwCFtPLAXiP1oj73\n"
+    },
+    {
+      "cited_identifier": "26f1901",
+      "available_object": true,
+      "original_commit": "26f190197f811d4efffdc4152069b1230fc2512a",
+      "author_date": "2026-10-11T11:06:17Z",
+      "committer_date": "2026-10-11T11:06:17Z",
+      "commit_object_sha256": "f2ae49c554e8252476d0d8ad49fc43af010b91f9067b3fed8d77f119ee8846ba",
+      "commit_object_utf8": "tree 51330f2d00d169e24b58edad80ed860414a1f8ca\nparent 199a7abb8de1668a5624a812206c77e6a62d35f1\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791716777 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791716777 +0000\n\nDraft Amendment 7: line-based subtitle source for the reference standard; phone layer recorded (not in force)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_011at4owXwCFtPLAXiP1oj73\n"
+    },
+    {
+      "cited_identifier": "2b99dfc",
+      "available_object": true,
+      "original_commit": "2b99dfc18a628e19e8a3d0e80146b839f854e395",
+      "author_date": "2026-10-12T11:59:15Z",
+      "committer_date": "2026-10-12T11:59:15Z",
+      "commit_object_sha256": "088a5972bfa1f66b9c0c13216e07671f9a3ba6e4a3eb28153ac51efa5ca201af",
+      "commit_object_utf8": "tree 21b87dd3f2176b520072e00e0010949cee153594\nparent 40ac60f1fa0d19758ab52a0f4c5ac666907cfffc\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791806355 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791806355 +0000\n\npreregistration: Amendment 8, Study 3 utterance boundaries (one seeded run, frozen; 30 s window sensitivity; reproducibility recorded); RUNBOOK step 6 follows it\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_011at4owXwCFtPLAXiP1oj73\n"
+    },
+    {
+      "cited_identifier": "3b65dee",
+      "available_object": true,
+      "original_commit": "3b65deedcec4e83471e361b9adb7bc915beb15da",
+      "author_date": "2026-10-03T06:37:52Z",
+      "committer_date": "2026-10-03T06:37:52Z",
+      "commit_object_sha256": "1080225fec3dc7ed868cc1a2ea1f0f8d04eaf9c6cb799d8ca12f12f3f7aed4e8",
+      "commit_object_text_supplied": false,
+      "reason": "Commit message includes internal editorial references; the registration snapshot and its file hash are supplied separately."
+    },
+    {
+      "cited_identifier": "4704420",
+      "available_object": true,
+      "original_commit": "4704420e7f5580ef8a7e757961eb122aced73df1",
+      "author_date": "2026-10-07T20:04:35+08:00",
+      "committer_date": "2026-10-07T20:04:35+08:00",
+      "commit_object_sha256": "235707cf74a5a444e4d26da50665df40678350c052741e77822ad0c7d4dc3c16",
+      "commit_object_utf8": "tree 4f1ecbda181ade1187609f406bee27391d7b7c9e\nparent 0e61e39a7f23a6ed1f1b849c06030d4d1b7f21db\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791374675 +0800\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791374675 +0800\n\npreregistration: Amendment 5, Tsou kept; Amendment 4 Part A withdrawn\n"
+    },
+    {
+      "cited_identifier": "4ae0531",
+      "available_object": true,
+      "original_commit": "4ae053142510e6a7aabb26acca1e4200f861ef44",
+      "author_date": "2026-10-03T14:47:49+08:00",
+      "committer_date": "2026-10-03T14:47:49+08:00",
+      "commit_object_sha256": "d5b8aa7d380b670fb0233632bc2ff17f39987ed75e4ed8af411436c51b317549",
+      "commit_object_text_supplied": false,
+      "reason": "Commit message includes internal editorial references; the registration snapshot and its file hash are supplied separately."
+    },
+    {
+      "cited_identifier": "5bbaafd",
+      "available_object": false,
+      "mapped_commit": "0fec9ace27a35a4f7b9aa089445ef37be9b4532c"
+    },
+    {
+      "cited_identifier": "5d35551",
+      "available_object": true,
+      "original_commit": "5d35551354bf0bc9b2c8447571b7b5c9b47db4e0",
+      "author_date": "2026-10-07T20:48:35+08:00",
+      "committer_date": "2026-10-07T20:48:35+08:00",
+      "commit_object_sha256": "bbdf92fd2dcac33d9209be82ccad633b218e459dab3d87290d6703ddb1472b7a",
+      "commit_object_utf8": "tree 79eb37028034743b7741bdc79282742c0295107d\nparent 5f40b6c6e3d2e179e4d100c16f8d4c423e37608f\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791377315 +0800\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791377315 +0800\n\nSimplify §6.1 exposition; draft Amendment 6 (Arm B without subtitle, Arms T and C); LV migration map\n"
+    },
+    {
+      "cited_identifier": "5f40b6c",
+      "available_object": true,
+      "original_commit": "5f40b6c6e3d2e179e4d100c16f8d4c423e37608f",
+      "author_date": "2026-10-07T20:07:56+08:00",
+      "committer_date": "2026-10-07T20:07:56+08:00",
+      "commit_object_sha256": "e399385a180202050334c0bb58cdebeeab188dcb396d65162b4deddad5eb5d8e",
+      "commit_object_utf8": "tree 5b661957f091904b48316dd6c31c78eb5f22b8a5\nparent 4704420e7f5580ef8a7e757961eb122aced73df1\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791374876 +0800\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791374876 +0800\n\nAmendment 5 follow-ups: Bunun marked reference-only; README records no Bunun collection\n"
+    },
+    {
+      "cited_identifier": "6244f32",
+      "available_object": true,
+      "original_commit": "6244f32cfa708fc0a048cff43fbd80934728724c",
+      "author_date": "2026-10-11T11:07:56Z",
+      "committer_date": "2026-10-11T11:07:56Z",
+      "commit_object_sha256": "a69ef7312407edbb70e27af7283642870b760ea52ae6a52a4ff67eb22cd67524",
+      "commit_object_utf8": "tree f297fe640f712a2aa4fe15718f4c1e8e2908201b\nparent 26f190197f811d4efffdc4152069b1230fc2512a\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791716876 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791716876 +0000\n\npreregistration: Amendment 7, line-based subtitle source for the reference standard; phone layer recorded\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_011at4owXwCFtPLAXiP1oj73\n"
+    },
+    {
+      "cited_identifier": "684aa79",
+      "available_object": true,
+      "original_commit": "684aa799a525c6c69c4f86b73bd39cc49b17b601",
+      "author_date": "2026-10-13T15:17:24Z",
+      "committer_date": "2026-10-13T15:17:24Z",
+      "commit_object_sha256": "98da502517ccb991f1e42a4b46b29f74c1bf8c1a39afa692594be6ab5c966b63",
+      "commit_object_utf8": "tree 7014eca3736737717efc821052f0c1dca159879b\nparent 6f6c42d7b14d56bf4b9d6ae842feb631a250d9b8\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791904644 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791904644 +0000\n\nanalysis/study3/split.json: Paiwan seed/scoring split drawn (Amendment 3 item 4), stream step 151\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_011at4owXwCFtPLAXiP1oj73\n"
+    },
+    {
+      "cited_identifier": "8c30cbf",
+      "available_object": true,
+      "original_commit": "8c30cbf38a3ee3b635c3b535c8d5d0cc976cdb52",
+      "author_date": "2026-10-05T13:51:34Z",
+      "committer_date": "2026-10-05T13:51:34Z",
+      "commit_object_sha256": "53f9997b3be6497faac390eee5617097cd720e9d1a442e15fa2710426a137875",
+      "commit_object_utf8": "tree c82bc1fe6c9b2e3bdecc93611e459f7b1441ea3f\nparent e1071e3a1a894f05f4b329bc2b60760941b8f8ad\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791208294 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791208294 +0000\n\nAmendment 3 in force: two retrieval routes against one reference standard\n\nBoth open parameters settled by the author and the inspection statement\nconfirmed, so the amendment is appended to PREREGISTRATION.md section 7 and\ntakes effect with this commit.\n\n  Arm B's seeds: option (b). The twelve Paiwan broadcast days split six and\n  six, drawn by continuing the single default_rng(20261005) stream after every\n  draw of Amendment 1, taking 6 of 12 without replacement in date order. Seeds\n  are the reference-set utterances of the seed half; both arms are scored on\n  the scoring half only. No Study 1 or Study 2 material supplies seeds, so\n  section 2 item 6 is not engaged.\n\n  The spot check: 40 tokens, ten from each of the four cells, superseding the\n  25 of section 4 item 11, which was sized for a single set. A cell holding\n  fewer than ten is checked in full and the shortfall recorded.\n\n  The inspection statement: analysis/study3/README.md records that no Study 3\n  content was inspected for any analysis purpose during collection, and the\n  author confirmed this on 2026-10-05. The amendment is therefore written\n  after collection and before any inspection, and says so.\n\nThe design: the reference standard is the Paiwan utterances whose time-aligned\nTITV Chinese subtitle meets Study 2's rule-based directive criterion, a\npublished human translation judged by a stated rule, so no model judges force.\nArm A is the detector of section 4 item 10, unchanged, unwindowed, Paiwan\nonly. Arm B is query-by-example at the utterance by multimodal similarity.\nBoth return the same number of utterances, so k cannot advantage either. The\nprimary statistic is the fraction of the reference set reached by B and not by\nA, bootstrapped at the broadcast day. A null is a reportable negative result\nabout the geometric route, not an under-determined outcome.\n\nWithdrawn: the binarized Urging-versus-rest test and the lift statistic, and\nwith them the question of which direction to condition in.\n\nUnchanged: section 4 item 10, the detector operating point; sections 1, 2, 3,\n5; and the corpus.\n\nAMENDMENT_3_DRAFT.md is marked superseded and kept as the drafting record,\nwith its two decision markers closed so nothing greps as open. Section 7 is\nthe only text that governs. The outline's 6.1 and 6.1.3 now say registered\nrather than pending.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01WdSJiha1Ucv8hUMLjvVAeS\n"
+    },
+    {
+      "cited_identifier": "a29454e",
+      "available_object": true,
+      "original_commit": "a29454e3f2b40ae86560a9188dac92a91a8db0d2",
+      "author_date": "2026-10-03T14:54:06+08:00",
+      "committer_date": "2026-10-03T14:54:06+08:00",
+      "commit_object_sha256": "ec3f2240172b4622ef1e0fb7a18d73e909adce713a3385be656eae2424beb881",
+      "commit_object_utf8": "tree 95acf0433e7f90f2fe411dec064dcb4a5bbe8081\nparent 4ae053142510e6a7aabb26acca1e4200f861ef44\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791010446 +0800\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791010446 +0800\n\nAmendment 2: restrict the Study 3 day frame to 看見族語; add the draw script\n\nPREREGISTRATION.md section 7 gains Amendment 2, appended; no earlier text is\nchanged. The day frame is now the dated entries whose 【】 bracket opens with\n看見族語 and names the playlist's own language, one entry per video id, less\nStudy 1's days. Decided by the author after the playlist metadata in\nanalysis/study3/frame.json (commit 4ae0531) was inspected, before any Study 3\nvideo was downloaded or viewed and before any draw was run. The amendment also\nfixes the numpy calls within each language's draw.\n\nAdds scripts/draw_study3_sample.py and its parameters,\nanalysis/study3/design.json, each value cited to where it is fixed. Tested on a\nsynthetic frame only: two runs gave byte-identical output, and every branch and\nexclusion behaved as specified. It has not been run on the real frame; this\ncommit precedes that run.\n\nNo Study 3 content was inspected for any analysis purpose.\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>\n"
+    },
+    {
+      "cited_identifier": "a6d86bc",
+      "available_object": false,
+      "mapped_commit": "0fec9ace27a35a4f7b9aa089445ef37be9b4532c"
+    },
+    {
+      "cited_identifier": "b218de1",
+      "available_object": true,
+      "original_commit": "b218de1f97d55c1b63aee2872796bf7cd4a4dd7c",
+      "author_date": "2026-10-11T06:12:56Z",
+      "committer_date": "2026-10-11T06:12:56Z",
+      "commit_object_sha256": "44ca77e80e139853c6cd824d6a5fccd529f7d7db0313a2eacc77a0353985a681",
+      "commit_object_utf8": "tree df0f0aa3f1a88571280cdc05bc0444dbd025e956\nparent 15afb4965160f638089f26f8e689f24f589b997b\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791699176 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791699176 +0000\n\nW3 pipeline quality: phone layer re-specified, subtitle OCR measured (q24)\n\nThe Study 1 phone layer was decoded under the Mandarin inventory (lang_id=\"cmn\",\nemit=2), not unrestricted as q18 assumed. Grammar-derived inventories for all six\nlanguages; on NTU Paiwan ASR PER 0.411 vs 0.445 shipped and 0.496 Mandarin.\nSubtitle OCR CER about 0.20; the registered ocr_vlm source covers 29% of lines.\npipeline/README.md states the revised Study 3 pipeline stage by stage.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_011at4owXwCFtPLAXiP1oj73\n"
+    },
+    {
+      "cited_identifier": "b78eeaa",
+      "available_object": false,
+      "mapped_commit": "d63d509507fce2b45619ad02e52688d33a18b4ce"
+    },
+    {
+      "cited_identifier": "cf63841",
+      "available_object": true,
+      "original_commit": "cf63841600528b552601a538cfeef9072e685e01",
+      "author_date": "2026-10-14T04:47:32Z",
+      "committer_date": "2026-10-14T04:47:32Z",
+      "commit_object_sha256": "f6f7c33f6c3b4743f388512b905a967fc896e93cc0c6d9f34a8195317762600f",
+      "commit_object_utf8": "tree 2c5b7a7ca2700ad43ac6fafe434f46c1d13d7f2f\nparent 10f1eb58a35dd830831cb5ed8571154f508defe9\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791953252 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791953252 +0000\n\npreregistration: Amendment 10, pose sampling recorded (every 8 frames); tight-frame minimum stated in time (1 s = 4 records); per-source PCA so form and prosody are not swamped; post-Amendment-9 exposure disclosed\n"
+    },
+    {
+      "cited_identifier": "d032dc5",
+      "available_object": true,
+      "original_commit": "d032dc554c77ee9e233052915b508aeb005fa256",
+      "author_date": "2026-10-13T20:52:01Z",
+      "committer_date": "2026-10-13T21:17:18Z",
+      "commit_object_sha256": "8afcd554b3d953ae42f5e124dc8cea26f1a85c78e953e910018b79f89842405f",
+      "commit_object_utf8": "tree 5c1ddac7baba2e60491dbb9c5e3f5cc6e64ee820\nparent 00cbe95542f81360f903319c7d2f1af1c3b35159\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791924721 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791926238 +0000\n\npreregistration: Amendment 9, Mandarin exclusion (all languages; §6.2 and Chapter 5 primary); Chinese directive criterion; registered route comparison kept with stated expectation; 120 Paiwan clips; judged directive experiment (ari/maya/-u/-i) as new §6.1 primary, face and kinematic blocks, CLM-8B text baseline; open choices fixed; same-community contrast for §6.2; audio checks withdrawn\n"
+    },
+    {
+      "cited_identifier": "e6f5bf2",
+      "available_object": true,
+      "original_commit": "e6f5bf23b184961486f5b5edc4e95106ae46dc43",
+      "author_date": "2026-10-03T05:32:16Z",
+      "committer_date": "2026-10-03T05:32:16Z",
+      "commit_object_sha256": "5eb503f15641249edab3a85d41f43ec8ffa32273ed1e34cb4809e8c4565a0f3d",
+      "commit_object_utf8": "tree 3ea5d2e1c5333c6801e0e66e53ae9a3cce3f68e8\nparent 4de007543ecb6fa03dc75f8687f1f6962a76b5c0\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791005536 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791005536 +0000\n\nLock the pre-registration for Study 3\n\nAll seven DRAFT VALUE items in PREREGISTRATION.md are confirmed unchanged\nand the markers are removed. The status line now reads IN FORCE. This\ncommit is the one that puts the document in force, and it precedes any\ninspection of the Study 3 corpus.\n\nThe seven values, as locked:\n  1. default_rng(20261005), 3 of 10 clips per broadcast day, without\n     replacement, fixed iteration order.\n  2. A category is tested on its own only at >=15 broadcast days and\n     >=25 clips; below that it is reported descriptively.\n  3. No label-driven top-up. Up to 4 extra whole broadcast days per\n     language, drawn by the same seeded rule, each entering every\n     analysis rather than only the one that motivated it.\n  4. The labeling unit is the utterance: the label unit follows the\n     retrieval unit. Clip labels are retained for corpus description\n     and for the dual-unit agreement rate.\n  5. The audio stand-ins are music proportion (predicted higher for\n     Celebrating) and speaker-change rate (predicted lower for\n     Reporting), both declared as directional predictions.\n  6. The spot check is 25 tokens, stratified by target and by\n     Urging / not, fixed seed, drawn before any result is computed.\n  7. The genetic-distance gradient is monotone non-increasing\n     Short >= Middle >= Long. The primary test is Middle against Long,\n     9 pairs against 5; Short holds exactly one pair and is reported\n     descriptively only.\n\nConsequent updates:\n  - 00_dissertation_outline.md: open decisions 6 and 7 resolved and\n    dated; decision 2's two remaining open items recorded as settled in\n    the pre-registration.\n  - writing_guide.md: hard line 2 and the W3 row record that the lock\n    happened 2026-10-03, ahead of the W3 slot.\n\nPREREGISTRATION.md is not edited from here on. Changes go in its section\n7 as dated amendments.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01WdSJiha1Ucv8hUMLjvVAeS\n"
+    },
+    {
+      "cited_identifier": "e972a96",
+      "available_object": true,
+      "original_commit": "e972a96db52992732d52f1fef8425f0f7daa4cdc",
+      "author_date": "2026-10-17T00:50:51+08:00",
+      "committer_date": "2026-10-17T00:50:51+08:00",
+      "commit_object_sha256": "190e445064fc5bf1973f74519f60eb62751c95af7f871f7aa29466d2b594dc13",
+      "commit_object_utf8": "tree d67123e53c127f31cc96d5cbe719578e453d19a2\nparent 10a2900cb5b0330eb94724eea57f022fc480b60e\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1792169451 +0800\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1792169451 +0800\n\nRecord blind Study 3 reporting and outcome interpretations\n"
+    },
+    {
+      "cited_identifier": "f40d4dc",
+      "available_object": true,
+      "original_commit": "f40d4dc0fd5195b763299e39f49cbc039b7e9da0",
+      "author_date": "2026-10-13T16:48:26Z",
+      "committer_date": "2026-10-13T16:48:26Z",
+      "commit_object_sha256": "f4aa86f75829fddac43188e3125a3ec0499659efd36c4152e0772d84b13ac6dc",
+      "commit_object_utf8": "tree fad37435550efafa60ccd539ae4703444f12623d\nparent 3549cf2ca12b10cfd00092941f470b5832a27908\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791910106 +0000\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791910106 +0000\n\ndirective_zh.py: D1 option A as code, revised on Study 1; design memo: D1 decided, Study 1 counts, D9 reference-set size\n"
+    },
+    {
+      "cited_identifier": "f580135",
+      "available_object": true,
+      "original_commit": "f58013591ec6cc6f8e7d40603a6a09ca14e95bf8",
+      "author_date": "2026-10-07T20:51:15+08:00",
+      "committer_date": "2026-10-07T20:51:15+08:00",
+      "commit_object_sha256": "1ef3272684a55bf6ffb614bc0a5f5c194c5094208c646b9cd059d0b0a3fc0f56",
+      "commit_object_utf8": "tree de1d4179182d513da0898e515059b192abf3cecd\nparent 5d35551354bf0bc9b2c8447571b7b5c9b47db4e0\nauthor Mao-Chang Ku <d08142002@ntu.edu.tw> 1791377475 +0800\ncommitter Mao-Chang Ku <d08142002@ntu.edu.tw> 1791377475 +0800\n\npreregistration: Amendment 6, subtitle modality leaves Arm B; Arms T and C added; form judgement extended\n"
+    },
+    {
+      "cited_identifier": "f6bb612",
+      "available_object": true,
+      "original_commit": "f6bb6121ee2b655636af4ac7f0e3057e49aebb9b",
+      "author_date": "2026-10-07T18:37:18+08:00",
+      "committer_date": "2026-10-07T18:37:18+08:00",
+      "commit_object_sha256": "93803048a094483ba7987c5f020426159fd422a77d735a0fc0830cc37fa73d74",
+      "commit_object_utf8": "tree 80af74436e7d9bcee25c20d4552584a1675ec4a5\nparent 754bd2fe2304ffb8705afbc9a4e702cca642fcd2\nauthor kumaochang <mcku1115@gmail.com> 1791369438 +0800\ncommitter kumaochang <mcku1115@gmail.com> 1791369438 +0800\n\nasr\n"
+    },
+    {
+      "cited_identifier": "d63d509",
+      "available_object": true,
+      "original_commit": "d63d509507fce2b45619ad02e52688d33a18b4ce",
+      "author_date": "2026-10-13T23:25:50+08:00",
+      "committer_date": "2026-10-16T23:08:40+08:00",
+      "commit_object_sha256": "a38761e670b976fc9c1bde43881372a1c3b9ee3fe8f27227556319f54231ffac",
+      "role": "Mapped replacement for b78eeaa",
+      "commit_object_utf8": "tree 7b088e088a73e0e338606283f642213712dbf1f4\nparent 9bd3bdf0c46e1ba0eebaf0ca144216240ca75b05\nauthor kumaochang <mcku1115@gmail.com> 1791905150 +0800\ncommitter kumaochang <mcku1115@gmail.com> 1792163320 +0800\n\nStudy 3: Arm C extension trigger count (Amendment 6 item 4), recorded before any Arm C score: 480 candidate tokens over 6 days, extension does not run\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n"
+    }
+  ],
+  "rewritten_identifier_basis": "The original commit-ID map associates a6d86bc and 5bbaafd with 0fec9ac, and b78eeaa with d63d509. Unavailable objects are not reconstructed.",
+  "disclosure": "docs/registration/records/exposure-record.patch",
+  "interpretation_excerpts": "docs/registration/records/interpretation-excerpts.json",
+  "object_verification": "For entries supplying commit_object_utf8, the original commit identifier is SHA-1 of b\"commit \"+decimal byte length+b\"\\0\"+the UTF-8 text. This verifies the supplied commit record, not availability of every tree or file in that commit."
+}

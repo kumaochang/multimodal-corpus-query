@@ -1,0 +1,286 @@
+diff --git a/PREREGISTRATION.md b/PREREGISTRATION.md
+index d6c8e6e..3ac8729 100644
+--- a/PREREGISTRATION.md
++++ b/PREREGISTRATION.md
+@@ -1151,6 +1151,281 @@ settings; the alignment programs; everything Amendments 1 to 7 fix.
+ 
+ ---
+ 
++### Amendment 9, 2026-10-14. Mandarin speech is excluded; the Paiwan route comparison is re-founded on a judged directive experiment; the open analysis choices are fixed; a same-community contrast is added to §6.2.
++
++#### Inspection statement
++
++**Written after Amendment 8 and before any Study 3 outcome was inspected.** Since Amendment 8 was
++appended (`2b99dfc`), the following was done with Study 3, and nothing else.
++
++- **Data layer, 216 clips** (RUNBOOK steps 6 to 12, `analysis/study3/run_log.md`), run on the
++  processing server by a Claude Code session under written instructions that forbade opening any
++  output. Only file counts, exit codes and provenance totals were displayed (for example the
++  number of utterances, of `flagged_no_keyframe` utterances, of empty transcripts, of
++  utterances without F0).
++- **Data layer, 84 undrawn Paiwan clips** (RUNBOOK §14), started 2026-10-14 01:06 (UTC+8) under the same
++  rules; at the time of writing step 6 (MOCO stages 2 to 4) is running and steps 7 to 12 are
++  queued in a chain script that starts each step only when its inputs pass count and exit-code
++  checks. Counts only.
++- **Seed/scoring split** drawn 2026-10-13 (`analysis/study3/split.json`, `684aa79`): which six
++  Paiwan days form each half. It reads no content.
++- **Arm C trigger** (Amendment 6 item 4), run 2026-10-13 (`armC_trigger.json`, `b78eeaa`):
++  form-level counts of Study 3 Paiwan transcripts in the scoring half, 480 candidate tokens over
++  6 days; the extension did not fire. No token, transcript or utterance id was displayed.
++- **Nothing else.** No Study 3 subtitle, transcript, phone string, label, pose, video frame or
++  audio was opened, printed, played or judged, by the author or by any program whose output was
++  read, apart from the counts above. No utterance has been labeled; no Arm has been scored; no
++  reference set exists; no annotation item has been drawn.
++
++All evidence behind this amendment comes from Study 1 (not evidence under §0.2, so reading it is
++allowed), from public reference grammars, and from the counts above. The decisions were reached in
++the working notes `pipeline/AMENDMENT_9_DESIGN.md` (D0 to D11), committed as they were made.
++**The author confirms this statement as of 2026-10-14.**
++
++---
++
++#### 1. Mandarin speech is excluded before any analysis (new)
++
++*Item added.* The registration treats every utterance of an Indigenous-language clip as speech in
++that language. TITV clips contain Mandarin interviews, whose subtitle is a transcript, not a
++translation. Such an utterance in the reference set is unreachable by Arm A by construction and
++reachable by Arm B, so it inflates the primary statistic of Amendment 3 item 6; in §6.2 it carries
++the wrong language.
++
++*What it becomes.* An utterance is excluded as Mandarin if either (a) an audio-language judgement
++by `gemini-3.1-flash-lite` (`pipeline/analysis/lid_gemini.py`; audio only, the first 30 s of a longer utterance, no
++subtitle, transcript or video; temperature 0; no thinking; prompt fixed by its SHA-256 in the
++provenance) answers
++`mandarin`, `mixed` or `no_speech`, or (b) the normalized edit distance between the Han characters
++of the utterance's subtitle and of the overlapping Whisper segments is at most 0.4
++(`mandarin_filter.py`). Kept: `not_chinese` and `other_chinese`. `other_chinese` (Gemini's
++answer for Hokkien or Hakka) is kept because on Study 1 Gemini gave it to 397 utterances of
++Indigenous-language news, far more than such news plausibly contains, and the author heard both
++decided `other_chinese` items as not Mandarin: the answer marks unfamiliar non-Mandarin speech.
++An utterance without a valid Gemini answer is excluded and counted. Sensitivity: `mixed` kept. The
++model's outputs are frozen with the run; the model judges language, not force. Counts per language
++and per half are reported. It applies to every language: to Paiwan throughout §6.1, and to all six
++languages in every utterance-level analysis that compares languages (§6.2 and the cross-language
++retrieval of Chapter 5), whose primary versions exclude Mandarin; the versions without the
++exclusion are sensitivity analyses. Gemini is therefore run on the utterances of all 216 clips and
++of the 84 added Paiwan clips. Mandarin utterances are still labeled (§3 item 8), for item 8.
++
++*Why, measured on Study 1.* The text match alone misses Mandarin: Whisper often translates Mandarin
++speech into English, and the assigned subtitle line is often the neighbouring one (Amendment 7 applies no
++offset). The author listened blind to 47 Study 1 utterances (`listen_sample.py`, seeds 20261015
++and 20261016, 2026-10-14): where Gemini answered `mandarin`, the author heard Mandarin 20 times, mixed once,
++not Mandarin twice (14 undecidable); where Gemini answered anything else, the author heard
++Mandarin 0 times. By Gemini's answers about 65% of Study 1 utterances are Mandarin.
++
++#### 2. The Chinese directive criterion (Amendment 3 item 1)
++
++*Item clarified.* "The rule-based directive criterion of Study 2, unchanged" cannot run on Chinese:
++it is a rule over English sentence mood. *What it becomes:* its category-for-category Chinese
++counterpart on explicit markers, `pipeline/analysis/directive_zh.py` at commit `f40d4dc` (IMP: 請 +
++verb; HORT: 讓我們一起, 吧-final with a first-person-plural or 大家 subject; NEG.IMP: clause-initial
++不要/別/請勿 ...; DEONTIC: addressee or audience subject + 應該/必須/務必/一定要, plural addressee + 要;
++reported speech and questions excluded), applied after item 1. Revised on Study 1 only.
++
++#### 3. The registered route comparison is kept and reported; its expected size is stated
++
++*Item recorded, not changed.* Amendment 3 items 1 to 7 and Amendment 6 items 1 and 2 are computed
++as registered, with items 1, 2 and 4 of this amendment, on all 120 Paiwan clips (item 4).
++
++*Expectation stated in advance.* After item 1, Study 1's Paiwan subtitles satisfy the criterion of
++item 2 in 0 to 2 of 545 utterances (the rest of Study 1's directive hits are Mandarin speech). The
++reference set is therefore expected to hold about 0 to 10 utterances. *Rules:* the primary result
++of Amendment 3 item 6 becomes the case table (each reference utterance of the scoring half with its
++route); the fraction reached by B and not A, with its day-cluster bootstrap, is reported only if
++the scoring half holds at least 10 reference utterances, and otherwise is stated as not estimable.
++If the seed half holds no reference utterance, Arm B has no seed and is not run; this is reported.
++
++#### 4. All 120 Paiwan clips (amends Amendment 6 item 4, Scope)
++
++*What it was.* The 84 undrawn Paiwan clips entered Arm C only. *What it becomes.* For Paiwan, the
++reference set, Arms A, B and T and the experiment of item 5 use all 120 clips of the 12 days. The
++seed/scoring split stays at the day level; inference remains over days. Labels (§3 item 8) are not
++run on the 84 clips, and the 84 clips enter no analysis outside §6.1. *Why:* item 3; whole days involve no
++selection (the argument of Amendment 6 item 4).
++
++#### 5. A judged directive experiment replaces Arm C and the listener checks (new primary for §6.1)
++
++*What it was.* Arm C (Amendment 6 item 3) ranked -u candidates by similarity to reference-set
++seeds and scored them against the reference standard; the listener checked 40 tokens from the
++route cells and 10 from Arm C (Amendment 3 item 8, Amendment 6 item 5). With a reference set of
++about 0 to 10, neither has seeds or cells. *What it becomes:*
++
++**Question.** Among Paiwan utterances carrying a form that may mark a directive (the hortative
++`ari`, the prohibitive `maya`, the imperative suffixes `-u` and `-i`), do non-text cues help decide
++whether the utterance is a directive, beyond its text, form included? And how often is a
++directive carried by none of these forms?
++
++**Pool** (`form_candidates.py`): Paiwan utterances of the 120 clips kept by item 1. Form class
++from the transcription tokens (Amendment 4 B2 normalization, then lowercased with non-letters
++removed): `marker` if a token is `ari` or
++matches `ma[jy]a`; otherwise `suffix` if a token of two or more letters ends in `u` or `i`
++(Amendment 6 item 3, extended to `-i`) and is not one of the 51 function words of
++`paiwan_suffix_stoplist.json`; otherwise `none`. The stoplist is fixed by rule on One Hundred
++Paiwan Texts (FormosanBank commit 52524b1): u/i-final word forms occurring at least 15 times with
++no token glossed `imp` or `hort` (`paiwan_stoplist.py`). There it moves the share of
++directive-glossed tokens among u/i-final tokens from 1:20 to 1:5. It comes from narrative text in
++one dialect; news Paiwan may have function words it misses, which lowers precision only. Cue, for enrichment only: the subtitle
++text within the utterance +- 3 s contains a loose marker (請 要 吧 不要 別 一起 應該 必須 務必 記得
++趕快 快點 讓我們 來 可以 不可以 不能 千萬). Strata: `marker`, `suffix_cue`, `suffix_nocue`, `none_cue`,
++`none_nocue` (not drawn). Neither cue nor stratum is a label or a model input.
++
++**Draw** (`draw_annotation.py`, `default_rng(20261018)`): quotas marker 50, suffix_cue 100,
++suffix_nocue 60, none_cue 30 (240). A stratum smaller than its quota is taken whole and the
++shortfall goes to suffix_cue, then suffix_nocue, then marker, then none_cue. Inclusion
++probabilities are kept. Batch 1: 50 items with the same stratum shares; batch 2: the other 190;
++batch 3: 40 repeats, simple random, judged at least 7 days after batch 2.
++
++**Judgement.** One Paiwan-speaking annotator, offline page (`make_annotation_kit.py`): video from
++2 s before to 2 s after the utterance, the subtitle band (75 to 90% of the frame height) blacked
++out, one key per item: 1 directive (the speaker asks the addressee, or a group including the
++speaker, to do or not to do something: command, request, urging, invitation, reminder,
++prohibition), 2 not directive, 3 cannot tell. Answer 3 is excluded from the models and counted.
++**Go/no-go:** batch 2 is judged only if batch 1 has at least 3 answers 1. Otherwise the experiment
++stops here, the count is reported, and any later attempt on other material is exploratory.
++Intra-rater agreement: Cohen's kappa on batch 3. One annotator: no inter-rater figure exists, and
++the write-up says so.
++
++**Feature blocks**, all frozen, computed per utterance:
++- T, text: the Paiwan transcription as in Amendment 4 B2 (XLM-R mean-pooled embedding and TF-IDF),
++  plus the form class as indicators (marker / suffix / none, and `ari` versus `maya`).
++- A, audio: Whisper large-v3 encoder mean over the utterance; the 15 prosodic features (item 6, point 3).
++- V, vision, two blocks:
++  - K, kinematics: the kinematic primary of item 6, point 1 (missing tight frames: training-fold mean plus
++    a missing indicator).
++  - Fa, face: OpenFace 3.0 (code commit and weights recorded at first run) on frames sampled at
++    10 per second inside the utterance, taking in each frame the largest detected face (no active
++    speaker detection exists; the largest face is a proxy for the speaker, stated). Per
++    utterance: mean and standard deviation of every action-unit intensity it outputs, of gaze yaw
++    and pitch, and of head yaw, pitch and roll; plus the share of sampled frames with a face.
++    Utterances with a face in fewer than half of the sampled frames get the training-fold mean
++    and a missing indicator. The share of judged items with a face is reported: a voice-over
++    speaker is usually not on screen, and then no visual block describes the speaker.
++- F, framing: the 8 framing measures of item 6, point 4, as a control.
++
++**Models.** Logistic regression, L2, C = 1.0, sample weights = inverse inclusion probability.
++These settings are fixed a priori, not tuned: Study 1 has no judged directives to tune on, and
++Study 3 may not be used for tuning. Inside
++each training fold, every block is standardized and reduced by PCA to min(16, n_train - 1)
++components, so that blocks enter with equal dimension (K and Fa are separate blocks; V = K+Fa).
++Models: T; T+A; T+K; T+Fa; T+V; T+A+V; F alone.
++Cross-validation: leave one broadcast day out (12 folds); out-of-fold scores pooled.
++
++**Primary items.** The models are trained and evaluated on the items of strata marker,
++suffix_cue and suffix_nocue only; the none_cue items enter no model and are reported
++descriptively.
++
++**Primary statistic.** On the primary items: weighted
++AUC(T+A+V) minus weighted AUC(T) on the pooled out-of-fold scores,
++with a paired day-cluster bootstrap (12 days resampled, 10,000 resamples,
++`default_rng(20261017)`), 95% percentile interval and one-sided p for a positive difference.
++**Secondary:** the same difference on the suffix items only (the forms that are ambiguous); T+A
++minus T; T+V minus T; T+K minus T (gesture and body); T+Fa minus T (gaze, head and face); F
++alone against T+V (a vision gain that F alone matches is a framing effect, not a gesture or face
++effect); the same differences on the items with a face only; weighted AP for each model; the
++directive share per form class and per stratum (weighted); the none_cue items: the share judged
++directive, reported descriptively as directives carried by none of the four forms (enriched,
++so it bounds nothing in the population; stated). If batches 1 and 2 yield fewer than 15 answers 1, all of this is
++reported descriptively, without p-values.
++
++**Text-classifier baselines.** CLM-8B (Contrastive Language Models,
++`github.com/Contrastive-LM/CLM`, Apache 2.0; a frozen Qwen3-8B encoder with a trained projection
++head, contrastive state-action objective; served by the repository's `clm-serve` over vLLM
++pooling; package, weight and backbone revisions recorded at first run) is a **registered
++secondary text baseline**. Question, typed `Choice`, fixed wording: "Is the speaker asking the
++listener (or a group that includes the speaker) to do something or not to do something, as in a
++command, request, urging, invitation, reminder or prohibition?" Options "yes, a directive" / "no,
++not a directive"; score = probability of the first. No examples, tuning or re-wording. Two inputs
++scored separately: (a) the Chinese subtitle text within the utterance +- 3 s (the human
++translation); (b) the Paiwan transcription. It is not trained on the judgements, so its score on
++every judged item is used as is. Reported: weighted AUC and AP of CLM(a) and CLM(b) on the primary
++items, and AUC(T+A+V) minus AUC(CLM(a)) and minus AUC(CLM(b)) with the same paired day-cluster
++bootstrap, overall and by stratum (input (a) reads the same window as the enrichment cue, so
++CLM(a) is expected to be advantaged on the `cue` strata; stated in advance). TypeSafe AI's Jev,
++the closed counterpart with the same interface, stays exploratory (Amendment 6 item 6a): run only
++after the statistics above are recorded, never a label or part of block T.
++
++#### 6. Choices left open in §2 and §3, fixed
++
++1. *Kinematic primary (§2 item 6):* the 14-dimensional composition-robust variant on tight frames
++   (at most 2 persons, tracked body at least 12% of the frame); an utterance needs at least 8 tight
++   frames. Secondary: 18d tight, 14d and 18d residualized on the 3 shot-block PCs, 9d
++   gesture-conditioned, 18d full.
++2. *Lift (§2 item 5):* units are labeled utterances within one shot, eligible under 1; top-1 cosine
++   retrieval per ordered language pair; hit if labels match; chance = the query label's share among
++   the target language's utterances; pair lift = mean(hit - chance); class lift = mean over its
++   ordered pairs. Primary: Middle minus Long, one-sided, day-cluster bootstrap (days within
++   language, 10,000 resamples). Short descriptive.
++3. *Arm B modalities (Amendment 6 item 1):* audio (Whisper large-v3 encoder mean), prosody (15
++   features, standardized within language, NaN to the language mean), kinematics (1); per-query
++   z-scored similarities, fused by the mean over the modalities available.
++4. *Framing measures:* the 8-feature shot block of `analysis/q10` over the utterance's pose frames.
++5. *Labels (§3 items 8 to 9):* `label_units.py` at commit `0c3932f`; clip prompt identical to Study 1;
++   utterance prompt with three wording changes; temperature 0; primary
++   `claude-haiku-4-5-20251001`; second model `gemini-3.1-flash-lite` on all units; self-consistency
++   on 334 utterances per language (`draw_perturbation_sample.py`, seed 20261014) under offsets 0.25
++   and 0.75 and one category-order permutation. These measure reliability, not validity.
++6. *Arm A on the tier:* `armA.py`; an utterance is in A if `ari` or `ma[jy]a` occurs in its
++   concatenated `armA_pwn` phones, unwindowed; reproduces `q21` exactly on NTU.
++
++#### 7. Withdrawn
++
++The audio criterion checks (§3 item 9 iii): their source `data/output_gemini/` does not exist for
++Study 3 and speaker change is unavailable (Amendment 8 item 4); a replacement would be a new
++hypothesis. The human checks of Amendment 3 item 8 and Amendment 6 item 5: replaced by item 5.
++
++#### 8. Same community, different language: a contrast for §6.2 (new, secondary)
++
++*Why.* In §6.2 language and community coincide: every Paiwan utterance comes from the Paiwan
++community, and so on. A distance effect could reflect language or community. The Mandarin
++utterances of item 1 are spoken mostly by members of the same communities (interviewees in the
++same broadcasts), so they hold community fixed while changing language.
++
++*What is computed.* Units as in item 6, point 2 (labeled, within one shot, at least 8 tight frames,
++kinematic primary of item 6, point 1). For each of the six communities c (the language of the clip):
++queries are the units of c that Gemini judges `mandarin` (not `mixed`); targets are the units of
++each community kept by item 1 as Indigenous-language speech. Units excluded by item 1 only
++through rule (b), or judged `mixed` or `no_speech`, are neither queries nor targets. Retrieval, hit, chance and lift as in
++item 6, point 2. Lift_same(c): targets of c, **excluding units of the query's own clip** (in the same
++clip the Mandarin and the Indigenous-language speaker are often the same person, which would
++measure the person, not the community). Lift_other(c): the mean of the lifts with targets of each
++other community. Statistic: D = the mean over communities of Lift_same(c) minus Lift_other(c),
++two-sided, 95% interval and p from a day-cluster bootstrap (days within language, 10,000
++resamples, `default_rng(20261019)`). A community with fewer than 10 eligible Mandarin units is
++left out of D and reported.
++
++*Read in advance.* D clearly above 0: gesture similarity follows community at least in part, and
++the distance effect of §6.2 cannot be attributed to language alone. D near 0: people of a
++community, speaking Mandarin, gesture no more like their community's Indigenous-language speech
++than like other communities', which is more consistent with gesture following language. D clearly
++below 0 is given no reading in advance and is reported as found. Neither
++reading is a proof: the Mandarin units are mostly interviews and the Indigenous-language units
++include narration and anchors, and the language class comes from a model (error bounded by
++item 1). Reported with D: the 8 framing measures of item 6, point 4 for Mandarin and
++Indigenous-language units side by side; the share of each class in tight frames.
++
++*Sensitivity.* D with same-clip targets included.
++
++#### 9. Not changed
++
++§1 to §5 except as stated; the day draw and the split; the utterance boundaries (Amendment 8);
++Arm A's patterns; Arm B's equal-k rule; the subtitle reading (Amendment 7).
++
++---
++
++#### Consequences outside this document
++
++- `analysis/study3/README.md`: the 84 undrawn Paiwan clips now enter §6.1 (item 4).
++- `00_dissertation_outline.md` §4.3, §6.1, §6.2 and §7.4: item 1 (Mandarin share, Study 1
++  included), item 3, item 5, item 8.
++- `pipeline/server/RUNBOOK.md`: the Gemini language judgement runs on all six languages.
++- Study 1's subtitle-based results (Chapter 5 text modality) are re-read in the light of item 1.
++
++---
++
+ > Format for any amendment: date, the item changed, what it was, what it became, the reason, and
+ > whether any Study 3 data had been inspected at the time. An amendment made after inspection is
+ > recorded as such and the affected analysis is reported as exploratory.

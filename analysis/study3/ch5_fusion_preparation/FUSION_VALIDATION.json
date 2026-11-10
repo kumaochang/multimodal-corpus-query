@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "rank_metric_query_vectors": 53760,
+  "summary_rows": 2100,
+  "pooled_P1_P3_MAP_coordinates": 420,
+  "pointwise_draw_coordinates_all_groups": 2100,
+  "draws_per_coordinate": 10000,
+  "direct_query_weight_max_error": 1.9984014443252818e-15,
+  "all_six_saved_oneblock_controls_exact": true,
+  "simultaneous_family_coordinates": 12,
+  "joint_valid": 10000,
+  "critical_value_independent": 2.7563936990630302,
+  "historical_gate_unchanged": true,
+  "protected_sources_unchanged": true,
+  "run_manifest": {
+    "bytes": 805,
+    "sha256": "ee9b5af372a3f3bf1dd0960644293dcd06755d9e7f2575e20f15bc561aac48c1"
+  },
+  "resources": {
+    "wall_seconds": 8.510180399985984,
+    "peak_working_set_bytes": 688668672,
+    "budget_seconds": 600,
+    "budget_bytes": 4294967296,
+    "OS_hard_memory_cap": false,
+    "measurement": "Windows peak_wset or sampled RSS"
+  }
+}

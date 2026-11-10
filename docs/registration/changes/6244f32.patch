@@ -1,0 +1,142 @@
+diff --git a/PREREGISTRATION.md b/PREREGISTRATION.md
+index 39dbbcf..e780447 100644
+--- a/PREREGISTRATION.md
++++ b/PREREGISTRATION.md
+@@ -875,6 +875,137 @@ detector operating point (§4 item 10); Amendments 4 and 5; the corpus.
+ 
+ ---
+ 
++### Amendment 7, 2026-10-11. The reference standard's subtitle text is read line by line, and the phone layer is recorded.
++
++#### Inspection statement
++
++**Written after Amendment 6 and before any Study 3 content was inspected.** Since Amendment 6 was
++appended, no Study 3 clip, transcript, subtitle, OCR output, phone string, label or outcome has
++been computed or viewed, and nothing under `data/study3/` has been read or processed. Two
++listings were made on 2026-10-11, both disclosed here: `ls data/study3` (which printed the two
++directory names `clips` and `source`) and `du -sh data/study3/clips` (which printed one total
++size, 40 GB). Neither printed a file name or any content. Under `analysis/study3/`, three files
++were read in part: `README.md` and `FRAME_FINDINGS_2026-10-03.md` (collection documentation), and
++`manifest.json`, whose clip records (file path, language, broadcast date, clip index, times,
++`drawn`, SHA-256) were used to write the upload checksum lists `pipeline/server/*.sha256`. The
++manifest holds no content, label or outcome. The measurements behind this amendment use only
++Study 1's 30 clips, the NTU Paiwan ASR corpus and the 語法概論 volumes (`analysis/q24`). The draft was committed as `26f1901`; between that commit and
++the commit that appends it here nothing under `data/study3/` was read, listed or processed. **The
++author confirms this statement, including that no OCR, transcription or labeling has been run on
++the Study 3 clips, as of 2026-10-11.**
++
++---
++
++#### 1. How the reference standard's subtitle text is produced
++
++*Item changed.* Amendment 3 item 1, the sentence "Source text is `data/ocr_vlm/`; the alignment
++from the clip-level string to the utterance is work to be built and its error rate is reported."
++The reference standard itself (the Paiwan utterances whose subtitle satisfies Study 2's rule-based
++directive criterion) is not changed.
++
++*What it was.* `data/ocr_vlm/`, produced by `scripts/ocr_vlm_reextract.py`: Claude Haiku reads
++one whole frame, scaled to 640 px, every 10 s; the readings are de-duplicated and joined into one
++string per clip, with no time stamps.
++
++*What it becomes.* Subtitle text is produced per **subtitle line**, with a time span, and then
++assigned to utterances:
++
++1. **Per-frame OCR.** PaddleOCR as in MOCO stage 5.1 (`new_make_ocr_raw_results.py`), about one
++   frame per second, uncorrected (`ocr_raw_results`). The majority-vote correction step is not
++   used for this purpose.
++2. **Line segmentation.** `pipeline/stages/subtitle_lines.py` as committed at `b218de1`: boxes lying wholly at x ≤ 300 (the programme watermark and language label) are
++   excluded; the subtitle band is a box vertical centre in [555, 625) of the 1280×720 frame and
++   the banner band [625, 700); consecutive frames whose subtitle-band text is within a
++   normalized edit distance of 0.5 form one line, with start and end times.
++3. **Reading.** One keyframe per line, at the midpoint of its span, cropped to x 300 to 1280 and
++   y 540 to 640 at native resolution, read by the model of the existing script
++   (`claude-haiku-4-5-20251001`, temperature 0) with this prompt, verbatim:
++   "This image is the subtitle area of a frame from a Taiwanese Indigenous Television news
++   broadcast. Transcribe the subtitle text exactly as shown, in the characters shown. Do not
++   translate, correct or complete it. Output only the text. If there is no subtitle text,
++   output exactly: (none)". If the reading is `(none)` or empty while the line exists, the
++   line's most frequent OCR reading (step 2) is used and the line is flagged. The number of
++   flagged lines is reported.
++4. **Assignment to utterances.** Each line is assigned to the utterance with which its time span
++   overlaps most; a line overlapping no utterance is unassigned. An utterance's subtitle text is
++   its assigned lines joined in time order; an utterance with none has empty subtitle text. No
++   time offset between subtitle and speech is applied or tuned. Reported: the number of lines,
++   of unassigned lines, and of utterances with empty subtitle text, per language.
++5. **The banner band** (headlines, speaker name tags) is kept as a separate field and is **not**
++   part of the subtitle text the directive criterion is applied to.
++
++*Why.* Measured on Study 1 (`analysis/q24` §2; 60 frames, 52 with a subtitle line): the
++registered layer recovers only 15 of 52 on-screen lines (29%, 95% CI by clip bootstrap 17 to
++42%), because a line stays on screen for a few seconds and the layer reads one frame in ten
++seconds; and it has no time stamps, so the alignment Amendment 3 called for could not be built
++from it. A reference standard drawn from it would contain at most about a third of the directive
++utterances it defines, selected by where the ten-second grid falls. The watermark exclusion
++removes the 見族X fragments that the whole-frame reading carries. Line segmentation alone
++recovered 52 of 52 lines (line-text CER 0.142 with the OCR majority reading); the VLM reading of
++each line is kept because OCR alone has CER 0.20 per frame.
++
++*Check before Study 3.* The procedure is first run on Study 1's 30 clips and scored against the
++frame reading of `analysis/q24` §2 (60 frames; read by a model, not by a person): coverage of the
++52 lines and CER of the assigned text. The result is reported whatever it is and does not change
++the procedure. No new human annotation is done.
++
++#### 2. The translation (subtitle) modality takes the same text
++
++*Item clarified.* Amendment 4 Part B2 fixes how the translation (subtitle) modality is embedded
++and that its input unit is the utterance, but not where its utterance-level text comes from.
++
++*What it becomes.* The utterance subtitle text of item 1 step 4, the same text the reference
++standard is judged on. Embedding settings are unchanged (Amendment 4 B2).
++
++*Why.* One subtitle text per utterance everywhere. In particular, the with-subtitle variant of
++Arm B (Amendment 6 item 1), which measures how far the reference standard retrieves itself, is
++only a measure of that circularity if the modality and the reference standard read the same text.
++
++#### 3. The phone layer, recorded
++
++*Item recorded, not changed.* The pre-registration does not specify the phone layer outside Arm A.
++This records the choice made before any Study 3 output exists.
++
++*What it is.* Allosaurus 1.0.2, model `uni2005`, decoded with the clip's own inventory file
++(`pipeline/inventories/<iso>.txt`, derived from the phonology chapters of the 語法概論 volumes by
++`build_inventories.py`, segments the model lacks mapped by Allosaurus' articulatory similarity),
++`emit` 1.0, `approximate` false; `pipeline/stages/phone_layer.py` writes the inventory's SHA-256
++with every output. ZIPA (`anyspeech/zipa-large-crctc-500k`) is reported as a comparison only.
++
++*Why.* On NTU Paiwan ASR (102 clips, 8,442 gold phones) the grammar-derived inventory gives PER
++0.411, against 0.445 for Allosaurus' shipped Paiwan inventory, 0.496 for the Mandarin inventory
++and 0.722 unrestricted. ZIPA gives 0.312 but emits `ʔ` 4 times against 259 in the gold and `ə`
++33 times against 387. Neither recognizer emits `q`, `c` or `ʎ`.
++
++*Arm A is not changed.* It remains `ari` and `maya` over Allosaurus `pwn` phone strings (shipped
++inventory, `emit` 1.0), the configuration whose operating point §4 item 10 fixed;
++`phone_layer.py` writes that tier separately for Paiwan clips.
++
++*Correction to the evidence table.* The row for `q18`-`q19` in the Appendix says the phone layer
++was "run without a language inventory". `analysis/q24` §1.1 shows the Study 1 layer was decoded
++under the Mandarin inventory (`lang_id="cmn"`, `emit` 2). The finding the row reports is
++unchanged; its stated cause is corrected here, and the Appendix is not edited.
++
++#### 4. Not changed
++
++The reference standard's definition; Study 2's directive criterion; the existing utterance
++boundaries; the labeling model and its input (`ocr_corrected` summary and five keyframes, the
++input with which Study 1's human validation was obtained); Arms A, B, C and T except as stated in
++item 2; the listener check (Amendment 3 item 8, Amendment 6 item 5); the detector operating
++point (§4 item 10); the corpus.
++
++---
++
++#### Consequences outside this document
++
++- `pipeline/server/RUNBOOK.md` step 9 follows item 1; the line-reading and assignment programs are
++  written, and run on Study 1 as item 1 requires, before that step runs on Study 3.
++- `pipeline/README.md` and `analysis/q24` note that Amendment 7 adopted the line-based source.
++- `00_dissertation_outline.md` §6.1.3 (reference standard) and §4.2 describe the source as in
++  item 1.
++
++---
++
+ > Format for any amendment: date, the item changed, what it was, what it became, the reason, and
+ > whether any Study 3 data had been inspected at the time. An amendment made after inspection is
+ > recorded as such and the affected analysis is reported as exploratory.
