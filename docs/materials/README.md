@@ -4,7 +4,7 @@ This guide connects the dissertation's saved results, source programs, input con
 
 ## Finding the results
 
-The clip-level and utterance-level analyses are successive stages of the same retrieval investigation. The Paiwan text-corpus analysis is a separate investigation of form-based access to directives. Within each stage, retain the result's candidate population, weighting, outcome, and interval definition when comparing it with another result.
+Use the tables below to locate saved results and the programs that produced them.
 
 ### Formal utterance-level results
 
@@ -24,7 +24,7 @@ The [ULFR-v1 materials](../../materials/releases/ulfr-v1/) contain selected grou
 
 The [focused two-way HA W3 materials](../../materials/releases/ha-w3-two-way-v1/) use the formal HA W3 model-data cache and adopted overlap weights, with a separate lower-order model specification. Its [manifest](../../materials/releases/ha-w3-two-way-v1/MANIFEST.json) and five `contrasts/*.json` files distinguish the base, prior-scale, day-weighted, and day-holdout comparisons. This is a different model specification on the shared formal inputs, rather than a replacement name for the full HA model.
 
-### Clip-level and later comparisons
+### Clip-level results and additional comparisons
 
 | Analysis | Saved results | Program or specification |
 |---|---|---|

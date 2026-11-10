@@ -8,9 +8,7 @@ Research materials accompanying Mao-Chang Ku’s doctoral dissertation at Nation
 
 The dissertation develops and evaluates multimodal query by example for the Austronesian languages of Taiwan. It examines how wording, sound, and visible bodily activity can organize comparisons beyond shared surface strings or annotation labels.
 
-The retrieval investigation uses six television-news subcorpora, named for the designated languages of their source broadcasts: Amis, Atayal, Paiwan, Tao (Yami), Truku, and Tsou. Its clip-level and utterance-level comparisons are two stages of the same investigation. A separate Paiwan text-corpus study connects the retrieval problem to imperative forms and directive uses.
-
-The central question is how different representations bring linguistic material together, and how those selections vary with activity category, source, and candidate range. Retrieval matching, prediction of human judgments, and the selection of individual cases provide different kinds of evidence.
+The utterance-level corpus comprises six television-news subcorpora, named for the designated languages of their source broadcasts: Amis, Atayal, Paiwan, Tao (Yami), Truku, and Tsou. The Paiwan text-corpus analysis examines how imperative and hortative glosses correspond to directive classifications based on published English translations.
 
 ## Analysis overview
 
@@ -25,13 +23,13 @@ The central question is how different representations bring linguistic material 
 | Acoustic and prosodic comparisons | Phone-interval statistics, acoustic-prosodic descriptions, and separate prosody and Whisper-encoder contributions to prediction. |
 | Bodily activity and framing | Directed source-pair comparisons and the sensitivity of class matching and retrieved neighbors to representation and composition choices. |
 
-Model-assigned activity categories, machine speech-language judgments, and human directive judgments remain distinct. Each comparison retains its own material, outcome, baseline, weighting, and uncertainty definition.
+Activity-category retrieval uses model-assigned labels as its reference. Machine speech-language judgments define filtering and comparison groups. The Paiwan news application evaluates predictions and retrieved cases against a consultant’s directive judgments.
 
 ## Using the materials
 
-The [materials and analysis guide](docs/materials/README.md) maps the saved results to their analysis programs, explains the required inputs and numerical environments, and gives the original command-line entry points. Start with its result-file tables to inspect the reported group results, or with its preparation and execution sections to work from the frozen inputs.
+The [materials and analysis guide](docs/materials/README.md) lists the analysis programs and saved results, documents required inputs and software environments, and gives commands for running the analyses.
 
-Programs retain their `analysis/`, `pipeline/`, and `scripts/` relationships. The two releases under [`materials/releases/`](materials/releases/) provide selected retrieval, hierarchical-model, and bodily-activity results; later comparisons have their own result files beside the corresponding analysis directories or under `data/study3_stats/`.
+Analysis programs are organized under `analysis/`, `pipeline/`, and `scripts/`. Selected retrieval, hierarchical-model, and bodily-activity results are available under [`materials/releases/`](materials/releases/). Additional saved results are stored with their analysis programs or under `data/study3_stats/`.
 
 ## Suggested citation
 
