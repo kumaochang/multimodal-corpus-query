@@ -84,5 +84,14 @@
       "omnilingual-asr"
     ],
     "historical_versions": "Record-specific; see producer provenance in frozen inputs"
+  },
+  "saved_asr_and_prediction_diagnostics": {
+    "python": "3.12.3",
+    "numpy": "1.26.4",
+    "additional_dependencies": [
+      "lxml"
+    ],
+    "source": "analysis/study3/paiwan_diagnostics/SOURCE_PROVENANCE.json",
+    "execution": "Reads frozen scientific inputs; existing prediction scores are not refitted."
   }
 }

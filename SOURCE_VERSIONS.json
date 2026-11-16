@@ -1096,9 +1096,9 @@
     {
       "path": "environments.json",
       "original_sha256": "58508db78f3b909ca26e67c4c7361f1ab30ea55065e5080857741b2d1b2aaf6c",
-      "public_sha256": "a6fb442de7f865ae0982969a50d6588f7eb04192b9e59f0dd0733ee07501c527",
+      "public_sha256": "e0b3df29531bb4643a552f1349cd922704f971e8ba3b2be8f3878ec670323765",
       "original_bytes": 10995,
-      "public_bytes": 1880
+      "public_bytes": 2200
     },
     {
       "path": "analysis/paiwan_texts/rule_comparison.csv",
@@ -1484,16 +1484,32 @@
     {
       "path": "docs/materials/file-availability.csv",
       "original_sha256": "5fb942572c9af4d952cfa24b108157d6cd64b4dfa9e1c3e2928830987451802b",
-      "public_sha256": "5fb942572c9af4d952cfa24b108157d6cd64b4dfa9e1c3e2928830987451802b",
+      "public_sha256": "bc0aea214a00f4894245a65845599772c8f91403a369e728f4b624236a3f8178",
       "original_bytes": 2302370,
-      "public_bytes": 2302370
+      "public_bytes": 2505877
     },
     {
       "path": "docs/materials/input-requirements.json",
       "original_sha256": "fd4df504a2b011763f5eadd481df0ce684a83b864bea7886662ad0d7f1cf483a",
-      "public_sha256": "fd4df504a2b011763f5eadd481df0ce684a83b864bea7886662ad0d7f1cf483a",
+      "public_sha256": "08db3fe68a6fb90eeb94596e8338d6614bdd08389dfed08d0944016816f7ad44",
       "original_bytes": 4653,
-      "public_bytes": 4653
+      "public_bytes": 6693
+    },
+    {
+      "path": "analysis/study3/paiwan_diagnostics/translation_rule_decomposition.py",
+      "original_sha256": "caeacb3bd6a6726be3b58fb39afce460b4c8f38b4ad5ba1c55b8bdc4284d445d",
+      "public_sha256": "0753389cd4094d2483ec4767b911279c2c1dc31978515f5b7d870c09f6809161",
+      "original_bytes": 15439,
+      "public_bytes": 16225,
+      "changes": "Command-line input/output roots and isolated output directories; public provenance and output names, source-location-only examples, and explicit parser-version checks. Scientific calculations are retained."
+    },
+    {
+      "path": "analysis/study3/paiwan_diagnostics/asr_and_prediction_diagnostics.py",
+      "original_sha256": "d6974e5051ca3512d6746de2b077a78a1b6f809a92c649006c4d80fc46da081c",
+      "public_sha256": "aa21cbf7a0dc4feafa7193565a6d5b9ad6ec5d8058bad44caa35b18a6ae8aa2a",
+      "original_bytes": 20795,
+      "public_bytes": 23356,
+      "changes": "Command-line input/output roots and isolated output directories; public provenance and output names. Scientific calculations are retained. The ASR reference case uses the recorded string digest instead of a manuscript dependency."
     }
   ]
 }

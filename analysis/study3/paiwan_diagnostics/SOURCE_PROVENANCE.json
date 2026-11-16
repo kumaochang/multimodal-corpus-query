@@ -1,0 +1,2673 @@
+{
+  "execution_date": "2026-11-14",
+  "environment": {
+    "python": "3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "translation_rules": {
+      "spacy": "3.8.16",
+      "model": "3.8.0",
+      "training_or_tuning": false
+    }
+  },
+  "scope": "Saved translation-rule decomposition, ASR source-spelling coverage, and within/between-day diagnostics of existing prediction scores. Original reference labels, weights and scores are unchanged.",
+  "scientific_inputs": {
+    "data/ntu_paiwan_asr/xml/Belmira__02SC105-1_Belmira.xml": {
+      "bytes": 15749,
+      "sha256": "c581cbbe4a71d9fb9df518786df148b74824ae0d44d1ed2700aa420a0ab013b6"
+    },
+    "data/ntu_paiwan_asr/xml/Belmira__02SC105-2_Belmira.xml": {
+      "bytes": 16875,
+      "sha256": "7631f98d7f2067021e95376177de298737d8245d5c94b192a65b9bcb560c224b"
+    },
+    "data/ntu_paiwan_asr/xml/Belmira__02SC105-3_Belmira.xml": {
+      "bytes": 15241,
+      "sha256": "3e6761d7c756ff62380cb6fbcf829ac712fd389f6f38dceaea211c0081279333"
+    },
+    "data/ntu_paiwan_asr/xml/Belmira__02SC106-1_Belmira.xml": {
+      "bytes": 15295,
+      "sha256": "f32c61848024910d84face13953d2173d23d2322c8b755cfa68fd34627072bff"
+    },
+    "data/ntu_paiwan_asr/xml/Belmira__02SC106-2_Belmira.xml": {
+      "bytes": 17268,
+      "sha256": "60b05bc24db046513c5768bb3ad9b7398475472a5d01a0a8cc5b050643555d54"
+    },
+    "data/ntu_paiwan_asr/xml/Belmira__02SC106-3_Belmira.xml": {
+      "bytes": 14635,
+      "sha256": "f6c21e012620b911d521428ae6e822febbe469df2b49815a1d8de46c6b356eb5"
+    },
+    "data/ntu_paiwan_asr/xml/Belmira__02SC107-3_Belmira.xml": {
+      "bytes": 16539,
+      "sha256": "8674f9eb09012be7b24171e9cffc4fb95fcac6eb328f4a1387912d6a22b83919"
+    },
+    "data/ntu_paiwan_asr/xml/Belmira__02SC107-4_Belmira.xml": {
+      "bytes": 16976,
+      "sha256": "6bbc892cfe01693b05b002b974a04703b7c35256745ee4b164558f84d2ebb958"
+    },
+    "data/ntu_paiwan_asr/xml/Calina__02JN112-1_Calina.xml": {
+      "bytes": 16814,
+      "sha256": "f055b6c5d78cead87bdc41e7d347e1652be86ea0f5209c7ddd8185e87aaf1e8a"
+    },
+    "data/ntu_paiwan_asr/xml/Calina__02JN112-2_Calina.xml": {
+      "bytes": 15980,
+      "sha256": "2379b13c211e6111fc8ee6be262ca3ab25a675e6d614d7b8b83e1c0e55f758f6"
+    },
+    "data/ntu_paiwan_asr/xml/Calina__02JN112-3_Calina.xml": {
+      "bytes": 19109,
+      "sha256": "ec47bf4b3e125135ea9031ffdcf4b69731f5bb093bb1d513ca5d27797a78e8fe"
+    },
+    "data/ntu_paiwan_asr/xml/Calina__frog_Calina.xml": {
+      "bytes": 6874,
+      "sha256": "266c5bfe468774e9a49a30691b590e0cb93e7f28c0059e5da55b626ee0a5ca26"
+    },
+    "data/ntu_paiwan_asr/xml/Calina__frog_Calina_untranscribed.xml": {
+      "bytes": 656,
+      "sha256": "0f981b147353fb97e313018e7e735664d32aa0d075e25fdbf1910dd4d34767de"
+    },
+    "data/ntu_paiwan_asr/xml/Calina__my_father_Calina.xml": {
+      "bytes": 6311,
+      "sha256": "6716a1955808ec609fdd386f056cf17feba8386c39d5dd6b7ed8ba544165e33b"
+    },
+    "data/ntu_paiwan_asr/xml/Calina__my_father_Calina_untranscribed.xml": {
+      "bytes": 676,
+      "sha256": "4ed277bf4754d81ae737ad5e64c4aa0c9dcccc0a97e1f256eab999ece8c4f543"
+    },
+    "data/ntu_paiwan_asr/xml/Calina__self_introduction_Calina.xml": {
+      "bytes": 6125,
+      "sha256": "03d9ff7c22407ec4c2cae6301f5fde0ff986f12ee670b3815427fc282dbb083b"
+    },
+    "data/ntu_paiwan_asr/xml/Calina__self_introduction_Calina_untranscribed.xml": {
+      "bytes": 708,
+      "sha256": "024ec352252214a74f0788aebd8100840086e3bd8fdc0fcec62583b300087cf6"
+    },
+    "data/ntu_paiwan_asr/xml/Doriel__frog_Doriel.xml": {
+      "bytes": 8221,
+      "sha256": "a2aa46c13e7cdd69e39297cbec02add88a70d170729a94712a2ce111463f3e5d"
+    },
+    "data/ntu_paiwan_asr/xml/Doriel__frog_Doriel_untranscribed.xml": {
+      "bytes": 656,
+      "sha256": "f8193c6326495df4da9ab16ead6e4953c344192120bc5e6dfab6de19961bff89"
+    },
+    "data/ntu_paiwan_asr/xml/Doriel__kiukay_Doriel.xml": {
+      "bytes": 7763,
+      "sha256": "d3127c2234bd0854d68a135827901635f89c03d262a9cc45d06d0027f9cd1389"
+    },
+    "data/ntu_paiwan_asr/xml/Doriel__kiukay_Doriel_untranscribed.xml": {
+      "bytes": 664,
+      "sha256": "26321e365940816033f92e47517bee24e436b330b5d784a6e59ed83d152d0d1d"
+    },
+    "data/ntu_paiwan_asr/xml/Doriel__mazazeliyulj_Doriel.xml": {
+      "bytes": 9688,
+      "sha256": "1a7c154a754a06c059d0739838eb4bd2abe09f988e6343ce8ffa1c7abf0f2ae2"
+    },
+    "data/ntu_paiwan_asr/xml/Doriel__mazazeliyulj_Doriel_untranscribed.xml": {
+      "bytes": 688,
+      "sha256": "396bea7cb63a01e89354e4a1ee2807bf2cf3da7f2c8f0254e0e8c253d0e47361"
+    },
+    "data/ntu_paiwan_asr/xml/Doriel__pear_Doriel.xml": {
+      "bytes": 8095,
+      "sha256": "d2b2413f9181eb383ad2c2136c3157e420b151c3ba516ecf5bf02826ca7999ff"
+    },
+    "data/ntu_paiwan_asr/xml/Doriel__pear_Doriel_untranscribed.xml": {
+      "bytes": 656,
+      "sha256": "836e01f8152871c9f664ea702151558f02dedf4f02a96b9d3435c2bb7e0cd780"
+    },
+    "data/ntu_paiwan_asr/xml/Edran__02EN108-2_Edran.xml": {
+      "bytes": 13922,
+      "sha256": "741c8629012713b7772a8a99862b890cd34be11804af3fd59c11e65a0fa8e647"
+    },
+    "data/ntu_paiwan_asr/xml/Edran__02EN110-1_Edran.xml": {
+      "bytes": 15284,
+      "sha256": "676c3843d6cb35b66663a53c4e5f0f6f41362c94039f6655821ab54f51abfea1"
+    },
+    "data/ntu_paiwan_asr/xml/Edran__02EN112-2_Edran.xml": {
+      "bytes": 13248,
+      "sha256": "4b5cded15ad58ed23911362a656c5876fb4c195407d59c79829e488824c8ddd7"
+    },
+    "data/ntu_paiwan_asr/xml/Edran__frog_Edran.xml": {
+      "bytes": 5385,
+      "sha256": "3500895e9bf91f7fdb80cfb23f15954c3967e1064a321fd18814b10e2937d3b7"
+    },
+    "data/ntu_paiwan_asr/xml/Edran__frog_Edran_untranscribed.xml": {
+      "bytes": 650,
+      "sha256": "17c06005d198bb7de843e991e63a3f505692fca3c9b9a1badd652236e2e91537"
+    },
+    "data/ntu_paiwan_asr/xml/Edran__when_I_was_eight_Edran.xml": {
+      "bytes": 8593,
+      "sha256": "a5677fccfaf7c4e88bda98ab91ba9037906dde57879119c2bd52516193e5ea58"
+    },
+    "data/ntu_paiwan_asr/xml/Edran__when_I_was_eight_Edran_untranscribed.xml": {
+      "bytes": 698,
+      "sha256": "14cf12b6949fb71c31806ec784fff257fcb73be70b3907a6c9f2256c3e10b7a7"
+    },
+    "data/ntu_paiwan_asr/xml/Falin__02SE105-1_Falin.xml": {
+      "bytes": 15387,
+      "sha256": "9602b5767e4a47d7db1bbbc28a9a46b17ad1d4075e20cc64708499834adc1c99"
+    },
+    "data/ntu_paiwan_asr/xml/Falin__02SE105-2_Falin_1st_v.xml": {
+      "bytes": 4060,
+      "sha256": "58052289145b55a68696dfcc5982445dde514d4cf1234342968f2f53969225be"
+    },
+    "data/ntu_paiwan_asr/xml/Falin__02SE105-2_Falin_2nd_v.xml": {
+      "bytes": 5341,
+      "sha256": "e3dd2518fa324f32d9fc97c8676a96d030a9de395002c751cabd201b349a092c"
+    },
+    "data/ntu_paiwan_asr/xml/Falin__02SE105-2_Falin_3rd_v.xml": {
+      "bytes": 12110,
+      "sha256": "e4ad109745a41925e5823e85e86383fcbd3137a0f5164fef6b429e7f57d04df0"
+    },
+    "data/ntu_paiwan_asr/xml/Falin__02SE105-3_Falin.xml": {
+      "bytes": 16460,
+      "sha256": "f427a671c186a691ddc8ca3675c18de87fd20141c4d19eb31855dcff713218a1"
+    },
+    "data/ntu_paiwan_asr/xml/Falin__frog_Falin.xml": {
+      "bytes": 5128,
+      "sha256": "febb76c0fc2ddcf084d1f7ac3a51ca6639ddaeea4777a0eeeee0f9e54e7ce620"
+    },
+    "data/ntu_paiwan_asr/xml/Falin__frog_Falin_untranscribed.xml": {
+      "bytes": 649,
+      "sha256": "15870a7d20845cb0723d4ed8d858b3e9924ddb7b7d58f14b2c1bc1260051c5a5"
+    },
+    "data/ntu_paiwan_asr/xml/Falin__my_life_Falin.xml": {
+      "bytes": 7061,
+      "sha256": "b7e230d98bfc73f13826f7a064ac0baef8730f62f5715339af4367f52a9deac9"
+    },
+    "data/ntu_paiwan_asr/xml/Falin__my_life_Falin_untranscribed.xml": {
+      "bytes": 661,
+      "sha256": "b4db59ccac47615178708f65f1a510b25e4e437e9594ceaac80af63da87325ec"
+    },
+    "data/ntu_paiwan_asr/xml/Garven__frog_Garven.xml": {
+      "bytes": 7887,
+      "sha256": "1ea7f9d5249cc5ed6ada65b8e9f2a70f0c1072b515f42e21f8442fe4c50716a2"
+    },
+    "data/ntu_paiwan_asr/xml/Garven__frog_Garven_untranscribed.xml": {
+      "bytes": 655,
+      "sha256": "b8a704bbd3cdb076f1ed151d5cbd89dfc4a0d35b7db7a66e6c62d1d054e57524"
+    },
+    "data/ntu_paiwan_asr/xml/Garven__masalut_Garven.xml": {
+      "bytes": 7091,
+      "sha256": "9c8edff1be9ae2a97f5d0ae9702e4b20acfcd911344a4a72fdf3c661205a976a"
+    },
+    "data/ntu_paiwan_asr/xml/Garven__masalut_Garven_untranscribed.xml": {
+      "bytes": 667,
+      "sha256": "d174f6006421d15f0f7f20b7ff5b692c8343f680439e9189446b8ea1eebba00a"
+    },
+    "data/ntu_paiwan_asr/xml/Garven__pear_Garven.xml": {
+      "bytes": 9723,
+      "sha256": "89c240d1fcd43b1efee8d0e053eb3d80ba9561ab98bf81f5ec0c257f349b0b3c"
+    },
+    "data/ntu_paiwan_asr/xml/Garven__pear_Garven_untranscribed.xml": {
+      "bytes": 655,
+      "sha256": "ad759edbfa44874759a6fcf0ce4f318d81911e470e9b00ef178015eaf4dfeb82"
+    },
+    "data/ntu_paiwan_asr/xml/Garven__self_introduction_Garven.xml": {
+      "bytes": 8378,
+      "sha256": "78a8c5a1eedcf338cb02b2acc8b2562505f5c4620ddf4afd176573fca1c1e75c"
+    },
+    "data/ntu_paiwan_asr/xml/Garven__self_introduction_Garven_untranscribed.xml": {
+      "bytes": 707,
+      "sha256": "9d1243b0dca3b6231aba0fe06ea0a227093765d5869220833356ade3bd5e760c"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__02SE105-1_Halmir.xml": {
+      "bytes": 15649,
+      "sha256": "efc0a4d70c74e0bbbe461c720bacb578dd8f0cb5cf43d1434d986810a911ef3b"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__02SE105-4_Halmir.xml": {
+      "bytes": 16290,
+      "sha256": "00ca4cc3f5e097c946ab1e1de948887ccc2f5e86146d07095f369927371782a1"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__02SE111-1_Halmir.xml": {
+      "bytes": 17990,
+      "sha256": "38ba9fc2b0e381759058f8a3203745d52b200bb82d8867c2a03ee748e93e446e"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__02SE112-1_Halmir.xml": {
+      "bytes": 18119,
+      "sha256": "53fda15d856e34001e8d4952e1362589a7bf36de9ace1cc184b9bb766690154f"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__fishing_methods_Halmir.xml": {
+      "bytes": 5861,
+      "sha256": "37dc525bc56d3d52aa19b77f19bb6ca16e8643011ed4a7ac53140e5129b44417"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__fishing_methods_Halmir_untranscribed.xml": {
+      "bytes": 699,
+      "sha256": "c882a8fbb156d355fc20fb6686d0a01460529983fbb165555cfd3c1666452ddd"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__frog_Halmir.xml": {
+      "bytes": 6344,
+      "sha256": "d32f2ba3192fa9efe59b1a1495a40a0b689f79e9a98ce90a2594ee6e60ec65d6"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__frog_Halmir_untranscribed.xml": {
+      "bytes": 655,
+      "sha256": "ec39227a271e62cece9839ffc7b8957cba93fcfa46effb1da6fb1e111f075fb0"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__slate_houses_Halmir.xml": {
+      "bytes": 8788,
+      "sha256": "2fd126b0e68d479605713b4ba5a66da54a2487b8d64924361075afe2b339567f"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__slate_houses_Halmir_untranscribed.xml": {
+      "bytes": 687,
+      "sha256": "22c2798bd7256c0595621e24adb877bc012ada426ea27aa81ece998e3d5665d8"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__the_meaning_of_spear_ball_Halmir.xml": {
+      "bytes": 8059,
+      "sha256": "66d428b74f6dd39ce1d427a107807acb8979bd4c13fe56490b9febd376b61f19"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__the_meaning_of_spear_ball_Halmir_untranscribed.xml": {
+      "bytes": 739,
+      "sha256": "dfe2bb317eda0b7c65f376ee1589ccfe4cb8cc1d8156dbea86d855f8a802b9d7"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__vassal_system_Halmir.xml": {
+      "bytes": 7322,
+      "sha256": "1ce84c9959e3869f50f4e9a1901057ba9377ec9c80095ebf14860f88a4376896"
+    },
+    "data/ntu_paiwan_asr/xml/Halmir__vassal_system_Halmir_untranscribed.xml": {
+      "bytes": 691,
+      "sha256": "0a92a9a2d80ea483690bb7a2dcbb932e187212033ef8371f5c378164944cd3a0"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__02EN106-1_Ilvane.xml": {
+      "bytes": 12503,
+      "sha256": "a21f4e9fb955cdad6e8d87d2e84d9bd807a4cf107597a9db8605c3aa0c726c61"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__02EN110-1_Ilvane.xml": {
+      "bytes": 15394,
+      "sha256": "82ad0721e866becda2b3a3c1e8f0898864de832f15e125304dfb347a6195d310"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__02JN105-1_Ilvane.xml": {
+      "bytes": 16427,
+      "sha256": "d7ab3e3e9fad34487f9e51263d4f01ba813e3a81e16912be73dca3e53a9cabf3"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__02JN111-2_Ilvane.xml": {
+      "bytes": 12880,
+      "sha256": "c129e5fc533182d4a527094e578f44a7968e4d0a8ca832a4d0515eb7ce3da302"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__02JN112-4_Ilvane.xml": {
+      "bytes": 14951,
+      "sha256": "d6ddf5c625ffd52b436a0e42b7c6ec1f7b5ab186a041408b63ba60f63bc20996"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__02SN112-1_Ilvane.xml": {
+      "bytes": 13400,
+      "sha256": "4b5a5f39715b264326601538656768023bf9895172b2626764bf35e445e0480d"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__savanguljan_Ilvane.xml": {
+      "bytes": 7437,
+      "sha256": "3184c84518110ef5a0e12ec46c19e825b572c4c6573dc0c89d9c34a8b5bc7550"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__savanguljan_Ilvane_untranscribed.xml": {
+      "bytes": 683,
+      "sha256": "ad227c94b3adfe969622469e1a6613d50043143dc0e51d8617900da580f85af1"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__self_introduction_Ilvane.xml": {
+      "bytes": 5533,
+      "sha256": "894cbf4cf4807cb277d6080979a791146821b5ed3c389446d4ca4fa5450567dc"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__self_introduction_Ilvane_untranscribed.xml": {
+      "bytes": 707,
+      "sha256": "80389e63b93b8633ba6b6bb8be126400284af46e83631557b197f31ba2e02a6b"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__the_placename_of_tjavuqel_Ilvane.xml": {
+      "bytes": 5995,
+      "sha256": "2fe2be729446e3af6bf7f24c1b95006f16713a48439b48b3550a0e8eea4e27dc"
+    },
+    "data/ntu_paiwan_asr/xml/Ilvane__the_placename_of_tjavuqel_Ilvane_untranscribed.xml": {
+      "bytes": 739,
+      "sha256": "c376809777d7a38da2feb9d37f384813bc5ba0cde5c6de63fcece0231903532f"
+    },
+    "data/ntu_paiwan_asr/xml/Kerris__02SN111-2_Kerris.xml": {
+      "bytes": 18362,
+      "sha256": "2ba6337d5c2cdca31b304e444647dd3dd927e587795e3c01346c6193eff94d86"
+    },
+    "data/ntu_paiwan_asr/xml/Kerris__02SN111-3_Kerris.xml": {
+      "bytes": 16730,
+      "sha256": "08b5cb2508147aee31f3268835549b252c77621bea469955e6263c57d8fe0089"
+    },
+    "data/ntu_paiwan_asr/xml/Kerris__02SN112-1_Kerris.xml": {
+      "bytes": 14103,
+      "sha256": "817c639ced09ae789bdf36686f5ed0ac1f8e4017e0d8bcd2fcddf45caf7ad6c9"
+    },
+    "data/ntu_paiwan_asr/xml/Kerris__02SN112-2_Kerris.xml": {
+      "bytes": 13929,
+      "sha256": "41a11e9f3f6e1a27139862a7884305760a920a2df1cf0aff519f87bea24157d6"
+    },
+    "data/ntu_paiwan_asr/xml/Kerris__02SN112-4_Kerris.xml": {
+      "bytes": 14427,
+      "sha256": "274584ce34061afefe8e77591704ddf1ca6b3e117c6fd6ea019203486e7a2b78"
+    },
+    "data/ntu_paiwan_asr/xml/Kerris__frog_Kerris.xml": {
+      "bytes": 6574,
+      "sha256": "325270c1093babfe5fc64ddca4d931ac9b530beb15da3657122d8da10cb0a2a3"
+    },
+    "data/ntu_paiwan_asr/xml/Kerris__frog_Kerris_untranscribed.xml": {
+      "bytes": 656,
+      "sha256": "a6418ab5b2c8e2f3330966b80fa51c890961fb46be8c4d5322cba74be25753ee"
+    },
+    "data/ntu_paiwan_asr/xml/Kerris__local_daycare_and_language_revitalization_Kerris.xml": {
+      "bytes": 8036,
+      "sha256": "93d0241cbb2d1b10ac89a8358839ba8be02abb11de298e108acfe48cc55c426b"
+    },
+    "data/ntu_paiwan_asr/xml/Kerris__local_daycare_and_language_revitalization_Kerris_untranscribed.xml": {
+      "bytes": 804,
+      "sha256": "094182dd9350a6b52bd67b80ae9167d3f9496ad4d0d92b986e0aa92a2d1bfd49"
+    },
+    "data/ntu_paiwan_asr/xml/Kerris__self_introduction_Kerris.xml": {
+      "bytes": 8153,
+      "sha256": "8fdb97836c7ec4a1f96457c20c88c689de1acb4220c8775e9bc295ae148b8652"
+    },
+    "data/ntu_paiwan_asr/xml/Kerris__self_introduction_Kerris_untranscribed.xml": {
+      "bytes": 708,
+      "sha256": "0c8a5c1bd4f11bc3faf05ebcba691ca40f3356f3b4d2f5d202d674e1da6ce600"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__01_P01_Loris.xml": {
+      "bytes": 22928,
+      "sha256": "d38c3db4b507e5709fd78a0c26285deafade6333d703753048d29252bd77a0db"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02JE105-1_Loris.xml": {
+      "bytes": 13191,
+      "sha256": "a91d72a6cf1ab6da52ebda6c4b2b42b1a167a08ecd9a9f927671ed50edc995ad"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02JE105-2_Loris.xml": {
+      "bytes": 12943,
+      "sha256": "af136e2a7f19050f51ab966c0b46225359746b42b02e6abf559846c5051dc035"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02JE105-3_Loris.xml": {
+      "bytes": 13179,
+      "sha256": "0184c9cbd32f64c57aefac3272595b580f61cb43bd8152a1b21f9c8df18d6f15"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02JE105-4_Loris.xml": {
+      "bytes": 12649,
+      "sha256": "9cc61388428196b2103d2945edc8d293b423371b422fc9897247ee18acd87440"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02JE106-1_Loris.xml": {
+      "bytes": 13653,
+      "sha256": "380b0fc8524f4a4c2633223cee2e7a5426911cf2ccb8c6594568a9a3a356dbf4"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02JE106-2_Loris.xml": {
+      "bytes": 14599,
+      "sha256": "7096908e1bba53a7a730128d45b2eaae0b4a8b490ff49fb085aecce1cae8da77"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02JE107-3_Loris.xml": {
+      "bytes": 11503,
+      "sha256": "7e4e3d13f8b1e26abb445f21cb1674c48bdcba4e5c0b1ac32ba7cd4edcbc77bf"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02JE108-1_Loris.xml": {
+      "bytes": 11603,
+      "sha256": "0257977977a9ee1e076b867af64eea16ffc7fbae84d004c77863782e987c9b47"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02JE110-3_Loris.xml": {
+      "bytes": 11716,
+      "sha256": "0c3236f9180a2f2b5cfbf25d07a0b1f74429fbdefb610de0e6a187ab78a15c92"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02JE110-4_Loris.xml": {
+      "bytes": 17141,
+      "sha256": "d2fac9043a262deead584bd89a99f518075b24a732e9cb2a66b82063a77aef69"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02JE111-2_Loris.xml": {
+      "bytes": 9623,
+      "sha256": "d4de2568e8c12dfb453fd823e9d595aea1f30c91e6215d36a876ba29242c69ec"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02SE105-1_Loris.xml": {
+      "bytes": 13501,
+      "sha256": "02f278c84f5be1421741080e89cc48e58694bb93cc2b8cf5fee3c356da2eabaf"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02SE105-2_Loris.xml": {
+      "bytes": 12511,
+      "sha256": "d3bbece61e2355a8cdf0559bc9d937ca19469f5cb6d969a1feaa0073d9c9db48"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02SE105-3_Loris.xml": {
+      "bytes": 12841,
+      "sha256": "9ccbdf47740c2898ffcdcf9830313e8d31fa6d37daa6dc7359ff74aceaaa0f1c"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02SE105-4_Loris.xml": {
+      "bytes": 13205,
+      "sha256": "cb48c932ab58b613e307a25b66463459b3e2c01538dfe69ef04b7c980df36255"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02SE111-1_Loris.xml": {
+      "bytes": 14899,
+      "sha256": "44a17de1bd479ed4c4f17510a6815daf7a9399b37d93c4d764a89d4296bc3bb8"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02SE111-2_Loris.xml": {
+      "bytes": 12855,
+      "sha256": "a7c1753048fd39e897b952003e265d19148c394ea5b52bb840bc649a3328b064"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__02SE112-1_Loris.xml": {
+      "bytes": 13973,
+      "sha256": "5d1fd632e41ef54589c826f15c27a6b5f2ac5ebe7111b67fe30533719ac9d7d4"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__Our_cattle_Loris.xml": {
+      "bytes": 5540,
+      "sha256": "d5200bd64af0799f562655e3220855ca71085e082b5f3515524bbe37b8198b3b"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__Our_cattle_Loris_untranscribed.xml": {
+      "bytes": 673,
+      "sha256": "7ff7e3431e7932376ae363bd5585d287e5372f17e0688a72772388d33a65b3e2"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__frog_Loris.xml": {
+      "bytes": 5015,
+      "sha256": "ed7e3f7c4b1461cc958f066f9353d34ddaf5d6f371ae3a3fe3a65c1fd913a845"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__frog_Loris_untranscribed.xml": {
+      "bytes": 649,
+      "sha256": "75fb5d91d4d49dd3d7eeea0d6752ebeb8cb79c0587e81f5e99f8d6a1e1af039a"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__my_father_Loris.xml": {
+      "bytes": 5200,
+      "sha256": "05000354added7d737f9fba2bdc2ab0801e8d1b8997f35d3a142b54537e7b022"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__my_father_Loris_untranscribed.xml": {
+      "bytes": 669,
+      "sha256": "df6d3c29c4ac5226403590fe655be52dd86325c26bd32840846e1b53e93b458d"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__pear_Loris.xml": {
+      "bytes": 5540,
+      "sha256": "6e778ef14c6766cb5caa9d71ed133ea386375923a556c038b43235133a098ece"
+    },
+    "data/ntu_paiwan_asr/xml/Loris__pear_Loris_untranscribed.xml": {
+      "bytes": 649,
+      "sha256": "5e4dcd220aacc15397b62e391375f31516de513a3638356d729a5f295deda352"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__a_little_story_about_assembly_hall_Maron.xml": {
+      "bytes": 7375,
+      "sha256": "0937880ab85f9ba9f02cba879192a2fcc27eade7ecf7bd263db25f3b56233cc0"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__a_little_story_about_assembly_hall_Maron_untranscribed.xml": {
+      "bytes": 770,
+      "sha256": "6e4b1d86f1dfd24e554cb6414b9ee289caa06d29c796f3cca0c6ffdc25057725"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__creators_of_ancestors_Maron.xml": {
+      "bytes": 7121,
+      "sha256": "5eadc1dbd3db0e7278109f6ea14ee842229150787eefd06c9f0f1a10579f16bc"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__creators_of_ancestors_Maron_untranscribed.xml": {
+      "bytes": 718,
+      "sha256": "890979f391e564a6220fb34a015f89a649a552b21e2ac08e6a618718d4d8948c"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__past_interactions_with_Kasavakan_Maron.xml": {
+      "bytes": 6406,
+      "sha256": "a5b11cfbbe2c7f0804a78b2c5cd86083260c5aea65ea2c52f98884e643929216"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__past_interactions_with_Kasavakan_Maron_untranscribed.xml": {
+      "bytes": 762,
+      "sha256": "4c268dc36c5ff7b2916009ae2171e952f1a538d37a48003e1062a679a2a68646"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__taboos_of_dystocia_Maron.xml": {
+      "bytes": 6877,
+      "sha256": "639a3dc15c9dc3e18d5fe4d83d5b73defd4be92fdd74664ddb4432032d494943"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__taboos_of_dystocia_Maron_untranscribed.xml": {
+      "bytes": 706,
+      "sha256": "18cf128df62d9487c705878574780a41e07ff0b98c3d6a4cffff5b2d3cc57e4f"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__taboos_of_going_to_the_beach1_Maron.xml": {
+      "bytes": 4815,
+      "sha256": "ef6b7fcd60300888cb41aa4d2aa233978b3e73b30f2a433dbc13ffce054a9c26"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__taboos_of_going_to_the_beach1_Maron_untranscribed.xml": {
+      "bytes": 750,
+      "sha256": "d4d2fa8cd407e9f2a31a98def48f162a1cb112fca6e66e2c964876272acee4f6"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__taboos_of_going_to_the_beach2_Maron.xml": {
+      "bytes": 5397,
+      "sha256": "91839295e865da45257569257afc3227b61a5c989d5bf33e26eaf423e6e8801c"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__taboos_of_going_to_the_beach2_Maron_untranscribed.xml": {
+      "bytes": 750,
+      "sha256": "8a7171e833e6e73403e9bc7453035d08834027dd8907d0d7a7f279bdc32ec1b5"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__the_man_who_killed_typhoon_Maron.xml": {
+      "bytes": 8500,
+      "sha256": "134b8ccadbcee9b1aad6e92d1058946e7d694504e77ea612f30f189464f16149"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__the_man_who_killed_typhoon_Maron_untranscribed.xml": {
+      "bytes": 738,
+      "sha256": "52dba8e074f4a83af42d8ff87e1852bc5b08376c2ae5293651b731b5d737d364"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__the_migration_history_of_tjavuqel_Maron.xml": {
+      "bytes": 7201,
+      "sha256": "97884a49f94ce9c07941ba7a7b1c5bfef988935927ae5355a785f56a5906a41d"
+    },
+    "data/ntu_paiwan_asr/xml/Maron__the_migration_history_of_tjavuqel_Maron_untranscribed.xml": {
+      "bytes": 766,
+      "sha256": "553e5707782bf902383528b4ce4b6a46072985adb3947f356b2eeaaec43e93f3"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN105-1_Nira.xml": {
+      "bytes": 12385,
+      "sha256": "d847e25ae34c9df9eab589245ca69407ccd8c4107903cd076a3c20f89532dd19"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN105-2_Nira.xml": {
+      "bytes": 11451,
+      "sha256": "478d49471f76f5a8d3e2f8e54c6265334bd85bfa036468110808374594609373"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN105-3_Nira.xml": {
+      "bytes": 10555,
+      "sha256": "1c4106aa2061b2ee0a06ca1637d0d0e56eb7bbe7c598c93868342dba20aca973"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN106-1_Nira.xml": {
+      "bytes": 11259,
+      "sha256": "e80f2ade57d88d66f560ae890ad7778f2dd61a7b356b372012d8a85a3e377b5f"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN106-2_Nira.xml": {
+      "bytes": 14169,
+      "sha256": "4ba2772053ef8e33382287d88e08cfb0c0f4176db378dc786a00b26de1e40df0"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN106-3_Nira.xml": {
+      "bytes": 15809,
+      "sha256": "abdb64970a7e9b98c596a0b9277271fa8030fd6ecb101de49ff1649507cfe46d"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN107-4_Nira.xml": {
+      "bytes": 14727,
+      "sha256": "d32a9a8a11a6b4a7d59a288447f0b76b7c1784a4dcdaa6f24156e1db3f937689"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN108-1_Nira.xml": {
+      "bytes": 14609,
+      "sha256": "f68d89c017b8cb1eb76238358f8d2c0875417683f1d973227ba47d711ae89787"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN108-3_Nira.xml": {
+      "bytes": 14523,
+      "sha256": "182488b590469e4461b9d46052c26d23771ce9e7749854c5b496974b0f17e059"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN110-1_Nira.xml": {
+      "bytes": 14490,
+      "sha256": "9bf09314f2b3e5a48c03cdeea082a47de9d321b50a1b8f39e4be4f318084ab36"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN112-1_Nira.xml": {
+      "bytes": 14804,
+      "sha256": "06a2b1bd780e53570f8701aa6710058545a22d0eacbf35d6dd3be7b1da08cdb2"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN112-2_Nira.xml": {
+      "bytes": 14193,
+      "sha256": "df4eb84000ced77aba09131a0a67b79019268091bc9a5e4c6c6b003147bbd69d"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN112-3_Nira.xml": {
+      "bytes": 14173,
+      "sha256": "89e9f9b3ea2aab509312b0fe297220a60f03b693932097c0b39c69c244c4fe28"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02JN112-4_Nira.xml": {
+      "bytes": 14105,
+      "sha256": "3c57ab1291562816d54321d13481170059b40dff6b4aba54a0c76fcb8b1d3ffb"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN105-1_Nira.xml": {
+      "bytes": 11978,
+      "sha256": "fb8a7c9beb739fdcb43515b1ebfe48f01bdfca7ec01c9ee8f7ebb8ac98998aab"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN105-2_Nira.xml": {
+      "bytes": 12595,
+      "sha256": "f4055ea00796ece4e48ca113cfcbc38c0c5ee09524f37a147f45b4a6b34f3e05"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN105-3_Nira.xml": {
+      "bytes": 12202,
+      "sha256": "986497c8ecddbd7016c4a8d1ba0a1bbef61dfaee7a8e91c935b593a035486d34"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN106-1_Nira.xml": {
+      "bytes": 14507,
+      "sha256": "afb694eda9b19717700f2a8d8df3a1e4693b6800cb385943b4e5f8152122243c"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN106-2_Nira.xml": {
+      "bytes": 12740,
+      "sha256": "52c0df5cd0163abb8e521a57df7dd5108cc3acce8a8c32b767701d08a46a9eae"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN106-3_Nira.xml": {
+      "bytes": 14615,
+      "sha256": "e5ca849cb7e89bb3654c7cc0b451c2ff302a7a39c6481c8834233af70b098902"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN107-4_Nira.xml": {
+      "bytes": 12884,
+      "sha256": "ce6a273fe88e205d33f5813258aba1c93f5b89f14d2aaa33f3fb5734f58a0cfe"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN108-2_Nira.xml": {
+      "bytes": 16091,
+      "sha256": "647d7e129211004d7f82b77cda0179b13c494470f7854811e2e6ce02f2a29730"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN108-3_Nira.xml": {
+      "bytes": 14526,
+      "sha256": "1c5a780e30a59b1263f3e3547d6427dcc417846af72756b5a33846612f414cd7"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN108-7_Nira.xml": {
+      "bytes": 12834,
+      "sha256": "59564a226880fd402e6f08808d802c1eaf75ed37129e1e9afcda1ece328123a1"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN111-2_Nira.xml": {
+      "bytes": 15810,
+      "sha256": "7ba9e43027e96a6f15396967c8c6167a8a8b7df6db99e12e6f2657af6a9c464a"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN111-3_Nira.xml": {
+      "bytes": 15120,
+      "sha256": "e655239762a1f6945251c45a8c873c3a4c875623221a28cf0855a7c6a3837796"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN112-1_Nira.xml": {
+      "bytes": 15037,
+      "sha256": "8190ae127278e86d3eabe75c55fbc3fef397523068a19ccd427ba4eb3bf44955"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN112-2_Nira.xml": {
+      "bytes": 16039,
+      "sha256": "2840b24247d1f089887225b0bbe2d3909ce16cd61bf23130d537994be5745aa3"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__02SN112-4_Nira.xml": {
+      "bytes": 13387,
+      "sha256": "ce268c75d28df778628ef88b2eb4348e28d0c336d8668fd1f7ec525dfb3112c7"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__frog_Nira.xml": {
+      "bytes": 5520,
+      "sha256": "9bb7f98c2def907e57076bccc8e39ae371badbf9654530a7d3bd34b5b544ac00"
+    },
+    "data/ntu_paiwan_asr/xml/Nira__frog_Nira_untranscribed.xml": {
+      "bytes": 644,
+      "sha256": "fcc60fd3380455546d4cca6a966c8152404ae5089e3b4424a77859d0273a2601"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_01.xml": {
+      "bytes": 11494,
+      "sha256": "b627f6876f92f142526e8ac7b80c832398b1508b1e186591251af27c7bd46d6c"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_02.xml": {
+      "bytes": 13436,
+      "sha256": "5a8d2e640498f676d457d4a934d20dd40321469f4612d4fd912cee8d0f675e02"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_03.xml": {
+      "bytes": 10106,
+      "sha256": "463e8532d501e32061693e7364a6c68f0b51c0bc21e74b7a9024c46c6c106a39"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_04.xml": {
+      "bytes": 11077,
+      "sha256": "5c9a1f8c042efa64507b86d636ac839b5a802906894b8356d96ca65b85271ddd"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_05.xml": {
+      "bytes": 10378,
+      "sha256": "9f64fc13799f87bbfb9a37ca653a005b2b36f76a7c87e6a11d09da1770c406ab"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_06.xml": {
+      "bytes": 14148,
+      "sha256": "ab1d89c9057fa555c49bb538efca54ec166054ed5e193cc661d6b6b9d8e2b51a"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_07.xml": {
+      "bytes": 12378,
+      "sha256": "6db68652c9dd49771d49c9bc40d5b991ada5a7b8bebf303dd4f23c68d8aaff2d"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_08.xml": {
+      "bytes": 12562,
+      "sha256": "c96741fc240cf2ed5532ba88460a38fc3d7c086ed62b5a7c79f4d0a62a8187fe"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_09.xml": {
+      "bytes": 13350,
+      "sha256": "17aef759183bb3b637e771e5a7f6a9594c4160c375e8c37e767bfa61c72537f8"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_10.xml": {
+      "bytes": 12532,
+      "sha256": "11f4c1ed533d5402e036e38b5183e3063cef60ed61b4753a4312a991b91845e1"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_11.xml": {
+      "bytes": 12460,
+      "sha256": "2203c4834d6f900f4e487f41aa59853d55034da3879f443b3e53b5b34dbc2726"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_12.xml": {
+      "bytes": 12182,
+      "sha256": "07776b3b6aaf11b6914ead52f63427426b1b85d5d3de1d33946b28f1ee8ba9e5"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_13.xml": {
+      "bytes": 10204,
+      "sha256": "2e0d8ffa4b8578147d40d2e314600ed19e794eecc84793d6624258a932fabfda"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_14.xml": {
+      "bytes": 13318,
+      "sha256": "9c1d439615e850e805fa2968602bf5c349b3a653cbfeb13d0094591fe6732f9e"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__02_Orsen_15.xml": {
+      "bytes": 11304,
+      "sha256": "391bf0f8e0aa7325618a89a682acf2cbc62b0cf1584008c88b6931837f9a3a45"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__Learning_languages_Orsen.xml": {
+      "bytes": 4451,
+      "sha256": "97f0c6188d3b767652d76026eca1d57799eb90dd7aac6f7fac838781d32a48e9"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__Learning_languages_Orsen_untranscribed.xml": {
+      "bytes": 706,
+      "sha256": "08811ec14093bac522f1aa912f615b1a428b62d95b11134b78157cc913a35268"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__hand_tattoos_in_Paiwan_Orsen.xml": {
+      "bytes": 5268,
+      "sha256": "5b0aa791dba426647f81d14cfa350bd319399c9d76482741220009d64c5f464e"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__hand_tattoos_in_Paiwan_Orsen_untranscribed.xml": {
+      "bytes": 722,
+      "sha256": "e6635d35de7acb5c8e7be23d032d47d0f0b2327f2cb7e6b8f46b822e6cfbbca7"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__naming_in_Paiwan_Orsen.xml": {
+      "bytes": 4391,
+      "sha256": "b1865c43ef55ed0e4a4edfb1122abcab2e09278c05788cba7d09964f924935c7"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__naming_in_Paiwan_Orsen_untranscribed.xml": {
+      "bytes": 698,
+      "sha256": "21b1e15a41c9ce5bec44edc222cb632dc7d5cc00265d99a736427d10e2095179"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__self-introduction_Orsen.xml": {
+      "bytes": 4546,
+      "sha256": "dda627100f49642518e019267c5aa584edbdc13b8e7662db79dc209dd2e6e344"
+    },
+    "data/ntu_paiwan_asr/xml/Orsen__self-introduction_Orsen_untranscribed.xml": {
+      "bytes": 702,
+      "sha256": "9d159ba5801fd8d57fc599af372ad1a0991fcb8bfa7482f12aeade5c0bad6191"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__02JE105-1_Sarnix.xml": {
+      "bytes": 13472,
+      "sha256": "8e5e3762440ed92c1f85ac931a9a6b8286e8e3abdcd802a8f9ed0e4286ba458e"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__02JE105-2_Sarnix.xml": {
+      "bytes": 11980,
+      "sha256": "4f3ee0149648520b218cbb2e292323e2448544831b119f4818348a3f8afbf1f2"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__02JE105-3_Sarnix.xml": {
+      "bytes": 12894,
+      "sha256": "b6bbb403c4026500965645543046e6a845763eb30305a31bdf7311bb875c3dc8"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__02JE105-4_Sarnix.xml": {
+      "bytes": 11876,
+      "sha256": "a5e1a7f890b9c7c7593162b607b34b0aba013d1b21e3301415ec8dd7f05765c8"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__02JE106-1_Sarnix.xml": {
+      "bytes": 12406,
+      "sha256": "84e6b7a55b70decb09d5c0596fc3a4360ff5c4a35458137d45361f2abb24f9f5"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__02JE106-2_Sarnix.xml": {
+      "bytes": 13718,
+      "sha256": "cb6a241238e819feae976561d3361ce451beb219f142f54981baedb1417f3b4d"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__02JE107-3_Sarnix.xml": {
+      "bytes": 11335,
+      "sha256": "d0d02b31cf26aadf798059145969d4b5e6b7f87eaf505536f9f61ec21f608055"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__02JE108-1_Sarnix.xml": {
+      "bytes": 12011,
+      "sha256": "d023a50444e03370d3546e920edb4dfc839e3418a13a757fbd652f0f4bce0955"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__a_story_about_drungdrung_Sarnix.xml": {
+      "bytes": 6352,
+      "sha256": "883aa800cf21eb89e54e8d713d350c023a51d6584cbae91034f68b43fb983bfc"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__a_story_about_drungdrung_Sarnix_untranscribed.xml": {
+      "bytes": 735,
+      "sha256": "a52e021d14dc11138bb9421233143562fb21d78991d4d491a5840dcded69e86c"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__hunting.god_legend_Sarnix.xml": {
+      "bytes": 4654,
+      "sha256": "5af6936092159fe36dac12215c3427e26a7ca0887c00b329d514bb5f298c8cd1"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__hunting.god_legend_Sarnix_untranscribed.xml": {
+      "bytes": 711,
+      "sha256": "c9ff841e77c76f1c185db47814b179ad2eb06d4b99ca8a591b4698cc37b22197"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__when_I_was_7_Sarnix.xml": {
+      "bytes": 4670,
+      "sha256": "145cee846edee0ef063568271cfa33644df6c8b98fb9fc7692401b06f044e7b8"
+    },
+    "data/ntu_paiwan_asr/xml/Sarnix__when_I_was_7_Sarnix_untranscribed.xml": {
+      "bytes": 687,
+      "sha256": "1257d328ed8a042687af179e920d03516e67a913ae86c9a6a0dbbfde44d837d1"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__02JN105-1_Tavora.xml": {
+      "bytes": 15468,
+      "sha256": "9b1f8cd22af9cff39801ade92ce23890e29e421fe5b59d6233d6ce22d47a6e11"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__02JN106-2_Tavora.xml": {
+      "bytes": 13806,
+      "sha256": "7a4e7869da753c8ec0d8fa655fd6c02a7e87c161304733775f1c0bca4d0ce6e7"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__02JN106-3_Tavora.xml": {
+      "bytes": 14409,
+      "sha256": "94ff2ab988314ce2cdb9987608104a7f853f2108b6bb6849499c2b0d72f37165"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__02JN108-3_Tavora.xml": {
+      "bytes": 13841,
+      "sha256": "495d099beb3704a0dba800c74aa7b5040f85f0cb501b75edb5bb223c09719885"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__02JN112-1_Tavora.xml": {
+      "bytes": 15917,
+      "sha256": "dcaa59fbba4182b858c362a1831ed81c183039b87fbaf1bba36f8cf28da8614a"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__02JN112-2_Tavora.xml": {
+      "bytes": 14036,
+      "sha256": "aa8efe596b59ac2f85c86c00fd46989c8004adf5d06f2de41a4d7cdfab965334"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__02JN112-4_Tavora.xml": {
+      "bytes": 14128,
+      "sha256": "483e47eaacb4dbb9b07d096abc8ae6e5b9f9d5047057cf8c6fcd95ee904d3476"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__02SN105-1_Tavora.xml": {
+      "bytes": 14531,
+      "sha256": "84d31c51a4377d941f373e04a86f951c98488655e3680101778ad20512c43506"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__02SN106-2_Tavora.xml": {
+      "bytes": 14636,
+      "sha256": "9a0eaf84f0c8ce9476d1a5693109f2bdd9fcc46460ae9fedd58a56b7a48a9fe5"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__02SN106-3_Tavora.xml": {
+      "bytes": 14127,
+      "sha256": "f5980f604db3e0ecaf19657dfe45538641d0559cdc3da111f14a729783b1885e"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__five_year_festival_square_Tavora.xml": {
+      "bytes": 5881,
+      "sha256": "42a302313d66d7d4e90b6a8cb0eaebbfe01e35cc5b6a8088f65a85d245cd3e8d"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__five_year_festival_square_Tavora_untranscribed.xml": {
+      "bytes": 739,
+      "sha256": "e37b5879313eae7050138d048a1d85750d9467693013de80d650cb50020b0cdb"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__labor_exchage_Tavora.xml": {
+      "bytes": 5372,
+      "sha256": "0f611a4699a13ffda972fb3f2065dd9338cee22252fb7f4c61855ea928e782da"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__labor_exchage_Tavora_untranscribed.xml": {
+      "bytes": 691,
+      "sha256": "4de3a1f14ed6e2440e61c0478230a16904dbc26e58aa72b0601e22ec42e24af2"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__my_parents_Tavora.xml": {
+      "bytes": 5287,
+      "sha256": "23d49e2486962e44eedacf85514ab0f59318b39f78b67cb51923fb41bee81300"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__my_parents_Tavora_untranscribed.xml": {
+      "bytes": 679,
+      "sha256": "0221006945394e87e0c547ae588287b73ddda752a7cc6529ec129c6525e653c3"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__self-introduction_Tavora.xml": {
+      "bytes": 5042,
+      "sha256": "e52c1a5608de6504ad52a18353c1a6c212256ae9684d6ff6b1d4064393101326"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__self-introduction_Tavora_untranscribed.xml": {
+      "bytes": 707,
+      "sha256": "9d65b146de26934ae6acc8997c39f988970f9f99c63b55f73e835751fb9a926d"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__tattoos_Tavora.xml": {
+      "bytes": 4978,
+      "sha256": "0b198f0224cdf6aec29c96ed711b7dbfdab08c658e6110ed6aba2ef53c3835e5"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__tattoos_Tavora_untranscribed.xml": {
+      "bytes": 667,
+      "sha256": "bcbd518da0eb1802ca2d2b80cd04c2de985e0215b8d0e96fb1a7b4a31c725bb5"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__the_church_and_the_tribe_Tavora.xml": {
+      "bytes": 5094,
+      "sha256": "bb4e16c2f039f9a6367c3327cd28a423c3f216442276da715335d936571c45f8"
+    },
+    "data/ntu_paiwan_asr/xml/Tavora__the_church_and_the_tribe_Tavora_untranscribed.xml": {
+      "bytes": 735,
+      "sha256": "2180f4340298c4727558649f5d236d2132c13a5593274a4bb4478d6c6e91842f"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN105-1_Zendar.xml": {
+      "bytes": 15979,
+      "sha256": "1b108123dfb9681d83613562db7faf4badfb77713ef02218c8bc5c8e962cef86"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN105-2_Zendar.xml": {
+      "bytes": 13731,
+      "sha256": "b46f072166015eaf24502f0ab5f16f03d14287eeff2b5dc035adf89d4dcee1a5"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN105-3_Zendar.xml": {
+      "bytes": 12355,
+      "sha256": "dd291c2ea857cd19944a97b3bf5e1ea1dcbfb07c94b64379fbe62a4f6320f5af"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN106-1_Zendar.xml": {
+      "bytes": 13617,
+      "sha256": "0c0f1aefac2f8deaf50abc548586259d38ce6bc978fd6a65d383d00f4316bd73"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN106-2_Zendar.xml": {
+      "bytes": 14240,
+      "sha256": "3e4c9469e93f4ee73a7c68ea178d0db80add564eff000f92e9620572adb627a7"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN106-3_Zendar.xml": {
+      "bytes": 14224,
+      "sha256": "5bd142e820d84260b12e0fa641e1d3e6d8179016534d7982216df56d49faf438"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN107-4_Zendar.xml": {
+      "bytes": 14007,
+      "sha256": "8f3190bfc11152d3c1720b9214e8a093740709cb40d3e2fc8251b4fc7942729b"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN108-1_Zendar.xml": {
+      "bytes": 15299,
+      "sha256": "2f68457d5726923d843823bf2dc6bbd9e4e5e46a0c1a85ed3951e4b4db30d9c1"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN108-3_Zendar.xml": {
+      "bytes": 13861,
+      "sha256": "ed93ee2b7d4709372d08f21dd386c9d3031b11f3995609b83dd68f1add94ce15"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN110-1_Zendar.xml": {
+      "bytes": 15063,
+      "sha256": "5fd7d16cdc1baa27dd62721d408bafb59d3db14612d77e5fcfed73263ec67a02"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN112-1_Zendar.xml": {
+      "bytes": 15649,
+      "sha256": "e23962199023534077caf1176e3efb03539f12401f573f81c2a6f9e6087f8489"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN112-2_Zendar.xml": {
+      "bytes": 14018,
+      "sha256": "26d7d187cd4b9f5473dfaac8bbf2cf94a574ded10219c1c08c2c8983d077206a"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN112-3_Zendar.xml": {
+      "bytes": 15437,
+      "sha256": "6f8499aba4fa63f2e924d92559d8afa02fcce9cf534c6ad71dfe81c2843c8f4d"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02JN112-4_Zendar.xml": {
+      "bytes": 13999,
+      "sha256": "071c699440cbe936149905872bf37d8299297310efc358fea61ed6be5b382243"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN105-1_Zendar.xml": {
+      "bytes": 14167,
+      "sha256": "e323929b4a3e53335648161a4efd27a5c1fe0427a4bb3074cd64d774a7a259e4"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN105-2_Zendar.xml": {
+      "bytes": 15765,
+      "sha256": "14714551de108b7f175cdfb1c5c8b805bd154bf68db9ef3fd54e822977e03691"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN105-3_Zendar.xml": {
+      "bytes": 14941,
+      "sha256": "c5e766a3f996578621b191178cc432bdeb45072a67cf766a329b20a5d0631efc"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN106-1_Zendar.xml": {
+      "bytes": 14365,
+      "sha256": "b60d64dab396b4f5cbc48fcdb4c7d9de76f589a51c906db9b54c7b62b51d6159"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN106-2_Zendar.xml": {
+      "bytes": 15947,
+      "sha256": "0354c30eea1c30318a8693f9fde0a07020a422392742525a31de737003cbcacf"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN106-3_Zendar.xml": {
+      "bytes": 13979,
+      "sha256": "467ae954dd5a4479a63a41cc5f1a3948ab42260f7f3acf7a14b70a0516093bd2"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN107-4_Zendar.xml": {
+      "bytes": 11727,
+      "sha256": "09a4034bc6d4addfe722e7b95cecb058c55c5b8916b813704daa06c7dbb7bb95"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN108-2_Zendar.xml": {
+      "bytes": 15356,
+      "sha256": "4ddbe060358ba393f0a0bf7d5e706f64b6485d236528a963ee217e820ce108b5"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN108-3_Zendar.xml": {
+      "bytes": 14486,
+      "sha256": "111b6e3ad680cf74b5feb8e4f7e0d79b2e61c2b922306384e60ef66c6e75238e"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN108-7_Zendar.xml": {
+      "bytes": 12816,
+      "sha256": "a724a4cacc15322abd9319b189163b2029d354240131080e218f2998c67f8c20"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN111-2_Zendar.xml": {
+      "bytes": 15929,
+      "sha256": "a0414d8b972c690b1beca342fda3d2f0dae5cbb2c1c29d344a0ea8b932e809d5"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN111-3_Zendar.xml": {
+      "bytes": 15370,
+      "sha256": "d9b3e600fd548fd5bb4dca1ccd271cd6c2216a024152de93cec412b5055e8c8a"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN112-1_Zendar.xml": {
+      "bytes": 13788,
+      "sha256": "2476f2a04e96e2db7bb8db6bcbc7359aa36c2292e56547ad46bd254372b4d134"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN112-2_Zendar.xml": {
+      "bytes": 12616,
+      "sha256": "5a6da79abb7f982d6d16596c2b2df078ed7f5a78cdd9345fa701bbadc7c757fa"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__02SN112-4_Zendar.xml": {
+      "bytes": 13941,
+      "sha256": "fa52ec06b8dbe8240e34f5d1d3ab10335bc846a290f72dead2a5f1151c71505d"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__White_owl_and_brown_owl_006_Zendar.xml": {
+      "bytes": 6839,
+      "sha256": "74b7ff854b190117a596803c155b7c9185cfa88d37311715e9d613c6d98668f6"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__White_owl_and_brown_owl_006_Zendar_untranscribed.xml": {
+      "bytes": 748,
+      "sha256": "9e89a89d7802ce082971e298f7263de77dbc6ad20fac535aa47099c0946a3384"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__frog_Zendar.xml": {
+      "bytes": 5698,
+      "sha256": "e3c6453d887430e6ecb3480a41d15f720db0de7f98da7cfa830758a1b3c03f26"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__frog_Zendar_untranscribed.xml": {
+      "bytes": 656,
+      "sha256": "3db5483a1bbc306aa19eb19536bcae47e3343870be63e08821d4e12e12645bb0"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__my_job_Zendar.xml": {
+      "bytes": 4380,
+      "sha256": "a17b7e63fadc4d2f17d025944dc3691cc08fe6c7285017956908355f402537fd"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__my_job_Zendar_untranscribed.xml": {
+      "bytes": 664,
+      "sha256": "47195b0d4625a1a1a5dcdea2a9f3a688da37eb2625c15358317a14a5ce59c098"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__my_life_Zendar.xml": {
+      "bytes": 6504,
+      "sha256": "36209a9c0b153bd20f92b660a3252c78d1d8f24e45d33ded70b2837930d1da6b"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__my_life_Zendar_untranscribed.xml": {
+      "bytes": 668,
+      "sha256": "4a2cadbf3bee46a72caf7d8ae98160bc62d6facf16f3744214fb980b6ef8dc01"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__my_mother_Zendar.xml": {
+      "bytes": 5777,
+      "sha256": "d5cab1acd5b0cd191db7aa082437fb7f3d31b5457e412d51936a778c0d97806e"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__my_mother_Zendar_untranscribed.xml": {
+      "bytes": 676,
+      "sha256": "4b526d63e1084251ff74c4801ea7a77ad26ac7574e37d6bc1908dfca96164916"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__pear_Zendar.xml": {
+      "bytes": 6761,
+      "sha256": "4d522b8ccf8d658f567edfdcceee9a740145cee6369793973f17b2afd1708de9"
+    },
+    "data/ntu_paiwan_asr/xml/Zendar__pear_Zendar_untranscribed.xml": {
+      "bytes": 656,
+      "sha256": "75aed00ff2e5eecfdaab7b21aa7fedb3fe05a66b62819e867d9ca80d1ae036c7"
+    },
+    "data/paiwan_texts/SHA256SUMS.txt": {
+      "bytes": 8400,
+      "sha256": "ae54b901d46c317a5337502d861404726142050f8b4f0c71393767063c4d01bc"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_001.xml": {
+      "bytes": 370121,
+      "sha256": "0d3f6a358d16326b77ba1d62fa757c85b5f736f3ed8a67f116e641a524956fe5"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_002.xml": {
+      "bytes": 491531,
+      "sha256": "31a0bdb58fbcfcf1a4e6d3d2dc9772818e2bfc3a4504193cbad73d53ac0a6717"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_003.xml": {
+      "bytes": 419968,
+      "sha256": "f05eccf775972b7267d3ec62406f97a9a2793f2afb06601f6e632c3a7067eb8e"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_004.xml": {
+      "bytes": 257355,
+      "sha256": "a259c3563660ec1a63841f48f8f75ee9a0358de1cd8611173ddfcd620f00c1cf"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_005.xml": {
+      "bytes": 308961,
+      "sha256": "36528365e2cc453d02701f93e93cef6dde9f7f8a477f70b84c348e6ba28ab683"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_006.xml": {
+      "bytes": 218923,
+      "sha256": "cd42a43826854feb4cf93657dbc45f7bb40bf5ac97b2713ab8041bd63c7803f2"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_007.xml": {
+      "bytes": 151031,
+      "sha256": "961c30cce63f470ff70d405f79502f48921a07e238146b91b46c79a217f63090"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_008.xml": {
+      "bytes": 240065,
+      "sha256": "f52161798d3580a6f4f851f2039d0a5dfb663df51f3421f580815ee7138f067a"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_009.xml": {
+      "bytes": 387973,
+      "sha256": "a37ae02bcc380fa4fb48eb2a56433b4252791b24d5f9f241126f76ba7c669b69"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_010.xml": {
+      "bytes": 272461,
+      "sha256": "a2d953b5e545b8a605024f260be06a0e6d6c8ac39a7e3a083bade710af109056"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_011.xml": {
+      "bytes": 655234,
+      "sha256": "f76078dba181071ac9eeace2aa379fa83e2429e7191d10c3c6ee50e9567853a0"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_012.xml": {
+      "bytes": 122708,
+      "sha256": "83cc69578744cb24d5b6244d0071c86a115ae20beb384351a19eb5ec6e0c21b8"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_013.xml": {
+      "bytes": 327705,
+      "sha256": "f6bac06c6d08cfe99ec4c4f6b788c3c2cc8c01be6762f9b7adfb55dd304bab8a"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_014.xml": {
+      "bytes": 120434,
+      "sha256": "97e4783df8645ed8bd989f796f25d7e523b05f29e5628c8c87d8c7ef1af68290"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_015.xml": {
+      "bytes": 84433,
+      "sha256": "94e5a96b5f4b1d2a0051ede275aded1af6a4dd889ade6d1af8e1cae85c01f7d7"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_016.xml": {
+      "bytes": 389867,
+      "sha256": "fb6a21b444095272ad6dd5d26f7772057a19785c00a8554c72e3bc825f366f57"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_017.xml": {
+      "bytes": 193818,
+      "sha256": "0022ad1b30eff6fd596a2e1d17f51e5650168b8d0c4f7bbc76ad6a36235212ed"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_018.xml": {
+      "bytes": 149040,
+      "sha256": "6b9fef34f5ca7a902cdf18ac368a436009d3ed40a49f847cc98aab1830bf638f"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_019.xml": {
+      "bytes": 41466,
+      "sha256": "00a935f94a5a1a51402d87f1de6641b5c7a2555a066209b5d07af8b24e1bd5d0"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_020.xml": {
+      "bytes": 47623,
+      "sha256": "dd612620bf6dbf5f16e14019a879d9b1b6f9a81cd3fb90df8806b392a3c68a3e"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_021.xml": {
+      "bytes": 68406,
+      "sha256": "0a46d2731cc83f03a85bc5fdf5b0357209a7ee980e88c1ee0ae8539182419445"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_022.xml": {
+      "bytes": 54919,
+      "sha256": "e0f8a84dde6ac9c653ca08251023c771dcafbbeae920b0ed4e5d1188e4bb88b7"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_023.xml": {
+      "bytes": 134266,
+      "sha256": "a5b12637fb2412e81cde4d4df76f1e001ab88a67210893b9652b89692fd23112"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_024.xml": {
+      "bytes": 81245,
+      "sha256": "e17a59e18e439cdd1da127c19a3ebcc275fb3babd5c1bf98499fe338803be057"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_025.xml": {
+      "bytes": 158264,
+      "sha256": "a247b27b643be3171fc4ddb933347bfcbd3d25c256f6c326ba79dd0077924bd5"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_026.xml": {
+      "bytes": 47113,
+      "sha256": "409779f20bf34202663dcf6b51f7d62b4d57cdd78b7bb2fe6bbc62ddbe83990b"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_027.xml": {
+      "bytes": 224587,
+      "sha256": "c3f015eb0b8b023cf72200e6c1e5ab0059432ab89df7a6a0658e40fee27d0023"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_028.xml": {
+      "bytes": 29439,
+      "sha256": "5e4099d818166f3ff1b003f1958e29b1f8ada275b5a6e5a82b5df69dfb4f00a6"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_029.xml": {
+      "bytes": 50610,
+      "sha256": "c3d0af8ae90d09bdcf9db1c36c681460a3d26f8ed0b36b82cc8a05f3d0f04a57"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_030.xml": {
+      "bytes": 59464,
+      "sha256": "9ffde734f64cd3049d1f6f10fa95d483a9e7e5ded8e6a23debc1ba6458a7596d"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_031.xml": {
+      "bytes": 95904,
+      "sha256": "8b5445c646ab22ec195be9822efd9062ae423b8d225ff3d893ad78f4e76c1f56"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_032.xml": {
+      "bytes": 126179,
+      "sha256": "16af861f55547c4bfd4e704bd5a18fba79ac71ecddc82f382203834383a5034b"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_033.xml": {
+      "bytes": 130516,
+      "sha256": "2d683a3698b9189d6d117b895b03be6ee4429373ba5db50e0fc17f9f842209a8"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_034.xml": {
+      "bytes": 158889,
+      "sha256": "2e1084d23ea54e4b7f62f3aba486e80390c4141adecf95bf44c38e5c5187f366"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_035.xml": {
+      "bytes": 83623,
+      "sha256": "6cb089ddccc4739a05b1b4b09dd998be1ed2f1a55a655c6a3b1961ae93c849e9"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_036.xml": {
+      "bytes": 127876,
+      "sha256": "57f102cf807eec3363411a4b592828e52f35b2f42444fa176ff9b9bf96d40f5a"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_037.xml": {
+      "bytes": 251312,
+      "sha256": "f9ab2ad1fab6ff04b44e2bda517978a4e0e3958bcd96fb9f8e171991f019e338"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_038.xml": {
+      "bytes": 180916,
+      "sha256": "ea2d7b12f6a59ce111e8fd63b05b5aa03dc8a563035b2872a905f662c7c645ba"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_039.xml": {
+      "bytes": 144790,
+      "sha256": "4dda033877a0e0d3639f7e14442ecafc755256dec37272722992cecf081db6c2"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_040.xml": {
+      "bytes": 459460,
+      "sha256": "f3e689435d0a3bf88762bae6fe4a7244dfdf593a8c3d3239862cd7e18630abac"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_041.xml": {
+      "bytes": 130265,
+      "sha256": "3a602952fdf12aa33deda61535874d56c792bff6f71ac4d75b651bcf2aa09537"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_042.xml": {
+      "bytes": 247239,
+      "sha256": "dcc129c0033ecb9a9b24f763bd247eb8792a21fcab0557e8a6c0f00e48584922"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_043.xml": {
+      "bytes": 115359,
+      "sha256": "a7a7ab93f87dc6650668852b2e75234e19b183b5971c91550420699d66506307"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_044.xml": {
+      "bytes": 112820,
+      "sha256": "8aa7ccb08417e229dd82c194cb6d5368615d317f80846896b2f9bdda00da4996"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_045.xml": {
+      "bytes": 23085,
+      "sha256": "3116c0e958ee71b6d245d72a2dbc43b1f4a3e3e211f143916e41975e1dbdb6e6"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_046.xml": {
+      "bytes": 88756,
+      "sha256": "0e2fd5ec07f3b8f5ac189b8f09a1bd6c3e1aca9bee3379388e9162fc24e36dbc"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_047.xml": {
+      "bytes": 177386,
+      "sha256": "382c7b5f8c60af1b5074542f6e2e1592b0ea38ec45ef47f8d2f70341703af998"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_048.xml": {
+      "bytes": 48972,
+      "sha256": "b488cfc6e978870a0b17699ba8e54ae4eee6aee0c8f2e5c0a98de9dc6cb7def2"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_049.xml": {
+      "bytes": 175912,
+      "sha256": "1a069cae52bd48ec0f9d9b5098baf45b02719d6b65fd8f1cf738d9964d4a68a3"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_050.xml": {
+      "bytes": 451811,
+      "sha256": "0a48e244aa9eea00d74282b6531cc7f8c12bf01bdae4e4fc0bcec2c54e4ef4b1"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_051.xml": {
+      "bytes": 189772,
+      "sha256": "f83941920250c6592903caeaa513b5217158a2e42c9b560121ae0838a00184b5"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_052.xml": {
+      "bytes": 132824,
+      "sha256": "b29228f1c7c17aace26000ab6fca769b50d8d605c5a5a814fbd7c8d54ce5dfc6"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_053.xml": {
+      "bytes": 216930,
+      "sha256": "f54b42231e01d155b0f677cb0a823448632f016d33d54712e74426907ca109c6"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_054.xml": {
+      "bytes": 200160,
+      "sha256": "69211c509412a28936b82a0335b1512902ff8540aa2675fe115a06f3b3a95353"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_055.xml": {
+      "bytes": 101669,
+      "sha256": "0d77c9cd0a82a900b4e215f319cbb7d51e046fd421638794f7ba5c660dac2fad"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_056.xml": {
+      "bytes": 306249,
+      "sha256": "8af58423497d5af27db1f896db6e18dba0fdd60d94f59a11aa9a26d3b3cd0e74"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_057.xml": {
+      "bytes": 68546,
+      "sha256": "d82926c68d27f23934f43a2a841e7cfedc27d26cc1ec58c9a98143b5de6dbb22"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_058.xml": {
+      "bytes": 663632,
+      "sha256": "06140adb438919e62c960e08c9f129de7f4fc49279b4206e05877501f32c18df"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_059.xml": {
+      "bytes": 227129,
+      "sha256": "41b376aa6ac17841f6763e0ceed24380dd32f10e8f3cbb0b224b891e4d65a3e8"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_060.xml": {
+      "bytes": 69337,
+      "sha256": "980c5f977c0a6dcb26eec6db3babca9da60f01b28c117f4b5b873db93e7304d7"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_061.xml": {
+      "bytes": 195418,
+      "sha256": "06ea5e92dba67ddb771500508aa6d2fcc7dca1d8178c32e72f1375141f823802"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_062.xml": {
+      "bytes": 160789,
+      "sha256": "1919fa712f4e0338314cec23aa74d1b2a90a7f82bf109bed6531553a8452e037"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_063.xml": {
+      "bytes": 49152,
+      "sha256": "f08e00308e5037c9cbfa032e64abb0acefd59e983319e9e60e8c60e1e3c7f2d9"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_064.xml": {
+      "bytes": 43454,
+      "sha256": "c5356831c28adcb09147d9dec73481af3e507a1bd5f1467644debd18b3de70c9"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_065.xml": {
+      "bytes": 101137,
+      "sha256": "d688ca0c730306e1b87ecb6c8f27605100e2f02c81944b9a9f287dca3eee9e0d"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_066.xml": {
+      "bytes": 74856,
+      "sha256": "abd1643590e5d6111671b2499f074e2efdaef6713593ae1eef4fec36150f45a2"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_067.xml": {
+      "bytes": 58785,
+      "sha256": "7f9e66021437855041805bfa35a29ebc215294f06a51a3b6c24de75b2a76e45b"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_068.xml": {
+      "bytes": 129240,
+      "sha256": "13202b2ce417f939bf17f94e9d3d0d86f34563ee246733f903bfd24efb05d520"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_069.xml": {
+      "bytes": 92289,
+      "sha256": "8645957d46884e8bfa048392885899c1b92b927cf4de7db96bcd23d2666741cf"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_070.xml": {
+      "bytes": 110093,
+      "sha256": "4249b991f5b7f91182169758e4a5e175d4a228f9c9121f37466645c2fedf7bed"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_071.xml": {
+      "bytes": 351873,
+      "sha256": "371ff3347e3a8812e320b76b930aa31da30b94d8b7ed4d45d9ecc081cb17de13"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_072.xml": {
+      "bytes": 242221,
+      "sha256": "fe09c7e95c241019f225c4b6c718a75f683e7cc065040c364d3d95416c6481f5"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_073.xml": {
+      "bytes": 332985,
+      "sha256": "6838bafcc915005ff8a86784090da7a1082cbb892a81f5201cbc44cca1c126d0"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_074.xml": {
+      "bytes": 361747,
+      "sha256": "13db2869337592a98addd4746b22157f20af8cf2fa39d3123c3bf9f2e655c29c"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_075.xml": {
+      "bytes": 395846,
+      "sha256": "7215d5c68283b0cb26dd0023b47e0f8c36fca79cb159ad9de09df1c89f90b40d"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_076.xml": {
+      "bytes": 204063,
+      "sha256": "aab09c77d925caa2f70dc642b66b48362c659f5d95b936bf4ac9e8ef3903fec0"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_077.xml": {
+      "bytes": 233299,
+      "sha256": "f832b95319a48c453040821ab46e525cbab7ca17b0144b995b26a1619507aa9d"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_078.xml": {
+      "bytes": 217349,
+      "sha256": "bd91970c479993d75080a77829623fab76ad7dd6290475838bc2f5835bacf6d9"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_079.xml": {
+      "bytes": 819218,
+      "sha256": "30b8355a48a21761b4d41e3437958e8b9016589216be52ceeb06329cfeea8556"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_080.xml": {
+      "bytes": 185846,
+      "sha256": "cda6edfab9f5b1183f382635e906030d0bb60b3df9737ac9d81e8233b97641b7"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_081.xml": {
+      "bytes": 196287,
+      "sha256": "dcbcf32a5ee81d6dd735c6605ca753a59909e566140612f524ba2d70b6075ba4"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_082.xml": {
+      "bytes": 89933,
+      "sha256": "98746e816c0ae286f50fc99650af89b01da31872042f9bda3c9b51d618c97367"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_083.xml": {
+      "bytes": 131399,
+      "sha256": "253a5068c7ab9b418938b7e99783f23ccffc949b09c3c35f61fbc1932b5ac3cd"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_084.xml": {
+      "bytes": 205921,
+      "sha256": "bed525072567c3a15d44965fc654430bc95c14aa17725c8beb3c90590435fab0"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_085.xml": {
+      "bytes": 248734,
+      "sha256": "9e1b9ee3fc75a198bcb77b32d831400962854ded0e57eff0fa985021a866223f"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_086.xml": {
+      "bytes": 98469,
+      "sha256": "c541dabd3c517fbcb6efd272bfe6bb53be5b7319cca10340900654b07109692d"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_087.xml": {
+      "bytes": 287955,
+      "sha256": "5b306ac80bb299c0361b431cd229f8451d7f6421d754b830c7cd423ff610f8c4"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_088.xml": {
+      "bytes": 183183,
+      "sha256": "ad51cf81fd7d37c573346d260d678cdf2c3bd0d1a65d33300c6ca79661cb1773"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_089.xml": {
+      "bytes": 126489,
+      "sha256": "e232ad5713f01f5fe1f94d0f3d63f6a8b07925e25b2bd2f4f8bd88bbb57d0219"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_090.xml": {
+      "bytes": 122756,
+      "sha256": "00e37f65011f736e02f838057439b9e936b47b2c1fa739934792e58d51b301a0"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_091.xml": {
+      "bytes": 381614,
+      "sha256": "8d691313f32bb910396f3395a80642b83ab17f37c0865237dbb5903e2994cfdc"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_092.xml": {
+      "bytes": 779852,
+      "sha256": "1aa5c58595f047e08f31121b8a591ef0bda0d95ceeefdd826660780ab5036502"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_093.xml": {
+      "bytes": 226027,
+      "sha256": "8470c1042f285a7599ec9279e0a381833903238d5fe24a315d8cff02f12cd65f"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_094.xml": {
+      "bytes": 267572,
+      "sha256": "5aac5148feb486b2472ba2fe5200baccf3ab679a51d8756120775436399964ea"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_095.xml": {
+      "bytes": 106612,
+      "sha256": "1948ba0f48418ca9bcf5758bef25aace2cc6102cd1a8d94b23d1d620e0caa9a8"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_096.xml": {
+      "bytes": 623612,
+      "sha256": "640f1171ad7ae9f9f7dc248f5590c4c3751432e5910e291b7cb79cadf00ecc9f"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_097.xml": {
+      "bytes": 302442,
+      "sha256": "f482c8887ec9447ca35a008304f5c4f9b45bfef879d97421b21ed0ecc91da7a0"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_098.xml": {
+      "bytes": 115673,
+      "sha256": "ebedbc41da7f77144a0705163c1b2143c250ff6ab81be4b58240c3200c974589"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_099.xml": {
+      "bytes": 148851,
+      "sha256": "f9ffe1d29bb2a4427ac256952cdeba20fed5f595767df08df08feda48c9ed34f"
+    },
+    "data/paiwan_texts/xml/PaiwanCh2_100.xml": {
+      "bytes": 385685,
+      "sha256": "e46e86657ddd8660f18598d96d9471327eb802978bb0e1377ac84350f5c48c99"
+    },
+    "data/study3_runs/annotation/pool.jsonl": {
+      "bytes": 441094,
+      "sha256": "782ad6429d667349e8004c08544bc80e50bc8f866b3d8b4203f7f977e1ea554e"
+    },
+    "data/study3_runs/ext84/lid_gemini/lid.jsonl": {
+      "bytes": 888530,
+      "sha256": "3316d56b90b20c692018a5e392abe35707669fa9700069d48e7cbc2e3775df6b"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241116-03.jsonl": {
+      "bytes": 16484,
+      "sha256": "3d75230fdead2b949217eb9e31e15199e700c45f08173e0018881dcbccf2eaed"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241116-04.jsonl": {
+      "bytes": 20106,
+      "sha256": "4f2768c90dffc4d2a24689d73190c1e7dc07b34e82343b94961525994f088b99"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241116-05.jsonl": {
+      "bytes": 9651,
+      "sha256": "fa96890cd435f0d926864553e5a2be2ef219ca7f75c0e55d0d92a0e234fc29dd"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241116-06.jsonl": {
+      "bytes": 15438,
+      "sha256": "fe5abc633bb0755100efb7aadcde10a14c98424a30982dc30a688438b9555d9c"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241116-07.jsonl": {
+      "bytes": 11371,
+      "sha256": "f22eb2645908b24dd28c486fe0a4a24967db65272f48019a0fce15ceb9ff4716"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241116-08.jsonl": {
+      "bytes": 18621,
+      "sha256": "cb015dc5f487abd2af8fe3ce2cba5e52fda26a5944c1011e5558d5adeb5db03b"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241116-10.jsonl": {
+      "bytes": 10937,
+      "sha256": "91a61a96c41b3361b2ea407ff6f466cd5a53c4617777abd3f7a811b5800b390d"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241207-02.jsonl": {
+      "bytes": 11039,
+      "sha256": "da95754405aae8a9892f5cd270c37c529491ffd672bd5431fe82f183a8221b8a"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241207-03.jsonl": {
+      "bytes": 9215,
+      "sha256": "87742b42a92ac2d8dcb1e0d06f665094e849416d6cdb35c0c1824fad5110236f"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241207-04.jsonl": {
+      "bytes": 8325,
+      "sha256": "f5aa53ce66621eb268ad61311914d0538b8f134490cb6891310877fdc9eb65f3"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241207-05.jsonl": {
+      "bytes": 23027,
+      "sha256": "0a8cb366bb66661e4be5a3c274726a559602eaf36898ca8cbc760501d3c75756"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241207-07.jsonl": {
+      "bytes": 19504,
+      "sha256": "182bcb679fb99353ac8590463e8a1b03ae27af6e2c0a02ec107c5ec70a2b3435"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241207-09.jsonl": {
+      "bytes": 18078,
+      "sha256": "f9f0e40e9850f237331193d2d2eabe918a19a47d6abf795281148ffe097ae81c"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20241207-10.jsonl": {
+      "bytes": 14692,
+      "sha256": "a6d1fa4da6331de92c6d71a3b41234ea89ec433fd6feeced2b5a904ae410c9ae"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250222-01.jsonl": {
+      "bytes": 14844,
+      "sha256": "7ad8b8a87a5a14c596af933aa175b0e6a27acb04cb39f0068eea84514ee89475"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250222-02.jsonl": {
+      "bytes": 18672,
+      "sha256": "d7efe3f183113798ca569684d48fd85769e8b469899a76dce5c6353a27b773b2"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250222-03.jsonl": {
+      "bytes": 13377,
+      "sha256": "36e71a649e5060bbaa636d2b8c8ba255a97d8bd2938c22cd3302b5fd421c7cc4"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250222-04.jsonl": {
+      "bytes": 21108,
+      "sha256": "d3dc44d9702a7c487eec28eb243e19e605c3304b717a818848d0f3c8d916249e"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250222-07.jsonl": {
+      "bytes": 20685,
+      "sha256": "a9bfa35e943f2c028068aa18d429bb070b588f4caa257c8f432f47677d0f6266"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250222-08.jsonl": {
+      "bytes": 11557,
+      "sha256": "b9e136efa178e228e40f250da878bb421fa5b18748b50ba62c5aa7693bcc4a9f"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250222-10.jsonl": {
+      "bytes": 11246,
+      "sha256": "017fd158c2bdb86c7987a109acb2532594f747ec550ee6b25727513448127c4d"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250412-01.jsonl": {
+      "bytes": 7517,
+      "sha256": "0725ea43f36bca78f1d833397bf933e7df0030739fe00e6a56e53d7658bff6db"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250412-02.jsonl": {
+      "bytes": 8052,
+      "sha256": "e06569ab1cf1459dea55d2b63dfa679206e984de3f32b91898acef0327d2bcb5"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250412-04.jsonl": {
+      "bytes": 165,
+      "sha256": "9e0bc84fff6fe96dc99d9682193872e26627d545f4dcb65316a5ed6bccfa69f6"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250412-05.jsonl": {
+      "bytes": 7851,
+      "sha256": "ff1a1a297f166496095676195da4a13373c32ef11e64742c1b860748cc4d3432"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250412-06.jsonl": {
+      "bytes": 22438,
+      "sha256": "f9f7759962a99a7ef299ecc2fe13efa4779f145bca38c0d86a94543ddf069369"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250412-07.jsonl": {
+      "bytes": 18669,
+      "sha256": "c0a421d9cec3781898b72b4db291efc56f576e0d6886e13b9eeb33fca5275139"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250412-10.jsonl": {
+      "bytes": 15324,
+      "sha256": "d86cc76a30e579f51ebe0dd7f395e353f653838d5cf4965f47db534df7d70d14"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250503-01.jsonl": {
+      "bytes": 10067,
+      "sha256": "64eb3a47aed122eac84253f28a018ad284a2eecd8d817648f9a2125676fbbeaf"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250503-02.jsonl": {
+      "bytes": 14439,
+      "sha256": "54f90073022980c46245892f82324ed30a060ba09873a61bb20484ac3f434053"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250503-03.jsonl": {
+      "bytes": 5236,
+      "sha256": "76f26d5750ea5bdd7fc88c08f4745902ac1e300bdfec0cd66bbbc336238a6a4b"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250503-04.jsonl": {
+      "bytes": 5469,
+      "sha256": "1a768b481e83f2bb7111550b850408ab0c3e9dcd68da46a852f4549276d6d982"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250503-06.jsonl": {
+      "bytes": 10597,
+      "sha256": "789c4dc944037f3597e6226f3b045adf1b41f9cfb6da7f57e125c8941a0144e8"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250503-09.jsonl": {
+      "bytes": 16216,
+      "sha256": "85007545d043824615e6a0699b0f81807a05b4f901b594dab059bc26d329cb7a"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250503-10.jsonl": {
+      "bytes": 7368,
+      "sha256": "2d60e857da82f4196436c176ee71d9fa75e6cec1a56cc33809fe00c8bb932d89"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250621-01.jsonl": {
+      "bytes": 11733,
+      "sha256": "bcd14da16696ab8079a5e79e8d277ba754503e0fa6e27dbca12cff462c7c842c"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250621-02.jsonl": {
+      "bytes": 5996,
+      "sha256": "0e3b223ba7018bbc98a78a2422981471bf451edd740969ed194b36d7acdbfd21"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250621-04.jsonl": {
+      "bytes": 13715,
+      "sha256": "6507afae42daad60a7911819e6ded39869eec5b5bcceb146513c19a001d8c353"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250621-06.jsonl": {
+      "bytes": 20868,
+      "sha256": "7ab26488191747b7a2554c0990a17f6f694cc9ee3fa6da27298de78219f264de"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250621-07.jsonl": {
+      "bytes": 19936,
+      "sha256": "ad9eda2e727e21c8993af8eb0aac13429d5997230ddf92522519e418d0b1ef25"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250621-08.jsonl": {
+      "bytes": 28190,
+      "sha256": "b4f59b0cb4792248ea40007de5d89edb2f738df2b9f88018dec3ec41e18f1467"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250621-10.jsonl": {
+      "bytes": 8944,
+      "sha256": "7155fcd2fd68f8108dce8fd4179280052430d3d850b52911e1be19cb86dadbec"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250823-01.jsonl": {
+      "bytes": 9533,
+      "sha256": "cfb93bc8ee33836cdb3abbab45e91628594264cb9c5928231cb151657787abf6"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250823-02.jsonl": {
+      "bytes": 20266,
+      "sha256": "b203a2fc22d2a46164086e56f3afa279f334569a7697fcb7aee70d8009eb8b9d"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250823-04.jsonl": {
+      "bytes": 7573,
+      "sha256": "3f6e3174c0095fc4757c884d45ad669c8547925ad4e64dbfb493daa1fdf1d2c9"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250823-06.jsonl": {
+      "bytes": 22059,
+      "sha256": "032746ab4c3294de7d04852fba34489c05e56f9eb6705670cd7cf90cb0bb4e49"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250823-07.jsonl": {
+      "bytes": 20950,
+      "sha256": "1c5faf51a6819409fb3153e52bf3cdfb2dc21076ca8d8ce193bfcad1bb7fe5eb"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250823-08.jsonl": {
+      "bytes": 21579,
+      "sha256": "a366d9e3872634c418c46d1b2c9e725df4051112c9a364bd2692a587ee122569"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250823-09.jsonl": {
+      "bytes": 15479,
+      "sha256": "c3d90bb4aac8fb1bcfbbe9e9540dbe8b6d76e37f4b09909998ff22befbcc1042"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250906-01.jsonl": {
+      "bytes": 10343,
+      "sha256": "30276add8ac3a3dce8b6ef8dfea3053f73257d5df4b4d2a26d4c8e7859f6aa33"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250906-03.jsonl": {
+      "bytes": 12412,
+      "sha256": "be462f4ba7fbc653965bbec54f71deb37b8a7fbc413b879eb88f094689bfcc0d"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250906-04.jsonl": {
+      "bytes": 15445,
+      "sha256": "8b107194342484ffbcceab6dce729915c4938dad012d771c3606886a9150cf56"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250906-05.jsonl": {
+      "bytes": 17652,
+      "sha256": "8cf5dcabe42026f5a933b44b9dee0d6b9ef8c03c816a11a97ce1992b347a275f"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250906-06.jsonl": {
+      "bytes": 15853,
+      "sha256": "dd247919ec69ca69a505b05b143ad05ea82b458c7849c5d7c233d74b19a6b14c"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250906-07.jsonl": {
+      "bytes": 17565,
+      "sha256": "c729e67185bfe171ad9b7b66a52f60a1d9f34bfb8e72ca2e0e773606ed754873"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20250906-09.jsonl": {
+      "bytes": 16399,
+      "sha256": "1730111d405c077535b0b5b40f07cc539c9c6af10aca96e9c734888248c62e6f"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260214-01.jsonl": {
+      "bytes": 9504,
+      "sha256": "a01669644fe671505db4590fe0dbf93860f3c33fcd4d856f0cefd68d843dc096"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260214-04.jsonl": {
+      "bytes": 5095,
+      "sha256": "6fe28da924e536b43e6b32020dceb262c97a8f2024a61ac75e9eb0c62dccda89"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260214-05.jsonl": {
+      "bytes": 16813,
+      "sha256": "1334b254cb4eb087ae9db3d5c4e09865527e893b598d2b3d872c49cc08ee9ccb"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260214-06.jsonl": {
+      "bytes": 21297,
+      "sha256": "07cec22a5b8df0860f9b4597a62295a8c3a406b2be51cd267d0c478ca13c40ed"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260214-07.jsonl": {
+      "bytes": 23230,
+      "sha256": "f751c56081aa1ae964afdea6087b1afef060f98ff4c933d708b9e5db50d3d274"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260214-08.jsonl": {
+      "bytes": 15926,
+      "sha256": "e5d9e6db6aab49511644a66dc7866040f9a325c3357bde40e4c6c2950511fa60"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260214-10.jsonl": {
+      "bytes": 6111,
+      "sha256": "e91b85b26a1d327e4a8b1f87258254138dd50d82958568f8748140effcd3e519"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260411-01.jsonl": {
+      "bytes": 8959,
+      "sha256": "7d546168d8f9d1cb078838108f760ac4e0f9470ff699240315afd822fcdd66cc"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260411-02.jsonl": {
+      "bytes": 10899,
+      "sha256": "9f3c1242f0dc6da4540dcfed5bda9365ecec69c428765d1459f86d13ee105321"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260411-04.jsonl": {
+      "bytes": 9761,
+      "sha256": "98cefa367a21168ebe2242474a189b3720f8be35fa1cb3a354b58051e981a243"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260411-06.jsonl": {
+      "bytes": 22270,
+      "sha256": "daf1733b7b4e7f998cf093d785f07a64ea43279e6cef0f964d8be725c587bf93"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260411-08.jsonl": {
+      "bytes": 15071,
+      "sha256": "d2a1331cb12a17089d01029a6bdec432e9f08a505445b65c4cf5f6e579ba583b"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260411-09.jsonl": {
+      "bytes": 15302,
+      "sha256": "aa261af0a954b6ff5b947223aeb942721501099364b8010573e9c327279eeb84"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260411-10.jsonl": {
+      "bytes": 8729,
+      "sha256": "a9507aa42f3cfc56ff51d1eb1d8bdf24dfbf557f156044690c688fdba84e7198"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260502-01.jsonl": {
+      "bytes": 9719,
+      "sha256": "78e27bfe6495a33769ec2441962e097d3624c2ee6517a65c84cde8d28369c985"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260502-02.jsonl": {
+      "bytes": 7458,
+      "sha256": "57a435c968a2e960d5b0a7b795ea013e9185f7f0ac77db48dddc3febd8c18a37"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260502-03.jsonl": {
+      "bytes": 16486,
+      "sha256": "279e65a373736bdcac5822122728f44ca1db25cf781934c099cf9a75061e735b"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260502-04.jsonl": {
+      "bytes": 3524,
+      "sha256": "9359e6a65325c201d097a6bc973e801c537de31caead4b9b031a024c17f2612c"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260502-06.jsonl": {
+      "bytes": 3310,
+      "sha256": "978f2c0a16daf670c0ea4e4df01f65908780a15de838c3a11f975ce13f21a131"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260502-09.jsonl": {
+      "bytes": 8929,
+      "sha256": "82f59afdb8281d85435306a4f6ff692e4b4e2a7bd07e5af23b6afd8f2cddf634"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260502-10.jsonl": {
+      "bytes": 21228,
+      "sha256": "bccf28e767e7842b647b39e7384639a1bc8167fb3a3dc9e15634a815f5b9ea6c"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260808-02.jsonl": {
+      "bytes": 8684,
+      "sha256": "757fe8811e75c8c2a3292ae5afc810d611a62835640dbe1c6887dfeac051b873"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260808-03.jsonl": {
+      "bytes": 11869,
+      "sha256": "8b4179162b36f1749b9730a299c51631b1b533c63cfc94cc23600b894e2dbedd"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260808-05.jsonl": {
+      "bytes": 12583,
+      "sha256": "1538b16f467d7ed94d3dbdbaa4869ef910f792adb87c3d02c3d0987d6c44e577"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260808-06.jsonl": {
+      "bytes": 21876,
+      "sha256": "7049547c131dc45e3276c75c5723b741bacef6a533f39b012ca0b56cf02e27f3"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260808-07.jsonl": {
+      "bytes": 19072,
+      "sha256": "4aa482e051c7db4a072c79f2c9581d42e3289648f8325e66575ecd078ee11ea3"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260808-08.jsonl": {
+      "bytes": 14529,
+      "sha256": "b168b39be03b13bae5a0e84009a467de1111b040d542c8e7f23dbd3ab6d7baaa"
+    },
+    "data/study3_runs/ext84/transcripts/news-Paiwan-20260808-10.jsonl": {
+      "bytes": 14081,
+      "sha256": "98fef48b7f20e11b699dad5820345a643478600a9ed24bb63e5bc4eaa48e7b7f"
+    },
+    "data/study3_runs/lid_gemini/lid.jsonl": {
+      "bytes": 2112309,
+      "sha256": "46add6d334724871d41f5a4b010209d64e2e2222e2daf048e7ac987ed048e23a"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20241116-01.jsonl": {
+      "bytes": 12276,
+      "sha256": "f9f395af631c3ae6b6d1cfc7e04b7aa4c405c402dd4e60b14f0dbe3c12c654fd"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20241116-02.jsonl": {
+      "bytes": 12663,
+      "sha256": "d655ae3e45a3bff178f08c29884165838c3191643fe68937a477ff3b53703158"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20241116-09.jsonl": {
+      "bytes": 18795,
+      "sha256": "3b915bce89d9c756d39b218eee9de4e6b907d823c7c81e764ba400e0ac59ee93"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20241207-01.jsonl": {
+      "bytes": 8878,
+      "sha256": "a67ab3bf1d43b5e7ae8a9f9552e730ede2a4a2b9a56a8c29545ba90bb75d0020"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20241207-06.jsonl": {
+      "bytes": 21722,
+      "sha256": "67a1beb6bc2ae619dd86793367a3687f39345f31e22dec087ad8466b3ea0d9f0"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20241207-08.jsonl": {
+      "bytes": 9265,
+      "sha256": "07171ba5eeea1c8f6d191ebf955c98fce78866c720c44bc1f92fd5c0fb05b669"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250222-05.jsonl": {
+      "bytes": 14056,
+      "sha256": "43a19f31454a7a566e388ba1c028da53b9844c424314e8c5e34c04b744898f91"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250222-06.jsonl": {
+      "bytes": 20283,
+      "sha256": "43e9b91d12c771fbb37a8e4bee42271500960b0c50afaa644249a14d9db5efc0"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250222-09.jsonl": {
+      "bytes": 11843,
+      "sha256": "12999c9784b799581879743d837453a69c546177612ef035b41701801d9aeccd"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250412-03.jsonl": {
+      "bytes": 9412,
+      "sha256": "ff22b11391fef86702698f84f747ebbe64bafd9885fdc90343343ac279be7b2e"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250412-08.jsonl": {
+      "bytes": 20879,
+      "sha256": "6b0ee733a94928deaf598eabcaaff3817bb06860db774c8b380d854cdb3f442c"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250412-09.jsonl": {
+      "bytes": 11612,
+      "sha256": "bbda07bcdc70e59b5a590c39413e273f7ebce944fd48f955e9bf2c0bf1a88c02"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250503-05.jsonl": {
+      "bytes": 6900,
+      "sha256": "e1104acd23d24b9f2454464cf8085d9b5332505d1edd044acfc4a33b8ae276e7"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250503-07.jsonl": {
+      "bytes": 11013,
+      "sha256": "78587cbb751c0c49c7478403015b64b599fa0efaf43295ba4c939ff1bcdefbf8"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250503-08.jsonl": {
+      "bytes": 13882,
+      "sha256": "75b81ae031b809df5813d586a8c7eb862ec19fa509d4c6d5bb6e0955ffb691aa"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250621-03.jsonl": {
+      "bytes": 8660,
+      "sha256": "f4e0fd172510bde99d38d5ce3d6d7a9a079c52a8083ddd673c95fe8f25e73a4a"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250621-05.jsonl": {
+      "bytes": 12145,
+      "sha256": "7342cf55e38824a2a73d2deb5181cc665e456ca87e4afefe9cedd5460ba1a648"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250621-09.jsonl": {
+      "bytes": 7457,
+      "sha256": "3d2275b1eb98518df0edc80348acdb741504538e7f3409f208dd7a2f837d6763"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250823-03.jsonl": {
+      "bytes": 20283,
+      "sha256": "840d69fd5284f45a2d606b3b990e715dbbd49ca887365eca14276a37151f313c"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250823-05.jsonl": {
+      "bytes": 20663,
+      "sha256": "1162337aba5262f70171c9b5a4d381fe2d6c07dc60bdab93f1b0538962f3e3c5"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250823-10.jsonl": {
+      "bytes": 9539,
+      "sha256": "42ebb7764e922d01cb416fd148c14575d88bce87bc3ad04822f77dd8952a3842"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250906-02.jsonl": {
+      "bytes": 17586,
+      "sha256": "f3d8cab37daa7b6c7c3a350ece0f3460b0a6057992e370cd2f79a8ceb43068c3"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250906-08.jsonl": {
+      "bytes": 17271,
+      "sha256": "72b8fd9fa7508c2c657c707d781eb7c3b988e9b568fbc799d252a810d90847df"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20250906-10.jsonl": {
+      "bytes": 14933,
+      "sha256": "9a1f49e2b25063b3d7b60bf73c46d7c804e5db35e719c5a37e5dd094be2f2df5"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20260214-02.jsonl": {
+      "bytes": 16154,
+      "sha256": "f803f44e48310eb3ab141feef0e9fd2605b4a677222cbea1663732c14ea0052c"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20260214-03.jsonl": {
+      "bytes": 15226,
+      "sha256": "6283f00fd2487e68049d479ca72d83bbf040af653e5ec03614d2c473fe54b443"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20260214-09.jsonl": {
+      "bytes": 17562,
+      "sha256": "a8edcba315ef61509a0c2c70bec05f2c8e7f833d05693ef905acfa84d889812d"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20260411-03.jsonl": {
+      "bytes": 11274,
+      "sha256": "5b67b838a05e49686c3ea2c26a1da8c0ca1857bed58a5f9b306dc5a56107b8fb"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20260411-05.jsonl": {
+      "bytes": 24608,
+      "sha256": "c0baece467ab40592d81d5c956c358cf4ef546f2d70c1cbcd355714feb78ea2b"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20260411-07.jsonl": {
+      "bytes": 21717,
+      "sha256": "99393d942c2fcfe09d27b0ff942893ac400a2a75f56b3848db8b7a9deceb410b"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20260502-05.jsonl": {
+      "bytes": 5311,
+      "sha256": "c30052adc3ea4a8a374cf08d3267bec3f1cffa19068ae666df9a81b0d3d7aad4"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20260502-07.jsonl": {
+      "bytes": 9390,
+      "sha256": "96a3ff6392e1ea3465ac952df7d317dbc20bc9bc30ad32efc3a1847e19e2f7c7"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20260808-01.jsonl": {
+      "bytes": 5887,
+      "sha256": "7577761794bf938d9122e09608774e983d5a9582697d8c1f8f0a9a8fa24a3a1e"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20260808-04.jsonl": {
+      "bytes": 15127,
+      "sha256": "ba56d26a3223b361b9f8a787c96896d16bf340ec3c0252d04e4205f3788adee7"
+    },
+    "data/study3_runs/transcripts/news-Paiwan-20260808-09.jsonl": {
+      "bytes": 17370,
+      "sha256": "b4ff88041c7d09f464c85d5871000ce68baa317cd4fb8425d9cb3c4147f667cc"
+    },
+    "work/data/aligned_trees/news-Paiwan-20241116-01.aligntree.TextGrid": {
+      "bytes": 161667,
+      "sha256": "0c809e227051d3ef83c853cfc301574d1fea22b93a29334e59b37cd6434a0bf8"
+    },
+    "work/data/aligned_trees/news-Paiwan-20241116-02.aligntree.TextGrid": {
+      "bytes": 106320,
+      "sha256": "adc24bdd039b5303ca0733e5d74769c8496be503eeffcdf86f6743437fa5cb56"
+    },
+    "work/data/aligned_trees/news-Paiwan-20241116-09.aligntree.TextGrid": {
+      "bytes": 162504,
+      "sha256": "45c04ee2e5f586626a1440146d504413458b7bd9fea86ec11f4d4092efc55e20"
+    },
+    "work/data/aligned_trees/news-Paiwan-20241207-01.aligntree.TextGrid": {
+      "bytes": 93983,
+      "sha256": "d5d73a247d10c131687e1b39c7b7fc771410a1b50b7a19ad969373dde323607f"
+    },
+    "work/data/aligned_trees/news-Paiwan-20241207-06.aligntree.TextGrid": {
+      "bytes": 173036,
+      "sha256": "e6ed285a6b139978b357b9d58fda6503bf876c4e294e27486aeb7c34dcc553ff"
+    },
+    "work/data/aligned_trees/news-Paiwan-20241207-08.aligntree.TextGrid": {
+      "bytes": 108548,
+      "sha256": "281a2065380c8f01ccc9f3c6bef6093661fa8d89194e40f1aec85ee4c72b4c26"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250222-05.aligntree.TextGrid": {
+      "bytes": 116419,
+      "sha256": "47e6a769587ef60fb96f9888ebb3eb6c2a3ba192f8f75aac6ae3a4de1b0976e1"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250222-06.aligntree.TextGrid": {
+      "bytes": 147269,
+      "sha256": "a3e687a0b3021430f9bb738d40df0f3987993fc329330bf32d15d2463cb6bd72"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250222-09.aligntree.TextGrid": {
+      "bytes": 111863,
+      "sha256": "43cf1141a2952410acfbb39023a0024c90a8746e6f201b5678d4ff8aac37adc2"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250412-03.aligntree.TextGrid": {
+      "bytes": 88394,
+      "sha256": "7058edbd02c5c0deb6102fae17d26778e08811ad33755c66a6d4988adfe99516"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250412-08.aligntree.TextGrid": {
+      "bytes": 193925,
+      "sha256": "50c0cf6fa528c722bc69b33064ba71022871625c80b134e6eca0116cdef37bf7"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250412-09.aligntree.TextGrid": {
+      "bytes": 109914,
+      "sha256": "0a3de581122d1ee9bcb1e1669843f628eb9d580586330578d88f8733a13021ba"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250503-05.aligntree.TextGrid": {
+      "bytes": 55969,
+      "sha256": "17085dd3bb202bec321b6d806b65ec21043531d5ff2aed2095e106eae62a3bc6"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250503-07.aligntree.TextGrid": {
+      "bytes": 96026,
+      "sha256": "806a87ab63af7adb8845a3d01172fbec200fc6c32457545823e653cfaaa3f060"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250503-08.aligntree.TextGrid": {
+      "bytes": 169144,
+      "sha256": "90cbc104c3d6f99d13b96351015613d5ffccbd455921ccb10194df3bc1edc605"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250621-03.aligntree.TextGrid": {
+      "bytes": 67446,
+      "sha256": "00ada5621fadf3ce91465d42afa7c7b0753180f3211784f4b0fc59dfb4ce0503"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250621-05.aligntree.TextGrid": {
+      "bytes": 107189,
+      "sha256": "525f5f3258b53cac682ae4c4545031ddc3dba17cfed9891c5e1359171ed0d929"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250621-09.aligntree.TextGrid": {
+      "bytes": 67577,
+      "sha256": "0fa6862f506d5bb67d5393a596dd4b5549a9fbd852017c27386fa4d6116b7395"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250823-03.aligntree.TextGrid": {
+      "bytes": 167255,
+      "sha256": "77ac42805a96bda8664a3f5d87efff0a7b9064744b0e5174576ff70355850d05"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250823-05.aligntree.TextGrid": {
+      "bytes": 169129,
+      "sha256": "bae75361f36cbafbb80bf775408552964ed714f82667ce794edb33261598c56a"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250823-10.aligntree.TextGrid": {
+      "bytes": 92164,
+      "sha256": "aeba2cae0b26d136abbcad1728707917f563ffd2a095d0e7b41a211b9a77cd73"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250906-02.aligntree.TextGrid": {
+      "bytes": 160648,
+      "sha256": "1fce4b838fe2a4e25ae2d96a489b36fa4df34633660a56e7d996a7c916925249"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250906-08.aligntree.TextGrid": {
+      "bytes": 143571,
+      "sha256": "ab65200353e0b71bc7e2e6db5470ea106517a42e50c670480a59eea0d7a0fe56"
+    },
+    "work/data/aligned_trees/news-Paiwan-20250906-10.aligntree.TextGrid": {
+      "bytes": 129918,
+      "sha256": "1c50d58c576b02ec9b7b72d66b0d28ccd4ccdc0054a6e0b15766e33a64876593"
+    },
+    "work/data/aligned_trees/news-Paiwan-20260214-02.aligntree.TextGrid": {
+      "bytes": 183587,
+      "sha256": "d97ec150cb6d049b07bed453782e0499f147391181b8aff7a59b786b1b968dda"
+    },
+    "work/data/aligned_trees/news-Paiwan-20260214-03.aligntree.TextGrid": {
+      "bytes": 145007,
+      "sha256": "9be15aff31104dc8e06cf2bcd02a7dd1dcf194898280a42d008941bd006b997a"
+    },
+    "work/data/aligned_trees/news-Paiwan-20260214-09.aligntree.TextGrid": {
+      "bytes": 137014,
+      "sha256": "6161a5c2542aea606f071a72021615f13b122f8efd70cab6793fa766efbf3ac8"
+    },
+    "work/data/aligned_trees/news-Paiwan-20260411-03.aligntree.TextGrid": {
+      "bytes": 89281,
+      "sha256": "0ed4a88143fae18d9dcfbc920d292f801ac1805cc2c5a2dbb8c0db3c7ccd1717"
+    },
+    "work/data/aligned_trees/news-Paiwan-20260411-05.aligntree.TextGrid": {
+      "bytes": 192066,
+      "sha256": "5601cb86c0f76471390890882b4858f671b9bda98b752e67a4cf1f7268b83b08"
+    },
+    "work/data/aligned_trees/news-Paiwan-20260411-07.aligntree.TextGrid": {
+      "bytes": 147905,
+      "sha256": "72c24f7bf55b1f5e7971d00a8bcb0dfe750b72c07ee1165e0e2de5b71c5e385a"
+    },
+    "work/data/aligned_trees/news-Paiwan-20260502-05.aligntree.TextGrid": {
+      "bytes": 53276,
+      "sha256": "ae3a1baef31f10ff4bc8ed0f85bb52a07ff6f2e0ab0a3ac1c00d180f3e331883"
+    },
+    "work/data/aligned_trees/news-Paiwan-20260502-07.aligntree.TextGrid": {
+      "bytes": 91475,
+      "sha256": "fccc2bd110d710c79751de7bbf602e2d9ea13b4680f9cda81775a7f7ad6fe5b2"
+    },
+    "work/data/aligned_trees/news-Paiwan-20260808-01.aligntree.TextGrid": {
+      "bytes": 63180,
+      "sha256": "84d53c2bd0f5b5bc696a41a0d69a99b3ffccb4c9e7ee85083ffd3be875e125fe"
+    },
+    "work/data/aligned_trees/news-Paiwan-20260808-04.aligntree.TextGrid": {
+      "bytes": 135454,
+      "sha256": "930fdaf7d48e856f3d421c01783799d2b3de556b4ec8bdf8acc35e17551ce39f"
+    },
+    "work/data/aligned_trees/news-Paiwan-20260808-09.aligntree.TextGrid": {
+      "bytes": 130816,
+      "sha256": "1de8ff955ea9f561dcf0735cea9d78a6e830f30711ff54cddd6bac4747b66800"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241116-03.aligntree.TextGrid": {
+      "bytes": 160254,
+      "sha256": "0f369bcee969afdfe793e3e3801a487af3972c4b3ab151d648f8591a6e10579b"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241116-04.aligntree.TextGrid": {
+      "bytes": 164652,
+      "sha256": "c4fc381ae385c5a3065c31837159cf8a066dec0b78924bd6715b77040c9cc856"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241116-05.aligntree.TextGrid": {
+      "bytes": 105912,
+      "sha256": "a174a494640e2eb92ef7d03bbf5c8be8dd9879067b4cb939c52789716753d213"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241116-06.aligntree.TextGrid": {
+      "bytes": 130830,
+      "sha256": "cd9bd51f4faf5b91e1f59f091c7b28cd1013e0bf39ba2bff7988032dfb348f8c"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241116-07.aligntree.TextGrid": {
+      "bytes": 111589,
+      "sha256": "d10566233a2a59a36176c79a63513534c94e2e39bec289a468cfbcaa8cb76893"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241116-08.aligntree.TextGrid": {
+      "bytes": 144607,
+      "sha256": "9192a57aeb5037af927e9274e5578bd54b9e1c2aba2c09d2dd363a37908c8ea7"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241116-10.aligntree.TextGrid": {
+      "bytes": 90912,
+      "sha256": "768188a5ac4a2584f8d41de629e76b3fc09ebe6ac92309b813186142f4c8ed1d"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241207-02.aligntree.TextGrid": {
+      "bytes": 133775,
+      "sha256": "310a56c77033ea82ad627d5927409cde560321cabc9a664994c9b5db86d63c81"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241207-03.aligntree.TextGrid": {
+      "bytes": 95748,
+      "sha256": "4b2b1096c0d5eb5ea7da4819ee162357fa2afdd1f371c88ff0367500324282bc"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241207-04.aligntree.TextGrid": {
+      "bytes": 81034,
+      "sha256": "9228ebf879b59d1bc2cd18531cbf22a4ba224d4dc30348ff64456c635193ba5f"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241207-05.aligntree.TextGrid": {
+      "bytes": 179748,
+      "sha256": "9bf6e064ba6001c7b516b307162941f1eaec3861183f423a86b00f0eae256a43"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241207-07.aligntree.TextGrid": {
+      "bytes": 173536,
+      "sha256": "c70df0b8ab325fdc7b69fd3d1ff6f621fdd3003412c4becf9a787c9dbc95074b"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241207-09.aligntree.TextGrid": {
+      "bytes": 137221,
+      "sha256": "e79fb2074f24ae64a038306ab87ef94da0f6d5af8b53594aa857f2c21d5c0d80"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20241207-10.aligntree.TextGrid": {
+      "bytes": 131803,
+      "sha256": "06d8a1b38441e9fbb107259bd089f6abe794642d44d465d1792a81379c107405"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250222-01.aligntree.TextGrid": {
+      "bytes": 176136,
+      "sha256": "d11d75438d5165cbbe270ca1f1614f5a55a3d86b6c3a0db440f29a0467391ca5"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250222-02.aligntree.TextGrid": {
+      "bytes": 165851,
+      "sha256": "495df8a50f93bf2a2461a59f632411eb999c546a96527fed99c53f3bb07adfc7"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250222-03.aligntree.TextGrid": {
+      "bytes": 113558,
+      "sha256": "7e54dde438350248f4bbc4711f99188ead54c717d8cd1e18c005b41eb27b5332"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250222-04.aligntree.TextGrid": {
+      "bytes": 192994,
+      "sha256": "635e94831e3c0b2e7d5e83ebb9661cd86410a9d30219c29b871408e165ba6e71"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250222-07.aligntree.TextGrid": {
+      "bytes": 192977,
+      "sha256": "95a9941619d21b56cb9198dec6039ea20be9831e0bb7dbb831b6f39db5600fc3"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250222-08.aligntree.TextGrid": {
+      "bytes": 123831,
+      "sha256": "e3709bdd19f58230db66603f1ed53f5d0be4f9545539e5d3edbb77ec4636d5d4"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250222-10.aligntree.TextGrid": {
+      "bytes": 124417,
+      "sha256": "4291b1665e62cc2810c0ac55580f0c1fb90d4a447ed70a240e0e1cb06989ef09"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250412-01.aligntree.TextGrid": {
+      "bytes": 83707,
+      "sha256": "cbf18029addd36f026205b981cb088c3d1a94fa3f5ed942af313dd674c0d3d62"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250412-02.aligntree.TextGrid": {
+      "bytes": 64717,
+      "sha256": "0b29f67644bdfff5f26e2f550b2a434e6b479f1f289e1512c71c0e745c0df177"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250412-04.aligntree.TextGrid": {
+      "bytes": 1408,
+      "sha256": "f9d52ce2b18c7337ba01faa4ae5c69b91763f0d925bfff00a4ce9f657580c7e3"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250412-05.aligntree.TextGrid": {
+      "bytes": 75766,
+      "sha256": "e3dda1d65c956f4cd59824dde0c34086e878649895abf7af77a6db6f52dccc83"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250412-06.aligntree.TextGrid": {
+      "bytes": 176710,
+      "sha256": "0a8aca3e3c9f32d8768dae925ce514350e9d729f5277cc78577a5105d0fe38a9"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250412-07.aligntree.TextGrid": {
+      "bytes": 170964,
+      "sha256": "83b6574b4acea0fa8e58ef30eeb3b66d2fccbe00bf2d47f0a7a4b9e8d48e1c4a"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250412-10.aligntree.TextGrid": {
+      "bytes": 130168,
+      "sha256": "915afd834f4b5af4bb4e423fa53ca5737117fe9241307880c13b23ebfcd947e3"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250503-01.aligntree.TextGrid": {
+      "bytes": 108141,
+      "sha256": "052fb45208e230129d434f1adc55e18a5ba2a15406cc8171cab6e1153fa99af0"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250503-02.aligntree.TextGrid": {
+      "bytes": 175630,
+      "sha256": "29f71a7f8688af88ca9fae17411d7ec916b1861981ad279b0eedcac79356495f"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250503-03.aligntree.TextGrid": {
+      "bytes": 64057,
+      "sha256": "08ff7153968bc27f4ac900a02b3f1074d92a838763f94fb4110f3b20dce5ad97"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250503-04.aligntree.TextGrid": {
+      "bytes": 74819,
+      "sha256": "8ed0e4ef590270ab5a2977ffdad34bfff443916ffff3d25e198e4d5f8902fd44"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250503-06.aligntree.TextGrid": {
+      "bytes": 122105,
+      "sha256": "c54098a996266f3203eedb0af6bf0e62f93a48e2e77bcd59a2c5539edecabf78"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250503-09.aligntree.TextGrid": {
+      "bytes": 155853,
+      "sha256": "bce62e2fe212645801e8abc07f8ca3993e1737cca7bb6608a5d9ef2ac76d3cfa"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250503-10.aligntree.TextGrid": {
+      "bytes": 59379,
+      "sha256": "1a4aaf9e3c43151136b1a8f58693dcc97d558638f80db427fc42a7b42433858c"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250621-01.aligntree.TextGrid": {
+      "bytes": 109258,
+      "sha256": "3fd5adbde6f4aacc1cdd6b0fcf0d363f023d2f13b630645c206fd22a1a455ee0"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250621-02.aligntree.TextGrid": {
+      "bytes": 78026,
+      "sha256": "c176e10063798f0585a02eef28fd6d89cc52d30b2beb345e7a95c15ac889e536"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250621-04.aligntree.TextGrid": {
+      "bytes": 106966,
+      "sha256": "37f04effd5517fec97d40ad3908dde7c999eada2ee8a6a0e8e77af4d164d4335"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250621-06.aligntree.TextGrid": {
+      "bytes": 175209,
+      "sha256": "0c92fcc51a076fa46ca8a4d0fe882dfa18386d16e1c10759bacbf7fd090c8878"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250621-07.aligntree.TextGrid": {
+      "bytes": 195335,
+      "sha256": "1518658dbc9fcbe873f67878b5dd14984d31f68468ec2dc397489ac898ce371d"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250621-08.aligntree.TextGrid": {
+      "bytes": 203805,
+      "sha256": "bb03ea5b38309e16263c99bb30e8695b4cbef3df5c2c1c651887176a754900f6"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250621-10.aligntree.TextGrid": {
+      "bytes": 97427,
+      "sha256": "4b5621d49f9ab4869d2bdc46907925cd26704530f1aed39631157cd45ac375d4"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250823-01.aligntree.TextGrid": {
+      "bytes": 114418,
+      "sha256": "5d18bd9fdf7b7e100a00a8142ea8690047099b18f1f5155b734ba5e719ea9771"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250823-02.aligntree.TextGrid": {
+      "bytes": 162057,
+      "sha256": "793e16dbc3bbde47456cfcd8bed8bdcd33bfeeef19f8be6c268fd0731ffd0fb7"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250823-04.aligntree.TextGrid": {
+      "bytes": 77383,
+      "sha256": "6cc70a1b0ead6ccfeca8dbd6f09a88b92854a69acc61432b681e3973f3e186d0"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250823-06.aligntree.TextGrid": {
+      "bytes": 175956,
+      "sha256": "9208069faca57836317c40630f6448b8af04ff9d0387b67e853f73d2193d6a0e"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250823-07.aligntree.TextGrid": {
+      "bytes": 182732,
+      "sha256": "9a1973effb41df6d1a4e260c7770c5f197d168393d8f13c0ed6ca18474761665"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250823-08.aligntree.TextGrid": {
+      "bytes": 170667,
+      "sha256": "bbad3778cc8bab0b3bf8b5766cee9202043f199e19b2f846eb657f66590ad8df"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250823-09.aligntree.TextGrid": {
+      "bytes": 132643,
+      "sha256": "36bc40fa18a3774203644caa7705855077b4c5916e345a7f3681b3095f323731"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250906-01.aligntree.TextGrid": {
+      "bytes": 99430,
+      "sha256": "ab1015353d69b999baa7ade085140c18ffc430a71eadd06ab48af85bbc50ec8d"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250906-03.aligntree.TextGrid": {
+      "bytes": 89800,
+      "sha256": "8151aed124b9657b4b12901f66aaec1712cd0a295b6e1f14ab813bec4f39b7ed"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250906-04.aligntree.TextGrid": {
+      "bytes": 137067,
+      "sha256": "ddc17041baaf421355da16e0e5556c8e7e15249a0520eda42109354350ef58e7"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250906-05.aligntree.TextGrid": {
+      "bytes": 150246,
+      "sha256": "7eb18c5f41eb5871e7e4f1337e96bbc32b2c3599fe116ac123866db0eba88530"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250906-06.aligntree.TextGrid": {
+      "bytes": 144056,
+      "sha256": "ffbcff85e6f20a7a0a8fd5ac907421c550f559abb341a7a33e5277088a57f805"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250906-07.aligntree.TextGrid": {
+      "bytes": 166542,
+      "sha256": "6ba99896c0a9502a7ec98d956959fc432315870823d02818ec466eaebb98d4e7"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20250906-09.aligntree.TextGrid": {
+      "bytes": 120798,
+      "sha256": "304856b9147245348c41acd3e79b486e3b8dc8fe838d785c6dbc9942f235009b"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260214-01.aligntree.TextGrid": {
+      "bytes": 124407,
+      "sha256": "8b49daf433e9677249e61574018df3e62cb1cd9f5323e9fa3b32528b8918063c"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260214-04.aligntree.TextGrid": {
+      "bytes": 37940,
+      "sha256": "36fab56258372dd01a818664945b96fa52dc6509ffa199daf6b85d3c464df06e"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260214-05.aligntree.TextGrid": {
+      "bytes": 122928,
+      "sha256": "28d54b3ee40975a233cdcd2bc5efaa0e6aa1baca66f72e3f9dee3d8117104bb7"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260214-06.aligntree.TextGrid": {
+      "bytes": 188277,
+      "sha256": "307ac8d31f659203f0ac2dc10ccb02a85a9d02f6fee1d557c970c958e1fae36a"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260214-07.aligntree.TextGrid": {
+      "bytes": 190944,
+      "sha256": "ba9ec6814f6d492e6eeff2aab3f0313293e1238eaaaeeba59cb9351d249c2343"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260214-08.aligntree.TextGrid": {
+      "bytes": 121902,
+      "sha256": "6a7ff4140a97b2b93039013c14ca1f3472a367d3b5b6a8636855fe07d1088b90"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260214-10.aligntree.TextGrid": {
+      "bytes": 64559,
+      "sha256": "5a06e89327cc15f9618b961b63f608388b840796f0953add3db3bfcfc493a935"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260411-01.aligntree.TextGrid": {
+      "bytes": 100924,
+      "sha256": "ad6b25e3257bd4ed549052d3ec7c5c7eb6d4f85c59c83603a0717b675cd01957"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260411-02.aligntree.TextGrid": {
+      "bytes": 106198,
+      "sha256": "ae8019a59bc9815e382a51d19e911dbe8f022bcffe27b83d877f1a65158d0dd7"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260411-04.aligntree.TextGrid": {
+      "bytes": 97279,
+      "sha256": "6452c577900b4badc953d0b508a6d6d26505ae683e91597b9d6d2fc18021ddec"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260411-06.aligntree.TextGrid": {
+      "bytes": 188975,
+      "sha256": "9e0e20dd9e562409d73d0d9374020022b9ff760b5db0fb2cfd59ed33cdbcecc2"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260411-08.aligntree.TextGrid": {
+      "bytes": 141139,
+      "sha256": "b16b15214cdce7f31a519545d3c4238ba9a1ccaf3f4b5ea1d141a6f6884a3277"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260411-09.aligntree.TextGrid": {
+      "bytes": 125130,
+      "sha256": "e2e3976017f86f83cce0db06073fcd44d728c19162954c30c90012d7b8efab48"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260411-10.aligntree.TextGrid": {
+      "bytes": 89699,
+      "sha256": "e55e743822928ad4ec0d27a17714c347fd160b27b395b3edf17960a9e91b5156"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260502-01.aligntree.TextGrid": {
+      "bytes": 81291,
+      "sha256": "6d631ad1c33a64215fc5433f112a406be9010b4b69ba73794116ca1478e796d4"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260502-02.aligntree.TextGrid": {
+      "bytes": 98512,
+      "sha256": "18f6dfbc0eb4dfb3e0688a04d8382a189c0f27cb9d091ed378f558563afd0bd9"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260502-03.aligntree.TextGrid": {
+      "bytes": 141053,
+      "sha256": "98acfd38f1af7cb62b887d67fabd12142cce12ba2719a0769b7a72f695ecd482"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260502-04.aligntree.TextGrid": {
+      "bytes": 35971,
+      "sha256": "ecb7325fc1c3b1c82262f09c1afe12042e478d1cdd547a37718e6916e6addef8"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260502-06.aligntree.TextGrid": {
+      "bytes": 39774,
+      "sha256": "8850173d3399c3d8d45bc6f76cb311302424be6cc7b36a9b799a42261526cd11"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260502-09.aligntree.TextGrid": {
+      "bytes": 79048,
+      "sha256": "1349b659c853a9aee5a41e52430f4bc9e154411d0697e05fb2aaa4e33d91c5b0"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260502-10.aligntree.TextGrid": {
+      "bytes": 164610,
+      "sha256": "88a1a0d350fbe2907812262b91a2dbf7f76da84a6271871cf827019b0f602136"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260808-02.aligntree.TextGrid": {
+      "bytes": 86257,
+      "sha256": "a866b6036e638e3601a604a3ee01faadfd1418d7c16db6a2d725d0e9beb0fe04"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260808-03.aligntree.TextGrid": {
+      "bytes": 136055,
+      "sha256": "ddc685536d02dce9bd932c9581eb4fa5b441b0b2e8f32dc35e00a27d8de6fa8b"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260808-05.aligntree.TextGrid": {
+      "bytes": 129701,
+      "sha256": "acab7817017b71fa2ff8ca33c2f98f8e74d4e1b0aa29647052bf7f0b4e91e973"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260808-06.aligntree.TextGrid": {
+      "bytes": 205195,
+      "sha256": "c10a8671c02e64b0c021816d1b4c702a4196cd3e44797fa9b44d491df1d78169"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260808-07.aligntree.TextGrid": {
+      "bytes": 179212,
+      "sha256": "9132bc2d8788e5c3a3917f53292bc00c74c470e1b724785fac5dc38157b824b3"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260808-08.aligntree.TextGrid": {
+      "bytes": 154387,
+      "sha256": "0ba6e6c7b79d3726b44154961df314e6ce2f253e322833e81b09e9a8a97d8315"
+    },
+    "work84/data/aligned_trees/news-Paiwan-20260808-10.aligntree.TextGrid": {
+      "bytes": 125482,
+      "sha256": "eee5716d3b4a4cead7c6e8595ffaaa8b303c918b581ca8330328955cb303148c"
+    },
+    "data/study3_metadata/units.json": {
+      "bytes": 8586644,
+      "sha256": "8fc503301da7a5b5a503b3ccbb1bf808b945d53a2116fea18f5242fdc0ab98c2"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/MANIFEST.json": {
+      "bytes": 3728,
+      "sha256": "43e22e6b01ddcf6a35e84d709941e64cded77be8ff91a373143920c2529a3fc4"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/RESULTS.json": {
+      "bytes": 22982,
+      "sha256": "d9ed047ef8beef91ef99e697e4c73a8bec46d1eab04c5c019f9b9e03e2b800b2"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_00.npz": {
+      "bytes": 383956,
+      "sha256": "ca797be2953cda9a31f1541a56c73027b3c9e07a8bc8f28bf027bb1e49854afe"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_01.npz": {
+      "bytes": 387562,
+      "sha256": "a22bbbcd1a96d88c4b326efe84654be583518bc9e6061225295f4300df247b2a"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_02.npz": {
+      "bytes": 387545,
+      "sha256": "7aed58cf088e27f27ce82a5d93f2f11a0b6862d6fe4d7373f80cb7a93a9682ac"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_03.npz": {
+      "bytes": 386189,
+      "sha256": "2d8fb3d10832b7fa04a4aacb12122b4553a678f3a179575b85c6bdde07c9a5b4"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_04.npz": {
+      "bytes": 389720,
+      "sha256": "5f6d2d43166b9ebe582fa9f1aade90ef78507100f80cd84305e7af58e418a5f3"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_05.npz": {
+      "bytes": 389242,
+      "sha256": "ac48666275407a1a505adcc250e98894963c5c651c20e4de0367f82e6c509ea6"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_06.npz": {
+      "bytes": 381669,
+      "sha256": "f5fdc6ef98648af7128a63ff3b9a19f2877b27f263db390442d7773931b9e32c"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_07.npz": {
+      "bytes": 384135,
+      "sha256": "ad452ac69a24710a91b267a7e0d047e90eb036fc8281d0a30cdba7f0c29e6446"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_08.npz": {
+      "bytes": 387016,
+      "sha256": "75f5f411ee394f0e8c2430f83f3997541debb2858a94f6ca6a3a4262c7b4a221"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_09.npz": {
+      "bytes": 385343,
+      "sha256": "e55dc4d1f23d2b3a36cbe930440ab767e2697059362bc19c8c42b9f79ddc905c"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_10.npz": {
+      "bytes": 384179,
+      "sha256": "fa5b625940e20d04e22773da0393096fe34637b7b31437dfefd35bf015187710"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_P/fold_11.npz": {
+      "bytes": 381861,
+      "sha256": "80711c6e3d1f7112d812ed1e1e04ab9854a405d974fe071c9d43c4943e2681da"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_00.npz": {
+      "bytes": 572734,
+      "sha256": "fee0be846866ab89b8295e5f1148c02a5af160ee2145e665921e6f9934f09569"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_01.npz": {
+      "bytes": 576459,
+      "sha256": "51d476f726cd697420676fe631bb737b2d4e86c613ca029738e188b59b18ceda"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_02.npz": {
+      "bytes": 575854,
+      "sha256": "c8f16bdd9fbb7e32c063071f7bc3b1ddaef0eff9a60303feb9a9ced785462549"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_03.npz": {
+      "bytes": 574105,
+      "sha256": "4c6c743aa38d0d657876a2836c74450f7541f9d3642ea18bc0d6cd2e6ffb4076"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_04.npz": {
+      "bytes": 578664,
+      "sha256": "1567242f4441eb4ded38ca00a491fe306692eede51a9690b4399f1bfdc524675"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_05.npz": {
+      "bytes": 578117,
+      "sha256": "067e81fd6c6a204a6362685cf32ef15fdcf9b4218d025b39b22cd33a7970545e"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_06.npz": {
+      "bytes": 570497,
+      "sha256": "250d5a593b8888cbf2f130bc74bd775a9cf04df96535e33d2311755bf6977a5c"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_07.npz": {
+      "bytes": 571978,
+      "sha256": "69d205c272dacb58ac331f76966f32d641db7908e96210dd89156ab64a813b8f"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_08.npz": {
+      "bytes": 575932,
+      "sha256": "0d85fe806b72b27a219e934ea1f7378134fbf9a3a033f2c3e0dcea76d43fac74"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_09.npz": {
+      "bytes": 573663,
+      "sha256": "f9009bf0db88a2346f78ca3fc5423859eecacc6d37329a375c05b14198219c8d"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_10.npz": {
+      "bytes": 571519,
+      "sha256": "a7f2c7dc608c0b4251c08684f220484b3b290cf48805c27b075d534ed8529db9"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/T_plus_W/fold_11.npz": {
+      "bytes": 569751,
+      "sha256": "29dd678ffe49c9c99f111acb5199a82d4c2b847acb518a0f8be1b459b0273d6a"
+    },
+    "data/study3_stats/prosody_exploration/P1_augmented_local/cache.npz": {
+      "bytes": 1074165,
+      "sha256": "117cc638e424c7bd991d0b9ba59ae1cc72025072022f9ff8d893ef1be4c8a4a6"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/cache.npz": {
+      "bytes": 26010,
+      "sha256": "5dfaf53b85c5ea14408c242cdedfeeed604064b3ae8d2dbd23620151c7e5617e"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_00.npz": {
+      "bytes": 382811,
+      "sha256": "3162a02d950db70b7c7277874083e37c3c1b4f77b90e1e58d787668a17f8316c"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_01.npz": {
+      "bytes": 386416,
+      "sha256": "d8424db79a53deb68944363184521c600d667f209750a2157f9b5da96d19d767"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_02.npz": {
+      "bytes": 386400,
+      "sha256": "0c7fca7f5804eba24d26a48dbb2cb3d0a925f9d9309488bd2778d61fbcc9836e"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_03.npz": {
+      "bytes": 385046,
+      "sha256": "50b3b98721b2472b0c901a08bc8c0634853c4fdd51056ce28f83c9269db36a68"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_04.npz": {
+      "bytes": 388576,
+      "sha256": "3f9385fd46e1e3136dd7d77da18abe7cffeff7f41b5208a8491c1b4680ea9254"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_05.npz": {
+      "bytes": 388096,
+      "sha256": "1b643a4fe68778174769d2f3e042c096ee8cf1287575bc223ea6ac47c78e5d74"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_06.npz": {
+      "bytes": 380521,
+      "sha256": "e0beb77c8da62740c70cfc50cd558a5596c2c7ef028e0cef79dda6963b29c172"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_07.npz": {
+      "bytes": 382988,
+      "sha256": "a0f27842f14677242cc9a86c74af98c8857707b562c4baa572e25e4b3451298d"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_08.npz": {
+      "bytes": 385874,
+      "sha256": "3ecb5c0df75708e50a9bcc3bca95bd93f9036e9565e3d4adda066dfa4cca988b"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_09.npz": {
+      "bytes": 384199,
+      "sha256": "ca6eeab7e85059a1afdf051b91206eb0933713fd14bfa7658567f235e64db070"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_10.npz": {
+      "bytes": 383037,
+      "sha256": "83b2011f28779f45e5b612328e0338c37edbe4fdf1d61cf534118bb8ea6d59e8"
+    },
+    "data/study3_stats/prosody_exploration/P1_baseline_local/fold_11.npz": {
+      "bytes": 380718,
+      "sha256": "b145433341fd67ade8aa49f10b2722a8a235193fb35a493835a8ce6c983097b4"
+    },
+    "data/study3_stats/registered/oof_scores.npz": {
+      "bytes": 17795,
+      "sha256": "f1d036398fa05e54ef0650923e547e395a4d4b4c4a7d0872a6add549d772223f"
+    }
+  },
+  "public_code_inputs": {
+    "analysis/paiwan_texts/study2_rebuild.py": {
+      "bytes": 2430,
+      "sha256": "2af59c6921de81e2de97bd2650025818c9be7ab516087b1fcc1dc3a2f9b4935b"
+    },
+    "scripts/study2_recall_check.py": {
+      "bytes": 12518,
+      "sha256": "1ca0446d54e3809cc0428839d64c30f0d8a484a64ea2292436613617ec3584f0"
+    },
+    "pipeline/analysis/form_candidates.py": {
+      "bytes": 5190,
+      "sha256": "abdb37c96158fcb28dbd89f5478f23ed4a277428bbe31f8d00aeecfc9ce162e6"
+    },
+    "pipeline/stages/utterances.py": {
+      "bytes": 1593,
+      "sha256": "7c44bf3206a9686a44457340c8f406279d15fc4bd0ba4adfbe2244d216ff2e3c"
+    },
+    "analysis/study3/prosody_preparation/INVENTORY.json": {
+      "bytes": 10836,
+      "sha256": "01915797186bcbedf491dbd5641cddc239e247b270b1f70d3b21c1c938860493"
+    },
+    "analysis/study3/clm_jev_preparation/DECISIONS.json": {
+      "bytes": 908,
+      "sha256": "12b73128d20033dc47a3a768edfb745827bc129d759ebf2dd52e95e8d40a6341"
+    },
+    "analysis/study3/paiwan_diagnostics/reference_case.json": {
+      "bytes": 220,
+      "sha256": "458fd0b1c1e353f04998f5fcf5f46b796bac19f1024f8895e732b3e8a219607a"
+    }
+  },
+  "original_programs": {
+    "translation_rule_decomposition": {
+      "sha256": "caeacb3bd6a6726be3b58fb39afce460b4c8f38b4ad5ba1c55b8bdc4284d445d",
+      "bytes": 15439
+    },
+    "asr_and_prediction_diagnostics": {
+      "sha256": "d6974e5051ca3512d6746de2b077a78a1b6f809a92c649006c4d80fc46da081c",
+      "bytes": 20795
+    }
+  },
+  "saved_result_sources": {
+    "translation_rule_decomposition.json": {
+      "sha256": "810b03c95b90033bd859a84da075699fd89f64de0de62af287f31b91a8e9b256",
+      "bytes": 612339
+    },
+    "translation_rule_example_locations.json": {
+      "sha256": "fee2d18b923cdb4a82368cea3584def66f6b4d74ef335bd6103aa226c44fb765",
+      "bytes": 324487
+    },
+    "asr_lexical_support.json": {
+      "sha256": "2e3e50c5c78d48a8ff7edb087a86d9d8306f6861017c0b4ccacfa4bc63bd1949",
+      "bytes": 102425
+    },
+    "prediction_diagnostics.json": {
+      "sha256": "82be88629a00724ea4bb0ce20d02c30149cb7d6c640502ad2ca36d5b014f24f0",
+      "bytes": 34510
+    },
+    "asr_lexical_support.csv": {
+      "sha256": "ae365e68482fc0c074cddebde4cac54f55bd92c8dab3a0f9820b45feb5cb2b39",
+      "bytes": 13250
+    },
+    "asr_candidate_spellings.csv": {
+      "sha256": "b65099c44a2ae3670851df0c947022dd84f2db1c44d860b9add79682c84f0644",
+      "bytes": 8457
+    },
+    "prediction_folds.csv": {
+      "sha256": "8a28e0bfdf5a55558c8905acc897e01d6f50bb08ae9eff4ba402f68bd55c2ec7",
+      "bytes": 9825
+    },
+    "prediction_pair_cells.csv": {
+      "sha256": "b6a10205d56a93595b647153ecebe613a973eb1eb7cb7e5296cc29250fa579f4",
+      "bytes": 31842
+    }
+  },
+  "public_projection": {
+    "translation_rule_decomposition.json": "Original result fields retained except the local interpreter location and input catalogue, now recorded here.",
+    "translation_rule_example_locations.json": "The seven named source-location and selection fields are retained for each of the ten examples. Full source-text payloads are not duplicated.",
+    "other_saved_results": "Byte-identical copies of the existing numerical summaries and CSV tables."
+  },
+  "reproduction": "Public entry points accept an input root and a new output directory. Existing scientific input hashes are checked before use. This repository update did not reexecute the parser or the real-data analyses.",
+  "input_layout": "Paths follow the public input layout; relocated scientific inputs retain their recorded byte counts and SHA-256 digests."
+}

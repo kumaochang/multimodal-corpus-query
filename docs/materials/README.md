@@ -1,6 +1,6 @@
 # Materials and analysis guide
 
-This guide connects the dissertation's saved results, source programs, input contracts, and command-line entry points. Paths below are relative to the repository root unless a link resolves them from this document. Run commands from the repository root. `python` denotes the interpreter for the relevant analysis environment.
+This guide connects saved results with their source programs, required inputs, and command-line entry points. Paths below are relative to the repository root unless a link resolves them from this document. Run commands from the repository root. `python` denotes the interpreter for the relevant analysis environment.
 
 ## Registration, sampling, and file locations
 
@@ -52,6 +52,9 @@ Each program specifies the path of the report it generates.
 | Clip-level retrieval and 15 feature combinations | [`retrieval_results.json`](../../analysis/clip_level_map_audit/retrieval_results.json), [`fusion15_results.json`](../../analysis/clip_level_map_audit/fusion15_results.json), and [`fusion15_results.csv`](../../analysis/clip_level_map_audit/fusion15_results.csv) | [`complete_fusion_map.py`](../../analysis/clip_level_map_audit/complete_fusion_map.py) and [`PLAN_F0.md`](../../analysis/clip_level_map_audit/PLAN_F0.md) |
 | Clip-level category baselines and composition diagnostics | Original programs `analysis/q1q2_composition.py`, `q3q4_reductions.py`, and `q5_baselines.py` through `q11_power.py` | The programs retain the individual diagnostic definitions. |
 | Paiwan translation-rule comparison | The rule program prints its contingency table and statistics; the coverage-sensitivity program writes its report when `--output` is given. | [`study2_rebuild.py`](../../analysis/paiwan_texts/study2_rebuild.py) and [`study2_recall_check.py`](../../scripts/study2_recall_check.py) |
+| Translation-rule decomposition | [`translation_rule_decomposition.json`](../../analysis/study3/paiwan_diagnostics/translation_rule_decomposition.json) and [`translation_rule_example_locations.json`](../../analysis/study3/paiwan_diagnostics/translation_rule_example_locations.json) | [`translation_rule_decomposition.py`](../../analysis/study3/paiwan_diagnostics/translation_rule_decomposition.py) |
+| Saved ASR spelling coverage | [`asr_lexical_support.json`](../../analysis/study3/paiwan_diagnostics/asr_lexical_support.json), `asr_lexical_support.csv`, and `asr_candidate_spellings.csv` in [`paiwan_diagnostics/`](../../analysis/study3/paiwan_diagnostics/) | [`asr_and_prediction_diagnostics.py`](../../analysis/study3/paiwan_diagnostics/asr_and_prediction_diagnostics.py), task `asr` |
+| Within- and between-day prediction diagnostics | [`prediction_diagnostics.json`](../../analysis/study3/paiwan_diagnostics/prediction_diagnostics.json), `prediction_folds.csv`, and `prediction_pair_cells.csv` in [`paiwan_diagnostics/`](../../analysis/study3/paiwan_diagnostics/) | [`asr_and_prediction_diagnostics.py`](../../analysis/study3/paiwan_diagnostics/asr_and_prediction_diagnostics.py), task `predictions` |
 | Surface-form counts | The program prints word-final counts and writes `rule_count_summary.json` to the chosen output directory. | [`symbolic_surface_counts.py`](../../analysis/symbolic_surface_counts.py) |
 | Phone detection | [`phone_detection_results.json`](../../analysis/phone_detection_results.json) | [`q21_speaker_recall_audit.py`](../../analysis/q21_speaker_recall_audit.py) |
 | Subtitle overlap in saved HA W3 retrieval | [`SUMMARY.json`](../../analysis/study3/ch5_subtitle_overlap/SUMMARY.json); reader and derived caches under `data/study3_stats/ch5_subtitle_overlap/` | [`ch5_subtitle_overlap/pipeline.py`](../../analysis/study3/ch5_subtitle_overlap/pipeline.py) |
@@ -246,6 +249,38 @@ python analysis/study3/ch5_framing_sensitivity/run_sensitivity.py --root . --pat
 ```
 
 The plan separates the original representation, centering control, zero- and median-imputed residualization, and complete-case branch. Query/candidate membership, PCA/OLS transformations, and rankings are fixed within its shared day-weight bootstrap. Read the paired changes together with the rank-change and matching-count summaries.
+
+### 11. Paiwan source and saved-score diagnostics
+
+The saved files in [`analysis/study3/paiwan_diagnostics/`](../../analysis/study3/paiwan_diagnostics/) retain the numerical precision of the completed analyses. [`SOURCE_PROVENANCE.json`](../../analysis/study3/paiwan_diagnostics/SOURCE_PROVENANCE.json) records their input identities and execution environments. The [file-availability catalogue](file-availability.csv) identifies supplied files and required inputs.
+
+The translation-rule decomposition reports the original `sent`, `voc2`, and `voc12` cells, lexical groups, nonexclusive English-rule triggers, and published form/gloss profiles. The ten example records retain source IDs, XML locations, and selection criteria. These are conditions on published English translations and links to published glosses.
+
+ASR coverage uses 2,463 core and 5,805 extension utterances. It separates exact and normalized spelling matches, token and type denominators, retained candidates, machine language groups, and the fixed nine-spelling screen. Spelling support describes correspondence with reference FORM tiers; it does not identify the language spoken in the recording. `reference_case.json` records the digest of the saved ASR string used for the reference-case equality check.
+
+The prediction diagnostics retain the original 192 items, labels, weights, and saved scores. They decompose the original pooled weighted AUC into within-day and between-day pair contributions, and report fold support and score summaries. The saved original estimates and uncertainty intervals remain the reference results. These diagnostics add no fitted model or uncertainty interval.
+
+Supply the scientific input tree at `--input-root`. Preserve its recorded repository-relative paths; the two programs read their code dependencies from this repository. Each `--out` must name a new directory:
+
+```sh
+python analysis/study3/paiwan_diagnostics/translation_rule_decomposition.py --input-root /path/to/input-tree --out output/translation-rule-decomposition
+python analysis/study3/paiwan_diagnostics/asr_and_prediction_diagnostics.py --task asr --input-root /path/to/input-tree --out output/asr-spelling-coverage
+python analysis/study3/paiwan_diagnostics/asr_and_prediction_diagnostics.py --task predictions --input-root /path/to/input-tree --out output/prediction-diagnostics
+```
+
+Translation-rule reproduction requires spaCy 3.8.16 and `en_core_web_sm` 3.8.0, the published XML files under `data/paiwan_texts/xml/`, and `data/paiwan_texts/SHA256SUMS.txt`. It executes the original learned parser and checks the three saved contingency tables before writing the decomposition.
+
+ASR reproduction additionally requires the NTU XML under `data/ntu_paiwan_asr/xml/`, the core unit metadata at `data/study3_metadata/units.json`, transcripts and machine-language records under `data/study3_runs/` and its `ext84/` extension, `annotation/pool.jsonl`, and the core/extension aligned trees under `work/data/aligned_trees/` and `work84/data/aligned_trees/`.
+
+Prediction reproduction requires `data/study3_stats/prosody_exploration/P1_augmented_local/` and `P1_baseline_local/`, including the saved caches, manifests, result summaries, and fold train/test indices, plus `data/study3_stats/registered/oof_scores.npz`. The inventory identifies this registered score archive by its original digest. These entry points read existing predictions and do not run the prediction models. NumPy 1.26.4 was used for the recorded diagnostics; the scripts also require lxml.
+
+A small numerical check can be run independently of the scientific input tree:
+
+```sh
+python analysis/study3/paiwan_diagnostics/asr_and_prediction_diagnostics.py --self-test
+```
+
+It checks hand-calculated weighted AUC/AP with a tied score, additive within/between contributions, and undefined single-class behavior. It does not read the scientific inputs.
 
 ## Reading comparisons correctly
 

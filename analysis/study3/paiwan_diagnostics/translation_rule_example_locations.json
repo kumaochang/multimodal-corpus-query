@@ -1,0 +1,302 @@
+[
+  {
+    "id": "002S22",
+    "file": "data/paiwan_texts/xml/PaiwanCh2_002.xml",
+    "line": 2922,
+    "S_ordinal": 22,
+    "selection_roles": [
+      "first_new_voc12"
+    ],
+    "variants": [
+      "voc12"
+    ],
+    "triggers": {
+      "voc12": {
+        "bare_VB": true,
+        "negative": false,
+        "hortative": false,
+        "deontic": false
+      }
+    }
+  },
+  {
+    "id": "002S42",
+    "file": "data/paiwan_texts/xml/PaiwanCh2_002.xml",
+    "line": 5575,
+    "S_ordinal": 42,
+    "selection_roles": [
+      "first_new_voc2"
+    ],
+    "variants": [
+      "voc2",
+      "voc12"
+    ],
+    "triggers": {
+      "voc2": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      },
+      "voc12": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      }
+    }
+  },
+  {
+    "id": "002S49",
+    "file": "data/paiwan_texts/xml/PaiwanCh2_002.xml",
+    "line": 6583,
+    "S_ordinal": 49,
+    "selection_roles": [
+      "source_order_fill"
+    ],
+    "variants": [
+      "voc2",
+      "voc12"
+    ],
+    "triggers": {
+      "voc2": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      },
+      "voc12": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      }
+    }
+  },
+  {
+    "id": "006S8",
+    "file": "data/paiwan_texts/xml/PaiwanCh2_006.xml",
+    "line": 1067,
+    "S_ordinal": 8,
+    "selection_roles": [
+      "source_order_fill"
+    ],
+    "variants": [
+      "voc2",
+      "voc12"
+    ],
+    "triggers": {
+      "voc2": {
+        "bare_VB": true,
+        "negative": false,
+        "hortative": false,
+        "deontic": false
+      },
+      "voc12": {
+        "bare_VB": true,
+        "negative": false,
+        "hortative": false,
+        "deontic": false
+      }
+    }
+  },
+  {
+    "id": "006S26",
+    "file": "data/paiwan_texts/xml/PaiwanCh2_006.xml",
+    "line": 3671,
+    "S_ordinal": 26,
+    "selection_roles": [
+      "source_order_fill"
+    ],
+    "variants": [
+      "voc2",
+      "voc12"
+    ],
+    "triggers": {
+      "voc2": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      },
+      "voc12": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      }
+    }
+  },
+  {
+    "id": "007S9",
+    "file": "data/paiwan_texts/xml/PaiwanCh2_007.xml",
+    "line": 1151,
+    "S_ordinal": 9,
+    "selection_roles": [
+      "first_primary_hortative",
+      "first_primary_an_without_literal_an_M"
+    ],
+    "variants": [
+      "sent",
+      "voc2",
+      "voc12"
+    ],
+    "triggers": {
+      "sent": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      },
+      "voc2": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      },
+      "voc12": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      }
+    }
+  },
+  {
+    "id": "011S66",
+    "file": "data/paiwan_texts/xml/PaiwanCh2_011.xml",
+    "line": 10692,
+    "S_ordinal": 66,
+    "selection_roles": [
+      "first_primary_an_with_lf_gloss",
+      "first_primary_si_an"
+    ],
+    "variants": [
+      "sent",
+      "voc2",
+      "voc12"
+    ],
+    "triggers": {
+      "sent": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      },
+      "voc2": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      },
+      "voc12": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": true,
+        "deontic": false
+      }
+    }
+  },
+  {
+    "id": "040S30",
+    "file": "data/paiwan_texts/xml/PaiwanCh2_040.xml",
+    "line": 4644,
+    "S_ordinal": 30,
+    "selection_roles": [
+      "first_primary_bare_VB"
+    ],
+    "variants": [
+      "sent",
+      "voc2",
+      "voc12"
+    ],
+    "triggers": {
+      "sent": {
+        "bare_VB": true,
+        "negative": false,
+        "hortative": false,
+        "deontic": false
+      },
+      "voc2": {
+        "bare_VB": true,
+        "negative": false,
+        "hortative": false,
+        "deontic": false
+      },
+      "voc12": {
+        "bare_VB": true,
+        "negative": false,
+        "hortative": false,
+        "deontic": false
+      }
+    }
+  },
+  {
+    "id": "044S10",
+    "file": "data/paiwan_texts/xml/PaiwanCh2_044.xml",
+    "line": 1067,
+    "S_ordinal": 10,
+    "selection_roles": [
+      "first_primary_negative"
+    ],
+    "variants": [
+      "sent",
+      "voc2",
+      "voc12"
+    ],
+    "triggers": {
+      "sent": {
+        "bare_VB": false,
+        "negative": true,
+        "hortative": false,
+        "deontic": false
+      },
+      "voc2": {
+        "bare_VB": false,
+        "negative": true,
+        "hortative": false,
+        "deontic": false
+      },
+      "voc12": {
+        "bare_VB": false,
+        "negative": true,
+        "hortative": false,
+        "deontic": false
+      }
+    }
+  },
+  {
+    "id": "058S117",
+    "file": "data/paiwan_texts/xml/PaiwanCh2_058.xml",
+    "line": 13835,
+    "S_ordinal": 117,
+    "selection_roles": [
+      "first_primary_deontic"
+    ],
+    "variants": [
+      "sent",
+      "voc2",
+      "voc12"
+    ],
+    "triggers": {
+      "sent": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": false,
+        "deontic": true
+      },
+      "voc2": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": false,
+        "deontic": true
+      },
+      "voc12": {
+        "bare_VB": false,
+        "negative": false,
+        "hortative": false,
+        "deontic": true
+      }
+    }
+  }
+]
